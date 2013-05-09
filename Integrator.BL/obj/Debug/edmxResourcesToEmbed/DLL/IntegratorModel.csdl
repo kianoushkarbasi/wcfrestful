@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="IntegratorModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="IntegratorEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="EmailLists" EntityType="IntegratorModel.EmailList" />
+    <EntitySet Name="ErrorLogs" EntityType="IntegratorModel.ErrorLog" />
+    <EntitySet Name="CMYKLookups" EntityType="IntegratorModel.CMYKLookup" />
+    <EntitySet Name="StatusMessages" EntityType="IntegratorModel.StatusMessage" />
+    <EntitySet Name="InsertedDataHistories" EntityType="IntegratorModel.InsertedDataHistory" />
+  </EntityContainer>
+  <EntityType Name="EmailList">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Type="Int32" Name="id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Email" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="IsActive" />
+    <Property Type="String" Name="Type" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="ErrorLog">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Type="Int32" Name="id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="DateTime" Name="Date" />
+    <Property Type="String" Name="Message" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Trace" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Source" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="ErrorType" MaxLength="150" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="CMYKLookup">
+    <Key>
+      <PropertyRef Name="RGB" />
+    </Key>
+    <Property Type="Int32" Name="RGB" Nullable="false" />
+    <Property Type="Int32" Name="CMYK" />
+    <Property Type="String" Name="FakeHex" MaxLength="10" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="StatusMessage">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Type="Int32" Name="id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="StatusMessage1" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Type" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="Date" />
+  </EntityType>
+  <EntityType Name="InsertedDataHistory">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Type="Int32" Name="id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="InsertedDataID" />
+    <Property Type="String" Name="XmlFileName" MaxLength="350" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Type" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="InsertedDate" />
+  </EntityType>
+</Schema>

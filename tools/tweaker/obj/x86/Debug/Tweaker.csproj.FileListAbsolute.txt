@@ -1,0 +1,30 @@
+D:\kianoush\tweaker\bin\Debug\Changename.exe.config
+D:\kianoush\tweaker\bin\Debug\Changename.exe
+D:\kianoush\tweaker\bin\Debug\Changename.pdb
+D:\kianoush\tweaker\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\kianoush\tweaker\obj\x86\Debug\Changename.exe
+D:\kianoush\tweaker\obj\x86\Debug\Changename.pdb
+C:\Users\kianoush.karbasi.DOMAIN\Documents\Visual Studio 2010\Projects\Changename\Changename\bin\Debug\Changename.exe.config
+C:\Users\kianoush.karbasi.DOMAIN\Documents\Visual Studio 2010\Projects\Changename\Changename\obj\x86\Debug\Changename.exe
+C:\Users\kianoush.karbasi.DOMAIN\Documents\Visual Studio 2010\Projects\Changename\Changename\obj\x86\Debug\Changename.pdb
+C:\Users\kianoush.karbasi.DOMAIN\Documents\Visual Studio 2010\Projects\Changename\Changename\bin\Debug\Changename.exe
+C:\Users\kianoush.karbasi.DOMAIN\Documents\Visual Studio 2010\Projects\Changename\Changename\bin\Debug\Changename.pdb
+C:\Users\kianoush.karbasi.DOMAIN\Documents\Visual Studio 2010\Projects\Changename\Changename\obj\x86\Debug\Tweaker.csprojResolveAssemblyReference.cache
+C:\Users\kianoush.karbasi.DOMAIN\Documents\Visual Studio 2012\Projects\tweaker\bin\Debug\Changename.exe.config
+C:\Users\kianoush.karbasi.DOMAIN\Documents\Visual Studio 2012\Projects\tweaker\obj\x86\Debug\Changename.exe
+C:\Users\kianoush.karbasi.DOMAIN\Documents\Visual Studio 2012\Projects\tweaker\obj\x86\Debug\Changename.pdb
+C:\Users\kianoush.karbasi.DOMAIN\Documents\Visual Studio 2012\Projects\tweaker\bin\Debug\Changename.exe
+C:\Users\kianoush.karbasi.DOMAIN\Documents\Visual Studio 2012\Projects\tweaker\bin\Debug\Changename.pdb
+C:\Users\kianoush.karbasi.DOMAIN\Documents\Visual Studio 2012\Projects\tweaker\obj\x86\Debug\Tweaker.csprojResolveAssemblyReference.cache
+C:\Users\kianoush.karbasi.DOMAIN\Documents\Visual Studio 2012\Projects\tweaker\bin\Debug\EntityFramework.dll
+C:\Users\kianoush.karbasi.DOMAIN\Documents\Visual Studio 2012\Projects\tweaker\bin\Debug\EntityFramework.xml
+C:\Users\kianoush.karbasi.DOMAIN\Documents\GitHub\Integrator\Live server\tools\tweaker\bin\Debug\Changename.exe.config
+C:\Users\kianoush.karbasi.DOMAIN\Documents\GitHub\Integrator\Live server\tools\tweaker\obj\x86\Debug\Changename.exe
+C:\Users\kianoush.karbasi.DOMAIN\Documents\GitHub\Integrator\Live server\tools\tweaker\obj\x86\Debug\Changename.pdb
+C:\Users\kianoush.karbasi.DOMAIN\Documents\GitHub\Integrator\Live server\tools\tweaker\bin\Debug\Changename.exe
+C:\Users\kianoush.karbasi.DOMAIN\Documents\GitHub\Integrator\Live server\tools\tweaker\bin\Debug\Changename.pdb
+C:\Users\kianoush.karbasi.DOMAIN\Documents\GitHub\Integrator\Live server\tools\tweaker\bin\Debug\EntityFramework.dll
+C:\Users\kianoush.karbasi.DOMAIN\Documents\GitHub\Integrator\Live server\tools\tweaker\bin\Debug\EntityFramework.xml
+C:\Users\kianoush.karbasi.DOMAIN\Documents\GitHub\Integrator\Live server\tools\tweaker\obj\x86\Debug\Tweaker.csprojResolveAssemblyReference.cache
+C:\Users\kianoush.karbasi.DOMAIN\Documents\github\integrator\live server\tools\tweaker\bin\Debug\Repository.dll
+C:\Users\kianoush.karbasi.DOMAIN\Documents\github\integrator\live server\tools\tweaker\bin\Debug\Repository.pdb

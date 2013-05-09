@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="C:\Users\kianoush.karbasi.DOMAIN\Documents\Visual Studio 2010\Projects\Sparshcom Integrator\Live server\TestXmlController\bin\Release\TestXmlController.dll" total="11" errors="2" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2012-10-22" time="09:58:03">
+  <environment nunit-version="2.6.1.12217" clr-version="2.0.50727.5456" os-version="Microsoft Windows NT 6.1.7601 Service Pack 1" platform="Win32NT" cwd="C:\Users\kianoush.karbasi.DOMAIN\Documents\Visual Studio 2010\Projects\Sparshcom Integrator\Live server\TestXmlController\bin\Release" machine-name="BLOND-LAPTOP-02" user="kianoush.karbasi" user-domain="DOMAIN" />
+  <culture-info current-culture="en-AU" current-uiculture="en-US" />
+  <test-suite type="Assembly" name="C:\Users\kianoush.karbasi.DOMAIN\Documents\Visual Studio 2010\Projects\Sparshcom Integrator\Live server\TestXmlController\bin\Release\TestXmlController.dll" executed="True" result="Failure" success="False" time="28.950" asserts="0">
+    <results>
+      <test-suite type="Namespace" name="TestXmlController" executed="True" result="Failure" success="False" time="28.929" asserts="0">
+        <results>
+          <test-suite type="TestFixture" name="IntegratorServiceTest" executed="True" result="Inconclusive" success="False" time="0.013" asserts="0" />
+          <test-suite type="TestFixture" name="XmlControllerTest" executed="True" result="Failure" success="False" time="28.908" asserts="0">
+            <results>
+              <test-case name="TestXmlController.XmlControllerTest.CheckFileAccessTest" executed="True" result="Success" success="True" time="2.296" asserts="0" />
+              <test-case name="TestXmlController.XmlControllerTest.findTAAAccountTest" executed="True" result="Success" success="True" time="0.009" asserts="0" />
+              <test-case name="TestXmlController.XmlControllerTest.GenerateOrderXmlTest" executed="True" result="Error" success="False" time="26.043" asserts="0">
+                <failure>
+                  <message><![CDATA[System.Data.EntityCommandExecutionException : An error occurred while executing the command definition. See the inner exception for details.
+  ----> System.Data.SqlClient.SqlException : Invalid object name 'dbo.TAA_CouponAdjustments'.]]></message>
+                  <stack-trace><![CDATA[at System.Data.EntityClient.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+at System.Data.Objects.Internal.ObjectQueryExecutionPlan.Execute[TResultType](ObjectContext context, ObjectParameterCollection parameterValues)
+at System.Data.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+at System.Data.Objects.ObjectQuery`1.System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+at Integrator.BL.XmlController.GenerateOrder(String emblemTemplateUrl, String productTemplateUrl, String emblemProductionTemplateUrl, String flatCutTemplateUrl, String emblemStichFileTemplateUrl, Nullable`1 orderNumber, Decimal previewdpi, Decimal printdpi) in C:\Users\kianoush.karbasi.DOMAIN\Documents\Visual Studio 2010\Projects\Sparshcom Integrator\Live server\Integrator.BL\XmlController.cs:line 823
+at TestXmlController.XmlControllerTest.GenerateOrderXmlTest() in C:\Users\kianoush.karbasi.DOMAIN\Documents\Visual Studio 2010\Projects\Sparshcom Integrator\Live server\TestXmlController\XmlControllerTest.cs:line 82
+--SqlException
+at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+at System.Data.SqlClient.SqlDataReader.get_MetaData()
+at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+at System.Data.EntityClient.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+]]></stack-trace>
+                </failure>
+              </test-case>
+              <test-case name="TestXmlController.XmlControllerTest.insertIntoProcessingListTest" executed="True" result="Success" success="True" time="0.004" asserts="0" />
+              <test-case name="TestXmlController.XmlControllerTest.parseXmlFileTest" executed="True" result="Error" success="False" time="0.359" asserts="0">
+                <failure>
+                  <message><![CDATA[Microsoft.VisualStudio.TestTools.UnitTesting.AssertFailedException : Assert.IsFalse failed. A path which contains files on my computer c:/temp/ has been passed but it didn't return anything]]></message>
+                  <stack-trace><![CDATA[at Microsoft.VisualStudio.TestTools.UnitTesting.Assert.HandleFail(String assertionName, String message, Object[] parameters)
+at TestXmlController.XmlControllerTest.parseXmlFileTestHelper[T]() in C:\Users\kianoush.karbasi.DOMAIN\Documents\Visual Studio 2010\Projects\Sparshcom Integrator\Live server\TestXmlController\XmlControllerTest.cs:line 463
+]]></stack-trace>
+                </failure>
+              </test-case>
+              <test-case name="TestXmlController.XmlControllerTest.removeFromProcessingListTest" executed="True" result="Success" success="True" time="0.003" asserts="0" />
+              <test-case name="TestXmlController.XmlControllerTest.replaceNullByDecimalZeroTest" executed="True" result="Success" success="True" time="0.005" asserts="0" />
+              <test-case name="TestXmlController.XmlControllerTest.replaceNullByEmptystringTest" executed="True" result="Success" success="True" time="0.002" asserts="0" />
+              <test-case name="TestXmlController.XmlControllerTest.replaceNullByIntZeroTest" executed="True" result="Success" success="True" time="0.004" asserts="0" />
+              <test-case name="TestXmlController.XmlControllerTest.ReplaceUrlSpecialCharTest" executed="True" result="Success" success="True" time="0.008" asserts="0" />
+              <test-case name="TestXmlController.XmlControllerTest.SetProfilesTest" executed="True" result="Success" success="True" time="0.146" asserts="0" />
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>

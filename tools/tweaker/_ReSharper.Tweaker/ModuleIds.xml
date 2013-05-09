@@ -1,0 +1,5 @@
+<Modules>
+  <Module PersistentId="73440BDB-6CA6-4BC9-B4F4-0B8D62E1C011" ModuleId="Tweaker" />
+  <Module PersistentId="31227776-F058-4236-A0F1-6DCFF48FCC92" ModuleId="BLL" />
+  <Module PersistentId="4B0F1D7C-D2E9-4CE1-9449-1D192AE84742" ModuleId="Repository" />
+</Modules>

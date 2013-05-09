@@ -1,0 +1,344 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="dnnolddescriptionModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="dnnolddescriptionModelStoreContainer">
+          <EntitySet Name="CAT_Products" EntityType="dnnolddescriptionModel.Store.CAT_Products" store:Type="Tables" Schema="dbo" />
+        </EntityContainer>
+        <EntityType Name="CAT_Products">
+          <Key>
+            <PropertyRef Name="ProductID" />
+          </Key>
+          <Property Name="ProductID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="CategoryID" Type="int" />
+          <Property Name="Category2ID" Type="int" />
+          <Property Name="Category3" Type="nvarchar" MaxLength="50" />
+          <Property Name="ProductName" Type="nvarchar" MaxLength="255" />
+          <Property Name="ProductNumber" Type="nvarchar" MaxLength="50" />
+          <Property Name="EAN" Type="nvarchar" MaxLength="50" />
+          <Property Name="ISBN" Type="nvarchar" MaxLength="50" />
+          <Property Name="Free1" Type="nvarchar" MaxLength="1000" />
+          <Property Name="Free2" Type="nvarchar" MaxLength="1000" />
+          <Property Name="Free3" Type="nvarchar" MaxLength="1000" />
+          <Property Name="KeyWords" Type="nvarchar" MaxLength="1000" />
+          <Property Name="ProductImage" Type="nvarchar" MaxLength="255" />
+          <Property Name="UnitCost" Type="money" Nullable="false" />
+          <Property Name="UnitCost2" Type="money" />
+          <Property Name="UnitCost3" Type="money" />
+          <Property Name="UnitCost4" Type="money" />
+          <Property Name="UnitCost5" Type="money" />
+          <Property Name="UnitCost6" Type="money" />
+          <Property Name="Description" Type="nvarchar(max)" />
+          <Property Name="DescriptionHTML" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="URL" Type="nvarchar" MaxLength="255" />
+          <Property Name="Stock" Type="int" />
+          <Property Name="OrderQuant" Type="nvarchar" Nullable="false" MaxLength="200" />
+          <Property Name="Weight" Type="decimal" Precision="10" Scale="4" />
+          <Property Name="Volume" Type="decimal" Precision="8" Scale="2" />
+          <Property Name="Length" Type="decimal" Precision="8" Scale="2" />
+          <Property Name="Width" Type="decimal" Precision="8" Scale="2" />
+          <Property Name="Height" Type="decimal" Precision="8" Scale="2" />
+          <Property Name="FreightCosts1" Type="money" />
+          <Property Name="FreightCosts2" Type="money" />
+          <Property Name="Featured" Type="bit" Nullable="false" />
+          <Property Name="SalePrice" Type="money" Nullable="false" />
+          <Property Name="SaleStart" Type="datetime" />
+          <Property Name="SaleEnd" Type="datetime" />
+          <Property Name="DownLoad" Type="bit" />
+          <Property Name="ZIPPassWord" Type="nvarchar" MaxLength="30" />
+          <Property Name="DownLoadFile" Type="nvarchar" MaxLength="255" />
+          <Property Name="Archive" Type="bit" />
+          <Property Name="CreatedByUser" Type="int" Nullable="false" />
+          <Property Name="BulkPriceLimit1" Type="int" Nullable="false" />
+          <Property Name="BulkPriceLimit2" Type="int" Nullable="false" />
+          <Property Name="BulkPriceLimit3" Type="int" Nullable="false" />
+          <Property Name="BulkPriceLimit4" Type="int" Nullable="false" />
+          <Property Name="BulkPriceLimit5" Type="int" Nullable="false" />
+          <Property Name="DateCreated" Type="datetime" />
+          <Property Name="RoleID" Type="int" />
+          <Property Name="SubscriptionPeriod" Type="int" />
+          <Property Name="RecurringBilling" Type="bit" />
+          <Property Name="TaxExempt" Type="bit" />
+          <Property Name="ShipExempt" Type="bit" />
+          <Property Name="InsuredValue" Type="money" Nullable="false" />
+          <Property Name="PublicationStart" Type="datetime" />
+          <Property Name="PublicationEnd" Type="datetime" />
+          <Property Name="Status" Type="char" Nullable="false" MaxLength="1" />
+          <Property Name="DonationItem" Type="bit" Nullable="false" />
+          <Property Name="PayPalSubscription" Type="bit" Nullable="false" />
+          <Property Name="UseRoleFees" Type="bit" Nullable="false" />
+          <Property Name="ProductCost" Type="money" Nullable="false" />
+          <Property Name="RoleExpiryType" Type="char" Nullable="false" MaxLength="1" />
+          <Property Name="ItemDeliveryType" Type="char" Nullable="false" MaxLength="1" />
+          <Property Name="ReorderPoint" Type="int" Nullable="false" />
+          <Property Name="OrderQuantValidExpr" Type="nvarchar" Nullable="false" MaxLength="255" />
+          <Property Name="ShippingAddress" Type="char" Nullable="false" MaxLength="1" />
+          <Property Name="OrigProductID" Type="int" />
+          <Property Name="AuctionFinished" Type="bit" Nullable="false" />
+          <Property Name="StartingPrice" Type="money" />
+          <Property Name="ReservePrice" Type="money" />
+          <Property Name="LastModifiedByUserID" Type="int" />
+          <Property Name="LastModifiedOnDate" Type="datetime" />
+          <Property Name="TaxCode" Type="nvarchar" MaxLength="16" />
+          <Property Name="MaxWeight" Type="decimal" Precision="10" Scale="4" />
+          <Property Name="TotalPeriods" Type="int" />
+          <Property Name="NonStockItem" Type="bit" />
+          <Property Name="StockedColorID" Type="int" />
+          <Property Name="StockedColorID2" Type="int" />
+          <Property Name="StockedColorID3" Type="int" />
+          <Property Name="StockedColorID4" Type="int" />
+          <Property Name="StockedColorID5" Type="int" />
+          <Property Name="StockedColorID6" Type="int" />
+          <Property Name="DealerTier1Price" Type="money" />
+          <Property Name="DealerTier2Price" Type="money" />
+          <Property Name="DealerTier3Price" Type="money" />
+          <Property Name="DealerTier4Price" Type="money" />
+          <Property Name="ConsumerTier1Price" Type="money" />
+          <Property Name="ConsumerTier2Price" Type="money" />
+          <Property Name="ConsumerTier3Price" Type="money" />
+          <Property Name="ConsumerTier4Price" Type="money" />
+          <Property Name="DiscountClass" Type="nvarchar" MaxLength="50" />
+          <Property Name="DiscountClassID" Type="int" />
+          <Property Name="CMSProductID" Type="int" />
+          <Property Name="TAASportID" Type="int" />
+          <Property Name="CMSProductDesign" Type="nvarchar" MaxLength="50" />
+          <Property Name="SortOrder" Type="int" />
+        </EntityType>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="dnnolddescriptionModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="dnnolddescriptionEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="CAT_Products" EntityType="dnnolddescriptionModel.CAT_Products" />
+        </EntityContainer>
+        <EntityType Name="CAT_Products">
+          <Key>
+            <PropertyRef Name="ProductID" />
+          </Key>
+          <Property Name="ProductID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CategoryID" Type="Int32" />
+          <Property Name="Category2ID" Type="Int32" />
+          <Property Name="Category3" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="ProductName" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="ProductNumber" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="EAN" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="ISBN" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Free1" Type="String" MaxLength="1000" Unicode="true" FixedLength="false" />
+          <Property Name="Free2" Type="String" MaxLength="1000" Unicode="true" FixedLength="false" />
+          <Property Name="Free3" Type="String" MaxLength="1000" Unicode="true" FixedLength="false" />
+          <Property Name="KeyWords" Type="String" MaxLength="1000" Unicode="true" FixedLength="false" />
+          <Property Name="ProductImage" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="UnitCost" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+          <Property Name="UnitCost2" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="UnitCost3" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="UnitCost4" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="UnitCost5" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="UnitCost6" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="Description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="DescriptionHTML" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="URL" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="Stock" Type="Int32" />
+          <Property Name="OrderQuant" Type="String" Nullable="false" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="Weight" Type="Decimal" Precision="10" Scale="4" />
+          <Property Name="Volume" Type="Decimal" Precision="8" Scale="2" />
+          <Property Name="Length" Type="Decimal" Precision="8" Scale="2" />
+          <Property Name="Width" Type="Decimal" Precision="8" Scale="2" />
+          <Property Name="Height" Type="Decimal" Precision="8" Scale="2" />
+          <Property Name="FreightCosts1" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="FreightCosts2" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="Featured" Type="Boolean" Nullable="false" />
+          <Property Name="SalePrice" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+          <Property Name="SaleStart" Type="DateTime" />
+          <Property Name="SaleEnd" Type="DateTime" />
+          <Property Name="DownLoad" Type="Boolean" />
+          <Property Name="ZIPPassWord" Type="String" MaxLength="30" Unicode="true" FixedLength="false" />
+          <Property Name="DownLoadFile" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="Archive" Type="Boolean" />
+          <Property Name="CreatedByUser" Type="Int32" Nullable="false" />
+          <Property Name="BulkPriceLimit1" Type="Int32" Nullable="false" />
+          <Property Name="BulkPriceLimit2" Type="Int32" Nullable="false" />
+          <Property Name="BulkPriceLimit3" Type="Int32" Nullable="false" />
+          <Property Name="BulkPriceLimit4" Type="Int32" Nullable="false" />
+          <Property Name="BulkPriceLimit5" Type="Int32" Nullable="false" />
+          <Property Name="DateCreated" Type="DateTime" />
+          <Property Name="RoleID" Type="Int32" />
+          <Property Name="SubscriptionPeriod" Type="Int32" />
+          <Property Name="RecurringBilling" Type="Boolean" />
+          <Property Name="TaxExempt" Type="Boolean" />
+          <Property Name="ShipExempt" Type="Boolean" />
+          <Property Name="InsuredValue" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+          <Property Name="PublicationStart" Type="DateTime" />
+          <Property Name="PublicationEnd" Type="DateTime" />
+          <Property Name="Status" Type="String" Nullable="false" MaxLength="1" Unicode="false" FixedLength="true" />
+          <Property Name="DonationItem" Type="Boolean" Nullable="false" />
+          <Property Name="PayPalSubscription" Type="Boolean" Nullable="false" />
+          <Property Name="UseRoleFees" Type="Boolean" Nullable="false" />
+          <Property Name="ProductCost" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+          <Property Name="RoleExpiryType" Type="String" Nullable="false" MaxLength="1" Unicode="false" FixedLength="true" />
+          <Property Name="ItemDeliveryType" Type="String" Nullable="false" MaxLength="1" Unicode="false" FixedLength="true" />
+          <Property Name="ReorderPoint" Type="Int32" Nullable="false" />
+          <Property Name="OrderQuantValidExpr" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="ShippingAddress" Type="String" Nullable="false" MaxLength="1" Unicode="false" FixedLength="true" />
+          <Property Name="OrigProductID" Type="Int32" />
+          <Property Name="AuctionFinished" Type="Boolean" Nullable="false" />
+          <Property Name="StartingPrice" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="ReservePrice" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="LastModifiedByUserID" Type="Int32" />
+          <Property Name="LastModifiedOnDate" Type="DateTime" />
+          <Property Name="TaxCode" Type="String" MaxLength="16" Unicode="true" FixedLength="false" />
+          <Property Name="MaxWeight" Type="Decimal" Precision="10" Scale="4" />
+          <Property Name="TotalPeriods" Type="Int32" />
+          <Property Name="NonStockItem" Type="Boolean" />
+          <Property Name="StockedColorID" Type="Int32" />
+          <Property Name="StockedColorID2" Type="Int32" />
+          <Property Name="StockedColorID3" Type="Int32" />
+          <Property Name="StockedColorID4" Type="Int32" />
+          <Property Name="StockedColorID5" Type="Int32" />
+          <Property Name="StockedColorID6" Type="Int32" />
+          <Property Name="DealerTier1Price" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="DealerTier2Price" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="DealerTier3Price" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="DealerTier4Price" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="ConsumerTier1Price" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="ConsumerTier2Price" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="ConsumerTier3Price" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="ConsumerTier4Price" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="DiscountClass" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="DiscountClassID" Type="Int32" />
+          <Property Name="CMSProductID" Type="Int32" />
+          <Property Name="TAASportID" Type="Int32" />
+          <Property Name="CMSProductDesign" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="SortOrder" Type="Int32" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="dnnolddescriptionModelStoreContainer" CdmEntityContainer="dnnolddescriptionEntities">
+          <EntitySetMapping Name="CAT_Products"><EntityTypeMapping TypeName="dnnolddescriptionModel.CAT_Products"><MappingFragment StoreEntitySet="CAT_Products">
+            <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+            <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+            <ScalarProperty Name="Category2ID" ColumnName="Category2ID" />
+            <ScalarProperty Name="Category3" ColumnName="Category3" />
+            <ScalarProperty Name="ProductName" ColumnName="ProductName" />
+            <ScalarProperty Name="ProductNumber" ColumnName="ProductNumber" />
+            <ScalarProperty Name="EAN" ColumnName="EAN" />
+            <ScalarProperty Name="ISBN" ColumnName="ISBN" />
+            <ScalarProperty Name="Free1" ColumnName="Free1" />
+            <ScalarProperty Name="Free2" ColumnName="Free2" />
+            <ScalarProperty Name="Free3" ColumnName="Free3" />
+            <ScalarProperty Name="KeyWords" ColumnName="KeyWords" />
+            <ScalarProperty Name="ProductImage" ColumnName="ProductImage" />
+            <ScalarProperty Name="UnitCost" ColumnName="UnitCost" />
+            <ScalarProperty Name="UnitCost2" ColumnName="UnitCost2" />
+            <ScalarProperty Name="UnitCost3" ColumnName="UnitCost3" />
+            <ScalarProperty Name="UnitCost4" ColumnName="UnitCost4" />
+            <ScalarProperty Name="UnitCost5" ColumnName="UnitCost5" />
+            <ScalarProperty Name="UnitCost6" ColumnName="UnitCost6" />
+            <ScalarProperty Name="Description" ColumnName="Description" />
+            <ScalarProperty Name="DescriptionHTML" ColumnName="DescriptionHTML" />
+            <ScalarProperty Name="URL" ColumnName="URL" />
+            <ScalarProperty Name="Stock" ColumnName="Stock" />
+            <ScalarProperty Name="OrderQuant" ColumnName="OrderQuant" />
+            <ScalarProperty Name="Weight" ColumnName="Weight" />
+            <ScalarProperty Name="Volume" ColumnName="Volume" />
+            <ScalarProperty Name="Length" ColumnName="Length" />
+            <ScalarProperty Name="Width" ColumnName="Width" />
+            <ScalarProperty Name="Height" ColumnName="Height" />
+            <ScalarProperty Name="FreightCosts1" ColumnName="FreightCosts1" />
+            <ScalarProperty Name="FreightCosts2" ColumnName="FreightCosts2" />
+            <ScalarProperty Name="Featured" ColumnName="Featured" />
+            <ScalarProperty Name="SalePrice" ColumnName="SalePrice" />
+            <ScalarProperty Name="SaleStart" ColumnName="SaleStart" />
+            <ScalarProperty Name="SaleEnd" ColumnName="SaleEnd" />
+            <ScalarProperty Name="DownLoad" ColumnName="DownLoad" />
+            <ScalarProperty Name="ZIPPassWord" ColumnName="ZIPPassWord" />
+            <ScalarProperty Name="DownLoadFile" ColumnName="DownLoadFile" />
+            <ScalarProperty Name="Archive" ColumnName="Archive" />
+            <ScalarProperty Name="CreatedByUser" ColumnName="CreatedByUser" />
+            <ScalarProperty Name="BulkPriceLimit1" ColumnName="BulkPriceLimit1" />
+            <ScalarProperty Name="BulkPriceLimit2" ColumnName="BulkPriceLimit2" />
+            <ScalarProperty Name="BulkPriceLimit3" ColumnName="BulkPriceLimit3" />
+            <ScalarProperty Name="BulkPriceLimit4" ColumnName="BulkPriceLimit4" />
+            <ScalarProperty Name="BulkPriceLimit5" ColumnName="BulkPriceLimit5" />
+            <ScalarProperty Name="DateCreated" ColumnName="DateCreated" />
+            <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+            <ScalarProperty Name="SubscriptionPeriod" ColumnName="SubscriptionPeriod" />
+            <ScalarProperty Name="RecurringBilling" ColumnName="RecurringBilling" />
+            <ScalarProperty Name="TaxExempt" ColumnName="TaxExempt" />
+            <ScalarProperty Name="ShipExempt" ColumnName="ShipExempt" />
+            <ScalarProperty Name="InsuredValue" ColumnName="InsuredValue" />
+            <ScalarProperty Name="PublicationStart" ColumnName="PublicationStart" />
+            <ScalarProperty Name="PublicationEnd" ColumnName="PublicationEnd" />
+            <ScalarProperty Name="Status" ColumnName="Status" />
+            <ScalarProperty Name="DonationItem" ColumnName="DonationItem" />
+            <ScalarProperty Name="PayPalSubscription" ColumnName="PayPalSubscription" />
+            <ScalarProperty Name="UseRoleFees" ColumnName="UseRoleFees" />
+            <ScalarProperty Name="ProductCost" ColumnName="ProductCost" />
+            <ScalarProperty Name="RoleExpiryType" ColumnName="RoleExpiryType" />
+            <ScalarProperty Name="ItemDeliveryType" ColumnName="ItemDeliveryType" />
+            <ScalarProperty Name="ReorderPoint" ColumnName="ReorderPoint" />
+            <ScalarProperty Name="OrderQuantValidExpr" ColumnName="OrderQuantValidExpr" />
+            <ScalarProperty Name="ShippingAddress" ColumnName="ShippingAddress" />
+            <ScalarProperty Name="OrigProductID" ColumnName="OrigProductID" />
+            <ScalarProperty Name="AuctionFinished" ColumnName="AuctionFinished" />
+            <ScalarProperty Name="StartingPrice" ColumnName="StartingPrice" />
+            <ScalarProperty Name="ReservePrice" ColumnName="ReservePrice" />
+            <ScalarProperty Name="LastModifiedByUserID" ColumnName="LastModifiedByUserID" />
+            <ScalarProperty Name="LastModifiedOnDate" ColumnName="LastModifiedOnDate" />
+            <ScalarProperty Name="TaxCode" ColumnName="TaxCode" />
+            <ScalarProperty Name="MaxWeight" ColumnName="MaxWeight" />
+            <ScalarProperty Name="TotalPeriods" ColumnName="TotalPeriods" />
+            <ScalarProperty Name="NonStockItem" ColumnName="NonStockItem" />
+            <ScalarProperty Name="StockedColorID" ColumnName="StockedColorID" />
+            <ScalarProperty Name="StockedColorID2" ColumnName="StockedColorID2" />
+            <ScalarProperty Name="StockedColorID3" ColumnName="StockedColorID3" />
+            <ScalarProperty Name="StockedColorID4" ColumnName="StockedColorID4" />
+            <ScalarProperty Name="StockedColorID5" ColumnName="StockedColorID5" />
+            <ScalarProperty Name="StockedColorID6" ColumnName="StockedColorID6" />
+            <ScalarProperty Name="DealerTier1Price" ColumnName="DealerTier1Price" />
+            <ScalarProperty Name="DealerTier2Price" ColumnName="DealerTier2Price" />
+            <ScalarProperty Name="DealerTier3Price" ColumnName="DealerTier3Price" />
+            <ScalarProperty Name="DealerTier4Price" ColumnName="DealerTier4Price" />
+            <ScalarProperty Name="ConsumerTier1Price" ColumnName="ConsumerTier1Price" />
+            <ScalarProperty Name="ConsumerTier2Price" ColumnName="ConsumerTier2Price" />
+            <ScalarProperty Name="ConsumerTier3Price" ColumnName="ConsumerTier3Price" />
+            <ScalarProperty Name="ConsumerTier4Price" ColumnName="ConsumerTier4Price" />
+            <ScalarProperty Name="DiscountClass" ColumnName="DiscountClass" />
+            <ScalarProperty Name="DiscountClassID" ColumnName="DiscountClassID" />
+            <ScalarProperty Name="CMSProductID" ColumnName="CMSProductID" />
+            <ScalarProperty Name="TAASportID" ColumnName="TAASportID" />
+            <ScalarProperty Name="CMSProductDesign" ColumnName="CMSProductDesign" />
+            <ScalarProperty Name="SortOrder" ColumnName="SortOrder" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="OldDatabase">
+        <EntityTypeShape EntityType="dnnolddescriptionModel.CAT_Products" Width="1.5" PointX="0.75" PointY="0.75" Height="19.095113932291667" IsExpanded="true" />
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

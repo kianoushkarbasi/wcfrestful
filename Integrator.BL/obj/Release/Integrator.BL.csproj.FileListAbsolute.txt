@@ -1,0 +1,12 @@
+C:\Users\kianoush.karbasi.DOMAIN\Documents\Visual Studio 2010\Projects\Sparshcom Integrator\Live server\Integrator.BL\bin\Release\Integrator.BL.dll.config
+C:\Users\kianoush.karbasi.DOMAIN\Documents\Visual Studio 2010\Projects\Sparshcom Integrator\Live server\Integrator.BL\bin\Release\Integrator.BL.dll
+C:\Users\kianoush.karbasi.DOMAIN\Documents\Visual Studio 2010\Projects\Sparshcom Integrator\Live server\Integrator.BL\bin\Release\Integrator.BL.pdb
+C:\Users\kianoush.karbasi.DOMAIN\Documents\Visual Studio 2010\Projects\Sparshcom Integrator\Live server\Integrator.BL\obj\Release\ResolveAssemblyReference.cache
+C:\Users\kianoush.karbasi.DOMAIN\Documents\Visual Studio 2010\Projects\Sparshcom Integrator\Live server\Integrator.BL\obj\Release\Integrator.BL.dll
+C:\Users\kianoush.karbasi.DOMAIN\Documents\Visual Studio 2010\Projects\Sparshcom Integrator\Live server\Integrator.BL\obj\Release\Integrator.BL.pdb
+C:\Users\kianoush.karbasi.DOMAIN\Documents\GitHub\Integrator\Live server\Integrator.BL\bin\Release\Integrator.BL.dll.config
+C:\Users\kianoush.karbasi.DOMAIN\Documents\GitHub\Integrator\Live server\Integrator.BL\bin\Release\Integrator.BL.dll
+C:\Users\kianoush.karbasi.DOMAIN\Documents\GitHub\Integrator\Live server\Integrator.BL\bin\Release\Integrator.BL.pdb
+C:\Users\kianoush.karbasi.DOMAIN\Documents\GitHub\Integrator\Live server\Integrator.BL\obj\Release\Integrator.BL.dll
+C:\Users\kianoush.karbasi.DOMAIN\Documents\GitHub\Integrator\Live server\Integrator.BL\obj\Release\Integrator.BL.pdb
+C:\Users\kianoush.karbasi.DOMAIN\Documents\GitHub\Integrator\Live server\Integrator.BL\obj\Release\Integrator.BL.csprojResolveAssemblyReference.cache

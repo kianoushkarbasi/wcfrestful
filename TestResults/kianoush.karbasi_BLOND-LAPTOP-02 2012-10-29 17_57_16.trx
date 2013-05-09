@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="efaf8bcb-1596-4768-b3a2-41133626f8e3" name="kianoush.karbasi@BLOND-LAPTOP-02 2012-10-29 17:57:16" runUser="DOMAIN\kianoush.karbasi" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="95a1edb0-65c2-4c96-820d-a08729a0d891">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="kianoush.karbasi_BLOND-LAPTOP-02 2012-10-29 17_57_16">
+      <DeploymentItem filename="C:\Users\kianoush.karbasi.DOMAIN\Documents\GitHub\Integrator\Live server\Integrator\bin\Integrator.dll" />
+      <DeploymentItem filename="C:\Users\kianoush.karbasi.DOMAIN\Documents\GitHub\Integrator\Live server\packages\AutoPoco.1.0.0.0\lib\AutoPoco.dll" />
+      <DeploymentItem filename="C:\Users\kianoush.karbasi.DOMAIN\Documents\GitHub\Integrator\Live server\Integrator.BL\bin\Debug\Integrator.BL.dll" />
+      <DeploymentItem filename="C:\Program Files (x86)\NUnit 2.6.1\bin\framework\pnunit.framework.dll" />
+      <DeploymentItem filename="C:\Program Files (x86)\NUnit 2.6.1\bin\framework\nunit.framework.dll" />
+      <DeploymentItem filename="C:\Program Files (x86)\NUnit 2.6.1\bin\framework\nunit.mocks.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-10-29T17:57:16.8939823+08:00" queuing="2012-10-29T17:57:18.3080632+08:00" start="2012-10-29T17:57:18.4450710+08:00" finish="2012-10-29T18:05:00.8345182+08:00" />
+  <ResultSummary outcome="Error">
+    <Counters total="1" executed="1" error="0" failed="0" timeout="0" aborted="1" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+    <RunInfos>
+      <RunInfo computerName="BLOND-LAPTOP-02" outcome="Warning" timestamp="2012-10-29T17:57:16.9439851+08:00">
+        <Text>Deployment is currently disabled. The deployment item 'Integrator.BL.dll' on test 'TestXmlController.MicrositeControllerTest.SaveFanIDImagesTest' was not deployed.</Text>
+      </RunInfo>
+      <RunInfo computerName="BLOND-LAPTOP-02" outcome="Error" timestamp="2012-10-29T18:05:00.8335181+08:00">
+        <Text>Test host process exited unexpectedly.</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="SaveFanIDImagesTest" storage="c:\users\kianoush.karbasi.domain\documents\github\integrator\live server\testxmlcontroller\bin\debug\testxmlcontroller.dll" id="305a0c13-0be4-953f-24ee-3162834513bd">
+      <DeploymentItems>
+        <DeploymentItem filename="Integrator.BL.dll" />
+      </DeploymentItems>
+      <Execution id="5020038a-b77e-4ebe-ad03-3b9128625962" />
+      <TestMethod codeBase="C:/Users/kianoush.karbasi.DOMAIN/Documents/GitHub/Integrator/Live server/TestXmlController/bin/Debug/TestXmlController.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestXmlController.MicrositeControllerTest, TestXmlController, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SaveFanIDImagesTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="305a0c13-0be4-953f-24ee-3162834513bd" executionId="5020038a-b77e-4ebe-ad03-3b9128625962" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="5020038a-b77e-4ebe-ad03-3b9128625962" testId="305a0c13-0be4-953f-24ee-3162834513bd" testName="SaveFanIDImagesTest" computerName="BLOND-LAPTOP-02" duration="00:07:42.2584397" startTime="2012-10-29T17:57:18.5760785+08:00" endTime="2012-10-29T18:05:00.8345182+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Aborted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5020038a-b77e-4ebe-ad03-3b9128625962">
+    </UnitTestResult>
+  </Results>
+</TestRun>

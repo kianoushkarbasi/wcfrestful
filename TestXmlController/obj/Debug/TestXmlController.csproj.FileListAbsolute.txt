@@ -1,0 +1,9 @@
+C:\Users\kianoush.karbasi.DOMAIN\documents\visual studio 2010\Projects\Integrator\TestXmlController\bin\Debug\TestXmlController.dll
+C:\Users\kianoush.karbasi.DOMAIN\documents\visual studio 2010\Projects\Integrator\TestXmlController\bin\Debug\TestXmlController.pdb
+C:\Users\kianoush.karbasi.DOMAIN\documents\visual studio 2010\Projects\Integrator\TestXmlController\bin\Debug\Integrator.BL.dll
+C:\Users\kianoush.karbasi.DOMAIN\documents\visual studio 2010\Projects\Integrator\TestXmlController\bin\Debug\Integrator.BL.pdb
+C:\Users\kianoush.karbasi.DOMAIN\documents\visual studio 2010\Projects\Integrator\TestXmlController\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\kianoush.karbasi.DOMAIN\documents\visual studio 2010\Projects\Integrator\TestXmlController\obj\Debug\TestXmlController.dll
+C:\Users\kianoush.karbasi.DOMAIN\documents\visual studio 2010\Projects\Integrator\TestXmlController\obj\Debug\TestXmlController.pdb
+C:\Users\kianoush.karbasi.DOMAIN\documents\visual studio 2010\Projects\Integrator\TestXmlController\bin\Debug\Integrator.dll
+C:\Users\kianoush.karbasi.DOMAIN\documents\visual studio 2010\Projects\Integrator\TestXmlController\bin\Debug\Integrator.pdb

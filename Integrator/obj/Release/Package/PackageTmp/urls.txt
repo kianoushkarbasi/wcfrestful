@@ -1,0 +1,2 @@
+﻿http://localhost:52278/integratorservice/startprofiletimer?password=blondgorilla
+http://localhost:52278/integratorservice/startmicrositetimer?password=blondgorilla

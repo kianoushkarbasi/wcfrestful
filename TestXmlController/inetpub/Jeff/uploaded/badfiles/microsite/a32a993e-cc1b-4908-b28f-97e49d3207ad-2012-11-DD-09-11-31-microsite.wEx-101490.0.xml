@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<microsites id="2012821153839" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="microsite.xsd">
+<timestamp>2012-8-21-15:38:39</timestamp>
+	<microsite>
+		<custAccount>128983</custAccount>
+		<retrievalCode>13D92D42</retrievalCode>
+		<teamName>ESCONDIDO</teamName>
+		<orderName></orderName>
+		<sport>Fanwear</sport>
+		<designNumber>Impact</designNumber>
+		<primaryColor>723</primaryColor>
+		<secondaryColor>721</secondaryColor>
+		<tertiaryColor>721</tertiaryColor>
+		<players>
+			<player>
+				<playerName>N. GALLEGO</playerName>
+				<playerNumber>55</playerNumber>
+				<gender>Male</gender>
+				<size>S</size>
+				<playerRetrievalCode>13D92D42-0</playerRetrievalCode>
+				<uploadedGraphicURLs>
+					<uploadedGraphicURL>128983/american_flag.png</uploadedGraphicURL>
+					<uploadedGraphicURL>128983/pop_warner_logo.tif</uploadedGraphicURL>
+				</uploadedGraphicURLs>
+			</player>
+			<player>
+				<playerName>G. GALLEGO</playerName>
+				<playerNumber>7</playerNumber>
+				<gender>Male</gender>
+				<size>XS</size>
+				<playerRetrievalCode>13D92D42-1</playerRetrievalCode>
+				<uploadedGraphicURLs>
+					<uploadedGraphicURL>128983/american_flag.png</uploadedGraphicURL>
+					<uploadedGraphicURL>128983/pop_warner_logo.tif</uploadedGraphicURL>
+				</uploadedGraphicURLs>
+			</player>
+		</players>
+	</microsite>
+</microsites>

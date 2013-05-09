@@ -1,0 +1,3059 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="micrositeModelStoreContainer" CdmEntityContainer="micrositeEntities">
+    <EntitySetMapping Name="Affiliates">
+      <EntityTypeMapping TypeName="micrositeModel.Affiliate">
+        <MappingFragment StoreEntitySet="Affiliates">
+          <ScalarProperty Name="AffiliateId" ColumnName="AffiliateId" />
+          <ScalarProperty Name="VendorId" ColumnName="VendorId" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+          <ScalarProperty Name="CPC" ColumnName="CPC" />
+          <ScalarProperty Name="Clicks" ColumnName="Clicks" />
+          <ScalarProperty Name="CPA" ColumnName="CPA" />
+          <ScalarProperty Name="Acquisitions" ColumnName="Acquisitions" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AnonymousUsers">
+      <EntityTypeMapping TypeName="micrositeModel.AnonymousUser">
+        <MappingFragment StoreEntitySet="AnonymousUsers">
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="PortalID" ColumnName="PortalID" />
+          <ScalarProperty Name="TabID" ColumnName="TabID" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="LastActiveDate" ColumnName="LastActiveDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="aspnet_Applications">
+      <EntityTypeMapping TypeName="micrositeModel.aspnet_Applications">
+        <MappingFragment StoreEntitySet="aspnet_Applications">
+          <ScalarProperty Name="ApplicationName" ColumnName="ApplicationName" />
+          <ScalarProperty Name="LoweredApplicationName" ColumnName="LoweredApplicationName" />
+          <ScalarProperty Name="ApplicationId" ColumnName="ApplicationId" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="aspnet_Membership">
+      <EntityTypeMapping TypeName="micrositeModel.aspnet_Membership">
+        <MappingFragment StoreEntitySet="aspnet_Membership">
+          <ScalarProperty Name="ApplicationId" ColumnName="ApplicationId" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="PasswordFormat" ColumnName="PasswordFormat" />
+          <ScalarProperty Name="PasswordSalt" ColumnName="PasswordSalt" />
+          <ScalarProperty Name="MobilePIN" ColumnName="MobilePIN" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="LoweredEmail" ColumnName="LoweredEmail" />
+          <ScalarProperty Name="PasswordQuestion" ColumnName="PasswordQuestion" />
+          <ScalarProperty Name="PasswordAnswer" ColumnName="PasswordAnswer" />
+          <ScalarProperty Name="IsApproved" ColumnName="IsApproved" />
+          <ScalarProperty Name="IsLockedOut" ColumnName="IsLockedOut" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="LastLoginDate" ColumnName="LastLoginDate" />
+          <ScalarProperty Name="LastPasswordChangedDate" ColumnName="LastPasswordChangedDate" />
+          <ScalarProperty Name="LastLockoutDate" ColumnName="LastLockoutDate" />
+          <ScalarProperty Name="FailedPasswordAttemptCount" ColumnName="FailedPasswordAttemptCount" />
+          <ScalarProperty Name="FailedPasswordAttemptWindowStart" ColumnName="FailedPasswordAttemptWindowStart" />
+          <ScalarProperty Name="FailedPasswordAnswerAttemptCount" ColumnName="FailedPasswordAnswerAttemptCount" />
+          <ScalarProperty Name="FailedPasswordAnswerAttemptWindowStart" ColumnName="FailedPasswordAnswerAttemptWindowStart" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="aspnet_Profile">
+      <EntityTypeMapping TypeName="micrositeModel.aspnet_Profile">
+        <MappingFragment StoreEntitySet="aspnet_Profile">
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="PropertyNames" ColumnName="PropertyNames" />
+          <ScalarProperty Name="PropertyValuesString" ColumnName="PropertyValuesString" />
+          <ScalarProperty Name="PropertyValuesBinary" ColumnName="PropertyValuesBinary" />
+          <ScalarProperty Name="LastUpdatedDate" ColumnName="LastUpdatedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="aspnet_Roles">
+      <EntityTypeMapping TypeName="micrositeModel.aspnet_Roles">
+        <MappingFragment StoreEntitySet="aspnet_Roles">
+          <ScalarProperty Name="ApplicationId" ColumnName="ApplicationId" />
+          <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+          <ScalarProperty Name="RoleName" ColumnName="RoleName" />
+          <ScalarProperty Name="LoweredRoleName" ColumnName="LoweredRoleName" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="aspnet_SchemaVersions">
+      <EntityTypeMapping TypeName="micrositeModel.aspnet_SchemaVersions">
+        <MappingFragment StoreEntitySet="aspnet_SchemaVersions">
+          <ScalarProperty Name="Feature" ColumnName="Feature" />
+          <ScalarProperty Name="CompatibleSchemaVersion" ColumnName="CompatibleSchemaVersion" />
+          <ScalarProperty Name="IsCurrentVersion" ColumnName="IsCurrentVersion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="aspnet_Users">
+      <EntityTypeMapping TypeName="micrositeModel.aspnet_Users">
+        <MappingFragment StoreEntitySet="aspnet_Users">
+          <ScalarProperty Name="ApplicationId" ColumnName="ApplicationId" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="LoweredUserName" ColumnName="LoweredUserName" />
+          <ScalarProperty Name="MobileAlias" ColumnName="MobileAlias" />
+          <ScalarProperty Name="IsAnonymous" ColumnName="IsAnonymous" />
+          <ScalarProperty Name="LastActivityDate" ColumnName="LastActivityDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Assemblies">
+      <EntityTypeMapping TypeName="micrositeModel.Assembly">
+        <MappingFragment StoreEntitySet="Assemblies">
+          <ScalarProperty Name="AssemblyID" ColumnName="AssemblyID" />
+          <ScalarProperty Name="PackageID" ColumnName="PackageID" />
+          <ScalarProperty Name="AssemblyName" ColumnName="AssemblyName" />
+          <ScalarProperty Name="Version" ColumnName="Version" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Authentications">
+      <EntityTypeMapping TypeName="micrositeModel.Authentication">
+        <MappingFragment StoreEntitySet="Authentication">
+          <ScalarProperty Name="AuthenticationID" ColumnName="AuthenticationID" />
+          <ScalarProperty Name="PackageID" ColumnName="PackageID" />
+          <ScalarProperty Name="AuthenticationType" ColumnName="AuthenticationType" />
+          <ScalarProperty Name="IsEnabled" ColumnName="IsEnabled" />
+          <ScalarProperty Name="SettingsControlSrc" ColumnName="SettingsControlSrc" />
+          <ScalarProperty Name="LoginControlSrc" ColumnName="LoginControlSrc" />
+          <ScalarProperty Name="LogoffControlSrc" ColumnName="LogoffControlSrc" />
+          <ScalarProperty Name="CreatedByUserID" ColumnName="CreatedByUserID" />
+          <ScalarProperty Name="CreatedOnDate" ColumnName="CreatedOnDate" />
+          <ScalarProperty Name="LastModifiedByUserID" ColumnName="LastModifiedByUserID" />
+          <ScalarProperty Name="LastModifiedOnDate" ColumnName="LastModifiedOnDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Banners">
+      <EntityTypeMapping TypeName="micrositeModel.Banner">
+        <MappingFragment StoreEntitySet="Banners">
+          <ScalarProperty Name="BannerId" ColumnName="BannerId" />
+          <ScalarProperty Name="VendorId" ColumnName="VendorId" />
+          <ScalarProperty Name="ImageFile" ColumnName="ImageFile" />
+          <ScalarProperty Name="BannerName" ColumnName="BannerName" />
+          <ScalarProperty Name="Impressions" ColumnName="Impressions" />
+          <ScalarProperty Name="CPM" ColumnName="CPM" />
+          <ScalarProperty Name="Views" ColumnName="Views" />
+          <ScalarProperty Name="ClickThroughs" ColumnName="ClickThroughs" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+          <ScalarProperty Name="CreatedByUser" ColumnName="CreatedByUser" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="BannerTypeId" ColumnName="BannerTypeId" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="GroupName" ColumnName="GroupName" />
+          <ScalarProperty Name="Criteria" ColumnName="Criteria" />
+          <ScalarProperty Name="URL" ColumnName="URL" />
+          <ScalarProperty Name="Width" ColumnName="Width" />
+          <ScalarProperty Name="Height" ColumnName="Height" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Batches">
+      <EntityTypeMapping TypeName="micrositeModel.Batch">
+        <MappingFragment StoreEntitySet="Batches">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="DateCreated" ColumnName="DateCreated" />
+          <ScalarProperty Name="DateSettled" ColumnName="DateSettled" />
+          <ScalarProperty Name="BatchNumber" ColumnName="BatchNumber" />
+          <ScalarProperty Name="ErrorMessage" ColumnName="ErrorMessage" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CAT_AdvCatPermission">
+      <EntityTypeMapping TypeName="micrositeModel.CAT_AdvCatPermission">
+        <MappingFragment StoreEntitySet="CAT_AdvCatPermission">
+          <ScalarProperty Name="AdvCatPermissionID" ColumnName="AdvCatPermissionID" />
+          <ScalarProperty Name="AdvCatID" ColumnName="AdvCatID" />
+          <ScalarProperty Name="PermissionID" ColumnName="PermissionID" />
+          <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+          <ScalarProperty Name="AllowAccess" ColumnName="AllowAccess" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CAT_AdvCatProducts">
+      <EntityTypeMapping TypeName="micrositeModel.CAT_AdvCatProducts">
+        <MappingFragment StoreEntitySet="CAT_AdvCatProducts">
+          <ScalarProperty Name="AdvCatProductID" ColumnName="AdvCatProductID" />
+          <ScalarProperty Name="AdvCatID" ColumnName="AdvCatID" />
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="AddAdvCatToProductDisplay" ColumnName="AddAdvCatToProductDisplay" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CAT_AdvCats">
+      <EntityTypeMapping TypeName="micrositeModel.CAT_AdvCats">
+        <MappingFragment StoreEntitySet="CAT_AdvCats">
+          <ScalarProperty Name="AdvCatID" ColumnName="AdvCatID" />
+          <ScalarProperty Name="AdvCatOrder" ColumnName="AdvCatOrder" />
+          <ScalarProperty Name="PortalID" ColumnName="PortalID" />
+          <ScalarProperty Name="AdvCatName" ColumnName="AdvCatName" />
+          <ScalarProperty Name="IsVisible" ColumnName="IsVisible" />
+          <ScalarProperty Name="ParentId" ColumnName="ParentId" />
+          <ScalarProperty Name="DisableLink" ColumnName="DisableLink" />
+          <ScalarProperty Name="Url" ColumnName="Url" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="KeyWords" ColumnName="KeyWords" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="IconFile" ColumnName="IconFile" />
+          <ScalarProperty Name="Level" ColumnName="Level" />
+          <ScalarProperty Name="AdvCatImportID" ColumnName="AdvCatImportID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CAT_AuditLog">
+      <EntityTypeMapping TypeName="micrositeModel.CAT_AuditLog">
+        <MappingFragment StoreEntitySet="CAT_AuditLog">
+          <ScalarProperty Name="AuditLogID" ColumnName="AuditLogID" />
+          <ScalarProperty Name="ItemID" ColumnName="ItemID" />
+          <ScalarProperty Name="SubItemID" ColumnName="SubItemID" />
+          <ScalarProperty Name="VersionGUID" ColumnName="VersionGUID" />
+          <ScalarProperty Name="CreatedByUserID" ColumnName="CreatedByUserID" />
+          <ScalarProperty Name="CreatedOnDate" ColumnName="CreatedOnDate" />
+          <ScalarProperty Name="Action" ColumnName="Action" />
+          <ScalarProperty Name="TableName" ColumnName="TableName" />
+          <ScalarProperty Name="FieldName" ColumnName="FieldName" />
+          <ScalarProperty Name="OldValue" ColumnName="OldValue" />
+          <ScalarProperty Name="NewValue" ColumnName="NewValue" />
+          <ScalarProperty Name="PortalID" ColumnName="PortalID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CAT_Bids">
+      <EntityTypeMapping TypeName="micrositeModel.CAT_Bids">
+        <MappingFragment StoreEntitySet="CAT_Bids">
+          <ScalarProperty Name="BidID" ColumnName="BidID" />
+          <ScalarProperty Name="PortalID" ColumnName="PortalID" />
+          <ScalarProperty Name="BidderUserID" ColumnName="BidderUserID" />
+          <ScalarProperty Name="BidderUserName" ColumnName="BidderUserName" />
+          <ScalarProperty Name="AuctionID" ColumnName="AuctionID" />
+          <ScalarProperty Name="BidAmount" ColumnName="BidAmount" />
+          <ScalarProperty Name="BidTime" ColumnName="BidTime" />
+          <ScalarProperty Name="AutomaticBid_" ColumnName="AutomaticBid " />
+          <ScalarProperty Name="WinningBid" ColumnName="WinningBid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CAT_CartPriceRules">
+      <EntityTypeMapping TypeName="micrositeModel.CAT_CartPriceRules">
+        <MappingFragment StoreEntitySet="CAT_CartPriceRules">
+          <ScalarProperty Name="CartPriceRuleID" ColumnName="CartPriceRuleID" />
+          <ScalarProperty Name="PortalID" ColumnName="PortalID" />
+          <ScalarProperty Name="RuleProductID" ColumnName="RuleProductID" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="Roles" ColumnName="Roles" />
+          <ScalarProperty Name="Formula" ColumnName="Formula" />
+          <ScalarProperty Name="Formula2" ColumnName="Formula2" />
+          <ScalarProperty Name="UsableWithOtherRules" ColumnName="UsableWithOtherRules" />
+          <ScalarProperty Name="UsableWithOtherCoupons" ColumnName="UsableWithOtherCoupons" />
+          <ScalarProperty Name="ProductIDs" ColumnName="ProductIDs" />
+          <ScalarProperty Name="CategoryIDs" ColumnName="CategoryIDs" />
+          <ScalarProperty Name="MaxNumberOfUses" ColumnName="MaxNumberOfUses" />
+          <ScalarProperty Name="PaymentTypes" ColumnName="PaymentTypes" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+          <ScalarProperty Name="Enabled" ColumnName="Enabled" />
+          <ScalarProperty Name="MaxNumberOfUsesByUser" ColumnName="MaxNumberOfUsesByUser" />
+          <ScalarProperty Name="ApplyFormulaTo" ColumnName="ApplyFormulaTo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CAT_Categories">
+      <EntityTypeMapping TypeName="micrositeModel.CAT_Categories">
+        <MappingFragment StoreEntitySet="CAT_Categories">
+          <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+          <ScalarProperty Name="CategoryName" ColumnName="CategoryName" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="PortalID" ColumnName="PortalID" />
+          <ScalarProperty Name="CategoryImportID" ColumnName="CategoryImportID" />
+          <ScalarProperty Name="CategoryFolderImage" ColumnName="CategoryFolderImage" />
+          <ScalarProperty Name="CategoryOpenFolderImage" ColumnName="CategoryOpenFolderImage" />
+          <ScalarProperty Name="CategoryPageImage" ColumnName="CategoryPageImage" />
+          <ScalarProperty Name="CreatedByUser" ColumnName="CreatedByUser" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CAT_CCPaymentProcessors">
+      <EntityTypeMapping TypeName="micrositeModel.CAT_CCPaymentProcessors">
+        <MappingFragment StoreEntitySet="CAT_CCPaymentProcessors">
+          <ScalarProperty Name="CCPaymentProcessorID" ColumnName="CCPaymentProcessorID" />
+          <ScalarProperty Name="CCPaymentProcessor" ColumnName="CCPaymentProcessor" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CAT_Checkout">
+      <EntityTypeMapping TypeName="micrositeModel.CAT_Checkout">
+        <MappingFragment StoreEntitySet="CAT_Checkout">
+          <ScalarProperty Name="CheckoutID" ColumnName="CheckoutID" />
+          <ScalarProperty Name="CartID" ColumnName="CartID" />
+          <ScalarProperty Name="OrderID" ColumnName="OrderID" />
+          <ScalarProperty Name="Message" ColumnName="Message" />
+          <ScalarProperty Name="PaymentMethodID" ColumnName="PaymentMethodID" />
+          <ScalarProperty Name="ShippingCompany" ColumnName="ShippingCompany" />
+          <ScalarProperty Name="Rate" ColumnName="Rate" />
+          <ScalarProperty Name="ShippingCharge" ColumnName="ShippingCharge" />
+          <ScalarProperty Name="ShipToID" ColumnName="ShipToID" />
+          <ScalarProperty Name="TaxRateName" ColumnName="TaxRateName" />
+          <ScalarProperty Name="DespatchDate" ColumnName="DespatchDate" />
+          <ScalarProperty Name="DeliveryDate" ColumnName="DeliveryDate" />
+          <ScalarProperty Name="PickUpDate" ColumnName="PickUpDate" />
+          <ScalarProperty Name="ShippingRateID" ColumnName="ShippingRateID" />
+          <ScalarProperty Name="ShipTax" ColumnName="ShipTax" />
+          <ScalarProperty Name="ShipTax2" ColumnName="ShipTax2" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CAT_Comments">
+      <EntityTypeMapping TypeName="micrositeModel.CAT_Comments">
+        <MappingFragment StoreEntitySet="CAT_Comments">
+          <ScalarProperty Name="CommentID" ColumnName="CommentID" />
+          <ScalarProperty Name="FeedBackID" ColumnName="FeedBackID" />
+          <ScalarProperty Name="CreatedByUser" ColumnName="CreatedByUser" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CAT_CouponCodes">
+      <EntityTypeMapping TypeName="micrositeModel.CAT_CouponCodes">
+        <MappingFragment StoreEntitySet="CAT_CouponCodes">
+          <ScalarProperty Name="CouponCodeID" ColumnName="CouponCodeID" />
+          <ScalarProperty Name="CartPriceRuleID" ColumnName="CartPriceRuleID" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Enabled" ColumnName="Enabled" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CAT_CreditNotes">
+      <EntityTypeMapping TypeName="micrositeModel.CAT_CreditNotes">
+        <MappingFragment StoreEntitySet="CAT_CreditNotes">
+          <ScalarProperty Name="CreditNoteID" ColumnName="CreditNoteID" />
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="CreditNoteDate" ColumnName="CreditNoteDate" />
+          <ScalarProperty Name="netAmount" ColumnName="netAmount" />
+          <ScalarProperty Name="Reference" ColumnName="Reference" />
+          <ScalarProperty Name="Tax" ColumnName="Tax" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CAT_EmailBlockList">
+      <EntityTypeMapping TypeName="micrositeModel.CAT_EmailBlockList">
+        <MappingFragment StoreEntitySet="CAT_EmailBlockList">
+          <ScalarProperty Name="EmailBlockListID" ColumnName="EmailBlockListID" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="PortalID" ColumnName="PortalID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CAT_Feedbacks">
+      <EntityTypeMapping TypeName="micrositeModel.CAT_Feedbacks">
+        <MappingFragment StoreEntitySet="CAT_Feedbacks">
+          <ScalarProperty Name="FeedBackID" ColumnName="FeedBackID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="FromUserStatus" ColumnName="FromUserStatus" />
+          <ScalarProperty Name="PortalID" ColumnName="PortalID" />
+          <ScalarProperty Name="ItemID" ColumnName="ItemID" />
+          <ScalarProperty Name="RecordID" ColumnName="RecordID" />
+          <ScalarProperty Name="Rating" ColumnName="Rating" />
+          <ScalarProperty Name="Approved" ColumnName="Approved" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CAT_ListItemTexts">
+      <EntityTypeMapping TypeName="micrositeModel.CAT_ListItemTexts">
+        <MappingFragment StoreEntitySet="CAT_ListItemTexts">
+          <ScalarProperty Name="ListItemTextID" ColumnName="ListItemTextID" />
+          <ScalarProperty Name="PortalID" ColumnName="PortalID" />
+          <ScalarProperty Name="CreatedByUser" ColumnName="CreatedByUser" />
+          <ScalarProperty Name="ListItemTextDescr" ColumnName="ListItemTextDescr" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CAT_ListItemTypes">
+      <EntityTypeMapping TypeName="micrositeModel.CAT_ListItemTypes">
+        <MappingFragment StoreEntitySet="CAT_ListItemTypes">
+          <ScalarProperty Name="ListItemTypeID" ColumnName="ListItemTypeID" />
+          <ScalarProperty Name="PortalID" ColumnName="PortalID" />
+          <ScalarProperty Name="CreatedByUser" ColumnName="CreatedByUser" />
+          <ScalarProperty Name="ListItemTypeName" ColumnName="ListItemTypeName" />
+          <ScalarProperty Name="CategoryIDs" ColumnName="CategoryIDs" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CAT_MainZones">
+      <EntityTypeMapping TypeName="micrositeModel.CAT_MainZones">
+        <MappingFragment StoreEntitySet="CAT_MainZones">
+          <ScalarProperty Name="MainZoneID" ColumnName="MainZoneID" />
+          <ScalarProperty Name="PortalID" ColumnName="PortalID" />
+          <ScalarProperty Name="ZoneNameID" ColumnName="ZoneNameID" />
+          <ScalarProperty Name="CountryCode" ColumnName="CountryCode" />
+          <ScalarProperty Name="StateCode" ColumnName="StateCode" />
+          <ScalarProperty Name="Tax" ColumnName="Tax" />
+          <ScalarProperty Name="TaxShipping" ColumnName="TaxShipping" />
+          <ScalarProperty Name="TaxRateName" ColumnName="TaxRateName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CAT_NativeLanguages">
+      <EntityTypeMapping TypeName="micrositeModel.CAT_NativeLanguages">
+        <MappingFragment StoreEntitySet="CAT_NativeLanguages">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="LangName" ColumnName="LangName" />
+          <ScalarProperty Name="ExchangeRate" ColumnName="ExchangeRate" />
+          <ScalarProperty Name="CurrencySymbol" ColumnName="CurrencySymbol" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CAT_NonDeliveryPeriods">
+      <EntityTypeMapping TypeName="micrositeModel.CAT_NonDeliveryPeriods">
+        <MappingFragment StoreEntitySet="CAT_NonDeliveryPeriods">
+          <ScalarProperty Name="PeriodID" ColumnName="PeriodID" />
+          <ScalarProperty Name="PortalID" ColumnName="PortalID" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CAT_NonDespatchPeriods">
+      <EntityTypeMapping TypeName="micrositeModel.CAT_NonDespatchPeriods">
+        <MappingFragment StoreEntitySet="CAT_NonDespatchPeriods">
+          <ScalarProperty Name="PeriodID" ColumnName="PeriodID" />
+          <ScalarProperty Name="PortalID" ColumnName="PortalID" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CAT_Options">
+      <EntityTypeMapping TypeName="micrositeModel.CAT_Options">
+        <MappingFragment StoreEntitySet="CAT_Options">
+          <ScalarProperty Name="OptionID" ColumnName="OptionID" />
+          <ScalarProperty Name="PortalID" ColumnName="PortalID" />
+          <ScalarProperty Name="CreatedByUser" ColumnName="CreatedByUser" />
+          <ScalarProperty Name="OptionName" ColumnName="OptionName" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Selections" ColumnName="Selections" />
+          <ScalarProperty Name="OptionImage" ColumnName="OptionImage" />
+          <ScalarProperty Name="Preselection" ColumnName="Preselection" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="RepeatCol" ColumnName="RepeatCol" />
+          <ScalarProperty Name="ControlType" ColumnName="ControlType" />
+          <ScalarProperty Name="Length" ColumnName="Length" />
+          <ScalarProperty Name="Columns" ColumnName="Columns" />
+          <ScalarProperty Name="Rows" ColumnName="Rows" />
+          <ScalarProperty Name="SpellCheck" ColumnName="SpellCheck" />
+          <ScalarProperty Name="ControlProperties" ColumnName="ControlProperties" />
+          <ScalarProperty Name="AddToPOSelID" ColumnName="AddToPOSelID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CAT_OrderDetails">
+      <EntityTypeMapping TypeName="micrositeModel.CAT_OrderDetails">
+        <MappingFragment StoreEntitySet="CAT_OrderDetails">
+          <ScalarProperty Name="OrderDetailsID" ColumnName="OrderDetailsID" />
+          <ScalarProperty Name="OrderID" ColumnName="OrderID" />
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="QuantityRemaining" ColumnName="QuantityRemaining" />
+          <ScalarProperty Name="UnitCost" ColumnName="UnitCost" />
+          <ScalarProperty Name="InvoiceNumber" ColumnName="InvoiceNumber" />
+          <ScalarProperty Name="InvoiceDate" ColumnName="InvoiceDate" />
+          <ScalarProperty Name="InvoiceShipCosts" ColumnName="InvoiceShipCosts" />
+          <ScalarProperty Name="CreditNoteNumber" ColumnName="CreditNoteNumber" />
+          <ScalarProperty Name="CreditNoteDate" ColumnName="CreditNoteDate" />
+          <ScalarProperty Name="CreditNoteShipCosts" ColumnName="CreditNoteShipCosts" />
+          <ScalarProperty Name="Options" ColumnName="Options" />
+          <ScalarProperty Name="AllocDate" ColumnName="AllocDate" />
+          <ScalarProperty Name="SubscrExpiryDate" ColumnName="SubscrExpiryDate" />
+          <ScalarProperty Name="RecordID" ColumnName="RecordID" />
+          <ScalarProperty Name="BaseRecID" ColumnName="BaseRecID" />
+          <ScalarProperty Name="ProductSlotID" ColumnName="ProductSlotID" />
+          <ScalarProperty Name="Tax" ColumnName="Tax" />
+          <ScalarProperty Name="ReferrerCommission" ColumnName="ReferrerCommission" />
+          <ScalarProperty Name="VendorCommission" ColumnName="VendorCommission" />
+          <ScalarProperty Name="ShippingCompany" ColumnName="ShippingCompany" />
+          <ScalarProperty Name="TrackingNumber" ColumnName="TrackingNumber" />
+          <ScalarProperty Name="DeliveredUnits" ColumnName="DeliveredUnits" />
+          <ScalarProperty Name="SKU" ColumnName="SKU" />
+          <ScalarProperty Name="ProductCost" ColumnName="ProductCost" />
+          <ScalarProperty Name="BillingPeriod" ColumnName="BillingPeriod" />
+          <ScalarProperty Name="Tax2" ColumnName="Tax2" />
+          <ScalarProperty Name="CouponCodeID" ColumnName="CouponCodeID" />
+          <ScalarProperty Name="CartPriceRuleID" ColumnName="CartPriceRuleID" />
+          <ScalarProperty Name="LoyaltyDiscount" ColumnName="LoyaltyDiscount" />
+          <ScalarProperty Name="CreatedByUserID" ColumnName="CreatedByUserID" />
+          <ScalarProperty Name="CreatedOnDate" ColumnName="CreatedOnDate" />
+          <ScalarProperty Name="LastModifiedByUserID" ColumnName="LastModifiedByUserID" />
+          <ScalarProperty Name="LastModifiedOnDate" ColumnName="LastModifiedOnDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CAT_OrderItemsLinks">
+      <EntityTypeMapping TypeName="micrositeModel.CAT_OrderItemsLinks">
+        <MappingFragment StoreEntitySet="CAT_OrderItemsLinks">
+          <ScalarProperty Name="OrderItemsLinksID" ColumnName="OrderItemsLinksID" />
+          <ScalarProperty Name="OrderDetailsID" ColumnName="OrderDetailsID" />
+          <ScalarProperty Name="FileID" ColumnName="FileID" />
+          <ScalarProperty Name="Clicks" ColumnName="Clicks" />
+          <ScalarProperty Name="MaxNumberOfClicks" ColumnName="MaxNumberOfClicks" />
+          <ScalarProperty Name="FirstClick" ColumnName="FirstClick" />
+          <ScalarProperty Name="AccessPeriod" ColumnName="AccessPeriod" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CAT_Orders">
+      <EntityTypeMapping TypeName="micrositeModel.CAT_Orders">
+        <MappingFragment StoreEntitySet="CAT_Orders">
+          <ScalarProperty Name="OrderID" ColumnName="OrderID" />
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="OrderDate" ColumnName="OrderDate" />
+          <ScalarProperty Name="ShipDate" ColumnName="ShipDate" />
+          <ScalarProperty Name="ShipToID" ColumnName="ShipToID" />
+          <ScalarProperty Name="PaymentType" ColumnName="PaymentType" />
+          <ScalarProperty Name="PaymentState" ColumnName="PaymentState" />
+          <ScalarProperty Name="ShipCosts" ColumnName="ShipCosts" />
+          <ScalarProperty Name="ShipTax" ColumnName="ShipTax" />
+          <ScalarProperty Name="PurchaseOrderNumber" ColumnName="PurchaseOrderNumber" />
+          <ScalarProperty Name="ShipTax2" ColumnName="ShipTax2" />
+          <ScalarProperty Name="ReferralID" ColumnName="ReferralID" />
+          <ScalarProperty Name="AACodeSent" ColumnName="AACodeSent" />
+          <ScalarProperty Name="CreatedByUserID" ColumnName="CreatedByUserID" />
+          <ScalarProperty Name="CreatedOnDate" ColumnName="CreatedOnDate" />
+          <ScalarProperty Name="LastModifiedByUserID" ColumnName="LastModifiedByUserID" />
+          <ScalarProperty Name="LastModifiedOnDate" ColumnName="LastModifiedOnDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CAT_OrderSerialNumbers">
+      <EntityTypeMapping TypeName="micrositeModel.CAT_OrderSerialNumbers">
+        <MappingFragment StoreEntitySet="CAT_OrderSerialNumbers">
+          <ScalarProperty Name="SerialNumberID" ColumnName="SerialNumberID" />
+          <ScalarProperty Name="PortalID" ColumnName="PortalID" />
+          <ScalarProperty Name="SerialNumber" ColumnName="SerialNumber" />
+          <ScalarProperty Name="VendorID" ColumnName="VendorID" />
+          <ScalarProperty Name="CreatedByUser" ColumnName="CreatedByUser" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="LastChangedByUser" ColumnName="LastChangedByUser" />
+          <ScalarProperty Name="LastChangeDate" ColumnName="LastChangeDate" />
+          <ScalarProperty Name="SNCategoryID" ColumnName="SNCategoryID" />
+          <ScalarProperty Name="OrderID" ColumnName="OrderID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CAT_OrderSNCategories">
+      <EntityTypeMapping TypeName="micrositeModel.CAT_OrderSNCategories">
+        <MappingFragment StoreEntitySet="CAT_OrderSNCategories">
+          <ScalarProperty Name="SNCategoryID" ColumnName="SNCategoryID" />
+          <ScalarProperty Name="PortalID" ColumnName="PortalID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ApplyMethod" ColumnName="ApplyMethod" />
+          <ScalarProperty Name="MinSNRemainingCount" ColumnName="MinSNRemainingCount" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CAT_Organization">
+      <EntityTypeMapping TypeName="micrositeModel.CAT_Organization">
+        <MappingFragment StoreEntitySet="CAT_Organization">
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="CustomerNumber" ColumnName="CustomerNumber" />
+          <ScalarProperty Name="Company" ColumnName="Company" />
+          <ScalarProperty Name="TaxNumber" ColumnName="TaxNumber" />
+          <ScalarProperty Name="TaxIdentNumber" ColumnName="TaxIdentNumber" />
+          <ScalarProperty Name="Tax" ColumnName="Tax" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="Discount" ColumnName="Discount" />
+          <ScalarProperty Name="PaymentTypes" ColumnName="PaymentTypes" />
+          <ScalarProperty Name="AccountType" ColumnName="AccountType" />
+          <ScalarProperty Name="Account" ColumnName="Account" />
+          <ScalarProperty Name="BankName" ColumnName="BankName" />
+          <ScalarProperty Name="SortCode" ColumnName="SortCode" />
+          <ScalarProperty Name="BankAddress" ColumnName="BankAddress" />
+          <ScalarProperty Name="AccountNumber" ColumnName="AccountNumber" />
+          <ScalarProperty Name="AccountOwnerName" ColumnName="AccountOwnerName" />
+          <ScalarProperty Name="IBAN" ColumnName="IBAN" />
+          <ScalarProperty Name="BIC" ColumnName="BIC" />
+          <ScalarProperty Name="EmailNotifications" ColumnName="EmailNotifications" />
+          <ScalarProperty Name="Department" ColumnName="Department" />
+          <ScalarProperty Name="LogoImage" ColumnName="LogoImage" />
+          <ScalarProperty Name="AccountStatus" ColumnName="AccountStatus" />
+          <ScalarProperty Name="StatusNotes" ColumnName="StatusNotes" />
+          <ScalarProperty Name="HomePage" ColumnName="HomePage" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CAT_PaymentMethodPermission">
+      <EntityTypeMapping TypeName="micrositeModel.CAT_PaymentMethodPermission">
+        <MappingFragment StoreEntitySet="CAT_PaymentMethodPermission">
+          <ScalarProperty Name="PaymentMethodPermissionID" ColumnName="PaymentMethodPermissionID" />
+          <ScalarProperty Name="PaymentMethodID" ColumnName="PaymentMethodID" />
+          <ScalarProperty Name="PermissionID" ColumnName="PermissionID" />
+          <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+          <ScalarProperty Name="AllowAccess" ColumnName="AllowAccess" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="CreatedByUserID" ColumnName="CreatedByUserID" />
+          <ScalarProperty Name="CreatedOnDate" ColumnName="CreatedOnDate" />
+          <ScalarProperty Name="LastModifiedByUserID" ColumnName="LastModifiedByUserID" />
+          <ScalarProperty Name="LastModifiedOnDate" ColumnName="LastModifiedOnDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CAT_PaymentMethods">
+      <EntityTypeMapping TypeName="micrositeModel.CAT_PaymentMethods">
+        <MappingFragment StoreEntitySet="CAT_PaymentMethods">
+          <ScalarProperty Name="PaymentMethodID" ColumnName="PaymentMethodID" />
+          <ScalarProperty Name="PortalID" ColumnName="PortalID" />
+          <ScalarProperty Name="CreatedByUser" ColumnName="CreatedByUser" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Countries" ColumnName="Countries" />
+          <ScalarProperty Name="Roles" ColumnName="Roles" />
+          <ScalarProperty Name="Formula" ColumnName="Formula" />
+          <ScalarProperty Name="CCPaymentProcessorID" ColumnName="CCPaymentProcessorID" />
+          <ScalarProperty Name="CCTransactionType" ColumnName="CCTransactionType" />
+          <ScalarProperty Name="ViewOrder" ColumnName="ViewOrder" />
+          <ScalarProperty Name="Enabled" ColumnName="Enabled" />
+          <ScalarProperty Name="CCBrand" ColumnName="CCBrand" />
+          <ScalarProperty Name="StoreCCTypes" ColumnName="StoreCCTypes" />
+          <ScalarProperty Name="CCLogin" ColumnName="CCLogin" />
+          <ScalarProperty Name="CCTransactionKey" ColumnName="CCTransactionKey" />
+          <ScalarProperty Name="CCUserName" ColumnName="CCUserName" />
+          <ScalarProperty Name="CCPassword" ColumnName="CCPassword" />
+          <ScalarProperty Name="CCMerchantHash" ColumnName="CCMerchantHash" />
+          <ScalarProperty Name="CCAdditionalParameters" ColumnName="CCAdditionalParameters" />
+          <ScalarProperty Name="CCTestMode" ColumnName="CCTestMode" />
+          <ScalarProperty Name="SaveCCData" ColumnName="SaveCCData" />
+          <ScalarProperty Name="PayPalID" ColumnName="PayPalID" />
+          <ScalarProperty Name="PayPalReturnTabID" ColumnName="PayPalReturnTabID" />
+          <ScalarProperty Name="PayPalCartName" ColumnName="PayPalCartName" />
+          <ScalarProperty Name="PayPalButtonURL" ColumnName="PayPalButtonURL" />
+          <ScalarProperty Name="PayPalURL" ColumnName="PayPalURL" />
+          <ScalarProperty Name="PayPalSandboxURL" ColumnName="PayPalSandboxURL" />
+          <ScalarProperty Name="PayPalCurrencyID" ColumnName="PayPalCurrencyID" />
+          <ScalarProperty Name="PayPalShippingAddress" ColumnName="PayPalShippingAddress" />
+          <ScalarProperty Name="PayPalPassingIndividualItems" ColumnName="PayPalPassingIndividualItems" />
+          <ScalarProperty Name="LogoImage" ColumnName="LogoImage" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="PMCategoryID" ColumnName="PMCategoryID" />
+          <ScalarProperty Name="Formula2" ColumnName="Formula2" />
+          <ScalarProperty Name="ProfileProperties" ColumnName="ProfileProperties" />
+          <ScalarProperty Name="TransSuccEmailMinTransAmt" ColumnName="TransSuccEmailMinTransAmt" />
+          <ScalarProperty Name="TransSuccEmails" ColumnName="TransSuccEmails" />
+          <ScalarProperty Name="TransSuccEmailSubjTmpl" ColumnName="TransSuccEmailSubjTmpl" />
+          <ScalarProperty Name="TransSuccEmailMsgTmpl" ColumnName="TransSuccEmailMsgTmpl" />
+          <ScalarProperty Name="TransFailEmails" ColumnName="TransFailEmails" />
+          <ScalarProperty Name="TransFailEmailSubjTmpl" ColumnName="TransFailEmailSubjTmpl" />
+          <ScalarProperty Name="TransFailEmailMsgTmpl" ColumnName="TransFailEmailMsgTmpl" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CAT_Periods">
+      <EntityTypeMapping TypeName="micrositeModel.CAT_Periods">
+        <MappingFragment StoreEntitySet="CAT_Periods">
+          <ScalarProperty Name="PeriodID" ColumnName="PeriodID" />
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+          <ScalarProperty Name="MinDays" ColumnName="MinDays" />
+          <ScalarProperty Name="SeasonalPrice" ColumnName="SeasonalPrice" />
+          <ScalarProperty Name="SeasonID" ColumnName="SeasonID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CAT_PMCategories">
+      <EntityTypeMapping TypeName="micrositeModel.CAT_PMCategories">
+        <MappingFragment StoreEntitySet="CAT_PMCategories">
+          <ScalarProperty Name="PMCategoryID" ColumnName="PMCategoryID" />
+          <ScalarProperty Name="PortalID" ColumnName="PortalID" />
+          <ScalarProperty Name="PMCategoryName" ColumnName="PMCategoryName" />
+          <ScalarProperty Name="PMCategoryViewOrder" ColumnName="PMCategoryViewOrder" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CAT_Posts">
+      <EntityTypeMapping TypeName="micrositeModel.CAT_Posts">
+        <MappingFragment StoreEntitySet="CAT_Posts">
+          <ScalarProperty Name="PostID" ColumnName="PostID" />
+          <ScalarProperty Name="ThreadID" ColumnName="ThreadID" />
+          <ScalarProperty Name="CreatedByUser" ColumnName="CreatedByUser" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="Body" ColumnName="Body" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CAT_PriceAgent">
+      <EntityTypeMapping TypeName="micrositeModel.CAT_PriceAgent">
+        <MappingFragment StoreEntitySet="CAT_PriceAgent">
+          <ScalarProperty Name="PriceAgentID" ColumnName="PriceAgentID" />
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="PriceCompare" ColumnName="PriceCompare" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CAT_PriceHistory">
+      <EntityTypeMapping TypeName="micrositeModel.CAT_PriceHistory">
+        <MappingFragment StoreEntitySet="CAT_PriceHistory">
+          <ScalarProperty Name="PriceHistoryID" ColumnName="PriceHistoryID" />
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="ChangeDate" ColumnName="ChangeDate" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CAT_PriceRules">
+      <EntityTypeMapping TypeName="micrositeModel.CAT_PriceRules">
+        <MappingFragment StoreEntitySet="CAT_PriceRules">
+          <ScalarProperty Name="PriceRuleID" ColumnName="PriceRuleID" />
+          <ScalarProperty Name="PortalID" ColumnName="PortalID" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="AlsoPurchasedProductID" ColumnName="AlsoPurchasedProductID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+          <ScalarProperty Name="Category2ID" ColumnName="Category2ID" />
+          <ScalarProperty Name="Category3" ColumnName="Category3" />
+          <ScalarProperty Name="AdvCatID" ColumnName="AdvCatID" />
+          <ScalarProperty Name="Formula" ColumnName="Formula" />
+          <ScalarProperty Name="Minimum" ColumnName="Minimum" />
+          <ScalarProperty Name="CouponCodes" ColumnName="CouponCodes" />
+          <ScalarProperty Name="RemoveUsedCoupons" ColumnName="RemoveUsedCoupons" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+          <ScalarProperty Name="Roles" ColumnName="Roles" />
+          <ScalarProperty Name="CartTotal" ColumnName="CartTotal" />
+          <ScalarProperty Name="BillingPeriod" ColumnName="BillingPeriod" />
+          <ScalarProperty Name="PointsPerCurrencyUnit" ColumnName="PointsPerCurrencyUnit" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CAT_ProdOptionsSelections">
+      <EntityTypeMapping TypeName="micrositeModel.CAT_ProdOptionsSelections">
+        <MappingFragment StoreEntitySet="CAT_ProdOptionsSelections">
+          <ScalarProperty Name="POSelID" ColumnName="POSelID" />
+          <ScalarProperty Name="POSelStock" ColumnName="POSelStock" />
+          <ScalarProperty Name="POSelImage" ColumnName="POSelImage" />
+          <ScalarProperty Name="POSelSKU" ColumnName="POSelSKU" />
+          <ScalarProperty Name="Formula" ColumnName="Formula" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CAT_ProductFiles">
+      <EntityTypeMapping TypeName="micrositeModel.CAT_ProductFiles">
+        <MappingFragment StoreEntitySet="CAT_ProductFiles">
+          <ScalarProperty Name="FileID" ColumnName="FileID" />
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="FileName" ColumnName="FileName" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="MediaType" ColumnName="MediaType" />
+          <ScalarProperty Name="ViewOrder" ColumnName="ViewOrder" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="ButtonIcon" ColumnName="ButtonIcon" />
+          <ScalarProperty Name="ViewerID" ColumnName="ViewerID" />
+          <ScalarProperty Name="DisplayLocation" ColumnName="DisplayLocation" />
+          <ScalarProperty Name="ViewPermissions" ColumnName="ViewPermissions" />
+          <ScalarProperty Name="MaxNumberOfClicks" ColumnName="MaxNumberOfClicks" />
+          <ScalarProperty Name="AccessPeriod" ColumnName="AccessPeriod" />
+          <ScalarProperty Name="ReOrderLink" ColumnName="ReOrderLink" />
+          <ScalarProperty Name="POSelID" ColumnName="POSelID" />
+          <ScalarProperty Name="MaxThumbWidth" ColumnName="MaxThumbWidth" />
+          <ScalarProperty Name="MaxThumbHeight" ColumnName="MaxThumbHeight" />
+          <ScalarProperty Name="CreatedByUserID" ColumnName="CreatedByUserID" />
+          <ScalarProperty Name="CreatedOnDate" ColumnName="CreatedOnDate" />
+          <ScalarProperty Name="LastModifiedByUserID" ColumnName="LastModifiedByUserID" />
+          <ScalarProperty Name="LastModifiedOnDate" ColumnName="LastModifiedOnDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CAT_ProductImages">
+      <EntityTypeMapping TypeName="micrositeModel.CAT_ProductImages">
+        <MappingFragment StoreEntitySet="CAT_ProductImages">
+          <ScalarProperty Name="ImageID" ColumnName="ImageID" />
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="ImageURL" ColumnName="ImageURL" />
+          <ScalarProperty Name="ImageFile" ColumnName="ImageFile" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="ImageType" ColumnName="ImageType" />
+          <ScalarProperty Name="ViewOrder" ColumnName="ViewOrder" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CAT_ProductPermission">
+      <EntityTypeMapping TypeName="micrositeModel.CAT_ProductPermission">
+        <MappingFragment StoreEntitySet="CAT_ProductPermission">
+          <ScalarProperty Name="ProductPermissionID" ColumnName="ProductPermissionID" />
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="PermissionID" ColumnName="PermissionID" />
+          <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+          <ScalarProperty Name="AllowAccess" ColumnName="AllowAccess" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="CreatedByUserID" ColumnName="CreatedByUserID" />
+          <ScalarProperty Name="CreatedOnDate" ColumnName="CreatedOnDate" />
+          <ScalarProperty Name="LastModifiedByUserID" ColumnName="LastModifiedByUserID" />
+          <ScalarProperty Name="LastModifiedOnDate" ColumnName="LastModifiedOnDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CAT_Products">
+      <EntityTypeMapping TypeName="micrositeModel.CAT_Products">
+        <MappingFragment StoreEntitySet="CAT_Products">
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+          <ScalarProperty Name="Category2ID" ColumnName="Category2ID" />
+          <ScalarProperty Name="Category3" ColumnName="Category3" />
+          <ScalarProperty Name="ProductName" ColumnName="ProductName" />
+          <ScalarProperty Name="ProductNumber" ColumnName="ProductNumber" />
+          <ScalarProperty Name="EAN" ColumnName="EAN" />
+          <ScalarProperty Name="ISBN" ColumnName="ISBN" />
+          <ScalarProperty Name="Free1" ColumnName="Free1" />
+          <ScalarProperty Name="Free2" ColumnName="Free2" />
+          <ScalarProperty Name="Free3" ColumnName="Free3" />
+          <ScalarProperty Name="KeyWords" ColumnName="KeyWords" />
+          <ScalarProperty Name="ProductImage" ColumnName="ProductImage" />
+          <ScalarProperty Name="UnitCost" ColumnName="UnitCost" />
+          <ScalarProperty Name="UnitCost2" ColumnName="UnitCost2" />
+          <ScalarProperty Name="UnitCost3" ColumnName="UnitCost3" />
+          <ScalarProperty Name="UnitCost4" ColumnName="UnitCost4" />
+          <ScalarProperty Name="UnitCost5" ColumnName="UnitCost5" />
+          <ScalarProperty Name="UnitCost6" ColumnName="UnitCost6" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="DescriptionHTML" ColumnName="DescriptionHTML" />
+          <ScalarProperty Name="URL" ColumnName="URL" />
+          <ScalarProperty Name="Stock" ColumnName="Stock" />
+          <ScalarProperty Name="OrderQuant" ColumnName="OrderQuant" />
+          <ScalarProperty Name="Weight" ColumnName="Weight" />
+          <ScalarProperty Name="Volume" ColumnName="Volume" />
+          <ScalarProperty Name="Length" ColumnName="Length" />
+          <ScalarProperty Name="Width" ColumnName="Width" />
+          <ScalarProperty Name="Height" ColumnName="Height" />
+          <ScalarProperty Name="FreightCosts1" ColumnName="FreightCosts1" />
+          <ScalarProperty Name="FreightCosts2" ColumnName="FreightCosts2" />
+          <ScalarProperty Name="Featured" ColumnName="Featured" />
+          <ScalarProperty Name="SalePrice" ColumnName="SalePrice" />
+          <ScalarProperty Name="SaleStart" ColumnName="SaleStart" />
+          <ScalarProperty Name="SaleEnd" ColumnName="SaleEnd" />
+          <ScalarProperty Name="DownLoad" ColumnName="DownLoad" />
+          <ScalarProperty Name="ZIPPassWord" ColumnName="ZIPPassWord" />
+          <ScalarProperty Name="DownLoadFile" ColumnName="DownLoadFile" />
+          <ScalarProperty Name="Archive" ColumnName="Archive" />
+          <ScalarProperty Name="CreatedByUser" ColumnName="CreatedByUser" />
+          <ScalarProperty Name="BulkPriceLimit1" ColumnName="BulkPriceLimit1" />
+          <ScalarProperty Name="BulkPriceLimit2" ColumnName="BulkPriceLimit2" />
+          <ScalarProperty Name="BulkPriceLimit3" ColumnName="BulkPriceLimit3" />
+          <ScalarProperty Name="BulkPriceLimit4" ColumnName="BulkPriceLimit4" />
+          <ScalarProperty Name="BulkPriceLimit5" ColumnName="BulkPriceLimit5" />
+          <ScalarProperty Name="DateCreated" ColumnName="DateCreated" />
+          <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+          <ScalarProperty Name="SubscriptionPeriod" ColumnName="SubscriptionPeriod" />
+          <ScalarProperty Name="RecurringBilling" ColumnName="RecurringBilling" />
+          <ScalarProperty Name="TaxExempt" ColumnName="TaxExempt" />
+          <ScalarProperty Name="ShipExempt" ColumnName="ShipExempt" />
+          <ScalarProperty Name="InsuredValue" ColumnName="InsuredValue" />
+          <ScalarProperty Name="PublicationStart" ColumnName="PublicationStart" />
+          <ScalarProperty Name="PublicationEnd" ColumnName="PublicationEnd" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="DonationItem" ColumnName="DonationItem" />
+          <ScalarProperty Name="PayPalSubscription" ColumnName="PayPalSubscription" />
+          <ScalarProperty Name="UseRoleFees" ColumnName="UseRoleFees" />
+          <ScalarProperty Name="ProductCost" ColumnName="ProductCost" />
+          <ScalarProperty Name="RoleExpiryType" ColumnName="RoleExpiryType" />
+          <ScalarProperty Name="ItemDeliveryType" ColumnName="ItemDeliveryType" />
+          <ScalarProperty Name="ReorderPoint" ColumnName="ReorderPoint" />
+          <ScalarProperty Name="OrderQuantValidExpr" ColumnName="OrderQuantValidExpr" />
+          <ScalarProperty Name="ShippingAddress" ColumnName="ShippingAddress" />
+          <ScalarProperty Name="OrigProductID" ColumnName="OrigProductID" />
+          <ScalarProperty Name="AuctionFinished" ColumnName="AuctionFinished" />
+          <ScalarProperty Name="StartingPrice" ColumnName="StartingPrice" />
+          <ScalarProperty Name="ReservePrice" ColumnName="ReservePrice" />
+          <ScalarProperty Name="LastModifiedByUserID" ColumnName="LastModifiedByUserID" />
+          <ScalarProperty Name="LastModifiedOnDate" ColumnName="LastModifiedOnDate" />
+          <ScalarProperty Name="TaxCode" ColumnName="TaxCode" />
+          <ScalarProperty Name="MaxWeight" ColumnName="MaxWeight" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CAT_ProductsLITypesTexts">
+      <EntityTypeMapping TypeName="micrositeModel.CAT_ProductsLITypesTexts">
+        <MappingFragment StoreEntitySet="CAT_ProductsLITypesTexts">
+          <ScalarProperty Name="ProductLITypeTextID" ColumnName="ProductLITypeTextID" />
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="TypeTextID" ColumnName="TypeTextID" />
+          <ScalarProperty Name="ViewOrder" ColumnName="ViewOrder" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CAT_ProductsOptions">
+      <EntityTypeMapping TypeName="micrositeModel.CAT_ProductsOptions">
+        <MappingFragment StoreEntitySet="CAT_ProductsOptions">
+          <ScalarProperty Name="ProductOptionID" ColumnName="ProductOptionID" />
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="OptionID" ColumnName="OptionID" />
+          <ScalarProperty Name="ViewOrder" ColumnName="ViewOrder" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CAT_ProductsSlots">
+      <EntityTypeMapping TypeName="micrositeModel.CAT_ProductsSlots">
+        <MappingFragment StoreEntitySet="CAT_ProductsSlots">
+          <ScalarProperty Name="ProductSlotID" ColumnName="ProductSlotID" />
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="SlotID" ColumnName="SlotID" />
+          <ScalarProperty Name="ViewOrder" ColumnName="ViewOrder" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CAT_ProductsTypesSpecs">
+      <EntityTypeMapping TypeName="micrositeModel.CAT_ProductsTypesSpecs">
+        <MappingFragment StoreEntitySet="CAT_ProductsTypesSpecs">
+          <ScalarProperty Name="ProductTypeSpecID" ColumnName="ProductTypeSpecID" />
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="TypeSpecID" ColumnName="TypeSpecID" />
+          <ScalarProperty Name="KindOfProductTypeSpec" ColumnName="KindOfProductTypeSpec" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CAT_ProductsZonesTax">
+      <EntityTypeMapping TypeName="micrositeModel.CAT_ProductsZonesTax">
+        <MappingFragment StoreEntitySet="CAT_ProductsZonesTax">
+          <ScalarProperty Name="ProductZoneTaxID" ColumnName="ProductZoneTaxID" />
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="ZoneNameID" ColumnName="ZoneNameID" />
+          <ScalarProperty Name="Tax" ColumnName="Tax" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CAT_ProductTypes">
+      <EntityTypeMapping TypeName="micrositeModel.CAT_ProductTypes">
+        <MappingFragment StoreEntitySet="CAT_ProductTypes">
+          <ScalarProperty Name="ProductTypeID" ColumnName="ProductTypeID" />
+          <ScalarProperty Name="PortalID" ColumnName="PortalID" />
+          <ScalarProperty Name="CreatedByUser" ColumnName="CreatedByUser" />
+          <ScalarProperty Name="ProductTypeName" ColumnName="ProductTypeName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CAT_Referrals">
+      <EntityTypeMapping TypeName="micrositeModel.CAT_Referrals">
+        <MappingFragment StoreEntitySet="CAT_Referrals">
+          <ScalarProperty Name="ReferralID" ColumnName="ReferralID" />
+          <ScalarProperty Name="ReferrerUserID" ColumnName="ReferrerUserID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="URLReferrer" ColumnName="URLReferrer" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="RewardExpiryDate" ColumnName="RewardExpiryDate" />
+          <ScalarProperty Name="Enabled" ColumnName="Enabled" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CAT_RelatedProducts">
+      <EntityTypeMapping TypeName="micrositeModel.CAT_RelatedProducts">
+        <MappingFragment StoreEntitySet="CAT_RelatedProducts">
+          <ScalarProperty Name="RelationID" ColumnName="RelationID" />
+          <ScalarProperty Name="ProductID1" ColumnName="ProductID1" />
+          <ScalarProperty Name="ProductID2" ColumnName="ProductID2" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CAT_Resources">
+      <EntityTypeMapping TypeName="micrositeModel.CAT_Resources">
+        <MappingFragment StoreEntitySet="CAT_Resources">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="value" ColumnName="value" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CAT_Reviews">
+      <EntityTypeMapping TypeName="micrositeModel.CAT_Reviews">
+        <MappingFragment StoreEntitySet="CAT_Reviews">
+          <ScalarProperty Name="ReviewID" ColumnName="ReviewID" />
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+          <ScalarProperty Name="CustomerEmail" ColumnName="CustomerEmail" />
+          <ScalarProperty Name="Rating" ColumnName="Rating" />
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="Approved" ColumnName="Approved" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CAT_SerialNumbers">
+      <EntityTypeMapping TypeName="micrositeModel.CAT_SerialNumbers">
+        <MappingFragment StoreEntitySet="CAT_SerialNumbers">
+          <ScalarProperty Name="SerialNumberID" ColumnName="SerialNumberID" />
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="POSelID" ColumnName="POSelID" />
+          <ScalarProperty Name="SerialNumber" ColumnName="SerialNumber" />
+          <ScalarProperty Name="VendorID" ColumnName="VendorID" />
+          <ScalarProperty Name="CreatedByUser" ColumnName="CreatedByUser" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="LastChangedByUser" ColumnName="LastChangedByUser" />
+          <ScalarProperty Name="LastChangeDate" ColumnName="LastChangeDate" />
+          <ScalarProperty Name="OrderDetailsID" ColumnName="OrderDetailsID" />
+          <ScalarProperty Name="SNCategoryID" ColumnName="SNCategoryID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CAT_Settings">
+      <EntityTypeMapping TypeName="micrositeModel.CAT_Settings">
+        <MappingFragment StoreEntitySet="CAT_Settings">
+          <ScalarProperty Name="SettingID" ColumnName="SettingID" />
+          <ScalarProperty Name="PortalID" ColumnName="PortalID" />
+          <ScalarProperty Name="StoreOwnerUserID" ColumnName="StoreOwnerUserID" />
+          <ScalarProperty Name="PostItems" ColumnName="PostItems" />
+          <ScalarProperty Name="StorePaymentTypes" ColumnName="StorePaymentTypes" />
+          <ScalarProperty Name="StoreCCTypes" ColumnName="StoreCCTypes" />
+          <ScalarProperty Name="CCLogin" ColumnName="CCLogin" />
+          <ScalarProperty Name="CCTransactionKey" ColumnName="CCTransactionKey" />
+          <ScalarProperty Name="CCPassword" ColumnName="CCPassword" />
+          <ScalarProperty Name="CCCryptoPassword" ColumnName="CCCryptoPassword" />
+          <ScalarProperty Name="CCMerchantHash" ColumnName="CCMerchantHash" />
+          <ScalarProperty Name="StorePriceType" ColumnName="StorePriceType" />
+          <ScalarProperty Name="StoreTax" ColumnName="StoreTax" />
+          <ScalarProperty Name="PayPalID" ColumnName="PayPalID" />
+          <ScalarProperty Name="PayPalCartName" ColumnName="PayPalCartName" />
+          <ScalarProperty Name="StoreCurrencyid" ColumnName="StoreCurrencyid" />
+          <ScalarProperty Name="CCPaymentProcessorID" ColumnName="CCPaymentProcessorID" />
+          <ScalarProperty Name="PayPalReturnTabID" ColumnName="PayPalReturnTabID" />
+          <ScalarProperty Name="PayPalButtonURL" ColumnName="PayPalButtonURL" />
+          <ScalarProperty Name="LicenceKey" ColumnName="LicenceKey" />
+          <ScalarProperty Name="StoreEmail" ColumnName="StoreEmail" />
+          <ScalarProperty Name="SMTPUserName" ColumnName="SMTPUserName" />
+          <ScalarProperty Name="SMTPPassword" ColumnName="SMTPPassword" />
+          <ScalarProperty Name="SMTPPort" ColumnName="SMTPPort" />
+          <ScalarProperty Name="SMTPServer" ColumnName="SMTPServer" />
+          <ScalarProperty Name="ShowNodeImages" ColumnName="ShowNodeImages" />
+          <ScalarProperty Name="ShowPriceHistory" ColumnName="ShowPriceHistory" />
+          <ScalarProperty Name="ShowPriceAgent" ColumnName="ShowPriceAgent" />
+          <ScalarProperty Name="StockControl" ColumnName="StockControl" />
+          <ScalarProperty Name="StockImage1" ColumnName="StockImage1" />
+          <ScalarProperty Name="StockImage2" ColumnName="StockImage2" />
+          <ScalarProperty Name="StockImage3" ColumnName="StockImage3" />
+          <ScalarProperty Name="StockImage4" ColumnName="StockImage4" />
+          <ScalarProperty Name="StockLimit1" ColumnName="StockLimit1" />
+          <ScalarProperty Name="StockLimit2" ColumnName="StockLimit2" />
+          <ScalarProperty Name="StockLimit3" ColumnName="StockLimit3" />
+          <ScalarProperty Name="TopTemplate" ColumnName="TopTemplate" />
+          <ScalarProperty Name="BottomTemplate" ColumnName="BottomTemplate" />
+          <ScalarProperty Name="TitleSide" ColumnName="TitleSide" />
+          <ScalarProperty Name="FreightFlatRate" ColumnName="FreightFlatRate" />
+          <ScalarProperty Name="FreightCostsForKg" ColumnName="FreightCostsForKg" />
+          <ScalarProperty Name="FreightCostsType" ColumnName="FreightCostsType" />
+          <ScalarProperty Name="FreightCODCosts" ColumnName="FreightCODCosts" />
+          <ScalarProperty Name="FreightInsurance" ColumnName="FreightInsurance" />
+          <ScalarProperty Name="woFreightFromLimit" ColumnName="woFreightFromLimit" />
+          <ScalarProperty Name="StockControlType" ColumnName="StockControlType" />
+          <ScalarProperty Name="OrderUnderLimit" ColumnName="OrderUnderLimit" />
+          <ScalarProperty Name="ShowOnlyIfStock" ColumnName="ShowOnlyIfStock" />
+          <ScalarProperty Name="PriceOfferDescription" ColumnName="PriceOfferDescription" />
+          <ScalarProperty Name="PublicAttributes" ColumnName="PublicAttributes" />
+          <ScalarProperty Name="PagingPageSize" ColumnName="PagingPageSize" />
+          <ScalarProperty Name="DoNotShowTerms" ColumnName="DoNotShowTerms" />
+          <ScalarProperty Name="EnableShipping" ColumnName="EnableShipping" />
+          <ScalarProperty Name="FolderLinks" ColumnName="FolderLinks" />
+          <ScalarProperty Name="RewardPeriod" ColumnName="RewardPeriod" />
+          <ScalarProperty Name="ReferrerCommission" ColumnName="ReferrerCommission" />
+          <ScalarProperty Name="VendorCommission" ColumnName="VendorCommission" />
+          <ScalarProperty Name="Skin" ColumnName="Skin" />
+          <ScalarProperty Name="SaveCCData" ColumnName="SaveCCData" />
+          <ScalarProperty Name="OrigCountry" ColumnName="OrigCountry" />
+          <ScalarProperty Name="OrigStateProvince" ColumnName="OrigStateProvince" />
+          <ScalarProperty Name="OrigZipPostal" ColumnName="OrigZipPostal" />
+          <ScalarProperty Name="UPSUserName" ColumnName="UPSUserName" />
+          <ScalarProperty Name="UPSPassword" ColumnName="UPSPassword" />
+          <ScalarProperty Name="UPSAccessLicense" ColumnName="UPSAccessLicense" />
+          <ScalarProperty Name="USPSUserName" ColumnName="USPSUserName" />
+          <ScalarProperty Name="USPSPassword" ColumnName="USPSPassword" />
+          <ScalarProperty Name="CanPostMerchCPCID" ColumnName="CanPostMerchCPCID" />
+          <ScalarProperty Name="ShippingCompanies" ColumnName="ShippingCompanies" />
+          <ScalarProperty Name="LimitRates" ColumnName="LimitRates" />
+          <ScalarProperty Name="ExcludeRates" ColumnName="ExcludeRates" />
+          <ScalarProperty Name="UPSPickup" ColumnName="UPSPickup" />
+          <ScalarProperty Name="UPSPack" ColumnName="UPSPack" />
+          <ScalarProperty Name="DHLServices" ColumnName="DHLServices" />
+          <ScalarProperty Name="FedExPack" ColumnName="FedExPack" />
+          <ScalarProperty Name="FedExGround" ColumnName="FedExGround" />
+          <ScalarProperty Name="RateBackup" ColumnName="RateBackup" />
+          <ScalarProperty Name="RateFailover" ColumnName="RateFailover" />
+          <ScalarProperty Name="AdjustRate" ColumnName="AdjustRate" />
+          <ScalarProperty Name="WeightUnit" ColumnName="WeightUnit" />
+          <ScalarProperty Name="EnableRequQuote" ColumnName="EnableRequQuote" />
+          <ScalarProperty Name="ImportFields" ColumnName="ImportFields" />
+          <ScalarProperty Name="ImportFile" ColumnName="ImportFile" />
+          <ScalarProperty Name="SyncItems" ColumnName="SyncItems" />
+          <ScalarProperty Name="CurrencyConverter" ColumnName="CurrencyConverter" />
+          <ScalarProperty Name="InvoiceCreationType" ColumnName="InvoiceCreationType" />
+          <ScalarProperty Name="CCTransactionType" ColumnName="CCTransactionType" />
+          <ScalarProperty Name="StartPaymentTypes" ColumnName="StartPaymentTypes" />
+          <ScalarProperty Name="CCAdditionalParameters" ColumnName="CCAdditionalParameters" />
+          <ScalarProperty Name="EmailTemplatePackage" ColumnName="EmailTemplatePackage" />
+          <ScalarProperty Name="OptionsTextFilter" ColumnName="OptionsTextFilter" />
+          <ScalarProperty Name="InventoryCheck" ColumnName="InventoryCheck" />
+          <ScalarProperty Name="WatermarkParams" ColumnName="WatermarkParams" />
+          <ScalarProperty Name="FreightInsuranceBasis" ColumnName="FreightInsuranceBasis" />
+          <ScalarProperty Name="CCTestMode" ColumnName="CCTestMode" />
+          <ScalarProperty Name="USPSTestMode" ColumnName="USPSTestMode" />
+          <ScalarProperty Name="EmailEncoding" ColumnName="EmailEncoding" />
+          <ScalarProperty Name="CCBlockList" ColumnName="CCBlockList" />
+          <ScalarProperty Name="IPBlockList" ColumnName="IPBlockList" />
+          <ScalarProperty Name="FedExAccountNumber" ColumnName="FedExAccountNumber" />
+          <ScalarProperty Name="FedExMeterNumber" ColumnName="FedExMeterNumber" />
+          <ScalarProperty Name="FedExURL" ColumnName="FedExURL" />
+          <ScalarProperty Name="NumberDecimalDigits" ColumnName="NumberDecimalDigits" />
+          <ScalarProperty Name="UPSAccountNumber" ColumnName="UPSAccountNumber" />
+          <ScalarProperty Name="UPSNegotiatedRates" ColumnName="UPSNegotiatedRates" />
+          <ScalarProperty Name="PayPalURL" ColumnName="PayPalURL" />
+          <ScalarProperty Name="PayPalSandboxURL" ColumnName="PayPalSandboxURL" />
+          <ScalarProperty Name="PayPalCurrencyID" ColumnName="PayPalCurrencyID" />
+          <ScalarProperty Name="PayPalShippingAddress" ColumnName="PayPalShippingAddress" />
+          <ScalarProperty Name="PayPalPassingIndividualItems" ColumnName="PayPalPassingIndividualItems" />
+          <ScalarProperty Name="UnitOfMeasurement" ColumnName="UnitOfMeasurement" />
+          <ScalarProperty Name="EmailSender1" ColumnName="EmailSender1" />
+          <ScalarProperty Name="EnableAJAX" ColumnName="EnableAJAX" />
+          <ScalarProperty Name="PointsConversionRate" ColumnName="PointsConversionRate" />
+          <ScalarProperty Name="OrigCity" ColumnName="OrigCity" />
+          <ScalarProperty Name="AffiliateCode" ColumnName="AffiliateCode" />
+          <ScalarProperty Name="AnalyticsCode" ColumnName="AnalyticsCode" />
+          <ScalarProperty Name="FraktguideUserCode" ColumnName="FraktguideUserCode" />
+          <ScalarProperty Name="FraktguideProductIDs" ColumnName="FraktguideProductIDs" />
+          <ScalarProperty Name="BidIncrementFormula" ColumnName="BidIncrementFormula" />
+          <ScalarProperty Name="StorePriceInputType" ColumnName="StorePriceInputType" />
+          <ScalarProperty Name="CCUserName" ColumnName="CCUserName" />
+          <ScalarProperty Name="RoleExpiryDateOffset" ColumnName="RoleExpiryDateOffset" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CAT_ShippingRates">
+      <EntityTypeMapping TypeName="micrositeModel.CAT_ShippingRates">
+        <MappingFragment StoreEntitySet="CAT_ShippingRates">
+          <ScalarProperty Name="ShippingRateID" ColumnName="ShippingRateID" />
+          <ScalarProperty Name="Company" ColumnName="Company" />
+          <ScalarProperty Name="RateName" ColumnName="RateName" />
+          <ScalarProperty Name="Formula" ColumnName="Formula" />
+          <ScalarProperty Name="Country" ColumnName="Country" />
+          <ScalarProperty Name="StateProvince" ColumnName="StateProvince" />
+          <ScalarProperty Name="Minimum" ColumnName="Minimum" />
+          <ScalarProperty Name="AdjustRate" ColumnName="AdjustRate" />
+          <ScalarProperty Name="ShipTime" ColumnName="ShipTime" />
+          <ScalarProperty Name="Visible" ColumnName="Visible" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="PortalID" ColumnName="PortalID" />
+          <ScalarProperty Name="ZipPostal" ColumnName="ZipPostal" />
+          <ScalarProperty Name="CreatedByUser" ColumnName="CreatedByUser" />
+          <ScalarProperty Name="ShipperEmailAddress" ColumnName="ShipperEmailAddress" />
+          <ScalarProperty Name="ShipperEmailSubjectTemplate" ColumnName="ShipperEmailSubjectTemplate" />
+          <ScalarProperty Name="ShipperEmailMessageTemplate" ColumnName="ShipperEmailMessageTemplate" />
+          <ScalarProperty Name="ShipperEmailSendType" ColumnName="ShipperEmailSendType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CAT_ShipTo">
+      <EntityTypeMapping TypeName="micrositeModel.CAT_ShipTo">
+        <MappingFragment StoreEntitySet="CAT_ShipTo">
+          <ScalarProperty Name="ShipToID" ColumnName="ShipToID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="Street" ColumnName="Street" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="Region" ColumnName="Region" />
+          <ScalarProperty Name="PostalCode" ColumnName="PostalCode" />
+          <ScalarProperty Name="Country" ColumnName="Country" />
+          <ScalarProperty Name="Unit" ColumnName="Unit" />
+          <ScalarProperty Name="Telephone" ColumnName="Telephone" />
+          <ScalarProperty Name="Archived" ColumnName="Archived" />
+          <ScalarProperty Name="ProfileProperties" ColumnName="ProfileProperties" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CAT_ShoppingCart">
+      <EntityTypeMapping TypeName="micrositeModel.CAT_ShoppingCart">
+        <MappingFragment StoreEntitySet="CAT_ShoppingCart">
+          <ScalarProperty Name="RecordID" ColumnName="RecordID" />
+          <ScalarProperty Name="CartID" ColumnName="CartID" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="UnitCost" ColumnName="UnitCost" />
+          <ScalarProperty Name="Options" ColumnName="Options" />
+          <ScalarProperty Name="AllocDate" ColumnName="AllocDate" />
+          <ScalarProperty Name="BaseRecID" ColumnName="BaseRecID" />
+          <ScalarProperty Name="ProductSlotID" ColumnName="ProductSlotID" />
+          <ScalarProperty Name="ConfigCompleted" ColumnName="ConfigCompleted" />
+          <ScalarProperty Name="Tax" ColumnName="Tax" />
+          <ScalarProperty Name="DateCreated" ColumnName="DateCreated" />
+          <ScalarProperty Name="SKU" ColumnName="SKU" />
+          <ScalarProperty Name="BillingPeriod" ColumnName="BillingPeriod" />
+          <ScalarProperty Name="Tax2" ColumnName="Tax2" />
+          <ScalarProperty Name="CouponCodeID" ColumnName="CouponCodeID" />
+          <ScalarProperty Name="CartPriceRuleID" ColumnName="CartPriceRuleID" />
+          <ScalarProperty Name="LoyaltyDiscount" ColumnName="LoyaltyDiscount" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CAT_Slots">
+      <EntityTypeMapping TypeName="micrositeModel.CAT_Slots">
+        <MappingFragment StoreEntitySet="CAT_Slots">
+          <ScalarProperty Name="SlotID" ColumnName="SlotID" />
+          <ScalarProperty Name="PortalID" ColumnName="PortalID" />
+          <ScalarProperty Name="CreatedByUser" ColumnName="CreatedByUser" />
+          <ScalarProperty Name="SlotName" ColumnName="SlotName" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="SlotImage" ColumnName="SlotImage" />
+          <ScalarProperty Name="Preselection" ColumnName="Preselection" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="PreselQuant" ColumnName="PreselQuant" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CAT_SlotsProductTypes">
+      <EntityTypeMapping TypeName="micrositeModel.CAT_SlotsProductTypes">
+        <MappingFragment StoreEntitySet="CAT_SlotsProductTypes">
+          <ScalarProperty Name="SlotProductTypeID" ColumnName="SlotProductTypeID" />
+          <ScalarProperty Name="SlotID" ColumnName="SlotID" />
+          <ScalarProperty Name="ProductTypeID" ColumnName="ProductTypeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CAT_SNCategories">
+      <EntityTypeMapping TypeName="micrositeModel.CAT_SNCategories">
+        <MappingFragment StoreEntitySet="CAT_SNCategories">
+          <ScalarProperty Name="SNCategoryID" ColumnName="SNCategoryID" />
+          <ScalarProperty Name="PortalID" ColumnName="PortalID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ApplyMethod" ColumnName="ApplyMethod" />
+          <ScalarProperty Name="MinSNRemainingCount" ColumnName="MinSNRemainingCount" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CAT_Specifications">
+      <EntityTypeMapping TypeName="micrositeModel.CAT_Specifications">
+        <MappingFragment StoreEntitySet="CAT_Specifications">
+          <ScalarProperty Name="SpecificationID" ColumnName="SpecificationID" />
+          <ScalarProperty Name="PortalID" ColumnName="PortalID" />
+          <ScalarProperty Name="CreatedByUser" ColumnName="CreatedByUser" />
+          <ScalarProperty Name="SpecificationName" ColumnName="SpecificationName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CAT_SRSerialNumbers">
+      <EntityTypeMapping TypeName="micrositeModel.CAT_SRSerialNumbers">
+        <MappingFragment StoreEntitySet="CAT_SRSerialNumbers">
+          <ScalarProperty Name="SerialNumberID" ColumnName="SerialNumberID" />
+          <ScalarProperty Name="ShippingRateID" ColumnName="ShippingRateID" />
+          <ScalarProperty Name="SerialNumber" ColumnName="SerialNumber" />
+          <ScalarProperty Name="VendorID" ColumnName="VendorID" />
+          <ScalarProperty Name="CreatedByUser" ColumnName="CreatedByUser" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="LastChangedByUser" ColumnName="LastChangedByUser" />
+          <ScalarProperty Name="LastChangeDate" ColumnName="LastChangeDate" />
+          <ScalarProperty Name="SNCategoryID" ColumnName="SNCategoryID" />
+          <ScalarProperty Name="OrderID" ColumnName="OrderID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CAT_SRSNCategories">
+      <EntityTypeMapping TypeName="micrositeModel.CAT_SRSNCategories">
+        <MappingFragment StoreEntitySet="CAT_SRSNCategories">
+          <ScalarProperty Name="SNCategoryID" ColumnName="SNCategoryID" />
+          <ScalarProperty Name="PortalID" ColumnName="PortalID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ApplyMethod" ColumnName="ApplyMethod" />
+          <ScalarProperty Name="MinSNRemainingCount" ColumnName="MinSNRemainingCount" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CAT_StoreCurrency">
+      <EntityTypeMapping TypeName="micrositeModel.CAT_StoreCurrency">
+        <MappingFragment StoreEntitySet="CAT_StoreCurrency">
+          <ScalarProperty Name="StoreCurrencyID" ColumnName="StoreCurrencyID" />
+          <ScalarProperty Name="StoreCurrency" ColumnName="StoreCurrency" />
+          <ScalarProperty Name="ExchangeRate" ColumnName="ExchangeRate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CAT_StorePermission">
+      <EntityTypeMapping TypeName="micrositeModel.CAT_StorePermission">
+        <MappingFragment StoreEntitySet="CAT_StorePermission">
+          <ScalarProperty Name="PermissionID" ColumnName="PermissionID" />
+          <ScalarProperty Name="PermissionCode" ColumnName="PermissionCode" />
+          <ScalarProperty Name="ModuleDefID" ColumnName="ModuleDefID" />
+          <ScalarProperty Name="PermissionKey" ColumnName="PermissionKey" />
+          <ScalarProperty Name="PermissionName" ColumnName="PermissionName" />
+          <ScalarProperty Name="ViewOrder" ColumnName="ViewOrder" />
+          <ScalarProperty Name="CreatedByUserID" ColumnName="CreatedByUserID" />
+          <ScalarProperty Name="CreatedOnDate" ColumnName="CreatedOnDate" />
+          <ScalarProperty Name="LastModifiedByUserID" ColumnName="LastModifiedByUserID" />
+          <ScalarProperty Name="LastModifiedOnDate" ColumnName="LastModifiedOnDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CAT_SubZones">
+      <EntityTypeMapping TypeName="micrositeModel.CAT_SubZones">
+        <MappingFragment StoreEntitySet="CAT_SubZones">
+          <ScalarProperty Name="SubZoneID" ColumnName="SubZoneID" />
+          <ScalarProperty Name="MainZoneID" ColumnName="MainZoneID" />
+          <ScalarProperty Name="ZoneNameID" ColumnName="ZoneNameID" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="PostalCode" ColumnName="PostalCode" />
+          <ScalarProperty Name="Tax" ColumnName="Tax" />
+          <ScalarProperty Name="TaxShipping" ColumnName="TaxShipping" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CAT_Threads">
+      <EntityTypeMapping TypeName="micrositeModel.CAT_Threads">
+        <MappingFragment StoreEntitySet="CAT_Threads">
+          <ScalarProperty Name="ThreadID" ColumnName="ThreadID" />
+          <ScalarProperty Name="LastPostedPostID" ColumnName="LastPostedPostID" />
+          <ScalarProperty Name="NotifiedUserID" ColumnName="NotifiedUserID" />
+          <ScalarProperty Name="PortalID" ColumnName="PortalID" />
+          <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+          <ScalarProperty Name="Subject" ColumnName="Subject" />
+          <ScalarProperty Name="IsClosed" ColumnName="IsClosed" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CAT_TypesSpecs">
+      <EntityTypeMapping TypeName="micrositeModel.CAT_TypesSpecs">
+        <MappingFragment StoreEntitySet="CAT_TypesSpecs">
+          <ScalarProperty Name="TypeSpecID" ColumnName="TypeSpecID" />
+          <ScalarProperty Name="ProductTypeID" ColumnName="ProductTypeID" />
+          <ScalarProperty Name="SpecificationID" ColumnName="SpecificationID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CAT_TypesTexts">
+      <EntityTypeMapping TypeName="micrositeModel.CAT_TypesTexts">
+        <MappingFragment StoreEntitySet="CAT_TypesTexts">
+          <ScalarProperty Name="TypeTextID" ColumnName="TypeTextID" />
+          <ScalarProperty Name="ListItemTypeID" ColumnName="ListItemTypeID" />
+          <ScalarProperty Name="ListItemTextID" ColumnName="ListItemTextID" />
+          <ScalarProperty Name="ViewOrder" ColumnName="ViewOrder" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CAT_VendorPermission">
+      <EntityTypeMapping TypeName="micrositeModel.CAT_VendorPermission">
+        <MappingFragment StoreEntitySet="CAT_VendorPermission">
+          <ScalarProperty Name="VendorPermissionID" ColumnName="VendorPermissionID" />
+          <ScalarProperty Name="PortalID" ColumnName="PortalID" />
+          <ScalarProperty Name="PermissionID" ColumnName="PermissionID" />
+          <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+          <ScalarProperty Name="MaxCount" ColumnName="MaxCount" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="CreatedByUserID" ColumnName="CreatedByUserID" />
+          <ScalarProperty Name="CreatedOnDate" ColumnName="CreatedOnDate" />
+          <ScalarProperty Name="LastModifiedByUserID" ColumnName="LastModifiedByUserID" />
+          <ScalarProperty Name="LastModifiedOnDate" ColumnName="LastModifiedOnDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CAT_Viewers">
+      <EntityTypeMapping TypeName="micrositeModel.CAT_Viewers">
+        <MappingFragment StoreEntitySet="CAT_Viewers">
+          <ScalarProperty Name="ViewerID" ColumnName="ViewerID" />
+          <ScalarProperty Name="PortalID" ColumnName="PortalID" />
+          <ScalarProperty Name="CreatedByUser" ColumnName="CreatedByUser" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Scripts" ColumnName="Scripts" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CAT_ZonesNames">
+      <EntityTypeMapping TypeName="micrositeModel.CAT_ZonesNames">
+        <MappingFragment StoreEntitySet="CAT_ZonesNames">
+          <ScalarProperty Name="ZoneNameID" ColumnName="ZoneNameID" />
+          <ScalarProperty Name="PortalID" ColumnName="PortalID" />
+          <ScalarProperty Name="ZoneName" ColumnName="ZoneName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Classifications">
+      <EntityTypeMapping TypeName="micrositeModel.Classification">
+        <MappingFragment StoreEntitySet="Classification">
+          <ScalarProperty Name="ClassificationId" ColumnName="ClassificationId" />
+          <ScalarProperty Name="ClassificationName" ColumnName="ClassificationName" />
+          <ScalarProperty Name="ParentId" ColumnName="ParentId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ContentItems">
+      <EntityTypeMapping TypeName="micrositeModel.ContentItem">
+        <MappingFragment StoreEntitySet="ContentItems">
+          <ScalarProperty Name="ContentItemID" ColumnName="ContentItemID" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="ContentTypeID" ColumnName="ContentTypeID" />
+          <ScalarProperty Name="TabID" ColumnName="TabID" />
+          <ScalarProperty Name="ModuleID" ColumnName="ModuleID" />
+          <ScalarProperty Name="ContentKey" ColumnName="ContentKey" />
+          <ScalarProperty Name="Indexed" ColumnName="Indexed" />
+          <ScalarProperty Name="CreatedByUserID" ColumnName="CreatedByUserID" />
+          <ScalarProperty Name="CreatedOnDate" ColumnName="CreatedOnDate" />
+          <ScalarProperty Name="LastModifiedByUserID" ColumnName="LastModifiedByUserID" />
+          <ScalarProperty Name="LastModifiedOnDate" ColumnName="LastModifiedOnDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ContentItems_MetaData">
+      <EntityTypeMapping TypeName="micrositeModel.ContentItems_MetaData">
+        <MappingFragment StoreEntitySet="ContentItems_MetaData">
+          <ScalarProperty Name="ContentItemMetaDataID" ColumnName="ContentItemMetaDataID" />
+          <ScalarProperty Name="ContentItemID" ColumnName="ContentItemID" />
+          <ScalarProperty Name="MetaDataID" ColumnName="MetaDataID" />
+          <ScalarProperty Name="MetaDataValue" ColumnName="MetaDataValue" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ContentItems_Tags">
+      <EntityTypeMapping TypeName="micrositeModel.ContentItems_Tags">
+        <MappingFragment StoreEntitySet="ContentItems_Tags">
+          <ScalarProperty Name="ContentItemTagID" ColumnName="ContentItemTagID" />
+          <ScalarProperty Name="ContentItemID" ColumnName="ContentItemID" />
+          <ScalarProperty Name="TermID" ColumnName="TermID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ContentTypes">
+      <EntityTypeMapping TypeName="micrositeModel.ContentType">
+        <MappingFragment StoreEntitySet="ContentTypes">
+          <ScalarProperty Name="ContentTypeID" ColumnName="ContentTypeID" />
+          <ScalarProperty Name="ContentType1" ColumnName="ContentType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Dashboard_Controls">
+      <EntityTypeMapping TypeName="micrositeModel.Dashboard_Controls">
+        <MappingFragment StoreEntitySet="Dashboard_Controls">
+          <ScalarProperty Name="DashboardControlID" ColumnName="DashboardControlID" />
+          <ScalarProperty Name="DashboardControlKey" ColumnName="DashboardControlKey" />
+          <ScalarProperty Name="IsEnabled" ColumnName="IsEnabled" />
+          <ScalarProperty Name="DashboardControlSrc" ColumnName="DashboardControlSrc" />
+          <ScalarProperty Name="DashboardControlLocalResources" ColumnName="DashboardControlLocalResources" />
+          <ScalarProperty Name="ControllerClass" ColumnName="ControllerClass" />
+          <ScalarProperty Name="ViewOrder" ColumnName="ViewOrder" />
+          <ScalarProperty Name="PackageID" ColumnName="PackageID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DesktopModulePermissions">
+      <EntityTypeMapping TypeName="micrositeModel.DesktopModulePermission">
+        <MappingFragment StoreEntitySet="DesktopModulePermission">
+          <ScalarProperty Name="DesktopModulePermissionID" ColumnName="DesktopModulePermissionID" />
+          <ScalarProperty Name="PortalDesktopModuleID" ColumnName="PortalDesktopModuleID" />
+          <ScalarProperty Name="PermissionID" ColumnName="PermissionID" />
+          <ScalarProperty Name="AllowAccess" ColumnName="AllowAccess" />
+          <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="CreatedByUserID" ColumnName="CreatedByUserID" />
+          <ScalarProperty Name="CreatedOnDate" ColumnName="CreatedOnDate" />
+          <ScalarProperty Name="LastModifiedByUserID" ColumnName="LastModifiedByUserID" />
+          <ScalarProperty Name="LastModifiedOnDate" ColumnName="LastModifiedOnDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DesktopModules">
+      <EntityTypeMapping TypeName="micrositeModel.DesktopModule">
+        <MappingFragment StoreEntitySet="DesktopModules">
+          <ScalarProperty Name="DesktopModuleID" ColumnName="DesktopModuleID" />
+          <ScalarProperty Name="FriendlyName" ColumnName="FriendlyName" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Version" ColumnName="Version" />
+          <ScalarProperty Name="IsPremium" ColumnName="IsPremium" />
+          <ScalarProperty Name="IsAdmin" ColumnName="IsAdmin" />
+          <ScalarProperty Name="BusinessControllerClass" ColumnName="BusinessControllerClass" />
+          <ScalarProperty Name="FolderName" ColumnName="FolderName" />
+          <ScalarProperty Name="ModuleName" ColumnName="ModuleName" />
+          <ScalarProperty Name="SupportedFeatures" ColumnName="SupportedFeatures" />
+          <ScalarProperty Name="CompatibleVersions" ColumnName="CompatibleVersions" />
+          <ScalarProperty Name="Dependencies" ColumnName="Dependencies" />
+          <ScalarProperty Name="Permissions" ColumnName="Permissions" />
+          <ScalarProperty Name="PackageID" ColumnName="PackageID" />
+          <ScalarProperty Name="CreatedByUserID" ColumnName="CreatedByUserID" />
+          <ScalarProperty Name="CreatedOnDate" ColumnName="CreatedOnDate" />
+          <ScalarProperty Name="LastModifiedByUserID" ColumnName="LastModifiedByUserID" />
+          <ScalarProperty Name="LastModifiedOnDate" ColumnName="LastModifiedOnDate" />
+          <ScalarProperty Name="ContentItemId" ColumnName="ContentItemId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EventLogs">
+      <EntityTypeMapping TypeName="micrositeModel.EventLog">
+        <MappingFragment StoreEntitySet="EventLog">
+          <ScalarProperty Name="LogGUID" ColumnName="LogGUID" />
+          <ScalarProperty Name="LogTypeKey" ColumnName="LogTypeKey" />
+          <ScalarProperty Name="LogConfigID" ColumnName="LogConfigID" />
+          <ScalarProperty Name="LogUserID" ColumnName="LogUserID" />
+          <ScalarProperty Name="LogUserName" ColumnName="LogUserName" />
+          <ScalarProperty Name="LogPortalID" ColumnName="LogPortalID" />
+          <ScalarProperty Name="LogPortalName" ColumnName="LogPortalName" />
+          <ScalarProperty Name="LogCreateDate" ColumnName="LogCreateDate" />
+          <ScalarProperty Name="LogServerName" ColumnName="LogServerName" />
+          <ScalarProperty Name="LogProperties" ColumnName="LogProperties" />
+          <ScalarProperty Name="LogNotificationPending" ColumnName="LogNotificationPending" />
+          <ScalarProperty Name="LogEventID" ColumnName="LogEventID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EventLogConfigs">
+      <EntityTypeMapping TypeName="micrositeModel.EventLogConfig">
+        <MappingFragment StoreEntitySet="EventLogConfig">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="LogTypeKey" ColumnName="LogTypeKey" />
+          <ScalarProperty Name="LogTypePortalID" ColumnName="LogTypePortalID" />
+          <ScalarProperty Name="LoggingIsActive" ColumnName="LoggingIsActive" />
+          <ScalarProperty Name="KeepMostRecent" ColumnName="KeepMostRecent" />
+          <ScalarProperty Name="EmailNotificationIsActive" ColumnName="EmailNotificationIsActive" />
+          <ScalarProperty Name="NotificationThreshold" ColumnName="NotificationThreshold" />
+          <ScalarProperty Name="NotificationThresholdTime" ColumnName="NotificationThresholdTime" />
+          <ScalarProperty Name="NotificationThresholdTimeType" ColumnName="NotificationThresholdTimeType" />
+          <ScalarProperty Name="MailFromAddress" ColumnName="MailFromAddress" />
+          <ScalarProperty Name="MailToAddress" ColumnName="MailToAddress" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EventLogTypes">
+      <EntityTypeMapping TypeName="micrositeModel.EventLogType">
+        <MappingFragment StoreEntitySet="EventLogTypes">
+          <ScalarProperty Name="LogTypeKey" ColumnName="LogTypeKey" />
+          <ScalarProperty Name="LogTypeFriendlyName" ColumnName="LogTypeFriendlyName" />
+          <ScalarProperty Name="LogTypeDescription" ColumnName="LogTypeDescription" />
+          <ScalarProperty Name="LogTypeOwner" ColumnName="LogTypeOwner" />
+          <ScalarProperty Name="LogTypeCSSClass" ColumnName="LogTypeCSSClass" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EventQueues">
+      <EntityTypeMapping TypeName="micrositeModel.EventQueue">
+        <MappingFragment StoreEntitySet="EventQueue">
+          <ScalarProperty Name="EventMessageID" ColumnName="EventMessageID" />
+          <ScalarProperty Name="EventName" ColumnName="EventName" />
+          <ScalarProperty Name="Priority" ColumnName="Priority" />
+          <ScalarProperty Name="ProcessorType" ColumnName="ProcessorType" />
+          <ScalarProperty Name="ProcessorCommand" ColumnName="ProcessorCommand" />
+          <ScalarProperty Name="Body" ColumnName="Body" />
+          <ScalarProperty Name="Sender" ColumnName="Sender" />
+          <ScalarProperty Name="Subscriber" ColumnName="Subscriber" />
+          <ScalarProperty Name="AuthorizedRoles" ColumnName="AuthorizedRoles" />
+          <ScalarProperty Name="ExceptionMessage" ColumnName="ExceptionMessage" />
+          <ScalarProperty Name="SentDate" ColumnName="SentDate" />
+          <ScalarProperty Name="ExpirationDate" ColumnName="ExpirationDate" />
+          <ScalarProperty Name="Attributes" ColumnName="Attributes" />
+          <ScalarProperty Name="IsComplete" ColumnName="IsComplete" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FAQs">
+      <EntityTypeMapping TypeName="micrositeModel.FAQ">
+        <MappingFragment StoreEntitySet="FAQs">
+          <ScalarProperty Name="ItemID" ColumnName="ItemID" />
+          <ScalarProperty Name="ModuleID" ColumnName="ModuleID" />
+          <ScalarProperty Name="CreatedByUser" ColumnName="CreatedByUser" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="Question" ColumnName="Question" />
+          <ScalarProperty Name="Answer" ColumnName="Answer" />
+          <ScalarProperty Name="CategoryId" ColumnName="CategoryId" />
+          <ScalarProperty Name="DateModified" ColumnName="DateModified" />
+          <ScalarProperty Name="ViewCount" ColumnName="ViewCount" />
+          <ScalarProperty Name="ViewOrder" ColumnName="ViewOrder" />
+          <ScalarProperty Name="FaqHide" ColumnName="FaqHide" />
+          <ScalarProperty Name="PublishDate" ColumnName="PublishDate" />
+          <ScalarProperty Name="ExpireDate" ColumnName="ExpireDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FAQsCategories">
+      <EntityTypeMapping TypeName="micrositeModel.FAQsCategory">
+        <MappingFragment StoreEntitySet="FAQsCategory">
+          <ScalarProperty Name="FaqCategoryId" ColumnName="FaqCategoryId" />
+          <ScalarProperty Name="ModuleId" ColumnName="ModuleId" />
+          <ScalarProperty Name="FaqCategoryName" ColumnName="FaqCategoryName" />
+          <ScalarProperty Name="FaqCategoryDescription" ColumnName="FaqCategoryDescription" />
+          <ScalarProperty Name="FaqCategoryParentId" ColumnName="FaqCategoryParentId" />
+          <ScalarProperty Name="ViewOrder" ColumnName="ViewOrder" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Files">
+      <EntityTypeMapping TypeName="micrositeModel.File">
+        <MappingFragment StoreEntitySet="Files">
+          <ScalarProperty Name="FileId" ColumnName="FileId" />
+          <ScalarProperty Name="PortalId" ColumnName="PortalId" />
+          <ScalarProperty Name="FileName" ColumnName="FileName" />
+          <ScalarProperty Name="Extension" ColumnName="Extension" />
+          <ScalarProperty Name="Size" ColumnName="Size" />
+          <ScalarProperty Name="Width" ColumnName="Width" />
+          <ScalarProperty Name="Height" ColumnName="Height" />
+          <ScalarProperty Name="ContentType" ColumnName="ContentType" />
+          <ScalarProperty Name="Folder" ColumnName="Folder" />
+          <ScalarProperty Name="FolderID" ColumnName="FolderID" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="CreatedByUserID" ColumnName="CreatedByUserID" />
+          <ScalarProperty Name="CreatedOnDate" ColumnName="CreatedOnDate" />
+          <ScalarProperty Name="LastModifiedByUserID" ColumnName="LastModifiedByUserID" />
+          <ScalarProperty Name="LastModifiedOnDate" ColumnName="LastModifiedOnDate" />
+          <ScalarProperty Name="UniqueId" ColumnName="UniqueId" />
+          <ScalarProperty Name="VersionGuid" ColumnName="VersionGuid" />
+          <ScalarProperty Name="SHA1Hash" ColumnName="SHA1Hash" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FolderMappings">
+      <EntityTypeMapping TypeName="micrositeModel.FolderMapping">
+        <MappingFragment StoreEntitySet="FolderMappings">
+          <ScalarProperty Name="FolderMappingID" ColumnName="FolderMappingID" />
+          <ScalarProperty Name="PortalID" ColumnName="PortalID" />
+          <ScalarProperty Name="MappingName" ColumnName="MappingName" />
+          <ScalarProperty Name="FolderProviderType" ColumnName="FolderProviderType" />
+          <ScalarProperty Name="Priority" ColumnName="Priority" />
+          <ScalarProperty Name="CreatedByUserID" ColumnName="CreatedByUserID" />
+          <ScalarProperty Name="CreatedOnDate" ColumnName="CreatedOnDate" />
+          <ScalarProperty Name="LastModifiedByUserID" ColumnName="LastModifiedByUserID" />
+          <ScalarProperty Name="LastModifiedOnDate" ColumnName="LastModifiedOnDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FolderMappingsSettings">
+      <EntityTypeMapping TypeName="micrositeModel.FolderMappingsSetting">
+        <MappingFragment StoreEntitySet="FolderMappingsSettings">
+          <ScalarProperty Name="FolderMappingID" ColumnName="FolderMappingID" />
+          <ScalarProperty Name="SettingName" ColumnName="SettingName" />
+          <ScalarProperty Name="SettingValue" ColumnName="SettingValue" />
+          <ScalarProperty Name="CreatedByUserID" ColumnName="CreatedByUserID" />
+          <ScalarProperty Name="CreatedOnDate" ColumnName="CreatedOnDate" />
+          <ScalarProperty Name="LastModifiedByUserID" ColumnName="LastModifiedByUserID" />
+          <ScalarProperty Name="LastModifiedOnDate" ColumnName="LastModifiedOnDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FolderPermissions">
+      <EntityTypeMapping TypeName="micrositeModel.FolderPermission">
+        <MappingFragment StoreEntitySet="FolderPermission">
+          <ScalarProperty Name="FolderPermissionID" ColumnName="FolderPermissionID" />
+          <ScalarProperty Name="FolderID" ColumnName="FolderID" />
+          <ScalarProperty Name="PermissionID" ColumnName="PermissionID" />
+          <ScalarProperty Name="AllowAccess" ColumnName="AllowAccess" />
+          <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="CreatedByUserID" ColumnName="CreatedByUserID" />
+          <ScalarProperty Name="CreatedOnDate" ColumnName="CreatedOnDate" />
+          <ScalarProperty Name="LastModifiedByUserID" ColumnName="LastModifiedByUserID" />
+          <ScalarProperty Name="LastModifiedOnDate" ColumnName="LastModifiedOnDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Folders">
+      <EntityTypeMapping TypeName="micrositeModel.Folder">
+        <MappingFragment StoreEntitySet="Folders">
+          <ScalarProperty Name="FolderID" ColumnName="FolderID" />
+          <ScalarProperty Name="PortalID" ColumnName="PortalID" />
+          <ScalarProperty Name="FolderPath" ColumnName="FolderPath" />
+          <ScalarProperty Name="StorageLocation" ColumnName="StorageLocation" />
+          <ScalarProperty Name="IsProtected" ColumnName="IsProtected" />
+          <ScalarProperty Name="IsCached" ColumnName="IsCached" />
+          <ScalarProperty Name="LastUpdated" ColumnName="LastUpdated" />
+          <ScalarProperty Name="CreatedByUserID" ColumnName="CreatedByUserID" />
+          <ScalarProperty Name="CreatedOnDate" ColumnName="CreatedOnDate" />
+          <ScalarProperty Name="LastModifiedByUserID" ColumnName="LastModifiedByUserID" />
+          <ScalarProperty Name="LastModifiedOnDate" ColumnName="LastModifiedOnDate" />
+          <ScalarProperty Name="UniqueId" ColumnName="UniqueId" />
+          <ScalarProperty Name="VersionGuid" ColumnName="VersionGuid" />
+          <ScalarProperty Name="FolderMappingID" ColumnName="FolderMappingID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HostSettings">
+      <EntityTypeMapping TypeName="micrositeModel.HostSetting">
+        <MappingFragment StoreEntitySet="HostSettings">
+          <ScalarProperty Name="SettingName" ColumnName="SettingName" />
+          <ScalarProperty Name="SettingValue" ColumnName="SettingValue" />
+          <ScalarProperty Name="SettingIsSecure" ColumnName="SettingIsSecure" />
+          <ScalarProperty Name="CreatedByUserID" ColumnName="CreatedByUserID" />
+          <ScalarProperty Name="CreatedOnDate" ColumnName="CreatedOnDate" />
+          <ScalarProperty Name="LastModifiedByUserID" ColumnName="LastModifiedByUserID" />
+          <ScalarProperty Name="LastModifiedOnDate" ColumnName="LastModifiedOnDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HtmlTexts">
+      <EntityTypeMapping TypeName="micrositeModel.HtmlText">
+        <MappingFragment StoreEntitySet="HtmlText">
+          <ScalarProperty Name="ModuleID" ColumnName="ModuleID" />
+          <ScalarProperty Name="ItemID" ColumnName="ItemID" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="Version" ColumnName="Version" />
+          <ScalarProperty Name="StateID" ColumnName="StateID" />
+          <ScalarProperty Name="IsPublished" ColumnName="IsPublished" />
+          <ScalarProperty Name="CreatedByUserID" ColumnName="CreatedByUserID" />
+          <ScalarProperty Name="CreatedOnDate" ColumnName="CreatedOnDate" />
+          <ScalarProperty Name="LastModifiedByUserID" ColumnName="LastModifiedByUserID" />
+          <ScalarProperty Name="LastModifiedOnDate" ColumnName="LastModifiedOnDate" />
+          <ScalarProperty Name="Summary" ColumnName="Summary" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HtmlTextLogs">
+      <EntityTypeMapping TypeName="micrositeModel.HtmlTextLog">
+        <MappingFragment StoreEntitySet="HtmlTextLog">
+          <ScalarProperty Name="HtmlTextLogID" ColumnName="HtmlTextLogID" />
+          <ScalarProperty Name="ItemID" ColumnName="ItemID" />
+          <ScalarProperty Name="StateID" ColumnName="StateID" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="Approved" ColumnName="Approved" />
+          <ScalarProperty Name="CreatedByUserID" ColumnName="CreatedByUserID" />
+          <ScalarProperty Name="CreatedOnDate" ColumnName="CreatedOnDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HtmlTextUsers">
+      <EntityTypeMapping TypeName="micrositeModel.HtmlTextUser">
+        <MappingFragment StoreEntitySet="HtmlTextUsers">
+          <ScalarProperty Name="HtmlTextUserID" ColumnName="HtmlTextUserID" />
+          <ScalarProperty Name="ItemID" ColumnName="ItemID" />
+          <ScalarProperty Name="StateID" ColumnName="StateID" />
+          <ScalarProperty Name="ModuleID" ColumnName="ModuleID" />
+          <ScalarProperty Name="TabID" ColumnName="TabID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="CreatedOnDate" ColumnName="CreatedOnDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LanguagePacks">
+      <EntityTypeMapping TypeName="micrositeModel.LanguagePack">
+        <MappingFragment StoreEntitySet="LanguagePacks">
+          <ScalarProperty Name="LanguagePackID" ColumnName="LanguagePackID" />
+          <ScalarProperty Name="PackageID" ColumnName="PackageID" />
+          <ScalarProperty Name="DependentPackageID" ColumnName="DependentPackageID" />
+          <ScalarProperty Name="LanguageID" ColumnName="LanguageID" />
+          <ScalarProperty Name="CreatedByUserID" ColumnName="CreatedByUserID" />
+          <ScalarProperty Name="CreatedOnDate" ColumnName="CreatedOnDate" />
+          <ScalarProperty Name="LastModifiedByUserID" ColumnName="LastModifiedByUserID" />
+          <ScalarProperty Name="LastModifiedOnDate" ColumnName="LastModifiedOnDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Languages">
+      <EntityTypeMapping TypeName="micrositeModel.Language">
+        <MappingFragment StoreEntitySet="Languages">
+          <ScalarProperty Name="LanguageID" ColumnName="LanguageID" />
+          <ScalarProperty Name="CultureCode" ColumnName="CultureCode" />
+          <ScalarProperty Name="CultureName" ColumnName="CultureName" />
+          <ScalarProperty Name="FallbackCulture" ColumnName="FallbackCulture" />
+          <ScalarProperty Name="CreatedByUserID" ColumnName="CreatedByUserID" />
+          <ScalarProperty Name="CreatedOnDate" ColumnName="CreatedOnDate" />
+          <ScalarProperty Name="LastModifiedByUserID" ColumnName="LastModifiedByUserID" />
+          <ScalarProperty Name="LastModifiedOnDate" ColumnName="LastModifiedOnDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Links">
+      <EntityTypeMapping TypeName="micrositeModel.Link">
+        <MappingFragment StoreEntitySet="Links">
+          <ScalarProperty Name="ItemID" ColumnName="ItemID" />
+          <ScalarProperty Name="ModuleID" ColumnName="ModuleID" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Url" ColumnName="Url" />
+          <ScalarProperty Name="ViewOrder" ColumnName="ViewOrder" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="CreatedByUser" ColumnName="CreatedByUser" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Lists">
+      <EntityTypeMapping TypeName="micrositeModel.List">
+        <MappingFragment StoreEntitySet="Lists">
+          <ScalarProperty Name="EntryID" ColumnName="EntryID" />
+          <ScalarProperty Name="ListName" ColumnName="ListName" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="Text" ColumnName="Text" />
+          <ScalarProperty Name="ParentID" ColumnName="ParentID" />
+          <ScalarProperty Name="Level" ColumnName="Level" />
+          <ScalarProperty Name="SortOrder" ColumnName="SortOrder" />
+          <ScalarProperty Name="DefinitionID" ColumnName="DefinitionID" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="PortalID" ColumnName="PortalID" />
+          <ScalarProperty Name="SystemList" ColumnName="SystemList" />
+          <ScalarProperty Name="CreatedByUserID" ColumnName="CreatedByUserID" />
+          <ScalarProperty Name="CreatedOnDate" ColumnName="CreatedOnDate" />
+          <ScalarProperty Name="LastModifiedByUserID" ColumnName="LastModifiedByUserID" />
+          <ScalarProperty Name="LastModifiedOnDate" ColumnName="LastModifiedOnDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Messaging_Messages">
+      <EntityTypeMapping TypeName="micrositeModel.Messaging_Messages">
+        <MappingFragment StoreEntitySet="Messaging_Messages">
+          <ScalarProperty Name="MessageID" ColumnName="MessageID" />
+          <ScalarProperty Name="PortalID" ColumnName="PortalID" />
+          <ScalarProperty Name="FromUserID" ColumnName="FromUserID" />
+          <ScalarProperty Name="ToUserName" ColumnName="ToUserName" />
+          <ScalarProperty Name="FromUserName" ColumnName="FromUserName" />
+          <ScalarProperty Name="ToUserID" ColumnName="ToUserID" />
+          <ScalarProperty Name="ToRoleID" ColumnName="ToRoleID" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Subject" ColumnName="Subject" />
+          <ScalarProperty Name="Body" ColumnName="Body" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Conversation" ColumnName="Conversation" />
+          <ScalarProperty Name="ReplyTo" ColumnName="ReplyTo" />
+          <ScalarProperty Name="AllowReply" ColumnName="AllowReply" />
+          <ScalarProperty Name="SkipPortal" ColumnName="SkipPortal" />
+          <ScalarProperty Name="EmailSent" ColumnName="EmailSent" />
+          <ScalarProperty Name="EmailSentDate" ColumnName="EmailSentDate" />
+          <ScalarProperty Name="EmailSchedulerInstance" ColumnName="EmailSchedulerInstance" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MetaDatas">
+      <EntityTypeMapping TypeName="micrositeModel.MetaData">
+        <MappingFragment StoreEntitySet="MetaData">
+          <ScalarProperty Name="MetaDataID" ColumnName="MetaDataID" />
+          <ScalarProperty Name="MetaDataName" ColumnName="MetaDataName" />
+          <ScalarProperty Name="MetaDataDescription" ColumnName="MetaDataDescription" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Mobile_PreviewProfiles">
+      <EntityTypeMapping TypeName="micrositeModel.Mobile_PreviewProfiles">
+        <MappingFragment StoreEntitySet="Mobile_PreviewProfiles">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="PortalId" ColumnName="PortalId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Width" ColumnName="Width" />
+          <ScalarProperty Name="Height" ColumnName="Height" />
+          <ScalarProperty Name="UserAgent" ColumnName="UserAgent" />
+          <ScalarProperty Name="SortOrder" ColumnName="SortOrder" />
+          <ScalarProperty Name="CreatedByUserID" ColumnName="CreatedByUserID" />
+          <ScalarProperty Name="CreatedOnDate" ColumnName="CreatedOnDate" />
+          <ScalarProperty Name="LastModifiedByUserID" ColumnName="LastModifiedByUserID" />
+          <ScalarProperty Name="LastModifiedOnDate" ColumnName="LastModifiedOnDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Mobile_RedirectionRules">
+      <EntityTypeMapping TypeName="micrositeModel.Mobile_RedirectionRules">
+        <MappingFragment StoreEntitySet="Mobile_RedirectionRules">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="RedirectionId" ColumnName="RedirectionId" />
+          <ScalarProperty Name="Capability" ColumnName="Capability" />
+          <ScalarProperty Name="Expression" ColumnName="Expression" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Mobile_Redirections">
+      <EntityTypeMapping TypeName="micrositeModel.Mobile_Redirections">
+        <MappingFragment StoreEntitySet="Mobile_Redirections">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="PortalId" ColumnName="PortalId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="SortOrder" ColumnName="SortOrder" />
+          <ScalarProperty Name="SourceTabId" ColumnName="SourceTabId" />
+          <ScalarProperty Name="IncludeChildTabs" ColumnName="IncludeChildTabs" />
+          <ScalarProperty Name="TargetType" ColumnName="TargetType" />
+          <ScalarProperty Name="TargetValue" ColumnName="TargetValue" />
+          <ScalarProperty Name="Enabled" ColumnName="Enabled" />
+          <ScalarProperty Name="CreatedByUserID" ColumnName="CreatedByUserID" />
+          <ScalarProperty Name="CreatedOnDate" ColumnName="CreatedOnDate" />
+          <ScalarProperty Name="LastModifiedByUserID" ColumnName="LastModifiedByUserID" />
+          <ScalarProperty Name="LastModifiedOnDate" ColumnName="LastModifiedOnDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ModuleControls">
+      <EntityTypeMapping TypeName="micrositeModel.ModuleControl">
+        <MappingFragment StoreEntitySet="ModuleControls">
+          <ScalarProperty Name="ModuleControlID" ColumnName="ModuleControlID" />
+          <ScalarProperty Name="ModuleDefID" ColumnName="ModuleDefID" />
+          <ScalarProperty Name="ControlKey" ColumnName="ControlKey" />
+          <ScalarProperty Name="ControlTitle" ColumnName="ControlTitle" />
+          <ScalarProperty Name="ControlSrc" ColumnName="ControlSrc" />
+          <ScalarProperty Name="IconFile" ColumnName="IconFile" />
+          <ScalarProperty Name="ControlType" ColumnName="ControlType" />
+          <ScalarProperty Name="ViewOrder" ColumnName="ViewOrder" />
+          <ScalarProperty Name="HelpUrl" ColumnName="HelpUrl" />
+          <ScalarProperty Name="SupportsPartialRendering" ColumnName="SupportsPartialRendering" />
+          <ScalarProperty Name="CreatedByUserID" ColumnName="CreatedByUserID" />
+          <ScalarProperty Name="CreatedOnDate" ColumnName="CreatedOnDate" />
+          <ScalarProperty Name="LastModifiedByUserID" ColumnName="LastModifiedByUserID" />
+          <ScalarProperty Name="LastModifiedOnDate" ColumnName="LastModifiedOnDate" />
+          <ScalarProperty Name="SupportsPopUps" ColumnName="SupportsPopUps" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ModuleDefinitions">
+      <EntityTypeMapping TypeName="micrositeModel.ModuleDefinition">
+        <MappingFragment StoreEntitySet="ModuleDefinitions">
+          <ScalarProperty Name="ModuleDefID" ColumnName="ModuleDefID" />
+          <ScalarProperty Name="FriendlyName" ColumnName="FriendlyName" />
+          <ScalarProperty Name="DesktopModuleID" ColumnName="DesktopModuleID" />
+          <ScalarProperty Name="DefaultCacheTime" ColumnName="DefaultCacheTime" />
+          <ScalarProperty Name="CreatedByUserID" ColumnName="CreatedByUserID" />
+          <ScalarProperty Name="CreatedOnDate" ColumnName="CreatedOnDate" />
+          <ScalarProperty Name="LastModifiedByUserID" ColumnName="LastModifiedByUserID" />
+          <ScalarProperty Name="LastModifiedOnDate" ColumnName="LastModifiedOnDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ModulePermissions">
+      <EntityTypeMapping TypeName="micrositeModel.ModulePermission">
+        <MappingFragment StoreEntitySet="ModulePermission">
+          <ScalarProperty Name="ModulePermissionID" ColumnName="ModulePermissionID" />
+          <ScalarProperty Name="ModuleID" ColumnName="ModuleID" />
+          <ScalarProperty Name="PermissionID" ColumnName="PermissionID" />
+          <ScalarProperty Name="AllowAccess" ColumnName="AllowAccess" />
+          <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="CreatedByUserID" ColumnName="CreatedByUserID" />
+          <ScalarProperty Name="CreatedOnDate" ColumnName="CreatedOnDate" />
+          <ScalarProperty Name="LastModifiedByUserID" ColumnName="LastModifiedByUserID" />
+          <ScalarProperty Name="LastModifiedOnDate" ColumnName="LastModifiedOnDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Modules">
+      <EntityTypeMapping TypeName="micrositeModel.Module">
+        <MappingFragment StoreEntitySet="Modules">
+          <ScalarProperty Name="ModuleID" ColumnName="ModuleID" />
+          <ScalarProperty Name="ModuleDefID" ColumnName="ModuleDefID" />
+          <ScalarProperty Name="AllTabs" ColumnName="AllTabs" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="InheritViewPermissions" ColumnName="InheritViewPermissions" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+          <ScalarProperty Name="PortalID" ColumnName="PortalID" />
+          <ScalarProperty Name="CreatedByUserID" ColumnName="CreatedByUserID" />
+          <ScalarProperty Name="CreatedOnDate" ColumnName="CreatedOnDate" />
+          <ScalarProperty Name="LastModifiedByUserID" ColumnName="LastModifiedByUserID" />
+          <ScalarProperty Name="LastModifiedOnDate" ColumnName="LastModifiedOnDate" />
+          <ScalarProperty Name="LastContentModifiedOnDate" ColumnName="LastContentModifiedOnDate" />
+          <ScalarProperty Name="ContentItemID" ColumnName="ContentItemID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ModuleSettings">
+      <EntityTypeMapping TypeName="micrositeModel.ModuleSetting">
+        <MappingFragment StoreEntitySet="ModuleSettings">
+          <ScalarProperty Name="ModuleID" ColumnName="ModuleID" />
+          <ScalarProperty Name="SettingName" ColumnName="SettingName" />
+          <ScalarProperty Name="SettingValue" ColumnName="SettingValue" />
+          <ScalarProperty Name="CreatedByUserID" ColumnName="CreatedByUserID" />
+          <ScalarProperty Name="CreatedOnDate" ColumnName="CreatedOnDate" />
+          <ScalarProperty Name="LastModifiedByUserID" ColumnName="LastModifiedByUserID" />
+          <ScalarProperty Name="LastModifiedOnDate" ColumnName="LastModifiedOnDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Packages">
+      <EntityTypeMapping TypeName="micrositeModel.Package">
+        <MappingFragment StoreEntitySet="Packages">
+          <ScalarProperty Name="PackageID" ColumnName="PackageID" />
+          <ScalarProperty Name="PortalID" ColumnName="PortalID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="FriendlyName" ColumnName="FriendlyName" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="PackageType" ColumnName="PackageType" />
+          <ScalarProperty Name="Version" ColumnName="Version" />
+          <ScalarProperty Name="License" ColumnName="License" />
+          <ScalarProperty Name="Manifest" ColumnName="Manifest" />
+          <ScalarProperty Name="Owner" ColumnName="Owner" />
+          <ScalarProperty Name="Organization" ColumnName="Organization" />
+          <ScalarProperty Name="Url" ColumnName="Url" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="ReleaseNotes" ColumnName="ReleaseNotes" />
+          <ScalarProperty Name="IsSystemPackage" ColumnName="IsSystemPackage" />
+          <ScalarProperty Name="CreatedByUserID" ColumnName="CreatedByUserID" />
+          <ScalarProperty Name="CreatedOnDate" ColumnName="CreatedOnDate" />
+          <ScalarProperty Name="LastModifiedByUserID" ColumnName="LastModifiedByUserID" />
+          <ScalarProperty Name="LastModifiedOnDate" ColumnName="LastModifiedOnDate" />
+          <ScalarProperty Name="FolderName" ColumnName="FolderName" />
+          <ScalarProperty Name="IconFile" ColumnName="IconFile" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PackageTypes">
+      <EntityTypeMapping TypeName="micrositeModel.PackageType">
+        <MappingFragment StoreEntitySet="PackageTypes">
+          <ScalarProperty Name="PackageType1" ColumnName="PackageType" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="SecurityAccessLevel" ColumnName="SecurityAccessLevel" />
+          <ScalarProperty Name="EditorControlSrc" ColumnName="EditorControlSrc" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Permissions">
+      <EntityTypeMapping TypeName="micrositeModel.Permission">
+        <MappingFragment StoreEntitySet="Permission">
+          <ScalarProperty Name="PermissionID" ColumnName="PermissionID" />
+          <ScalarProperty Name="PermissionCode" ColumnName="PermissionCode" />
+          <ScalarProperty Name="ModuleDefID" ColumnName="ModuleDefID" />
+          <ScalarProperty Name="PermissionKey" ColumnName="PermissionKey" />
+          <ScalarProperty Name="PermissionName" ColumnName="PermissionName" />
+          <ScalarProperty Name="ViewOrder" ColumnName="ViewOrder" />
+          <ScalarProperty Name="CreatedByUserID" ColumnName="CreatedByUserID" />
+          <ScalarProperty Name="CreatedOnDate" ColumnName="CreatedOnDate" />
+          <ScalarProperty Name="LastModifiedByUserID" ColumnName="LastModifiedByUserID" />
+          <ScalarProperty Name="LastModifiedOnDate" ColumnName="LastModifiedOnDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PortalAlias">
+      <EntityTypeMapping TypeName="micrositeModel.PortalAlia">
+        <MappingFragment StoreEntitySet="PortalAlias">
+          <ScalarProperty Name="PortalAliasID" ColumnName="PortalAliasID" />
+          <ScalarProperty Name="PortalID" ColumnName="PortalID" />
+          <ScalarProperty Name="HTTPAlias" ColumnName="HTTPAlias" />
+          <ScalarProperty Name="CreatedByUserID" ColumnName="CreatedByUserID" />
+          <ScalarProperty Name="CreatedOnDate" ColumnName="CreatedOnDate" />
+          <ScalarProperty Name="LastModifiedByUserID" ColumnName="LastModifiedByUserID" />
+          <ScalarProperty Name="LastModifiedOnDate" ColumnName="LastModifiedOnDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PortalDesktopModules">
+      <EntityTypeMapping TypeName="micrositeModel.PortalDesktopModule">
+        <MappingFragment StoreEntitySet="PortalDesktopModules">
+          <ScalarProperty Name="PortalDesktopModuleID" ColumnName="PortalDesktopModuleID" />
+          <ScalarProperty Name="PortalID" ColumnName="PortalID" />
+          <ScalarProperty Name="DesktopModuleID" ColumnName="DesktopModuleID" />
+          <ScalarProperty Name="CreatedByUserID" ColumnName="CreatedByUserID" />
+          <ScalarProperty Name="CreatedOnDate" ColumnName="CreatedOnDate" />
+          <ScalarProperty Name="LastModifiedByUserID" ColumnName="LastModifiedByUserID" />
+          <ScalarProperty Name="LastModifiedOnDate" ColumnName="LastModifiedOnDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PortalGroups">
+      <EntityTypeMapping TypeName="micrositeModel.PortalGroup">
+        <MappingFragment StoreEntitySet="PortalGroups">
+          <ScalarProperty Name="PortalGroupID" ColumnName="PortalGroupID" />
+          <ScalarProperty Name="MasterPortalID" ColumnName="MasterPortalID" />
+          <ScalarProperty Name="PortalGroupName" ColumnName="PortalGroupName" />
+          <ScalarProperty Name="PortalGroupDescription" ColumnName="PortalGroupDescription" />
+          <ScalarProperty Name="AuthenticationDomain" ColumnName="AuthenticationDomain" />
+          <ScalarProperty Name="CreatedByUserID" ColumnName="CreatedByUserID" />
+          <ScalarProperty Name="CreatedOnDate" ColumnName="CreatedOnDate" />
+          <ScalarProperty Name="LastModifiedByUserID" ColumnName="LastModifiedByUserID" />
+          <ScalarProperty Name="LastModifiedOnDate" ColumnName="LastModifiedOnDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PortalLanguages">
+      <EntityTypeMapping TypeName="micrositeModel.PortalLanguage">
+        <MappingFragment StoreEntitySet="PortalLanguages">
+          <ScalarProperty Name="PortalLanguageID" ColumnName="PortalLanguageID" />
+          <ScalarProperty Name="PortalID" ColumnName="PortalID" />
+          <ScalarProperty Name="LanguageID" ColumnName="LanguageID" />
+          <ScalarProperty Name="CreatedByUserID" ColumnName="CreatedByUserID" />
+          <ScalarProperty Name="CreatedOnDate" ColumnName="CreatedOnDate" />
+          <ScalarProperty Name="LastModifiedByUserID" ColumnName="LastModifiedByUserID" />
+          <ScalarProperty Name="LastModifiedOnDate" ColumnName="LastModifiedOnDate" />
+          <ScalarProperty Name="IsPublished" ColumnName="IsPublished" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PortalLocalizations">
+      <EntityTypeMapping TypeName="micrositeModel.PortalLocalization">
+        <MappingFragment StoreEntitySet="PortalLocalization">
+          <ScalarProperty Name="PortalID" ColumnName="PortalID" />
+          <ScalarProperty Name="CultureCode" ColumnName="CultureCode" />
+          <ScalarProperty Name="PortalName" ColumnName="PortalName" />
+          <ScalarProperty Name="LogoFile" ColumnName="LogoFile" />
+          <ScalarProperty Name="FooterText" ColumnName="FooterText" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="KeyWords" ColumnName="KeyWords" />
+          <ScalarProperty Name="BackgroundFile" ColumnName="BackgroundFile" />
+          <ScalarProperty Name="HomeTabId" ColumnName="HomeTabId" />
+          <ScalarProperty Name="LoginTabId" ColumnName="LoginTabId" />
+          <ScalarProperty Name="UserTabId" ColumnName="UserTabId" />
+          <ScalarProperty Name="AdminTabId" ColumnName="AdminTabId" />
+          <ScalarProperty Name="SplashTabId" ColumnName="SplashTabId" />
+          <ScalarProperty Name="CreatedByUserID" ColumnName="CreatedByUserID" />
+          <ScalarProperty Name="CreatedOnDate" ColumnName="CreatedOnDate" />
+          <ScalarProperty Name="LastModifiedByUserID" ColumnName="LastModifiedByUserID" />
+          <ScalarProperty Name="LastModifiedOnDate" ColumnName="LastModifiedOnDate" />
+          <ScalarProperty Name="RegisterTabId" ColumnName="RegisterTabId" />
+          <ScalarProperty Name="SearchTabId" ColumnName="SearchTabId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Portals">
+      <EntityTypeMapping TypeName="micrositeModel.Portal">
+        <MappingFragment StoreEntitySet="Portals">
+          <ScalarProperty Name="PortalID" ColumnName="PortalID" />
+          <ScalarProperty Name="ExpiryDate" ColumnName="ExpiryDate" />
+          <ScalarProperty Name="UserRegistration" ColumnName="UserRegistration" />
+          <ScalarProperty Name="BannerAdvertising" ColumnName="BannerAdvertising" />
+          <ScalarProperty Name="AdministratorId" ColumnName="AdministratorId" />
+          <ScalarProperty Name="Currency" ColumnName="Currency" />
+          <ScalarProperty Name="HostFee" ColumnName="HostFee" />
+          <ScalarProperty Name="HostSpace" ColumnName="HostSpace" />
+          <ScalarProperty Name="AdministratorRoleId" ColumnName="AdministratorRoleId" />
+          <ScalarProperty Name="RegisteredRoleId" ColumnName="RegisteredRoleId" />
+          <ScalarProperty Name="GUID" ColumnName="GUID" />
+          <ScalarProperty Name="PaymentProcessor" ColumnName="PaymentProcessor" />
+          <ScalarProperty Name="ProcessorUserId" ColumnName="ProcessorUserId" />
+          <ScalarProperty Name="ProcessorPassword" ColumnName="ProcessorPassword" />
+          <ScalarProperty Name="SiteLogHistory" ColumnName="SiteLogHistory" />
+          <ScalarProperty Name="DefaultLanguage" ColumnName="DefaultLanguage" />
+          <ScalarProperty Name="TimezoneOffset" ColumnName="TimezoneOffset" />
+          <ScalarProperty Name="HomeDirectory" ColumnName="HomeDirectory" />
+          <ScalarProperty Name="PageQuota" ColumnName="PageQuota" />
+          <ScalarProperty Name="UserQuota" ColumnName="UserQuota" />
+          <ScalarProperty Name="CreatedByUserID" ColumnName="CreatedByUserID" />
+          <ScalarProperty Name="CreatedOnDate" ColumnName="CreatedOnDate" />
+          <ScalarProperty Name="LastModifiedByUserID" ColumnName="LastModifiedByUserID" />
+          <ScalarProperty Name="LastModifiedOnDate" ColumnName="LastModifiedOnDate" />
+          <ScalarProperty Name="PortalGroupID" ColumnName="PortalGroupID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PortalSettings">
+      <EntityTypeMapping TypeName="micrositeModel.PortalSetting">
+        <MappingFragment StoreEntitySet="PortalSettings">
+          <ScalarProperty Name="PortalID" ColumnName="PortalID" />
+          <ScalarProperty Name="SettingName" ColumnName="SettingName" />
+          <ScalarProperty Name="SettingValue" ColumnName="SettingValue" />
+          <ScalarProperty Name="CreatedByUserID" ColumnName="CreatedByUserID" />
+          <ScalarProperty Name="CreatedOnDate" ColumnName="CreatedOnDate" />
+          <ScalarProperty Name="LastModifiedByUserID" ColumnName="LastModifiedByUserID" />
+          <ScalarProperty Name="LastModifiedOnDate" ColumnName="LastModifiedOnDate" />
+          <ScalarProperty Name="CultureCode" ColumnName="CultureCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Profiles">
+      <EntityTypeMapping TypeName="micrositeModel.Profile">
+        <MappingFragment StoreEntitySet="Profile">
+          <ScalarProperty Name="ProfileId" ColumnName="ProfileId" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="PortalId" ColumnName="PortalId" />
+          <ScalarProperty Name="ProfileData" ColumnName="ProfileData" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProfilePropertyDefinitions">
+      <EntityTypeMapping TypeName="micrositeModel.ProfilePropertyDefinition">
+        <MappingFragment StoreEntitySet="ProfilePropertyDefinition">
+          <ScalarProperty Name="PropertyDefinitionID" ColumnName="PropertyDefinitionID" />
+          <ScalarProperty Name="PortalID" ColumnName="PortalID" />
+          <ScalarProperty Name="ModuleDefID" ColumnName="ModuleDefID" />
+          <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+          <ScalarProperty Name="DataType" ColumnName="DataType" />
+          <ScalarProperty Name="DefaultValue" ColumnName="DefaultValue" />
+          <ScalarProperty Name="PropertyCategory" ColumnName="PropertyCategory" />
+          <ScalarProperty Name="PropertyName" ColumnName="PropertyName" />
+          <ScalarProperty Name="Length" ColumnName="Length" />
+          <ScalarProperty Name="Required" ColumnName="Required" />
+          <ScalarProperty Name="ValidationExpression" ColumnName="ValidationExpression" />
+          <ScalarProperty Name="ViewOrder" ColumnName="ViewOrder" />
+          <ScalarProperty Name="Visible" ColumnName="Visible" />
+          <ScalarProperty Name="CreatedByUserID" ColumnName="CreatedByUserID" />
+          <ScalarProperty Name="CreatedOnDate" ColumnName="CreatedOnDate" />
+          <ScalarProperty Name="LastModifiedByUserID" ColumnName="LastModifiedByUserID" />
+          <ScalarProperty Name="LastModifiedOnDate" ColumnName="LastModifiedOnDate" />
+          <ScalarProperty Name="DefaultVisibility" ColumnName="DefaultVisibility" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RoleGroups">
+      <EntityTypeMapping TypeName="micrositeModel.RoleGroup">
+        <MappingFragment StoreEntitySet="RoleGroups">
+          <ScalarProperty Name="RoleGroupID" ColumnName="RoleGroupID" />
+          <ScalarProperty Name="PortalID" ColumnName="PortalID" />
+          <ScalarProperty Name="RoleGroupName" ColumnName="RoleGroupName" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="CreatedByUserID" ColumnName="CreatedByUserID" />
+          <ScalarProperty Name="CreatedOnDate" ColumnName="CreatedOnDate" />
+          <ScalarProperty Name="LastModifiedByUserID" ColumnName="LastModifiedByUserID" />
+          <ScalarProperty Name="LastModifiedOnDate" ColumnName="LastModifiedOnDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Roles">
+      <EntityTypeMapping TypeName="micrositeModel.Role">
+        <MappingFragment StoreEntitySet="Roles">
+          <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+          <ScalarProperty Name="PortalID" ColumnName="PortalID" />
+          <ScalarProperty Name="RoleName" ColumnName="RoleName" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="ServiceFee" ColumnName="ServiceFee" />
+          <ScalarProperty Name="BillingFrequency" ColumnName="BillingFrequency" />
+          <ScalarProperty Name="TrialPeriod" ColumnName="TrialPeriod" />
+          <ScalarProperty Name="TrialFrequency" ColumnName="TrialFrequency" />
+          <ScalarProperty Name="BillingPeriod" ColumnName="BillingPeriod" />
+          <ScalarProperty Name="TrialFee" ColumnName="TrialFee" />
+          <ScalarProperty Name="IsPublic" ColumnName="IsPublic" />
+          <ScalarProperty Name="AutoAssignment" ColumnName="AutoAssignment" />
+          <ScalarProperty Name="RoleGroupID" ColumnName="RoleGroupID" />
+          <ScalarProperty Name="RSVPCode" ColumnName="RSVPCode" />
+          <ScalarProperty Name="IconFile" ColumnName="IconFile" />
+          <ScalarProperty Name="CreatedByUserID" ColumnName="CreatedByUserID" />
+          <ScalarProperty Name="CreatedOnDate" ColumnName="CreatedOnDate" />
+          <ScalarProperty Name="LastModifiedByUserID" ColumnName="LastModifiedByUserID" />
+          <ScalarProperty Name="LastModifiedOnDate" ColumnName="LastModifiedOnDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Schedules">
+      <EntityTypeMapping TypeName="micrositeModel.Schedule">
+        <MappingFragment StoreEntitySet="Schedule">
+          <ScalarProperty Name="ScheduleID" ColumnName="ScheduleID" />
+          <ScalarProperty Name="TypeFullName" ColumnName="TypeFullName" />
+          <ScalarProperty Name="TimeLapse" ColumnName="TimeLapse" />
+          <ScalarProperty Name="TimeLapseMeasurement" ColumnName="TimeLapseMeasurement" />
+          <ScalarProperty Name="RetryTimeLapse" ColumnName="RetryTimeLapse" />
+          <ScalarProperty Name="RetryTimeLapseMeasurement" ColumnName="RetryTimeLapseMeasurement" />
+          <ScalarProperty Name="RetainHistoryNum" ColumnName="RetainHistoryNum" />
+          <ScalarProperty Name="AttachToEvent" ColumnName="AttachToEvent" />
+          <ScalarProperty Name="CatchUpEnabled" ColumnName="CatchUpEnabled" />
+          <ScalarProperty Name="Enabled" ColumnName="Enabled" />
+          <ScalarProperty Name="ObjectDependencies" ColumnName="ObjectDependencies" />
+          <ScalarProperty Name="Servers" ColumnName="Servers" />
+          <ScalarProperty Name="CreatedByUserID" ColumnName="CreatedByUserID" />
+          <ScalarProperty Name="CreatedOnDate" ColumnName="CreatedOnDate" />
+          <ScalarProperty Name="LastModifiedByUserID" ColumnName="LastModifiedByUserID" />
+          <ScalarProperty Name="LastModifiedOnDate" ColumnName="LastModifiedOnDate" />
+          <ScalarProperty Name="FriendlyName" ColumnName="FriendlyName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ScheduleHistories">
+      <EntityTypeMapping TypeName="micrositeModel.ScheduleHistory">
+        <MappingFragment StoreEntitySet="ScheduleHistory">
+          <ScalarProperty Name="ScheduleHistoryID" ColumnName="ScheduleHistoryID" />
+          <ScalarProperty Name="ScheduleID" ColumnName="ScheduleID" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+          <ScalarProperty Name="Succeeded" ColumnName="Succeeded" />
+          <ScalarProperty Name="LogNotes" ColumnName="LogNotes" />
+          <ScalarProperty Name="NextStart" ColumnName="NextStart" />
+          <ScalarProperty Name="Server" ColumnName="Server" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ScheduleItemSettings">
+      <EntityTypeMapping TypeName="micrositeModel.ScheduleItemSetting">
+        <MappingFragment StoreEntitySet="ScheduleItemSettings">
+          <ScalarProperty Name="ScheduleID" ColumnName="ScheduleID" />
+          <ScalarProperty Name="SettingName" ColumnName="SettingName" />
+          <ScalarProperty Name="SettingValue" ColumnName="SettingValue" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SearchCommonWords">
+      <EntityTypeMapping TypeName="micrositeModel.SearchCommonWord">
+        <MappingFragment StoreEntitySet="SearchCommonWords">
+          <ScalarProperty Name="CommonWordID" ColumnName="CommonWordID" />
+          <ScalarProperty Name="CommonWord" ColumnName="CommonWord" />
+          <ScalarProperty Name="Locale" ColumnName="Locale" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SearchIndexers">
+      <EntityTypeMapping TypeName="micrositeModel.SearchIndexer">
+        <MappingFragment StoreEntitySet="SearchIndexer">
+          <ScalarProperty Name="SearchIndexerID" ColumnName="SearchIndexerID" />
+          <ScalarProperty Name="SearchIndexerAssemblyQualifiedName" ColumnName="SearchIndexerAssemblyQualifiedName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SearchItems">
+      <EntityTypeMapping TypeName="micrositeModel.SearchItem">
+        <MappingFragment StoreEntitySet="SearchItem">
+          <ScalarProperty Name="SearchItemID" ColumnName="SearchItemID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Author" ColumnName="Author" />
+          <ScalarProperty Name="PubDate" ColumnName="PubDate" />
+          <ScalarProperty Name="ModuleId" ColumnName="ModuleId" />
+          <ScalarProperty Name="SearchKey" ColumnName="SearchKey" />
+          <ScalarProperty Name="Guid" ColumnName="Guid" />
+          <ScalarProperty Name="HitCount" ColumnName="HitCount" />
+          <ScalarProperty Name="ImageFileId" ColumnName="ImageFileId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SearchItemWords">
+      <EntityTypeMapping TypeName="micrositeModel.SearchItemWord">
+        <MappingFragment StoreEntitySet="SearchItemWord">
+          <ScalarProperty Name="SearchItemWordID" ColumnName="SearchItemWordID" />
+          <ScalarProperty Name="SearchItemID" ColumnName="SearchItemID" />
+          <ScalarProperty Name="SearchWordsID" ColumnName="SearchWordsID" />
+          <ScalarProperty Name="Occurrences" ColumnName="Occurrences" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SearchItemWordPositions">
+      <EntityTypeMapping TypeName="micrositeModel.SearchItemWordPosition">
+        <MappingFragment StoreEntitySet="SearchItemWordPosition">
+          <ScalarProperty Name="SearchItemWordPositionID" ColumnName="SearchItemWordPositionID" />
+          <ScalarProperty Name="SearchItemWordID" ColumnName="SearchItemWordID" />
+          <ScalarProperty Name="ContentPosition" ColumnName="ContentPosition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SearchWords">
+      <EntityTypeMapping TypeName="micrositeModel.SearchWord">
+        <MappingFragment StoreEntitySet="SearchWord">
+          <ScalarProperty Name="SearchWordsID" ColumnName="SearchWordsID" />
+          <ScalarProperty Name="Word" ColumnName="Word" />
+          <ScalarProperty Name="IsCommon" ColumnName="IsCommon" />
+          <ScalarProperty Name="HitCount" ColumnName="HitCount" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SiteLogs">
+      <EntityTypeMapping TypeName="micrositeModel.SiteLog">
+        <MappingFragment StoreEntitySet="SiteLog">
+          <ScalarProperty Name="SiteLogId" ColumnName="SiteLogId" />
+          <ScalarProperty Name="DateTime" ColumnName="DateTime" />
+          <ScalarProperty Name="PortalId" ColumnName="PortalId" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="Referrer" ColumnName="Referrer" />
+          <ScalarProperty Name="Url" ColumnName="Url" />
+          <ScalarProperty Name="UserAgent" ColumnName="UserAgent" />
+          <ScalarProperty Name="UserHostAddress" ColumnName="UserHostAddress" />
+          <ScalarProperty Name="UserHostName" ColumnName="UserHostName" />
+          <ScalarProperty Name="TabId" ColumnName="TabId" />
+          <ScalarProperty Name="AffiliateId" ColumnName="AffiliateId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SkinControls">
+      <EntityTypeMapping TypeName="micrositeModel.SkinControl">
+        <MappingFragment StoreEntitySet="SkinControls">
+          <ScalarProperty Name="SkinControlID" ColumnName="SkinControlID" />
+          <ScalarProperty Name="PackageID" ColumnName="PackageID" />
+          <ScalarProperty Name="ControlKey" ColumnName="ControlKey" />
+          <ScalarProperty Name="ControlSrc" ColumnName="ControlSrc" />
+          <ScalarProperty Name="IconFile" ColumnName="IconFile" />
+          <ScalarProperty Name="HelpUrl" ColumnName="HelpUrl" />
+          <ScalarProperty Name="SupportsPartialRendering" ColumnName="SupportsPartialRendering" />
+          <ScalarProperty Name="CreatedByUserID" ColumnName="CreatedByUserID" />
+          <ScalarProperty Name="CreatedOnDate" ColumnName="CreatedOnDate" />
+          <ScalarProperty Name="LastModifiedByUserID" ColumnName="LastModifiedByUserID" />
+          <ScalarProperty Name="LastModifiedOnDate" ColumnName="LastModifiedOnDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SkinPackages">
+      <EntityTypeMapping TypeName="micrositeModel.SkinPackage">
+        <MappingFragment StoreEntitySet="SkinPackages">
+          <ScalarProperty Name="SkinPackageID" ColumnName="SkinPackageID" />
+          <ScalarProperty Name="PackageID" ColumnName="PackageID" />
+          <ScalarProperty Name="PortalID" ColumnName="PortalID" />
+          <ScalarProperty Name="SkinName" ColumnName="SkinName" />
+          <ScalarProperty Name="SkinType" ColumnName="SkinType" />
+          <ScalarProperty Name="CreatedByUserID" ColumnName="CreatedByUserID" />
+          <ScalarProperty Name="CreatedOnDate" ColumnName="CreatedOnDate" />
+          <ScalarProperty Name="LastModifiedByUserID" ColumnName="LastModifiedByUserID" />
+          <ScalarProperty Name="LastModifiedOnDate" ColumnName="LastModifiedOnDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Skins">
+      <EntityTypeMapping TypeName="micrositeModel.Skin">
+        <MappingFragment StoreEntitySet="Skins">
+          <ScalarProperty Name="SkinID" ColumnName="SkinID" />
+          <ScalarProperty Name="SkinPackageID" ColumnName="SkinPackageID" />
+          <ScalarProperty Name="SkinSrc" ColumnName="SkinSrc" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="micrositeModel.sysdiagram">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SystemMessages">
+      <EntityTypeMapping TypeName="micrositeModel.SystemMessage">
+        <MappingFragment StoreEntitySet="SystemMessages">
+          <ScalarProperty Name="MessageID" ColumnName="MessageID" />
+          <ScalarProperty Name="PortalID" ColumnName="PortalID" />
+          <ScalarProperty Name="MessageName" ColumnName="MessageName" />
+          <ScalarProperty Name="MessageValue" ColumnName="MessageValue" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TAA_Boxes">
+      <EntityTypeMapping TypeName="micrositeModel.TAA_Boxes">
+        <MappingFragment StoreEntitySet="TAA_Boxes">
+          <ScalarProperty Name="BoxID" ColumnName="BoxID" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Height" ColumnName="Height" />
+          <ScalarProperty Name="Width" ColumnName="Width" />
+          <ScalarProperty Name="Depth" ColumnName="Depth" />
+          <ScalarProperty Name="Volume" ColumnName="Volume" />
+          <ScalarProperty Name="Weight" ColumnName="Weight" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TAA_Colors">
+      <EntityTypeMapping TypeName="micrositeModel.TAA_Colors">
+        <MappingFragment StoreEntitySet="TAA_Colors">
+          <ScalarProperty Name="ColorID" ColumnName="ColorID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Color" ColumnName="Color" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TAA_Microsite">
+      <EntityTypeMapping TypeName="micrositeModel.TAA_Microsite">
+        <MappingFragment StoreEntitySet="TAA_Microsite">
+          <ScalarProperty Name="MicrositeID" ColumnName="MicrositeID" />
+          <ScalarProperty Name="TeamName" ColumnName="TeamName" />
+          <ScalarProperty Name="PrimaryColour" ColumnName="PrimaryColour" />
+          <ScalarProperty Name="SecondaryColour" ColumnName="SecondaryColour" />
+          <ScalarProperty Name="Accent" ColumnName="Accent" />
+          <ScalarProperty Name="TeamLogo" ColumnName="TeamLogo" />
+          <ScalarProperty Name="CreatedByUserID" ColumnName="CreatedByUserID" />
+          <ScalarProperty Name="CreatedOnDate" ColumnName="CreatedOnDate" />
+          <ScalarProperty Name="LastModifiedByUserID" ColumnName="LastModifiedByUserID" />
+          <ScalarProperty Name="LastModifiedOnDate" ColumnName="LastModifiedOnDate" />
+          <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+          <ScalarProperty Name="DeletedByUserID" ColumnName="DeletedByUserID" />
+          <ScalarProperty Name="DeletedOnDate" ColumnName="DeletedOnDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TAA_PantSizes">
+      <EntityTypeMapping TypeName="micrositeModel.TAA_PantSizes">
+        <MappingFragment StoreEntitySet="TAA_PantSizes">
+          <ScalarProperty Name="PantSizeID" ColumnName="PantSizeID" />
+          <ScalarProperty Name="SizeGroupID" ColumnName="SizeGroupID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Size" ColumnName="Size" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TAA_ProductCategories">
+      <EntityTypeMapping TypeName="micrositeModel.TAA_ProductCategories">
+        <MappingFragment StoreEntitySet="TAA_ProductCategories">
+          <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+          <ScalarProperty Name="ParentCatID" ColumnName="ParentCatID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TAA_Products">
+      <EntityTypeMapping TypeName="micrositeModel.TAA_Products">
+        <MappingFragment StoreEntitySet="TAA_Products">
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+          <ScalarProperty Name="ItemCode" ColumnName="ItemCode" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="ImageURL" ColumnName="ImageURL" />
+          <ScalarProperty Name="SizeID" ColumnName="SizeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TAA_ProductSizes">
+      <EntityTypeMapping TypeName="micrositeModel.TAA_ProductSizes">
+        <MappingFragment StoreEntitySet="TAA_ProductSizes">
+          <ScalarProperty Name="SizeID" ColumnName="SizeID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TAA_RoleCallSheets">
+      <EntityTypeMapping TypeName="micrositeModel.TAA_RoleCallSheets">
+        <MappingFragment StoreEntitySet="TAA_RoleCallSheets">
+          <ScalarProperty Name="RollCallSheetID" ColumnName="RollCallSheetID" />
+          <ScalarProperty Name="MicrositeID" ColumnName="MicrositeID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TAA_RoleCards">
+      <EntityTypeMapping TypeName="micrositeModel.TAA_RoleCards">
+        <MappingFragment StoreEntitySet="TAA_RoleCards">
+          <ScalarProperty Name="RoleCardID" ColumnName="RoleCardID" />
+          <ScalarProperty Name="RoleCallSheetID" ColumnName="RoleCallSheetID" />
+          <ScalarProperty Name="PrintedName" ColumnName="PrintedName" />
+          <ScalarProperty Name="JerseyNumber" ColumnName="JerseyNumber" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="MiddleInitial" ColumnName="MiddleInitial" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="Zip" ColumnName="Zip" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="SizeGroupID" ColumnName="SizeGroupID" />
+          <ScalarProperty Name="PantSizeID" ColumnName="PantSizeID" />
+          <ScalarProperty Name="ShirtSizeID" ColumnName="ShirtSizeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TAA_ShirtSizes">
+      <EntityTypeMapping TypeName="micrositeModel.TAA_ShirtSizes">
+        <MappingFragment StoreEntitySet="TAA_ShirtSizes">
+          <ScalarProperty Name="ShirtSizeID" ColumnName="ShirtSizeID" />
+          <ScalarProperty Name="SizeGroupID" ColumnName="SizeGroupID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Size" ColumnName="Size" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TAA_ShoppingCart">
+      <EntityTypeMapping TypeName="micrositeModel.TAA_ShoppingCart">
+        <MappingFragment StoreEntitySet="TAA_ShoppingCart">
+          <ScalarProperty Name="CartID" ColumnName="CartID" />
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="RoleCardID" ColumnName="RoleCardID" />
+          <ScalarProperty Name="UnitPrice" ColumnName="UnitPrice" />
+          <ScalarProperty Name="QuantityXS" ColumnName="QuantityXS" />
+          <ScalarProperty Name="SizeS" ColumnName="SizeS" />
+          <ScalarProperty Name="SizeM" ColumnName="SizeM" />
+          <ScalarProperty Name="SizeL" ColumnName="SizeL" />
+          <ScalarProperty Name="SizeXL" ColumnName="SizeXL" />
+          <ScalarProperty Name="SizeXXL" ColumnName="SizeXXL" />
+          <ScalarProperty Name="DateCreated" ColumnName="DateCreated" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TAA_SizeGroups">
+      <EntityTypeMapping TypeName="micrositeModel.TAA_SizeGroups">
+        <MappingFragment StoreEntitySet="TAA_SizeGroups">
+          <ScalarProperty Name="SizeGroupID" ColumnName="SizeGroupID" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TabModules">
+      <EntityTypeMapping TypeName="micrositeModel.TabModule">
+        <MappingFragment StoreEntitySet="TabModules">
+          <ScalarProperty Name="TabModuleID" ColumnName="TabModuleID" />
+          <ScalarProperty Name="TabID" ColumnName="TabID" />
+          <ScalarProperty Name="ModuleID" ColumnName="ModuleID" />
+          <ScalarProperty Name="PaneName" ColumnName="PaneName" />
+          <ScalarProperty Name="ModuleOrder" ColumnName="ModuleOrder" />
+          <ScalarProperty Name="CacheTime" ColumnName="CacheTime" />
+          <ScalarProperty Name="Alignment" ColumnName="Alignment" />
+          <ScalarProperty Name="Color" ColumnName="Color" />
+          <ScalarProperty Name="Border" ColumnName="Border" />
+          <ScalarProperty Name="IconFile" ColumnName="IconFile" />
+          <ScalarProperty Name="Visibility" ColumnName="Visibility" />
+          <ScalarProperty Name="ContainerSrc" ColumnName="ContainerSrc" />
+          <ScalarProperty Name="DisplayTitle" ColumnName="DisplayTitle" />
+          <ScalarProperty Name="DisplayPrint" ColumnName="DisplayPrint" />
+          <ScalarProperty Name="DisplaySyndicate" ColumnName="DisplaySyndicate" />
+          <ScalarProperty Name="IsWebSlice" ColumnName="IsWebSlice" />
+          <ScalarProperty Name="WebSliceTitle" ColumnName="WebSliceTitle" />
+          <ScalarProperty Name="WebSliceExpiryDate" ColumnName="WebSliceExpiryDate" />
+          <ScalarProperty Name="WebSliceTTL" ColumnName="WebSliceTTL" />
+          <ScalarProperty Name="CreatedByUserID" ColumnName="CreatedByUserID" />
+          <ScalarProperty Name="CreatedOnDate" ColumnName="CreatedOnDate" />
+          <ScalarProperty Name="LastModifiedByUserID" ColumnName="LastModifiedByUserID" />
+          <ScalarProperty Name="LastModifiedOnDate" ColumnName="LastModifiedOnDate" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="CacheMethod" ColumnName="CacheMethod" />
+          <ScalarProperty Name="ModuleTitle" ColumnName="ModuleTitle" />
+          <ScalarProperty Name="Header" ColumnName="Header" />
+          <ScalarProperty Name="Footer" ColumnName="Footer" />
+          <ScalarProperty Name="CultureCode" ColumnName="CultureCode" />
+          <ScalarProperty Name="UniqueId" ColumnName="UniqueId" />
+          <ScalarProperty Name="VersionGuid" ColumnName="VersionGuid" />
+          <ScalarProperty Name="DefaultLanguageGuid" ColumnName="DefaultLanguageGuid" />
+          <ScalarProperty Name="LocalizedVersionGuid" ColumnName="LocalizedVersionGuid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TabModuleSettings">
+      <EntityTypeMapping TypeName="micrositeModel.TabModuleSetting">
+        <MappingFragment StoreEntitySet="TabModuleSettings">
+          <ScalarProperty Name="TabModuleID" ColumnName="TabModuleID" />
+          <ScalarProperty Name="SettingName" ColumnName="SettingName" />
+          <ScalarProperty Name="SettingValue" ColumnName="SettingValue" />
+          <ScalarProperty Name="CreatedByUserID" ColumnName="CreatedByUserID" />
+          <ScalarProperty Name="CreatedOnDate" ColumnName="CreatedOnDate" />
+          <ScalarProperty Name="LastModifiedByUserID" ColumnName="LastModifiedByUserID" />
+          <ScalarProperty Name="LastModifiedOnDate" ColumnName="LastModifiedOnDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TabPermissions">
+      <EntityTypeMapping TypeName="micrositeModel.TabPermission">
+        <MappingFragment StoreEntitySet="TabPermission">
+          <ScalarProperty Name="TabPermissionID" ColumnName="TabPermissionID" />
+          <ScalarProperty Name="TabID" ColumnName="TabID" />
+          <ScalarProperty Name="PermissionID" ColumnName="PermissionID" />
+          <ScalarProperty Name="AllowAccess" ColumnName="AllowAccess" />
+          <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="CreatedByUserID" ColumnName="CreatedByUserID" />
+          <ScalarProperty Name="CreatedOnDate" ColumnName="CreatedOnDate" />
+          <ScalarProperty Name="LastModifiedByUserID" ColumnName="LastModifiedByUserID" />
+          <ScalarProperty Name="LastModifiedOnDate" ColumnName="LastModifiedOnDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tabs">
+      <EntityTypeMapping TypeName="micrositeModel.Tab">
+        <MappingFragment StoreEntitySet="Tabs">
+          <ScalarProperty Name="TabID" ColumnName="TabID" />
+          <ScalarProperty Name="TabOrder" ColumnName="TabOrder" />
+          <ScalarProperty Name="PortalID" ColumnName="PortalID" />
+          <ScalarProperty Name="TabName" ColumnName="TabName" />
+          <ScalarProperty Name="IsVisible" ColumnName="IsVisible" />
+          <ScalarProperty Name="ParentId" ColumnName="ParentId" />
+          <ScalarProperty Name="Level" ColumnName="Level" />
+          <ScalarProperty Name="IconFile" ColumnName="IconFile" />
+          <ScalarProperty Name="DisableLink" ColumnName="DisableLink" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="KeyWords" ColumnName="KeyWords" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="Url" ColumnName="Url" />
+          <ScalarProperty Name="SkinSrc" ColumnName="SkinSrc" />
+          <ScalarProperty Name="ContainerSrc" ColumnName="ContainerSrc" />
+          <ScalarProperty Name="TabPath" ColumnName="TabPath" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+          <ScalarProperty Name="RefreshInterval" ColumnName="RefreshInterval" />
+          <ScalarProperty Name="PageHeadText" ColumnName="PageHeadText" />
+          <ScalarProperty Name="IsSecure" ColumnName="IsSecure" />
+          <ScalarProperty Name="PermanentRedirect" ColumnName="PermanentRedirect" />
+          <ScalarProperty Name="SiteMapPriority" ColumnName="SiteMapPriority" />
+          <ScalarProperty Name="CreatedByUserID" ColumnName="CreatedByUserID" />
+          <ScalarProperty Name="CreatedOnDate" ColumnName="CreatedOnDate" />
+          <ScalarProperty Name="LastModifiedByUserID" ColumnName="LastModifiedByUserID" />
+          <ScalarProperty Name="LastModifiedOnDate" ColumnName="LastModifiedOnDate" />
+          <ScalarProperty Name="IconFileLarge" ColumnName="IconFileLarge" />
+          <ScalarProperty Name="CultureCode" ColumnName="CultureCode" />
+          <ScalarProperty Name="ContentItemID" ColumnName="ContentItemID" />
+          <ScalarProperty Name="UniqueId" ColumnName="UniqueId" />
+          <ScalarProperty Name="VersionGuid" ColumnName="VersionGuid" />
+          <ScalarProperty Name="DefaultLanguageGuid" ColumnName="DefaultLanguageGuid" />
+          <ScalarProperty Name="LocalizedVersionGuid" ColumnName="LocalizedVersionGuid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TabSettings">
+      <EntityTypeMapping TypeName="micrositeModel.TabSetting">
+        <MappingFragment StoreEntitySet="TabSettings">
+          <ScalarProperty Name="TabID" ColumnName="TabID" />
+          <ScalarProperty Name="SettingName" ColumnName="SettingName" />
+          <ScalarProperty Name="SettingValue" ColumnName="SettingValue" />
+          <ScalarProperty Name="CreatedByUserID" ColumnName="CreatedByUserID" />
+          <ScalarProperty Name="CreatedOnDate" ColumnName="CreatedOnDate" />
+          <ScalarProperty Name="LastModifiedByUserID" ColumnName="LastModifiedByUserID" />
+          <ScalarProperty Name="LastModifiedOnDate" ColumnName="LastModifiedOnDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Taxonomy_ScopeTypes">
+      <EntityTypeMapping TypeName="micrositeModel.Taxonomy_ScopeTypes">
+        <MappingFragment StoreEntitySet="Taxonomy_ScopeTypes">
+          <ScalarProperty Name="ScopeTypeID" ColumnName="ScopeTypeID" />
+          <ScalarProperty Name="ScopeType" ColumnName="ScopeType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Taxonomy_Terms">
+      <EntityTypeMapping TypeName="micrositeModel.Taxonomy_Terms">
+        <MappingFragment StoreEntitySet="Taxonomy_Terms">
+          <ScalarProperty Name="TermID" ColumnName="TermID" />
+          <ScalarProperty Name="VocabularyID" ColumnName="VocabularyID" />
+          <ScalarProperty Name="ParentTermID" ColumnName="ParentTermID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Weight" ColumnName="Weight" />
+          <ScalarProperty Name="TermLeft" ColumnName="TermLeft" />
+          <ScalarProperty Name="TermRight" ColumnName="TermRight" />
+          <ScalarProperty Name="CreatedByUserID" ColumnName="CreatedByUserID" />
+          <ScalarProperty Name="CreatedOnDate" ColumnName="CreatedOnDate" />
+          <ScalarProperty Name="LastModifiedByUserID" ColumnName="LastModifiedByUserID" />
+          <ScalarProperty Name="LastModifiedOnDate" ColumnName="LastModifiedOnDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Taxonomy_Vocabularies">
+      <EntityTypeMapping TypeName="micrositeModel.Taxonomy_Vocabularies">
+        <MappingFragment StoreEntitySet="Taxonomy_Vocabularies">
+          <ScalarProperty Name="VocabularyID" ColumnName="VocabularyID" />
+          <ScalarProperty Name="VocabularyTypeID" ColumnName="VocabularyTypeID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Weight" ColumnName="Weight" />
+          <ScalarProperty Name="ScopeID" ColumnName="ScopeID" />
+          <ScalarProperty Name="ScopeTypeID" ColumnName="ScopeTypeID" />
+          <ScalarProperty Name="CreatedByUserID" ColumnName="CreatedByUserID" />
+          <ScalarProperty Name="CreatedOnDate" ColumnName="CreatedOnDate" />
+          <ScalarProperty Name="LastModifiedByUserID" ColumnName="LastModifiedByUserID" />
+          <ScalarProperty Name="LastModifiedOnDate" ColumnName="LastModifiedOnDate" />
+          <ScalarProperty Name="IsSystem" ColumnName="IsSystem" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Taxonomy_VocabularyTypes">
+      <EntityTypeMapping TypeName="micrositeModel.Taxonomy_VocabularyTypes">
+        <MappingFragment StoreEntitySet="Taxonomy_VocabularyTypes">
+          <ScalarProperty Name="VocabularyTypeID" ColumnName="VocabularyTypeID" />
+          <ScalarProperty Name="VocabularyType" ColumnName="VocabularyType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Transactions">
+      <EntityTypeMapping TypeName="micrositeModel.Transaction">
+        <MappingFragment StoreEntitySet="Transactions">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TransactionID" ColumnName="TransactionID" />
+          <ScalarProperty Name="TransactionType" ColumnName="TransactionType" />
+          <ScalarProperty Name="AuthCode" ColumnName="AuthCode" />
+          <ScalarProperty Name="AvsCode" ColumnName="AvsCode" />
+          <ScalarProperty Name="OrderID" ColumnName="OrderID" />
+          <ScalarProperty Name="Number" ColumnName="Number" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="Month" ColumnName="Month" />
+          <ScalarProperty Name="BankCode" ColumnName="BankCode" />
+          <ScalarProperty Name="BankName" ColumnName="BankName" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Address2" ColumnName="Address2" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="Country" ColumnName="Country" />
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="StateProvince" ColumnName="StateProvince" />
+          <ScalarProperty Name="ZipPostal" ColumnName="ZipPostal" />
+          <ScalarProperty Name="ClientIP" ColumnName="ClientIP" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="TransactionDate" ColumnName="TransactionDate" />
+          <ScalarProperty Name="ErrorMessage" ColumnName="ErrorMessage" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="BatchID" ColumnName="BatchID" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="ReferenceNumber" ColumnName="ReferenceNumber" />
+          <ScalarProperty Name="SequenceNumber" ColumnName="SequenceNumber" />
+          <ScalarProperty Name="ReturnedACI" ColumnName="ReturnedACI" />
+          <ScalarProperty Name="AuthorizationSourceCode" ColumnName="AuthorizationSourceCode" />
+          <ScalarProperty Name="CardType" ColumnName="CardType" />
+          <ScalarProperty Name="TaxAmount" ColumnName="TaxAmount" />
+          <ScalarProperty Name="ShippingAmount" ColumnName="ShippingAmount" />
+          <ScalarProperty Name="CardLevel" ColumnName="CardLevel" />
+          <ScalarProperty Name="OrderID2" ColumnName="OrderID2" />
+          <ScalarProperty Name="BankAccountNumber" ColumnName="BankAccountNumber" />
+          <ScalarProperty Name="BankAccountName" ColumnName="BankAccountName" />
+          <ScalarProperty Name="BankAccountType" ColumnName="BankAccountType" />
+          <ScalarProperty Name="LastModifiedByUserID" ColumnName="LastModifiedByUserID" />
+          <ScalarProperty Name="LastModifiedOnDate" ColumnName="LastModifiedOnDate" />
+          <ScalarProperty Name="CreatedByUserID" ColumnName="CreatedByUserID" />
+          <ScalarProperty Name="CreatedOnDate" ColumnName="CreatedOnDate" />
+          <ScalarProperty Name="ProfileProperties" ColumnName="ProfileProperties" />
+          <ScalarProperty Name="CustomerTransFeeAmt" ColumnName="CustomerTransFeeAmt" />
+          <ScalarProperty Name="MerchantTransFeeAmt" ColumnName="MerchantTransFeeAmt" />
+          <ScalarProperty Name="PaymentMethodID" ColumnName="PaymentMethodID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UrlLogs">
+      <EntityTypeMapping TypeName="micrositeModel.UrlLog">
+        <MappingFragment StoreEntitySet="UrlLog">
+          <ScalarProperty Name="UrlLogID" ColumnName="UrlLogID" />
+          <ScalarProperty Name="UrlTrackingID" ColumnName="UrlTrackingID" />
+          <ScalarProperty Name="ClickDate" ColumnName="ClickDate" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Urls">
+      <EntityTypeMapping TypeName="micrositeModel.Url">
+        <MappingFragment StoreEntitySet="Urls">
+          <ScalarProperty Name="UrlID" ColumnName="UrlID" />
+          <ScalarProperty Name="PortalID" ColumnName="PortalID" />
+          <ScalarProperty Name="Url1" ColumnName="Url" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UrlTrackings">
+      <EntityTypeMapping TypeName="micrositeModel.UrlTracking">
+        <MappingFragment StoreEntitySet="UrlTracking">
+          <ScalarProperty Name="UrlTrackingID" ColumnName="UrlTrackingID" />
+          <ScalarProperty Name="PortalID" ColumnName="PortalID" />
+          <ScalarProperty Name="Url" ColumnName="Url" />
+          <ScalarProperty Name="UrlType" ColumnName="UrlType" />
+          <ScalarProperty Name="Clicks" ColumnName="Clicks" />
+          <ScalarProperty Name="LastClick" ColumnName="LastClick" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="LogActivity" ColumnName="LogActivity" />
+          <ScalarProperty Name="TrackClicks" ColumnName="TrackClicks" />
+          <ScalarProperty Name="ModuleId" ColumnName="ModuleId" />
+          <ScalarProperty Name="NewWindow" ColumnName="NewWindow" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserAuthentications">
+      <EntityTypeMapping TypeName="micrositeModel.UserAuthentication">
+        <MappingFragment StoreEntitySet="UserAuthentication">
+          <ScalarProperty Name="UserAuthenticationID" ColumnName="UserAuthenticationID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="AuthenticationType" ColumnName="AuthenticationType" />
+          <ScalarProperty Name="AuthenticationToken" ColumnName="AuthenticationToken" />
+          <ScalarProperty Name="CreatedByUserID" ColumnName="CreatedByUserID" />
+          <ScalarProperty Name="CreatedOnDate" ColumnName="CreatedOnDate" />
+          <ScalarProperty Name="LastModifiedByUserID" ColumnName="LastModifiedByUserID" />
+          <ScalarProperty Name="LastModifiedOnDate" ColumnName="LastModifiedOnDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserPortals">
+      <EntityTypeMapping TypeName="micrositeModel.UserPortal">
+        <MappingFragment StoreEntitySet="UserPortals">
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="PortalId" ColumnName="PortalId" />
+          <ScalarProperty Name="UserPortalId" ColumnName="UserPortalId" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="Authorised" ColumnName="Authorised" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="RefreshRoles" ColumnName="RefreshRoles" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserProfiles">
+      <EntityTypeMapping TypeName="micrositeModel.UserProfile">
+        <MappingFragment StoreEntitySet="UserProfile">
+          <ScalarProperty Name="ProfileID" ColumnName="ProfileID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="PropertyDefinitionID" ColumnName="PropertyDefinitionID" />
+          <ScalarProperty Name="PropertyValue" ColumnName="PropertyValue" />
+          <ScalarProperty Name="PropertyText" ColumnName="PropertyText" />
+          <ScalarProperty Name="Visibility" ColumnName="Visibility" />
+          <ScalarProperty Name="LastUpdatedDate" ColumnName="LastUpdatedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserRoles">
+      <EntityTypeMapping TypeName="micrositeModel.UserRole">
+        <MappingFragment StoreEntitySet="UserRoles">
+          <ScalarProperty Name="UserRoleID" ColumnName="UserRoleID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+          <ScalarProperty Name="ExpiryDate" ColumnName="ExpiryDate" />
+          <ScalarProperty Name="IsTrialUsed" ColumnName="IsTrialUsed" />
+          <ScalarProperty Name="EffectiveDate" ColumnName="EffectiveDate" />
+          <ScalarProperty Name="CreatedByUserID" ColumnName="CreatedByUserID" />
+          <ScalarProperty Name="CreatedOnDate" ColumnName="CreatedOnDate" />
+          <ScalarProperty Name="LastModifiedByUserID" ColumnName="LastModifiedByUserID" />
+          <ScalarProperty Name="LastModifiedOnDate" ColumnName="LastModifiedOnDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="micrositeModel.User">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="IsSuperUser" ColumnName="IsSuperUser" />
+          <ScalarProperty Name="AffiliateId" ColumnName="AffiliateId" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
+          <ScalarProperty Name="UpdatePassword" ColumnName="UpdatePassword" />
+          <ScalarProperty Name="LastIPAddress" ColumnName="LastIPAddress" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="CreatedByUserID" ColumnName="CreatedByUserID" />
+          <ScalarProperty Name="CreatedOnDate" ColumnName="CreatedOnDate" />
+          <ScalarProperty Name="LastModifiedByUserID" ColumnName="LastModifiedByUserID" />
+          <ScalarProperty Name="LastModifiedOnDate" ColumnName="LastModifiedOnDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UsersOnlines">
+      <EntityTypeMapping TypeName="micrositeModel.UsersOnline">
+        <MappingFragment StoreEntitySet="UsersOnline">
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="PortalID" ColumnName="PortalID" />
+          <ScalarProperty Name="TabID" ColumnName="TabID" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="LastActiveDate" ColumnName="LastActiveDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VendorClassifications">
+      <EntityTypeMapping TypeName="micrositeModel.VendorClassification">
+        <MappingFragment StoreEntitySet="VendorClassification">
+          <ScalarProperty Name="VendorClassificationId" ColumnName="VendorClassificationId" />
+          <ScalarProperty Name="VendorId" ColumnName="VendorId" />
+          <ScalarProperty Name="ClassificationId" ColumnName="ClassificationId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Vendors">
+      <EntityTypeMapping TypeName="micrositeModel.Vendor">
+        <MappingFragment StoreEntitySet="Vendors">
+          <ScalarProperty Name="VendorId" ColumnName="VendorId" />
+          <ScalarProperty Name="VendorName" ColumnName="VendorName" />
+          <ScalarProperty Name="Street" ColumnName="Street" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="Region" ColumnName="Region" />
+          <ScalarProperty Name="Country" ColumnName="Country" />
+          <ScalarProperty Name="PostalCode" ColumnName="PostalCode" />
+          <ScalarProperty Name="Telephone" ColumnName="Telephone" />
+          <ScalarProperty Name="PortalId" ColumnName="PortalId" />
+          <ScalarProperty Name="Fax" ColumnName="Fax" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Website" ColumnName="Website" />
+          <ScalarProperty Name="ClickThroughs" ColumnName="ClickThroughs" />
+          <ScalarProperty Name="Views" ColumnName="Views" />
+          <ScalarProperty Name="CreatedByUser" ColumnName="CreatedByUser" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="LogoFile" ColumnName="LogoFile" />
+          <ScalarProperty Name="KeyWords" ColumnName="KeyWords" />
+          <ScalarProperty Name="Unit" ColumnName="Unit" />
+          <ScalarProperty Name="Authorized" ColumnName="Authorized" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="Cell" ColumnName="Cell" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Versions">
+      <EntityTypeMapping TypeName="micrositeModel.Version">
+        <MappingFragment StoreEntitySet="Version">
+          <ScalarProperty Name="VersionId" ColumnName="VersionId" />
+          <ScalarProperty Name="Major" ColumnName="Major" />
+          <ScalarProperty Name="Minor" ColumnName="Minor" />
+          <ScalarProperty Name="Build" ColumnName="Build" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WebServers">
+      <EntityTypeMapping TypeName="micrositeModel.WebServer">
+        <MappingFragment StoreEntitySet="WebServers">
+          <ScalarProperty Name="ServerID" ColumnName="ServerID" />
+          <ScalarProperty Name="ServerName" ColumnName="ServerName" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="LastActivityDate" ColumnName="LastActivityDate" />
+          <ScalarProperty Name="URL" ColumnName="URL" />
+          <ScalarProperty Name="IISAppName" ColumnName="IISAppName" />
+          <ScalarProperty Name="Enabled" ColumnName="Enabled" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Workflows">
+      <EntityTypeMapping TypeName="micrositeModel.Workflow">
+        <MappingFragment StoreEntitySet="Workflow">
+          <ScalarProperty Name="WorkflowID" ColumnName="WorkflowID" />
+          <ScalarProperty Name="PortalID" ColumnName="PortalID" />
+          <ScalarProperty Name="WorkflowName" ColumnName="WorkflowName" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WorkflowStates">
+      <EntityTypeMapping TypeName="micrositeModel.WorkflowState">
+        <MappingFragment StoreEntitySet="WorkflowStates">
+          <ScalarProperty Name="StateID" ColumnName="StateID" />
+          <ScalarProperty Name="WorkflowID" ColumnName="WorkflowID" />
+          <ScalarProperty Name="StateName" ColumnName="StateName" />
+          <ScalarProperty Name="Order" ColumnName="Order" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Notify" ColumnName="Notify" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="aspnet_UsersInRoles" TypeName="micrositeModel.aspnet_UsersInRoles" StoreEntitySet="aspnet_UsersInRoles">
+      <EndProperty Name="aspnet_Roles">
+        <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+      </EndProperty>
+      <EndProperty Name="aspnet_Users">
+        <ScalarProperty Name="UserId" ColumnName="UserId" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <EntitySetMapping Name="OrderInfoes">
+      <EntityTypeMapping TypeName="micrositeModel.OrderInfo">
+        <MappingFragment StoreEntitySet="OrderInfo">
+          <ScalarProperty Name="Expr4" ColumnName="Expr4" />
+          <ScalarProperty Name="Expr3" ColumnName="Expr3" />
+          <ScalarProperty Name="Expr2" ColumnName="Expr2" />
+          <ScalarProperty Name="Expr1" ColumnName="Expr1" />
+          <ScalarProperty Name="LoyaltyDiscount" ColumnName="LoyaltyDiscount" />
+          <ScalarProperty Name="CartPriceRuleID" ColumnName="CartPriceRuleID" />
+          <ScalarProperty Name="CouponCodeID" ColumnName="CouponCodeID" />
+          <ScalarProperty Name="Tax2" ColumnName="Tax2" />
+          <ScalarProperty Name="BillingPeriod" ColumnName="BillingPeriod" />
+          <ScalarProperty Name="ProductCost" ColumnName="ProductCost" />
+          <ScalarProperty Name="SKU" ColumnName="SKU" />
+          <ScalarProperty Name="DeliveredUnits" ColumnName="DeliveredUnits" />
+          <ScalarProperty Name="TrackingNumber" ColumnName="TrackingNumber" />
+          <ScalarProperty Name="ShippingCompany" ColumnName="ShippingCompany" />
+          <ScalarProperty Name="VendorCommission" ColumnName="VendorCommission" />
+          <ScalarProperty Name="ReferrerCommission" ColumnName="ReferrerCommission" />
+          <ScalarProperty Name="Tax" ColumnName="Tax" />
+          <ScalarProperty Name="ProductSlotID" ColumnName="ProductSlotID" />
+          <ScalarProperty Name="BaseRecID" ColumnName="BaseRecID" />
+          <ScalarProperty Name="RecordID" ColumnName="RecordID" />
+          <ScalarProperty Name="SubscrExpiryDate" ColumnName="SubscrExpiryDate" />
+          <ScalarProperty Name="AllocDate" ColumnName="AllocDate" />
+          <ScalarProperty Name="Options" ColumnName="Options" />
+          <ScalarProperty Name="CreditNoteShipCosts" ColumnName="CreditNoteShipCosts" />
+          <ScalarProperty Name="CreditNoteDate" ColumnName="CreditNoteDate" />
+          <ScalarProperty Name="CreditNoteNumber" ColumnName="CreditNoteNumber" />
+          <ScalarProperty Name="InvoiceShipCosts" ColumnName="InvoiceShipCosts" />
+          <ScalarProperty Name="InvoiceDate" ColumnName="InvoiceDate" />
+          <ScalarProperty Name="InvoiceNumber" ColumnName="InvoiceNumber" />
+          <ScalarProperty Name="UnitCost" ColumnName="UnitCost" />
+          <ScalarProperty Name="QuantityRemaining" ColumnName="QuantityRemaining" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="OrderDetailsID" ColumnName="OrderDetailsID" />
+          <ScalarProperty Name="LastModifiedOnDate" ColumnName="LastModifiedOnDate" />
+          <ScalarProperty Name="LastModifiedByUserID" ColumnName="LastModifiedByUserID" />
+          <ScalarProperty Name="CreatedOnDate" ColumnName="CreatedOnDate" />
+          <ScalarProperty Name="CreatedByUserID" ColumnName="CreatedByUserID" />
+          <ScalarProperty Name="AACodeSent" ColumnName="AACodeSent" />
+          <ScalarProperty Name="ReferralID" ColumnName="ReferralID" />
+          <ScalarProperty Name="ShipTax2" ColumnName="ShipTax2" />
+          <ScalarProperty Name="PurchaseOrderNumber" ColumnName="PurchaseOrderNumber" />
+          <ScalarProperty Name="ShipTax" ColumnName="ShipTax" />
+          <ScalarProperty Name="ShipCosts" ColumnName="ShipCosts" />
+          <ScalarProperty Name="PaymentState" ColumnName="PaymentState" />
+          <ScalarProperty Name="PaymentType" ColumnName="PaymentType" />
+          <ScalarProperty Name="ShipToID" ColumnName="ShipToID" />
+          <ScalarProperty Name="ShipDate" ColumnName="ShipDate" />
+          <ScalarProperty Name="OrderDate" ColumnName="OrderDate" />
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="OrderID" ColumnName="OrderID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

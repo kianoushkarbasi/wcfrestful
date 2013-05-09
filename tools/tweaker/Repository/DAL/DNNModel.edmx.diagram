@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="87fb0fe091cd4f5a95e418743ac8ec5e" Name="Diagram1">
+        <EntityTypeShape EntityType="FanoramaStagingModel.Affiliate" Width="1.5" PointX="5.25" PointY="243.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.AnonymousUser" Width="1.5" PointX="3" PointY="56.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.aspnet_Applications" Width="1.5" PointX="13.75" PointY="6.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.aspnet_Membership" Width="1.5" PointX="16" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.aspnet_Profile" Width="1.5" PointX="20.5" PointY="9.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.aspnet_Roles" Width="1.5" PointX="16" PointY="12.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.aspnet_SchemaVersions" Width="1.5" PointX="0.75" PointY="8.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.aspnet_Users" Width="1.5" PointX="18.25" PointY="9" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.Assembly" Width="1.5" PointX="3.75" PointY="15.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.Authentication" Width="1.5" PointX="3.75" PointY="8.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.Banner" Width="1.5" PointX="5.25" PointY="247" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.Batch" Width="1.5" PointX="0.75" PointY="11.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.CAT_AdvCatPermission" Width="1.5" PointX="5.25" PointY="60.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.CAT_AdvCatProducts" Width="1.5" PointX="5.25" PointY="57.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.CAT_AdvCats" Width="1.5" PointX="3" PointY="59.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.CAT_AuditLog" Width="1.5" PointX="18.75" PointY="2.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.CAT_Bids" Width="1.5" PointX="18.75" PointY="13.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.CAT_CartPriceRules" Width="1.5" PointX="12.75" PointY="22.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.CAT_Categories" Width="1.5" PointX="0.75" PointY="42.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.CAT_CCPaymentProcessors" Width="1.5" PointX="11.75" PointY="10.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.CAT_Checkout" Width="1.5" PointX="7.75" PointY="23.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.CAT_Comments" Width="1.5" PointX="11.25" PointY="158.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.CAT_CouponCodes" Width="1.5" PointX="0.75" PointY="14.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.CAT_CreditNotes" Width="1.5" PointX="9" PointY="154.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.CAT_EmailBlockList" Width="1.5" PointX="3" PointY="65.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.CAT_Feedbacks" Width="1.5" PointX="9" PointY="157.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.CAT_ListItemTexts" Width="1.5" PointX="3" PointY="67.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.CAT_ListItemTypes" Width="1.5" PointX="3" PointY="70.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.CAT_MainZones" Width="1.5" PointX="3" PointY="73.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.CAT_NativeLanguages" Width="1.5" PointX="10.75" PointY="15.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.CAT_NonDeliveryPeriods" Width="1.5" PointX="12.75" PointY="15.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.CAT_NonDespatchPeriods" Width="1.5" PointX="15.75" PointY="16.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.CAT_Options" Width="1.5" PointX="3" PointY="77.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.CAT_OrderDetails" Width="1.5" PointX="11.25" PointY="98.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.CAT_OrderItemsLinks" Width="1.5" PointX="7.5" PointY="38.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.CAT_Orders" Width="1.5" PointX="9" PointY="167.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.CAT_OrderSerialNumbers" Width="1.5" PointX="14.75" PointY="23.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.CAT_OrderSNCategories" Width="1.5" PointX="14.75" PointY="27.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.CAT_Organization" Width="1.5" PointX="9" PointY="175.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.CAT_PaymentMethodPermission" Width="1.5" PointX="9" PointY="100.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.CAT_PaymentMethods" Width="1.5" PointX="6.75" PointY="46.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.CAT_Periods" Width="1.5" PointX="5.25" PointY="27.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.CAT_PMCategories" Width="1.5" PointX="7.75" PointY="28.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.CAT_Posts" Width="1.5" PointX="11.25" PointY="193.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.CAT_PriceAgent" Width="1.5" PointX="5.25" PointY="31.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.CAT_PriceHistory" Width="1.5" PointX="5.25" PointY="34.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.CAT_PriceRules" Width="1.5" PointX="3" PointY="83" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.CAT_ProdOptionsSelections" Width="1.5" PointX="27.75" PointY="9.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.CAT_ProductFiles" Width="1.5" PointX="5.25" PointY="36.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.CAT_ProductImages" Width="1.5" PointX="5.25" PointY="43.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.CAT_ProductPermission" Width="1.5" PointX="14" PointY="95.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.CAT_Products" Width="1.5" PointX="3" PointY="32.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.CAT_ProductsLITypesTexts" Width="1.5" PointX="7.5" PointY="70.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.CAT_ProductsOptions" Width="1.5" PointX="5.25" PointY="78.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.CAT_ProductsSlots" Width="1.5" PointX="5.25" PointY="94.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.CAT_ProductsTypesSpecs" Width="1.5" PointX="7.5" PointY="91.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.CAT_ProductsZonesTax" Width="1.5" PointX="5.25" PointY="64.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.CAT_ProductTypes" Width="1.5" PointX="3" PointY="89.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.CAT_Referrals" Width="1.5" PointX="9" PointY="184.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.CAT_RelatedProducts" Width="1.5" PointX="5.25" PointY="67.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.CAT_Resources" Width="1.5" PointX="14.75" PointY="2.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.CAT_Reviews" Width="1.5" PointX="5.25" PointY="97.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.CAT_SerialNumbers" Width="1.5" PointX="27.75" PointY="12.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.CAT_Settings" Width="1.5" PointX="3" PointY="100.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.CAT_ShippingRates" Width="1.5" PointX="27.75" PointY="16.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.CAT_ShipTo" Width="1.5" PointX="9" PointY="187.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.CAT_ShoppingCart" Width="1.5" PointX="5.25" PointY="101" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.CAT_Slots" Width="1.5" PointX="3" PointY="94.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.CAT_SlotsProductTypes" Width="1.5" PointX="5.25" PointY="88.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.CAT_SNCategories" Width="1.5" PointX="16.75" PointY="29.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.CAT_Specifications" Width="1.5" PointX="3" PointY="98.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.CAT_SRSerialNumbers" Width="1.5" PointX="18.75" PointY="29.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.CAT_SRSNCategories" Width="1.5" PointX="12.75" PointY="30.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.CAT_StoreCurrency" Width="1.5" PointX="20.75" PointY="30.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.CAT_StorePermission" Width="1.5" PointX="3" PointY="28.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.CAT_SubZones" Width="1.5" PointX="5.25" PointY="73.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.CAT_Threads" Width="1.5" PointX="9" PointY="192.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.CAT_TypesSpecs" Width="1.5" PointX="5.25" PointY="91.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.CAT_TypesTexts" Width="1.5" PointX="5.25" PointY="70.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.CAT_VendorPermission" Width="1.5" PointX="6" PointY="122" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.CAT_Viewers" Width="1.5" PointX="29.75" PointY="2.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.CAT_ZonesNames" Width="1.5" PointX="3" PointY="131.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.Classification" Width="1.5" PointX="6" PointY="239.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.ContentItem" Width="1.5" PointX="6.75" PointY="184.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.ContentItems_MetaData" Width="1.5" PointX="12" PointY="185.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.ContentItems_Tags" Width="1.5" PointX="9" PointY="94.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.ContentType" Width="1.5" PointX="4.5" PointY="186" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.Dashboard_Controls" Width="1.5" PointX="3.75" PointY="168.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.DesktopModulePermission" Width="1.5" PointX="8.25" PointY="112" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.DesktopModule" Width="1.5" PointX="3.75" PointY="21.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.EventLog" Width="1.5" PointX="27.25" PointY="28.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.EventLogConfig" Width="1.5" PointX="25" PointY="30.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.EventLogType" Width="1.5" PointX="22.75" PointY="26.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.EventQueue" Width="1.5" PointX="29.75" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.FAQ" Width="1.5" PointX="11.25" PointY="112.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.FAQsCategory" Width="1.5" PointX="7.75" PointY="31.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.File" Width="1.5" PointX="5.25" PointY="130.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.Flyer_Flyer" Width="1.5" PointX="8.25" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.Flyer_HeaderImage" Width="1.5" PointX="6" PointY="8.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.Flyer_ImageEditorData" Width="1.5" PointX="29.75" PointY="10.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.Flyer_Login" Width="1.5" PointX="25" PointY="17.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.Flyer_Logo" Width="1.5" PointX="12.25" PointY="2.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.Flyer_LogoType" Width="1.5" PointX="10" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.Flyer_Order" Width="1.5" PointX="25" PointY="20.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.Flyer_PlaceHolder" Width="1.5" PointX="10" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.Flyer_PlaceHolderLocation" Width="1.5" PointX="7.75" PointY="2.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.Flyer_Player" Width="1.5" PointX="6" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.Flyer_Preference" Width="1.5" PointX="9" PointY="8.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.Flyer_Product" Width="1.5" PointX="7.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.Flyer_Rcommendation" Width="1.5" PointX="6" PointY="19.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.Flyer_Template" Width="1.5" PointX="6" PointY="11.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.Flyer_Template_Preference" Width="1.5" PointX="11.25" PointY="12.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.flyer_template_preference1" Width="1.5" PointX="9.75" PointY="31.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.Flyer_TemplatePreferenceDetails" Width="1.5" PointX="29.75" PointY="17.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.Flyer_TemplateRegions" Width="1.5" PointX="8.25" PointY="19" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.Flyer_TemplateType" Width="1.5" PointX="3.75" PointY="12.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.Flyer_User" Width="1.5" PointX="22.75" PointY="19.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.FolderMapping" Width="1.5" PointX="3" PointY="139.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.FolderMappingsSetting" Width="1.5" PointX="5.25" PointY="139.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.FolderPermission" Width="1.5" PointX="5.25" PointY="143.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.Folder" Width="1.5" PointX="3" PointY="143.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.HostSetting" Width="1.5" PointX="29.75" PointY="20.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.HtmlText" Width="1.5" PointX="14.25" PointY="121.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.HtmlTextLog" Width="1.5" PointX="19.5" PointY="118.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.HtmlTextUser" Width="1.5" PointX="16.5" PointY="129" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.LanguagePack" Width="1.5" PointX="6" PointY="84.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.Language" Width="1.5" PointX="3.75" PointY="158.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.Link" Width="1.5" PointX="11.25" PointY="129.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.List" Width="1.5" PointX="29.75" PointY="24.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.Messaging_Messages" Width="1.5" PointX="29.75" PointY="29.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.MetaData" Width="1.5" PointX="9.75" PointY="201" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.Mobile_PreviewProfiles" Width="1.5" PointX="3" PointY="148.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.Mobile_RedirectionRules" Width="1.5" PointX="5.25" PointY="153.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.Mobile_Redirections" Width="1.5" PointX="3" PointY="152.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.ModuleControl" Width="1.5" PointX="9" PointY="86.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.ModuleDefinition" Width="1.5" PointX="6.75" PointY="107.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.ModulePermission" Width="1.5" PointX="14.25" PointY="117" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.Module" Width="1.5" PointX="9" PointY="120.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.ModuleSetting" Width="1.5" PointX="11.25" PointY="133.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.Package" Width="1.5" PointX="1.5" PointY="20.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.PackageType" Width="1.5" PointX="1.5" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.Permission" Width="1.5" PointX="6" PointY="112" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.PortalAlia" Width="1.5" PointX="3" PointY="181.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.PortalDesktopModule" Width="1.5" PointX="6" PointY="118.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.PortalGroup" Width="1.5" PointX="15.75" PointY="32.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.PortalLanguage" Width="1.5" PointX="6" PointY="126.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.PortalLocalization" Width="1.5" PointX="3" PointY="191.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.Portal" Width="1.5" PointX="0.75" PointY="117.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.PortalSetting" Width="1.5" PointX="3" PointY="197.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.Profile" Width="1.5" PointX="3" PointY="127.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.ProfilePropertyDefinition" Width="1.5" PointX="3" PointY="204.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.RoleGroup" Width="1.5" PointX="3" PointY="209.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.Role" Width="1.5" PointX="5.25" PointY="162.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.Schedule" Width="1.5" PointX="22.75" PointY="10.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.ScheduleHistory" Width="1.5" PointX="25" PointY="10.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.ScheduleItemSetting" Width="1.5" PointX="25" PointY="14" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.SearchCommonWord" Width="1.5" PointX="31.75" PointY="2.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.SearchIndexer" Width="1.5" PointX="20.75" PointY="2.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.SearchItem" Width="1.5" PointX="11.25" PointY="136.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.SearchItemWord" Width="1.5" PointX="13.5" PointY="136.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.SearchItemWordPosition" Width="1.5" PointX="15.75" PointY="137.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.SearchWord" Width="1.5" PointX="11.25" PointY="141.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.SiteLog" Width="1.5" PointX="3" PointY="213.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.SkinControl" Width="1.5" PointX="3.75" PointY="174.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.SkinPackage" Width="1.5" PointX="3.75" PointY="220.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.Skin" Width="1.5" PointX="6" PointY="221.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.SystemMessage" Width="1.5" PointX="3" PointY="217.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.TAA_Adjustments" Width="1.5" PointX="12" PointY="165.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.TAA_Boxes" Width="1.5" PointX="31.75" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.TAA_Colors" Width="1.5" PointX="31.75" PointY="9.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.TAA_Commissions" Width="1.5" PointX="31.75" PointY="13.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.TAA_CouponAdjustments" Width="1.5" PointX="11.25" PointY="169.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.TAA_Coupons" Width="1.5" PointX="9" PointY="148" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.TAA_DealerMicrosites" Width="1.5" PointX="31.75" PointY="18.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.TAA_DealerPriceLists" Width="1.5" PointX="17.75" PointY="33.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.TAA_DiscountClasses" Width="1.5" PointX="19.75" PointY="33.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.TAA_Emails" Width="1.5" PointX="31.75" PointY="22.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.TAA_EmailTemplates" Width="1.5" PointX="21.75" PointY="33.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.TAA_FanID" Width="1.5" PointX="31.75" PointY="26.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.TAA_ImageUpload" Width="1.5" PointX="7.75" PointY="34.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.TAA_Microsite" Width="1.5" PointX="25" PointY="2.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.TAA_MicrositeLogos" Width="1.5" PointX="27.25" PointY="4.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.TAA_Notifications" Width="1.5" PointX="9.75" PointY="34.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.TAA_OrdersAdjustments" Width="1.5" PointX="14.25" PointY="169.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.TAA_PantSizes" Width="1.5" PointX="18" PointY="18.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.TAA_Parameters" Width="1.5" PointX="11.75" PointY="33.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.TAA_PaymentTerms" Width="1.5" PointX="4.5" PointY="172" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.TAA_ProductCategories" Width="1.5" PointX="24.75" PointY="23.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.TAA_ProductionTimes" Width="1.5" PointX="31.75" PointY="34.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.TAA_Products" Width="1.5" PointX="27" PointY="23.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.TAA_ProductSizes" Width="1.5" PointX="13" PointY="35.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.TAA_RecentActivity" Width="1.5" PointX="33.75" PointY="2.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.TAA_RoleCallSheets" Width="1.5" PointX="18" PointY="24.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.TAA_RoleCards" Width="1.5" PointX="20.25" PointY="18.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.TAA_ShippingBoxes" Width="1.5" PointX="33.75" PointY="7.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.TAA_ShirtSizes" Width="1.5" PointX="18" PointY="21.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.TAA_ShoppingCart" Width="1.5" PointX="10.75" PointY="21.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.TAA_ShoppingCartAdjustments" Width="1.5" PointX="15.25" PointY="92" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.TAA_ShoppingCartSizes" Width="1.5" PointX="13" PointY="18.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.TAA_SizeGroups" Width="1.5" PointX="15.75" PointY="20.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.TAA_Sizes" Width="1.5" PointX="10.75" PointY="18.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.TAA_Sports" Width="1.5" PointX="22.75" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.TabModule" Width="1.5" PointX="17.25" PointY="119.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.TabModuleSetting" Width="1.5" PointX="19.5" PointY="126.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.TabPermission" Width="1.5" PointX="20.25" PointY="122" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.Tab" Width="1.5" PointX="12" PointY="119.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.TabSetting" Width="1.5" PointX="14.25" PointY="126.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.Taxonomy_ScopeTypes" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.Taxonomy_Terms" Width="1.5" PointX="5.25" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.Taxonomy_Vocabularies" Width="1.5" PointX="3" PointY="2.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.Taxonomy_VocabularyTypes" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.Transaction" Width="1.5" PointX="33.75" PointY="13.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.UrlLog" Width="1.5" PointX="5.25" PointY="233.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.Url" Width="1.5" PointX="3" PointY="230.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.UrlTracking" Width="1.5" PointX="3" PointY="232.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.UserAuthentication" Width="1.5" PointX="9" PointY="196.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.UserDefinedData" Width="1.5" PointX="13.5" PointY="146.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.UserDefinedField" Width="1.5" PointX="11.25" PointY="145.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.UserDefinedFieldSetting" Width="1.5" PointX="13.5" PointY="149.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.UserDefinedRow" Width="1.5" PointX="11.25" PointY="151.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.UserPortal" Width="1.5" PointX="9" PointY="116.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.UserProfile" Width="1.5" PointX="5.25" PointY="205.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.UserRole" Width="1.5" PointX="7.5" PointY="163.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.User" Width="1.5" PointX="6.75" PointY="168.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.UsersOnline" Width="1.5" PointX="9" PointY="127.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.VendorClassification" Width="1.5" PointX="8.25" PointY="246.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.Vendor" Width="1.5" PointX="3" PointY="244.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.Version" Width="1.5" PointX="33.75" PointY="25.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.WebServer" Width="1.5" PointX="23.75" PointY="35.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.Workflow" Width="1.5" PointX="9.75" PointY="108.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.WorkflowState" Width="1.5" PointX="12" PointY="108.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.CAT_vw_OrderDetailsRollCall" Width="1.5" PointX="25.75" PointY="35.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.CAT_vw_PaymentMethodPermissions" Width="1.5" PointX="33.75" PointY="28.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.CAT_vw_ProductPermissions" Width="1.5" PointX="27.75" PointY="35.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.CAT_vw_ShoppingCartProduct" Width="1.5" PointX="33.75" PointY="34.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.CAT_vw_ShoppingCartRollCall" Width="1.5" PointX="35.75" PointY="2.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.TAA_vw_OrderDetailsRollCall" Width="1.5" PointX="35.75" PointY="8.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.TAA_vw_ProductsInOrders" Width="1.5" PointX="35.75" PointY="15.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.TAA_vw_ShoppingCartRollCall" Width="1.5" PointX="15.75" PointY="37.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.TAA_vw_UserAndProfiles" Width="1.5" PointX="17.75" PointY="37.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.vw_aspnet_Applications" Width="1.5" PointX="19.75" PointY="37.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.vw_aspnet_MembershipUsers" Width="1.5" PointX="37.75" PointY="2.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.vw_aspnet_Profiles" Width="1.5" PointX="37.75" PointY="9.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.vw_aspnet_Roles" Width="1.5" PointX="9.75" PointY="39.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.vw_aspnet_Users" Width="1.5" PointX="37.75" PointY="12.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.vw_aspnet_UsersInRoles" Width="1.5" PointX="11.75" PointY="39.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.vw_DesktopModulePermissions" Width="1.5" PointX="37.75" PointY="16.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.vw_DesktopModules" Width="1.5" PointX="37.75" PointY="22.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.vw_FolderPermissions" Width="1.5" PointX="21.75" PointY="39.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.vw_Lists" Width="1.5" PointX="37.75" PointY="29.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.vw_ModulePermissions" Width="1.5" PointX="29.75" PointY="39.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.vw_Modules" Width="1.5" PointX="31.75" PointY="39.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.vw_Portals" Width="1.5" PointX="37.75" PointY="35.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.vw_PortalsDefaultLanguage" Width="1.5" PointX="39.75" PointY="2.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.vw_SearchItems" Width="1.5" PointX="39.75" PointY="12.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.vw_TabModules" Width="1.5" PointX="39.75" PointY="17.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.vw_TabPermissions" Width="1.5" PointX="39.75" PointY="29.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.vw_Tabs" Width="1.5" PointX="39.75" PointY="35.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.vw_UserRoles" Width="1.5" PointX="8.75" PointY="42.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FanoramaStagingModel.vw_Users" Width="1.5" PointX="10.75" PointY="42.25" IsExpanded="true" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_Affiliates_Vendors" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_AnonymousUsers_Portals" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK__aspnet_Me__Appli__4A78EF25" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK__aspnet_Ro__Appli__5EB4F1FC" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK__aspnet_Us__Appli__609D3A6E" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK__aspnet_Me__UserI__4B6D135E" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK__aspnet_Pr__UserI__263B8EAF" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_PackageAssemblies_PackageAssemblies" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_Authentication_Packages" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_Banner_Vendor" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_CAT_AdvCatPermission_AdvCats" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_CAT_AdvCatPermission_StorePermission" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_CAT_AdvCatProducts_AdvCats" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_CAT_AdvCatProducts_Products" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_CAT_AdvCats_CAT_AdvCats" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_CAT_AdvCats_Portals" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_CAT_Products_Categories" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_CAT_Comments_CAT_Feedbacks" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_CAT_CreditNotes_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_CAT_EmailBlockList_Portals" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_CAT_Feedbacks_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_CAT_ListItemTexts_Portals" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_CAT_ListItemTypes_Portals" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_CAT_TypesTexts_ListItemTypes" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_CAT_MainZones_Portals" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_CAT_SubZones_MainZones" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_CAT_Options_Portals" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_CAT_ProductsOptions_Options" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_CAT_OrderDetails_Orders" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_CAT_OrderDetails_Products" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_CAT_OrderItemsLinks_ProductFiles" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_CAT_Orders_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_TAA_CouponAdjustments_CAT_Orders" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_TAA_OrdersAdjustments_CAT_Orders" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_CAT_Organization_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_CAT_PaymentMethodPermission_CAT_PaymentMethods" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_CAT_PaymentMethodPermission_CAT_StorePermission" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_CAT_PaymentMethodPermission_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_CAT_Periods_Products" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_CAT_Posts_CAT_Threads" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_CAT_PriceAgent_Products" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_CAT_PriceHistory_Products" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_CAT_PriceRules_Portals" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_CAT_ProductFiles_Products" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_CAT_ProductImages_Products" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_CAT_ProductPermission_CAT_Products" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_CAT_ProductPermission_CAT_StorePermission" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_CAT_ProductPermission_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_CAT_ProductsOptions_Products" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_CAT_ProductsSlots_Products" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_CAT_ProductsZonesTax_Products" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_CAT_RelatedProducts_Products" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_CAT_Reviews_Products" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_CAT_ShoppingCart_Products" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_TAA_ProductSizes_CAT_Products" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_TAA_ShoppingCart_CAT_Products" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_CAT_ProductsLITypesTexts_TypesTexts" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_CAT_ProductsSlots_Slots" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_CAT_ProductsTypesSpecs_TypesSpecs" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_CAT_ProductTypes_Portals" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_CAT_SlotsProductTypes_ProductTypes" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_CAT_TypesSpecs_ProductTypes" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_CAT_Referrals_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_CAT_Settings_Portals" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_CAT_ShipTo_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_CAT_Slots_Portals" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_CAT_Specifications_Portals" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_CAT_VendorPermission_CAT_StorePermission" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_CAT_Threads_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_CAT_VendorPermission_Portals" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_CAT_VendorPermission_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_CAT_ZonesNames_Portals" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_Classification_Classification" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_VendorClassification_Classification" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_ContentItems_ContentTypes" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_ContentItems_MetaData_ContentItems" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_ContentItems_Tags_ContentItems" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_Modules_ContentItems" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_Tabs_ContentItems" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_ContentItems_MetaDataMetaData" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_ContentItems_Tags_Taxonomy_Terms" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_Dashboard_Controls_Packages" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_DesktopModulePermission_Permission" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_DesktopModulePermission_PortalDesktopModules" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_DesktopModulePermissionUsers" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_DesktopModules_Packages" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_ModuleDefinitions_DesktopModules" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_PortalDesktopModules_DesktopModules" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_EventLog_EventLogConfig" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_EventLog_EventLogTypes" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_EventLogConfig_EventLogTypes" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_FAQs_Modules" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_Files_Folders" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_Files_Portals" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_Flyer_Flyer_Flyer_HeaderImage" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_Flyer_Flyer_Flyer_Player" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_Flyer_Flyer_Flyer_Rcommendation" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_Flyer_Flyer_Flyer_Template" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_Flyer_Login_Flyer_User" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_Flyer_Logo_Flyer_LogoType" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_Flyer_Logo_Flyer_PlaceHolder" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_Flyer_Order_Flyer_User" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_Flyer_PlaceHolder_Flyer_PlaceHolderLocation" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_PlaceHolder_Flyer_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_Flyer_Template_Preference_Flyer_Preference" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_Flyer_Template_Flyer_TemplateType" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_Flyer_Template_Preference_Flyer_Template" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_Flyer_TemplateRegions_Flyer_Template" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_FolderMappings_Portals" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_FolderMappingsSettings_FolderMappings" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_FolderPermission_Folders" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_FolderPermission_Permission" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_FolderPermissionUsers" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_Folders_Portals" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_HtmlText_Modules" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_HtmlText_WorkflowStates" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_HtmlTextLog_HtmlText" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_HtmlTextUsers_HtmlText" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_HtmlTextLog_WorkflowStates" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_LanguagePacks_Languages" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_LanguagePacks_Packages" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_PortalLanguages_PortalLanguages" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_Links_Modules" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_Mobile_PreviewProfiles_Portals" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_Mobile_RedirectionRules_Mobile_Redirections" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_Mobile_Redirections_Portals" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_ModuleControls_ModuleDefinitions" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_Modules_ModuleDefinitions" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_ModulePermission_Modules" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_ModulePermission_Permission" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_ModulePermissionUsers" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_Modules_Portals" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_ModuleSettings_Modules" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_SearchItem_Modules" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_TabModules_Modules" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_UserDefinedFields_Modules" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_UserDefinedRows_Modules" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_Packages_PackageTypes" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_SkinControls_Packages" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_SkinPackages_Packages" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_TabPermission_Permission" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_PortalAlias_Portals" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_PortalDesktopModules_Portals" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_PortalLanguages_Portals" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_PortalLocalization_Portals" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_PortalSettings_Portals" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_Profile_Portals" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_ProfilePropertyDefinition_Portals" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_RoleGroups_Portals" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_Roles_Portals" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_SiteLog_Portals" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_SystemMessages_Portals" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_Tabs_Portals" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_Urls_Portals" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_UrlTracking_Portals" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_UserPortals_Portals" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_UsersOnline_Portals" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_Vendor_Portals" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_Profile_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_UserProfile_ProfilePropertyDefinition" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_Roles_RoleGroups" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_UserRoles_Roles" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_ScheduleHistory_Schedule" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_ScheduleItemSettings_Schedule" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_SearchItemWord_SearchItem" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_SearchItemWord_SearchWord" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_SearchItemWordPosition_SearchItemWord" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_Skins_SkinPackages" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_ShoppingCartAdjustments_TAA_Adjustments" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_TAA_OrdersAdjustments_TAA_Adjustments" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_TAA_CouponAdjustments_TAA_Coupons" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_TAA_Microsite_TAA_Sports" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_TAA_MicrositeLogos_TAA_Microsite" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_TAA_PantSizes_TAA_SizeGroups" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_TAA_RoleCards_TAA_PantSizes" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_TAA_Products_TAA_ProductCategories" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_TAA_ProductSizes_TAA_Sizes" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_TAA_RoleCards_TAA_RoleCallSheets" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_TAA_RoleCards_TAA_ShirtSizes" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_TAA_ShirtSizes_TAA_SizeGroups" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_TAA_ShoppingCartSizes_TAA_ShoppingCart" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_TAA_ShoppingCartAdjustments_TAA_ShoppingCartSizes" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_TAA_ShoppingCartSizes_TAA_Sizes" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_TabModules_Tabs" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_TabModuleSettings_TabModules" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_TabPermission_Tabs" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_TabPermission_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_Tabs_Tabs" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_TabSettings_Tabs" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_Taxonomy_Vocabularies_Taxonomy_ScopeTypes" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_Taxonomy_Terms_Taxonomy_Terms" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_Taxonomy_Terms_Taxonomy_Vocabularies" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_Taxonomy_Vocabularies_Taxonomy_VocabularyTypes" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_UrlLog_UrlTracking" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_UserAuthentication_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_UserDefinedData_UserDefinedFields" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_UserDefinedData_UserDefinedRows" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_UserDefinedFieldSettings_UserDefinedFields" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_UserPortals_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_UserProfile_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_UserRoles_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_UsersOnline_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_VendorClassification_Vendors" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.FK_WorkflowStates_Workflow" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.aspnet_UsersInRoles" ManuallyRouted="false" />
+        <AssociationConnector Association="FanoramaStagingModel.TAA_DealerPaymentTerms" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

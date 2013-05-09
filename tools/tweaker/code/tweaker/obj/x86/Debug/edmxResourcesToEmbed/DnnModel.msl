@@ -1,0 +1,283 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="fanlive4ModelStoreContainer" CdmEntityContainer="fanlive4Entities">
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="fanlive4Model.User">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="IsSuperUser" ColumnName="IsSuperUser" />
+          <ScalarProperty Name="AffiliateId" ColumnName="AffiliateId" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
+          <ScalarProperty Name="UpdatePassword" ColumnName="UpdatePassword" />
+          <ScalarProperty Name="LastIPAddress" ColumnName="LastIPAddress" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="CreatedByUserID" ColumnName="CreatedByUserID" />
+          <ScalarProperty Name="CreatedOnDate" ColumnName="CreatedOnDate" />
+          <ScalarProperty Name="LastModifiedByUserID" ColumnName="LastModifiedByUserID" />
+          <ScalarProperty Name="LastModifiedOnDate" ColumnName="LastModifiedOnDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserProfiles">
+      <EntityTypeMapping TypeName="fanlive4Model.UserProfile">
+        <MappingFragment StoreEntitySet="UserProfile">
+          <ScalarProperty Name="LastUpdatedDate" ColumnName="LastUpdatedDate" />
+          <ScalarProperty Name="Visibility" ColumnName="Visibility" />
+          <ScalarProperty Name="PropertyText" ColumnName="PropertyText" />
+          <ScalarProperty Name="PropertyValue" ColumnName="PropertyValue" />
+          <ScalarProperty Name="PropertyDefinitionID" ColumnName="PropertyDefinitionID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="ProfileID" ColumnName="ProfileID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TAA_FanID">
+      <EntityTypeMapping TypeName="fanlive4Model.TAA_FanID">
+        <MappingFragment StoreEntitySet="TAA_FanID">
+          <ScalarProperty Name="CUGGoodresolution" ColumnName="CUGGoodresolution" />
+          <ScalarProperty Name="CUGGoodvectorized" ColumnName="CUGGoodvectorized" />
+          <ScalarProperty Name="CUGGoodtransparancy" ColumnName="CUGGoodtransparancy" />
+          <ScalarProperty Name="CUGGoodsize" ColumnName="CUGGoodsize" />
+          <ScalarProperty Name="GraphicDeleted" ColumnName="GraphicDeleted" />
+          <ScalarProperty Name="CUG" ColumnName="CUG" />
+          <ScalarProperty Name="GAUploadedGraphic" ColumnName="GAUploadedGraphic" />
+          <ScalarProperty Name="UserUploadedGraphic" ColumnName="UserUploadedGraphic" />
+          <ScalarProperty Name="TAASportID" ColumnName="TAASportID" />
+          <ScalarProperty Name="DeletedOnDate" ColumnName="DeletedOnDate" />
+          <ScalarProperty Name="DeletedByUserID" ColumnName="DeletedByUserID" />
+          <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+          <ScalarProperty Name="LastModifiedOnDate" ColumnName="LastModifiedOnDate" />
+          <ScalarProperty Name="LastModifiedByUserID" ColumnName="LastModifiedByUserID" />
+          <ScalarProperty Name="CreatedOnDate" ColumnName="CreatedOnDate" />
+          <ScalarProperty Name="CreatedByUserID" ColumnName="CreatedByUserID" />
+          <ScalarProperty Name="Sport" ColumnName="Sport" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="School" ColumnName="School" />
+          <ScalarProperty Name="TeamLogo" ColumnName="TeamLogo" />
+          <ScalarProperty Name="AccentColorID" ColumnName="AccentColorID" />
+          <ScalarProperty Name="Accent" ColumnName="Accent" />
+          <ScalarProperty Name="SecondaryColorID" ColumnName="SecondaryColorID" />
+          <ScalarProperty Name="SecondaryColor" ColumnName="SecondaryColor" />
+          <ScalarProperty Name="PrimaryColorID" ColumnName="PrimaryColorID" />
+          <ScalarProperty Name="PrimaryColor" ColumnName="PrimaryColor" />
+          <ScalarProperty Name="TeamName" ColumnName="TeamName" />
+          <ScalarProperty Name="DesignName" ColumnName="DesignName" />
+          <ScalarProperty Name="FanID" ColumnName="FanID" />
+          <ScalarProperty Name="MicrositeID" ColumnName="MicrositeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TAA_Microsite">
+      <EntityTypeMapping TypeName="fanlive4Model.TAA_Microsite">
+        <MappingFragment StoreEntitySet="TAA_Microsite">
+          <ScalarProperty Name="IntegratorCustAccount" ColumnName="IntegratorCustAccount" />
+          <ScalarProperty Name="IntegratorRetrievalCode" ColumnName="IntegratorRetrievalCode" />
+          <ScalarProperty Name="TeamUniqueID" ColumnName="TeamUniqueID" />
+          <ScalarProperty Name="PartialURL" ColumnName="PartialURL" />
+          <ScalarProperty Name="URL" ColumnName="URL" />
+          <ScalarProperty Name="DeletedOnDate" ColumnName="DeletedOnDate" />
+          <ScalarProperty Name="DeletedByUserID" ColumnName="DeletedByUserID" />
+          <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+          <ScalarProperty Name="LastModifiedOnDate" ColumnName="LastModifiedOnDate" />
+          <ScalarProperty Name="LastModifiedByUserID" ColumnName="LastModifiedByUserID" />
+          <ScalarProperty Name="CreatedOnDate" ColumnName="CreatedOnDate" />
+          <ScalarProperty Name="CreatedByUserID" ColumnName="CreatedByUserID" />
+          <ScalarProperty Name="Locked" ColumnName="Locked" />
+          <ScalarProperty Name="Enabled" ColumnName="Enabled" />
+          <ScalarProperty Name="CreatedFromSLP" ColumnName="CreatedFromSLP" />
+          <ScalarProperty Name="SportID" ColumnName="SportID" />
+          <ScalarProperty Name="Sport" ColumnName="Sport" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="School" ColumnName="School" />
+          <ScalarProperty Name="TeamLogo" ColumnName="TeamLogo" />
+          <ScalarProperty Name="AccentColorID" ColumnName="AccentColorID" />
+          <ScalarProperty Name="SecondaryColorID" ColumnName="SecondaryColorID" />
+          <ScalarProperty Name="PrimaryColorID" ColumnName="PrimaryColorID" />
+          <ScalarProperty Name="Accent" ColumnName="Accent" />
+          <ScalarProperty Name="SecondaryColour" ColumnName="SecondaryColour" />
+          <ScalarProperty Name="PrimaryColour" ColumnName="PrimaryColour" />
+          <ScalarProperty Name="TeamName" ColumnName="TeamName" />
+          <ScalarProperty Name="MicrositeID" ColumnName="MicrositeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TAA_RoleCards">
+      <EntityTypeMapping TypeName="fanlive4Model.TAA_RoleCards">
+        <MappingFragment StoreEntitySet="TAA_RoleCards">
+          <ScalarProperty Name="DeletedOnDate" ColumnName="DeletedOnDate" />
+          <ScalarProperty Name="DeletedByUserID" ColumnName="DeletedByUserID" />
+          <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+          <ScalarProperty Name="LastModifiedOnDate" ColumnName="LastModifiedOnDate" />
+          <ScalarProperty Name="LastModifiedByUserID" ColumnName="LastModifiedByUserID" />
+          <ScalarProperty Name="CreatedOnDate" ColumnName="CreatedOnDate" />
+          <ScalarProperty Name="CreatedByUserID" ColumnName="CreatedByUserID" />
+          <ScalarProperty Name="playerRetrievalCode" ColumnName="playerRetrievalCode" />
+          <ScalarProperty Name="ShirtSizeID" ColumnName="ShirtSizeID" />
+          <ScalarProperty Name="PantSizeID" ColumnName="PantSizeID" />
+          <ScalarProperty Name="SizeGroupID" ColumnName="SizeGroupID" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="Zip" ColumnName="Zip" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="MiddleInitial" ColumnName="MiddleInitial" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="JerseyNumber" ColumnName="JerseyNumber" />
+          <ScalarProperty Name="PrintedName" ColumnName="PrintedName" />
+          <ScalarProperty Name="RoleCallSheetID" ColumnName="RoleCallSheetID" />
+          <ScalarProperty Name="RoleCardID" ColumnName="RoleCardID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TAA_RoleCallSheets">
+      <EntityTypeMapping TypeName="fanlive4Model.TAA_RoleCallSheets">
+        <MappingFragment StoreEntitySet="TAA_RoleCallSheets">
+          <ScalarProperty Name="DeletedOnDate" ColumnName="DeletedOnDate" />
+          <ScalarProperty Name="DeletedByUserID" ColumnName="DeletedByUserID" />
+          <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+          <ScalarProperty Name="LastModifiedOnDate" ColumnName="LastModifiedOnDate" />
+          <ScalarProperty Name="LastModifiedByUserID" ColumnName="LastModifiedByUserID" />
+          <ScalarProperty Name="CreatedOnDate" ColumnName="CreatedOnDate" />
+          <ScalarProperty Name="CreatedByUserID" ColumnName="CreatedByUserID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="MicrositeID" ColumnName="MicrositeID" />
+          <ScalarProperty Name="RollCallSheetID" ColumnName="RollCallSheetID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CAT_Products">
+      <EntityTypeMapping TypeName="fanlive4Model.CAT_Products">
+        <MappingFragment StoreEntitySet="CAT_Products">
+          <ScalarProperty Name="SortOrder" ColumnName="SortOrder" />
+          <ScalarProperty Name="CMSProductDesign" ColumnName="CMSProductDesign" />
+          <ScalarProperty Name="TAASportID" ColumnName="TAASportID" />
+          <ScalarProperty Name="CMSProductID" ColumnName="CMSProductID" />
+          <ScalarProperty Name="DiscountClassID" ColumnName="DiscountClassID" />
+          <ScalarProperty Name="DiscountClass" ColumnName="DiscountClass" />
+          <ScalarProperty Name="ConsumerTier4Price" ColumnName="ConsumerTier4Price" />
+          <ScalarProperty Name="ConsumerTier3Price" ColumnName="ConsumerTier3Price" />
+          <ScalarProperty Name="ConsumerTier2Price" ColumnName="ConsumerTier2Price" />
+          <ScalarProperty Name="ConsumerTier1Price" ColumnName="ConsumerTier1Price" />
+          <ScalarProperty Name="DealerTier4Price" ColumnName="DealerTier4Price" />
+          <ScalarProperty Name="DealerTier3Price" ColumnName="DealerTier3Price" />
+          <ScalarProperty Name="DealerTier2Price" ColumnName="DealerTier2Price" />
+          <ScalarProperty Name="DealerTier1Price" ColumnName="DealerTier1Price" />
+          <ScalarProperty Name="StockedColorID6" ColumnName="StockedColorID6" />
+          <ScalarProperty Name="StockedColorID5" ColumnName="StockedColorID5" />
+          <ScalarProperty Name="StockedColorID4" ColumnName="StockedColorID4" />
+          <ScalarProperty Name="StockedColorID3" ColumnName="StockedColorID3" />
+          <ScalarProperty Name="StockedColorID2" ColumnName="StockedColorID2" />
+          <ScalarProperty Name="StockedColorID" ColumnName="StockedColorID" />
+          <ScalarProperty Name="NonStockItem" ColumnName="NonStockItem" />
+          <ScalarProperty Name="TotalPeriods" ColumnName="TotalPeriods" />
+          <ScalarProperty Name="MaxWeight" ColumnName="MaxWeight" />
+          <ScalarProperty Name="TaxCode" ColumnName="TaxCode" />
+          <ScalarProperty Name="LastModifiedOnDate" ColumnName="LastModifiedOnDate" />
+          <ScalarProperty Name="LastModifiedByUserID" ColumnName="LastModifiedByUserID" />
+          <ScalarProperty Name="ReservePrice" ColumnName="ReservePrice" />
+          <ScalarProperty Name="StartingPrice" ColumnName="StartingPrice" />
+          <ScalarProperty Name="AuctionFinished" ColumnName="AuctionFinished" />
+          <ScalarProperty Name="OrigProductID" ColumnName="OrigProductID" />
+          <ScalarProperty Name="ShippingAddress" ColumnName="ShippingAddress" />
+          <ScalarProperty Name="OrderQuantValidExpr" ColumnName="OrderQuantValidExpr" />
+          <ScalarProperty Name="ReorderPoint" ColumnName="ReorderPoint" />
+          <ScalarProperty Name="ItemDeliveryType" ColumnName="ItemDeliveryType" />
+          <ScalarProperty Name="RoleExpiryType" ColumnName="RoleExpiryType" />
+          <ScalarProperty Name="ProductCost" ColumnName="ProductCost" />
+          <ScalarProperty Name="UseRoleFees" ColumnName="UseRoleFees" />
+          <ScalarProperty Name="PayPalSubscription" ColumnName="PayPalSubscription" />
+          <ScalarProperty Name="DonationItem" ColumnName="DonationItem" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="PublicationEnd" ColumnName="PublicationEnd" />
+          <ScalarProperty Name="PublicationStart" ColumnName="PublicationStart" />
+          <ScalarProperty Name="InsuredValue" ColumnName="InsuredValue" />
+          <ScalarProperty Name="ShipExempt" ColumnName="ShipExempt" />
+          <ScalarProperty Name="TaxExempt" ColumnName="TaxExempt" />
+          <ScalarProperty Name="RecurringBilling" ColumnName="RecurringBilling" />
+          <ScalarProperty Name="SubscriptionPeriod" ColumnName="SubscriptionPeriod" />
+          <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+          <ScalarProperty Name="DateCreated" ColumnName="DateCreated" />
+          <ScalarProperty Name="BulkPriceLimit5" ColumnName="BulkPriceLimit5" />
+          <ScalarProperty Name="BulkPriceLimit4" ColumnName="BulkPriceLimit4" />
+          <ScalarProperty Name="BulkPriceLimit3" ColumnName="BulkPriceLimit3" />
+          <ScalarProperty Name="BulkPriceLimit2" ColumnName="BulkPriceLimit2" />
+          <ScalarProperty Name="BulkPriceLimit1" ColumnName="BulkPriceLimit1" />
+          <ScalarProperty Name="CreatedByUser" ColumnName="CreatedByUser" />
+          <ScalarProperty Name="Archive" ColumnName="Archive" />
+          <ScalarProperty Name="DownLoadFile" ColumnName="DownLoadFile" />
+          <ScalarProperty Name="ZIPPassWord" ColumnName="ZIPPassWord" />
+          <ScalarProperty Name="DownLoad" ColumnName="DownLoad" />
+          <ScalarProperty Name="SaleEnd" ColumnName="SaleEnd" />
+          <ScalarProperty Name="SaleStart" ColumnName="SaleStart" />
+          <ScalarProperty Name="SalePrice" ColumnName="SalePrice" />
+          <ScalarProperty Name="Featured" ColumnName="Featured" />
+          <ScalarProperty Name="FreightCosts2" ColumnName="FreightCosts2" />
+          <ScalarProperty Name="FreightCosts1" ColumnName="FreightCosts1" />
+          <ScalarProperty Name="Height" ColumnName="Height" />
+          <ScalarProperty Name="Width" ColumnName="Width" />
+          <ScalarProperty Name="Length" ColumnName="Length" />
+          <ScalarProperty Name="Volume" ColumnName="Volume" />
+          <ScalarProperty Name="Weight" ColumnName="Weight" />
+          <ScalarProperty Name="OrderQuant" ColumnName="OrderQuant" />
+          <ScalarProperty Name="Stock" ColumnName="Stock" />
+          <ScalarProperty Name="URL" ColumnName="URL" />
+          <ScalarProperty Name="DescriptionHTML" ColumnName="DescriptionHTML" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="UnitCost6" ColumnName="UnitCost6" />
+          <ScalarProperty Name="UnitCost5" ColumnName="UnitCost5" />
+          <ScalarProperty Name="UnitCost4" ColumnName="UnitCost4" />
+          <ScalarProperty Name="UnitCost3" ColumnName="UnitCost3" />
+          <ScalarProperty Name="UnitCost2" ColumnName="UnitCost2" />
+          <ScalarProperty Name="UnitCost" ColumnName="UnitCost" />
+          <ScalarProperty Name="ProductImage" ColumnName="ProductImage" />
+          <ScalarProperty Name="KeyWords" ColumnName="KeyWords" />
+          <ScalarProperty Name="Free3" ColumnName="Free3" />
+          <ScalarProperty Name="Free2" ColumnName="Free2" />
+          <ScalarProperty Name="Free1" ColumnName="Free1" />
+          <ScalarProperty Name="ISBN" ColumnName="ISBN" />
+          <ScalarProperty Name="EAN" ColumnName="EAN" />
+          <ScalarProperty Name="ProductNumber" ColumnName="ProductNumber" />
+          <ScalarProperty Name="ProductName" ColumnName="ProductName" />
+          <ScalarProperty Name="Category3" ColumnName="Category3" />
+          <ScalarProperty Name="Category2ID" ColumnName="Category2ID" />
+          <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CAT_AdvCatProducts">
+      <EntityTypeMapping TypeName="fanlive4Model.CAT_AdvCatProducts">
+        <MappingFragment StoreEntitySet="CAT_AdvCatProducts">
+          <ScalarProperty Name="AddAdvCatToProductDisplay" ColumnName="AddAdvCatToProductDisplay" />
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="AdvCatID" ColumnName="AdvCatID" />
+          <ScalarProperty Name="AdvCatProductID" ColumnName="AdvCatProductID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TAA_MicrositeLogos">
+      <EntityTypeMapping TypeName="fanlive4Model.TAA_MicrositeLogos">
+        <MappingFragment StoreEntitySet="TAA_MicrositeLogos">
+          <ScalarProperty Name="DeletedOnDate" ColumnName="DeletedOnDate" />
+          <ScalarProperty Name="DeletedByUserID" ColumnName="DeletedByUserID" />
+          <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+          <ScalarProperty Name="LastModifiedOnDate" ColumnName="LastModifiedOnDate" />
+          <ScalarProperty Name="LastModifiedByUserID" ColumnName="LastModifiedByUserID" />
+          <ScalarProperty Name="CreatedOnDate" ColumnName="CreatedOnDate" />
+          <ScalarProperty Name="CreatedByUserID" ColumnName="CreatedByUserID" />
+          <ScalarProperty Name="LogoName" ColumnName="LogoName" />
+          <ScalarProperty Name="Logo" ColumnName="Logo" />
+          <ScalarProperty Name="MicrositeID" ColumnName="MicrositeID" />
+          <ScalarProperty Name="LogoID" ColumnName="LogoID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

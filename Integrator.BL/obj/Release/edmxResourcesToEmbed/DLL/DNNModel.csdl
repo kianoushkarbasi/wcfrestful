@@ -1,0 +1,2096 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="fanlive7Model" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="DNNEntities" annotation:LazyLoadingEnabled="true">
+    <FunctionImport Name="Integrator_InsertNewUser_">
+      <Parameter Name="ApplicationName" Mode="In" Type="String" />
+      <Parameter Name="UserName" Mode="In" Type="String" />
+      <Parameter Name="Password" Mode="In" Type="String" />
+      <Parameter Name="firstName" Mode="In" Type="String" />
+      <Parameter Name="lastName" Mode="In" Type="String" />
+      <Parameter Name="displayName" Mode="In" Type="String" />
+      <Parameter Name="PasswordSalt" Mode="In" Type="String" />
+      <Parameter Name="Email" Mode="In" Type="String" />
+      <Parameter Name="PasswordQuestion" Mode="In" Type="String" />
+      <Parameter Name="PasswordAnswer" Mode="In" Type="String" />
+      <Parameter Name="IsApproved" Mode="In" Type="Boolean" />
+      <Parameter Name="CurrentTimeUtc" Mode="In" Type="DateTime" />
+      <Parameter Name="CreateDate" Mode="In" Type="DateTime" />
+      <Parameter Name="UniqueEmail" Mode="In" Type="Int32" />
+      <Parameter Name="PasswordFormat" Mode="In" Type="Int32" />
+      <Parameter Name="PortalId" Mode="In" Type="Int32" />
+      <Parameter Name="UserId" Mode="In" Type="Guid" />
+      <Parameter Name="DNNUserId" Mode="In" Type="Int32" />
+      <Parameter Name="ReturnUserId" Mode="InOut" Type="Int32" />
+    </FunctionImport>
+    <EntitySet Name="aspnet_Membership" EntityType="fanlive7Model.aspnet_Membership" />
+    <EntitySet Name="aspnet_Profile" EntityType="fanlive7Model.aspnet_Profile" />
+    <EntitySet Name="aspnet_Roles" EntityType="fanlive7Model.aspnet_Roles" />
+    <EntitySet Name="aspnet_Users" EntityType="fanlive7Model.aspnet_Users" />
+    <EntitySet Name="CAT_AdvCatProducts" EntityType="fanlive7Model.CAT_AdvCatProducts" />
+    <EntitySet Name="CAT_AdvCats" EntityType="fanlive7Model.CAT_AdvCats" />
+    <EntitySet Name="CAT_OrderDetails" EntityType="fanlive7Model.CAT_OrderDetails" />
+    <EntitySet Name="CAT_Orders" EntityType="fanlive7Model.CAT_Orders" />
+    <EntitySet Name="CAT_Organization" EntityType="fanlive7Model.CAT_Organization" />
+    <EntitySet Name="CAT_PaymentMethodPermission" EntityType="fanlive7Model.CAT_PaymentMethodPermission" />
+    <EntitySet Name="CAT_PaymentMethods" EntityType="fanlive7Model.CAT_PaymentMethods" />
+    <EntitySet Name="CAT_Products" EntityType="fanlive7Model.CAT_Products" />
+    <EntitySet Name="CAT_ShipTo" EntityType="fanlive7Model.CAT_ShipTo" />
+    <EntitySet Name="CAT_ShoppingCart" EntityType="fanlive7Model.CAT_ShoppingCart" />
+    <EntitySet Name="Roles" EntityType="fanlive7Model.Role" />
+    <EntitySet Name="TAA_Adjustments" EntityType="fanlive7Model.TAA_Adjustments" />
+    <EntitySet Name="TAA_Boxes" EntityType="fanlive7Model.TAA_Boxes" />
+    <EntitySet Name="TAA_Colors" EntityType="fanlive7Model.TAA_Colors" />
+    <EntitySet Name="TAA_Commissions" EntityType="fanlive7Model.TAA_Commissions" />
+    <EntitySet Name="TAA_DealerMicrosites" EntityType="fanlive7Model.TAA_DealerMicrosites" />
+    <EntitySet Name="TAA_DealerPriceLists" EntityType="fanlive7Model.TAA_DealerPriceLists" />
+    <EntitySet Name="TAA_DiscountClasses" EntityType="fanlive7Model.TAA_DiscountClasses" />
+    <EntitySet Name="TAA_Emails" EntityType="fanlive7Model.TAA_Emails" />
+    <EntitySet Name="TAA_FanID" EntityType="fanlive7Model.TAA_FanID" />
+    <EntitySet Name="TAA_ImageUpload" EntityType="fanlive7Model.TAA_ImageUpload" />
+    <EntitySet Name="TAA_Microsite" EntityType="fanlive7Model.TAA_Microsite" />
+    <EntitySet Name="TAA_MicrositeLogos" EntityType="fanlive7Model.TAA_MicrositeLogos" />
+    <EntitySet Name="TAA_Notifications" EntityType="fanlive7Model.TAA_Notifications" />
+    <EntitySet Name="TAA_OrdersAdjustments" EntityType="fanlive7Model.TAA_OrdersAdjustments" />
+    <EntitySet Name="TAA_PantSizes" EntityType="fanlive7Model.TAA_PantSizes" />
+    <EntitySet Name="TAA_Parameters" EntityType="fanlive7Model.TAA_Parameters" />
+    <EntitySet Name="TAA_PaymentTerms" EntityType="fanlive7Model.TAA_PaymentTerms" />
+    <EntitySet Name="TAA_ProductCategories" EntityType="fanlive7Model.TAA_ProductCategories" />
+    <EntitySet Name="TAA_ProductionTimes" EntityType="fanlive7Model.TAA_ProductionTimes" />
+    <EntitySet Name="TAA_Products" EntityType="fanlive7Model.TAA_Products" />
+    <EntitySet Name="TAA_ProductSizes" EntityType="fanlive7Model.TAA_ProductSizes" />
+    <EntitySet Name="TAA_RecentActivity" EntityType="fanlive7Model.TAA_RecentActivity" />
+    <EntitySet Name="TAA_RoleCallSheets" EntityType="fanlive7Model.TAA_RoleCallSheets" />
+    <EntitySet Name="TAA_RoleCards" EntityType="fanlive7Model.TAA_RoleCards" />
+    <EntitySet Name="TAA_ShippingBoxes" EntityType="fanlive7Model.TAA_ShippingBoxes" />
+    <EntitySet Name="TAA_ShirtSizes" EntityType="fanlive7Model.TAA_ShirtSizes" />
+    <EntitySet Name="TAA_ShoppingCart" EntityType="fanlive7Model.TAA_ShoppingCart" />
+    <EntitySet Name="TAA_ShoppingCartAdjustments" EntityType="fanlive7Model.TAA_ShoppingCartAdjustments" />
+    <EntitySet Name="TAA_ShoppingCartSizes" EntityType="fanlive7Model.TAA_ShoppingCartSizes" />
+    <EntitySet Name="TAA_SizeGroups" EntityType="fanlive7Model.TAA_SizeGroups" />
+    <EntitySet Name="TAA_Sizes" EntityType="fanlive7Model.TAA_Sizes" />
+    <EntitySet Name="TAA_Sports" EntityType="fanlive7Model.TAA_Sports" />
+    <EntitySet Name="UserRoles" EntityType="fanlive7Model.UserRole" />
+    <EntitySet Name="Users" EntityType="fanlive7Model.User" />
+    <AssociationSet Name="FK__aspnet_Me__UserI__4B6D135E" Association="fanlive7Model.FK__aspnet_Me__UserI__4B6D135E">
+      <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+      <End Role="aspnet_Membership" EntitySet="aspnet_Membership" />
+    </AssociationSet>
+    <AssociationSet Name="FK__aspnet_Pr__UserI__263B8EAF" Association="fanlive7Model.FK__aspnet_Pr__UserI__263B8EAF">
+      <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+      <End Role="aspnet_Profile" EntitySet="aspnet_Profile" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CAT_AdvCatProducts_AdvCats" Association="fanlive7Model.FK_CAT_AdvCatProducts_AdvCats">
+      <End Role="CAT_AdvCats" EntitySet="CAT_AdvCats" />
+      <End Role="CAT_AdvCatProducts" EntitySet="CAT_AdvCatProducts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CAT_AdvCatProducts_Products" Association="fanlive7Model.FK_CAT_AdvCatProducts_Products">
+      <End Role="CAT_Products" EntitySet="CAT_Products" />
+      <End Role="CAT_AdvCatProducts" EntitySet="CAT_AdvCatProducts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CAT_AdvCats_CAT_AdvCats" Association="fanlive7Model.FK_CAT_AdvCats_CAT_AdvCats">
+      <End Role="CAT_AdvCats" EntitySet="CAT_AdvCats" />
+      <End Role="CAT_AdvCats1" EntitySet="CAT_AdvCats" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CAT_OrderDetails_Orders" Association="fanlive7Model.FK_CAT_OrderDetails_Orders">
+      <End Role="CAT_Orders" EntitySet="CAT_Orders" />
+      <End Role="CAT_OrderDetails" EntitySet="CAT_OrderDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CAT_OrderDetails_Products" Association="fanlive7Model.FK_CAT_OrderDetails_Products">
+      <End Role="CAT_Products" EntitySet="CAT_Products" />
+      <End Role="CAT_OrderDetails" EntitySet="CAT_OrderDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CAT_Orders_Users" Association="fanlive7Model.FK_CAT_Orders_Users">
+      <End Role="User" EntitySet="Users" />
+      <End Role="CAT_Orders" EntitySet="CAT_Orders" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TAA_OrdersAdjustments_CAT_Orders" Association="fanlive7Model.FK_TAA_OrdersAdjustments_CAT_Orders">
+      <End Role="CAT_Orders" EntitySet="CAT_Orders" />
+      <End Role="TAA_OrdersAdjustments" EntitySet="TAA_OrdersAdjustments" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CAT_Organization_Users" Association="fanlive7Model.FK_CAT_Organization_Users">
+      <End Role="User" EntitySet="Users" />
+      <End Role="CAT_Organization" EntitySet="CAT_Organization" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CAT_PaymentMethodPermission_CAT_PaymentMethods" Association="fanlive7Model.FK_CAT_PaymentMethodPermission_CAT_PaymentMethods">
+      <End Role="CAT_PaymentMethods" EntitySet="CAT_PaymentMethods" />
+      <End Role="CAT_PaymentMethodPermission" EntitySet="CAT_PaymentMethodPermission" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CAT_PaymentMethodPermission_Users" Association="fanlive7Model.FK_CAT_PaymentMethodPermission_Users">
+      <End Role="User" EntitySet="Users" />
+      <End Role="CAT_PaymentMethodPermission" EntitySet="CAT_PaymentMethodPermission" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CAT_ShoppingCart_Products" Association="fanlive7Model.FK_CAT_ShoppingCart_Products">
+      <End Role="CAT_Products" EntitySet="CAT_Products" />
+      <End Role="CAT_ShoppingCart" EntitySet="CAT_ShoppingCart" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TAA_ProductSizes_CAT_Products" Association="fanlive7Model.FK_TAA_ProductSizes_CAT_Products">
+      <End Role="CAT_Products" EntitySet="CAT_Products" />
+      <End Role="TAA_ProductSizes" EntitySet="TAA_ProductSizes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TAA_ShoppingCart_CAT_Products" Association="fanlive7Model.FK_TAA_ShoppingCart_CAT_Products">
+      <End Role="CAT_Products" EntitySet="CAT_Products" />
+      <End Role="TAA_ShoppingCart" EntitySet="TAA_ShoppingCart" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CAT_ShipTo_Users" Association="fanlive7Model.FK_CAT_ShipTo_Users">
+      <End Role="User" EntitySet="Users" />
+      <End Role="CAT_ShipTo" EntitySet="CAT_ShipTo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserRoles_Roles" Association="fanlive7Model.FK_UserRoles_Roles">
+      <End Role="Role" EntitySet="Roles" />
+      <End Role="UserRole" EntitySet="UserRoles" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ShoppingCartAdjustments_TAA_Adjustments" Association="fanlive7Model.FK_ShoppingCartAdjustments_TAA_Adjustments">
+      <End Role="TAA_Adjustments" EntitySet="TAA_Adjustments" />
+      <End Role="TAA_ShoppingCartAdjustments" EntitySet="TAA_ShoppingCartAdjustments" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TAA_OrdersAdjustments_TAA_Adjustments" Association="fanlive7Model.FK_TAA_OrdersAdjustments_TAA_Adjustments">
+      <End Role="TAA_Adjustments" EntitySet="TAA_Adjustments" />
+      <End Role="TAA_OrdersAdjustments" EntitySet="TAA_OrdersAdjustments" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TAA_Microsite_TAA_Sports" Association="fanlive7Model.FK_TAA_Microsite_TAA_Sports">
+      <End Role="TAA_Sports" EntitySet="TAA_Sports" />
+      <End Role="TAA_Microsite" EntitySet="TAA_Microsite" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TAA_MicrositeLogos_TAA_Microsite" Association="fanlive7Model.FK_TAA_MicrositeLogos_TAA_Microsite">
+      <End Role="TAA_Microsite" EntitySet="TAA_Microsite" />
+      <End Role="TAA_MicrositeLogos" EntitySet="TAA_MicrositeLogos" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TAA_PantSizes_TAA_SizeGroups" Association="fanlive7Model.FK_TAA_PantSizes_TAA_SizeGroups">
+      <End Role="TAA_SizeGroups" EntitySet="TAA_SizeGroups" />
+      <End Role="TAA_PantSizes" EntitySet="TAA_PantSizes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TAA_RoleCards_TAA_PantSizes" Association="fanlive7Model.FK_TAA_RoleCards_TAA_PantSizes">
+      <End Role="TAA_PantSizes" EntitySet="TAA_PantSizes" />
+      <End Role="TAA_RoleCards" EntitySet="TAA_RoleCards" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TAA_Products_TAA_ProductCategories" Association="fanlive7Model.FK_TAA_Products_TAA_ProductCategories">
+      <End Role="TAA_ProductCategories" EntitySet="TAA_ProductCategories" />
+      <End Role="TAA_Products" EntitySet="TAA_Products" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TAA_ProductSizes_TAA_Sizes" Association="fanlive7Model.FK_TAA_ProductSizes_TAA_Sizes">
+      <End Role="TAA_Sizes" EntitySet="TAA_Sizes" />
+      <End Role="TAA_ProductSizes" EntitySet="TAA_ProductSizes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TAA_RoleCards_TAA_RoleCallSheets" Association="fanlive7Model.FK_TAA_RoleCards_TAA_RoleCallSheets">
+      <End Role="TAA_RoleCallSheets" EntitySet="TAA_RoleCallSheets" />
+      <End Role="TAA_RoleCards" EntitySet="TAA_RoleCards" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TAA_RoleCards_TAA_ShirtSizes" Association="fanlive7Model.FK_TAA_RoleCards_TAA_ShirtSizes">
+      <End Role="TAA_ShirtSizes" EntitySet="TAA_ShirtSizes" />
+      <End Role="TAA_RoleCards" EntitySet="TAA_RoleCards" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TAA_ShirtSizes_TAA_SizeGroups" Association="fanlive7Model.FK_TAA_ShirtSizes_TAA_SizeGroups">
+      <End Role="TAA_SizeGroups" EntitySet="TAA_SizeGroups" />
+      <End Role="TAA_ShirtSizes" EntitySet="TAA_ShirtSizes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TAA_ShoppingCartSizes_TAA_ShoppingCart" Association="fanlive7Model.FK_TAA_ShoppingCartSizes_TAA_ShoppingCart">
+      <End Role="TAA_ShoppingCart" EntitySet="TAA_ShoppingCart" />
+      <End Role="TAA_ShoppingCartSizes" EntitySet="TAA_ShoppingCartSizes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TAA_ShoppingCartAdjustments_TAA_ShoppingCartSizes" Association="fanlive7Model.FK_TAA_ShoppingCartAdjustments_TAA_ShoppingCartSizes">
+      <End Role="TAA_ShoppingCartSizes" EntitySet="TAA_ShoppingCartSizes" />
+      <End Role="TAA_ShoppingCartAdjustments" EntitySet="TAA_ShoppingCartAdjustments" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TAA_ShoppingCartSizes_TAA_Sizes" Association="fanlive7Model.FK_TAA_ShoppingCartSizes_TAA_Sizes">
+      <End Role="TAA_Sizes" EntitySet="TAA_Sizes" />
+      <End Role="TAA_ShoppingCartSizes" EntitySet="TAA_ShoppingCartSizes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserRoles_Users" Association="fanlive7Model.FK_UserRoles_Users">
+      <End Role="User" EntitySet="Users" />
+      <End Role="UserRole" EntitySet="UserRoles" />
+    </AssociationSet>
+    <AssociationSet Name="TAA_DealerPaymentTerms" Association="fanlive7Model.TAA_DealerPaymentTerms">
+      <End Role="TAA_PaymentTerms" EntitySet="TAA_PaymentTerms" />
+      <End Role="User" EntitySet="Users" />
+    </AssociationSet>
+    <EntitySet Name="UserProfiles" EntityType="fanlive7Model.UserProfile" />
+    <AssociationSet Name="FK_UserProfile_Users" Association="fanlive7Model.FK_UserProfile_Users">
+      <End Role="User" EntitySet="Users" />
+      <End Role="UserProfile" EntitySet="UserProfiles" />
+    </AssociationSet>
+    <EntitySet Name="TAA_vw_OrderDetailsRollCall" EntityType="fanlive7Model.TAA_vw_OrderDetailsRollCall" />
+    <EntitySet Name="TAA_vw_ProductsInOrders" EntityType="fanlive7Model.TAA_vw_ProductsInOrders" />
+    <EntitySet Name="TAA_vw_ShoppingCartRollCall" EntityType="fanlive7Model.TAA_vw_ShoppingCartRollCall" />
+    <EntitySet Name="TAA_vw_UserAndProfiles" EntityType="fanlive7Model.TAA_vw_UserAndProfiles" />
+    <EntitySet Name="Transactions" EntityType="fanlive7Model.Transaction" />
+    <EntitySet Name="TAA_CouponAdjustments" EntityType="fanlive7Model.TAA_CouponAdjustments" />
+    <EntitySet Name="TAA_Coupons" EntityType="fanlive7Model.TAA_Coupons" />
+    <AssociationSet Name="FK_TAA_CouponAdjustments_CAT_Orders" Association="fanlive7Model.FK_TAA_CouponAdjustments_CAT_Orders">
+      <End Role="CAT_Orders" EntitySet="CAT_Orders" />
+      <End Role="TAA_CouponAdjustments" EntitySet="TAA_CouponAdjustments" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TAA_CouponAdjustments_TAA_Coupons" Association="fanlive7Model.FK_TAA_CouponAdjustments_TAA_Coupons">
+      <End Role="TAA_Coupons" EntitySet="TAA_Coupons" />
+      <End Role="TAA_CouponAdjustments" EntitySet="TAA_CouponAdjustments" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="aspnet_Membership">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Type="Guid" Name="ApplicationId" Nullable="false" />
+    <Property Type="Guid" Name="UserId" Nullable="false" />
+    <Property Type="String" Name="Password" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="PasswordFormat" Nullable="false" />
+    <Property Type="String" Name="PasswordSalt" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="MobilePIN" MaxLength="16" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Email" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="LoweredEmail" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="PasswordQuestion" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="PasswordAnswer" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="IsApproved" Nullable="false" />
+    <Property Type="Boolean" Name="IsLockedOut" Nullable="false" />
+    <Property Type="DateTime" Name="CreateDate" Nullable="false" />
+    <Property Type="DateTime" Name="LastLoginDate" Nullable="false" />
+    <Property Type="DateTime" Name="LastPasswordChangedDate" Nullable="false" />
+    <Property Type="DateTime" Name="LastLockoutDate" Nullable="false" />
+    <Property Type="Int32" Name="FailedPasswordAttemptCount" Nullable="false" />
+    <Property Type="DateTime" Name="FailedPasswordAttemptWindowStart" Nullable="false" />
+    <Property Type="Int32" Name="FailedPasswordAnswerAttemptCount" Nullable="false" />
+    <Property Type="DateTime" Name="FailedPasswordAnswerAttemptWindowStart" Nullable="false" />
+    <Property Type="String" Name="Comment" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="aspnet_Users" Relationship="fanlive7Model.FK__aspnet_Me__UserI__4B6D135E" FromRole="aspnet_Membership" ToRole="aspnet_Users" />
+  </EntityType>
+  <EntityType Name="aspnet_Profile">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Type="Guid" Name="UserId" Nullable="false" />
+    <Property Type="String" Name="PropertyNames" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="PropertyValuesString" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Binary" Name="PropertyValuesBinary" Nullable="false" MaxLength="Max" FixedLength="false" />
+    <Property Type="DateTime" Name="LastUpdatedDate" Nullable="false" />
+    <NavigationProperty Name="aspnet_Users" Relationship="fanlive7Model.FK__aspnet_Pr__UserI__263B8EAF" FromRole="aspnet_Profile" ToRole="aspnet_Users" />
+  </EntityType>
+  <EntityType Name="aspnet_Roles">
+    <Key>
+      <PropertyRef Name="RoleId" />
+    </Key>
+    <Property Type="Guid" Name="ApplicationId" Nullable="false" />
+    <Property Type="Guid" Name="RoleId" Nullable="false" />
+    <Property Type="String" Name="RoleName" Nullable="false" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="LoweredRoleName" Nullable="false" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Description" MaxLength="256" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="aspnet_Users">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Type="Guid" Name="ApplicationId" Nullable="false" />
+    <Property Type="Guid" Name="UserId" Nullable="false" />
+    <Property Type="String" Name="UserName" Nullable="false" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="LoweredUserName" Nullable="false" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="MobileAlias" MaxLength="16" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="IsAnonymous" Nullable="false" />
+    <Property Type="DateTime" Name="LastActivityDate" Nullable="false" />
+    <NavigationProperty Name="aspnet_Membership" Relationship="fanlive7Model.FK__aspnet_Me__UserI__4B6D135E" FromRole="aspnet_Users" ToRole="aspnet_Membership" />
+    <NavigationProperty Name="aspnet_Profile" Relationship="fanlive7Model.FK__aspnet_Pr__UserI__263B8EAF" FromRole="aspnet_Users" ToRole="aspnet_Profile" />
+  </EntityType>
+  <EntityType Name="CAT_AdvCatProducts">
+    <Key>
+      <PropertyRef Name="AdvCatProductID" />
+    </Key>
+    <Property Type="Int32" Name="AdvCatProductID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="AdvCatID" Nullable="false" />
+    <Property Type="Int32" Name="ProductID" Nullable="false" />
+    <Property Type="Boolean" Name="AddAdvCatToProductDisplay" />
+    <NavigationProperty Name="CAT_AdvCats" Relationship="fanlive7Model.FK_CAT_AdvCatProducts_AdvCats" FromRole="CAT_AdvCatProducts" ToRole="CAT_AdvCats" />
+    <NavigationProperty Name="CAT_Products" Relationship="fanlive7Model.FK_CAT_AdvCatProducts_Products" FromRole="CAT_AdvCatProducts" ToRole="CAT_Products" />
+  </EntityType>
+  <EntityType Name="CAT_AdvCats">
+    <Key>
+      <PropertyRef Name="AdvCatID" />
+    </Key>
+    <Property Type="Int32" Name="AdvCatID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="AdvCatOrder" Nullable="false" />
+    <Property Type="Int32" Name="PortalID" />
+    <Property Type="String" Name="AdvCatName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="IsVisible" Nullable="false" />
+    <Property Type="Int32" Name="ParentId" />
+    <Property Type="Boolean" Name="DisableLink" Nullable="false" />
+    <Property Type="String" Name="Url" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="StartDate" />
+    <Property Type="DateTime" Name="EndDate" />
+    <Property Type="String" Name="Title" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Description" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="KeyWords" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="IsDeleted" Nullable="false" />
+    <Property Type="String" Name="IconFile" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="Level" Nullable="false" />
+    <Property Type="String" Name="AdvCatImportID" MaxLength="255" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="CAT_AdvCatProducts" Relationship="fanlive7Model.FK_CAT_AdvCatProducts_AdvCats" FromRole="CAT_AdvCats" ToRole="CAT_AdvCatProducts" />
+    <NavigationProperty Name="CAT_AdvCats1" Relationship="fanlive7Model.FK_CAT_AdvCats_CAT_AdvCats" FromRole="CAT_AdvCats" ToRole="CAT_AdvCats1" />
+    <NavigationProperty Name="CAT_AdvCats2" Relationship="fanlive7Model.FK_CAT_AdvCats_CAT_AdvCats" FromRole="CAT_AdvCats1" ToRole="CAT_AdvCats" />
+  </EntityType>
+  <EntityType Name="CAT_OrderDetails">
+    <Key>
+      <PropertyRef Name="OrderDetailsID" />
+    </Key>
+    <Property Type="Int32" Name="OrderDetailsID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="OrderID" Nullable="false" />
+    <Property Type="Int32" Name="ProductID" Nullable="false" />
+    <Property Type="Int32" Name="Quantity" Nullable="false" />
+    <Property Type="Int32" Name="QuantityRemaining" Nullable="false" />
+    <Property Type="Decimal" Name="UnitCost" Nullable="false" Precision="19" Scale="4" />
+    <Property Type="Int32" Name="InvoiceNumber" />
+    <Property Type="DateTime" Name="InvoiceDate" />
+    <Property Type="Decimal" Name="InvoiceShipCosts" Precision="19" Scale="4" />
+    <Property Type="Int32" Name="CreditNoteNumber" />
+    <Property Type="DateTime" Name="CreditNoteDate" />
+    <Property Type="Decimal" Name="CreditNoteShipCosts" Precision="19" Scale="4" />
+    <Property Type="String" Name="Options" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="AllocDate" />
+    <Property Type="DateTime" Name="SubscrExpiryDate" />
+    <Property Type="Int32" Name="RecordID" Nullable="false" />
+    <Property Type="Int32" Name="BaseRecID" />
+    <Property Type="Int32" Name="ProductSlotID" />
+    <Property Type="Decimal" Name="Tax" Precision="7" Scale="4" />
+    <Property Type="Decimal" Name="ReferrerCommission" Nullable="false" Precision="5" Scale="2" />
+    <Property Type="Decimal" Name="VendorCommission" Nullable="false" Precision="5" Scale="2" />
+    <Property Type="String" Name="ShippingCompany" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="TrackingNumber" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="DeliveredUnits" Nullable="false" />
+    <Property Type="String" Name="SKU" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="ProductCost" Nullable="false" Precision="19" Scale="4" />
+    <Property Type="Int32" Name="BillingPeriod" Nullable="false" />
+    <Property Type="Decimal" Name="Tax2" Nullable="false" Precision="7" Scale="4" />
+    <Property Type="Int32" Name="CouponCodeID" />
+    <Property Type="Int32" Name="CartPriceRuleID" />
+    <Property Type="Decimal" Name="LoyaltyDiscount" Precision="7" Scale="4" />
+    <Property Type="Int32" Name="CreatedByUserID" />
+    <Property Type="DateTime" Name="CreatedOnDate" />
+    <Property Type="Int32" Name="LastModifiedByUserID" />
+    <Property Type="DateTime" Name="LastModifiedOnDate" />
+    <Property Type="Int32" Name="PeriodsRemaining" />
+    <NavigationProperty Name="CAT_Orders" Relationship="fanlive7Model.FK_CAT_OrderDetails_Orders" FromRole="CAT_OrderDetails" ToRole="CAT_Orders" />
+    <NavigationProperty Name="CAT_Products" Relationship="fanlive7Model.FK_CAT_OrderDetails_Products" FromRole="CAT_OrderDetails" ToRole="CAT_Products" />
+  </EntityType>
+  <EntityType Name="CAT_Orders">
+    <Key>
+      <PropertyRef Name="OrderID" />
+    </Key>
+    <Property Type="Int32" Name="OrderID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="CustomerID" Nullable="false" />
+    <Property Type="DateTime" Name="OrderDate" Nullable="false" />
+    <Property Type="DateTime" Name="ShipDate" />
+    <Property Type="Int32" Name="ShipToID" />
+    <Property Type="String" Name="PaymentType" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="PaymentState" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="ShipCosts" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="ShipTax" Precision="7" Scale="4" />
+    <Property Type="String" Name="PurchaseOrderNumber" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="ShipTax2" Nullable="false" Precision="7" Scale="4" />
+    <Property Type="Int32" Name="ReferralID" />
+    <Property Type="Boolean" Name="AACodeSent" Nullable="false" />
+    <Property Type="Int32" Name="CreatedByUserID" />
+    <Property Type="DateTime" Name="CreatedOnDate" />
+    <Property Type="Int32" Name="LastModifiedByUserID" />
+    <Property Type="DateTime" Name="LastModifiedOnDate" />
+    <Property Type="String" Name="ShippingMethod" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="DeliveryDate" />
+    <Property Type="String" Name="taaDeliveryMode" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="ShippingRebate" Precision="19" Scale="4" />
+    <Property Type="String" Name="Carrier" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="DeclaredValue" Precision="19" Scale="4" />
+    <Property Type="Int32" Name="MicrositeID" />
+    <NavigationProperty Name="CAT_OrderDetails" Relationship="fanlive7Model.FK_CAT_OrderDetails_Orders" FromRole="CAT_Orders" ToRole="CAT_OrderDetails" />
+    <NavigationProperty Name="User" Relationship="fanlive7Model.FK_CAT_Orders_Users" FromRole="CAT_Orders" ToRole="User" />
+    <NavigationProperty Name="TAA_OrdersAdjustments" Relationship="fanlive7Model.FK_TAA_OrdersAdjustments_CAT_Orders" FromRole="CAT_Orders" ToRole="TAA_OrdersAdjustments" />
+    <NavigationProperty Name="TAA_CouponAdjustments" Relationship="fanlive7Model.FK_TAA_CouponAdjustments_CAT_Orders" FromRole="CAT_Orders" ToRole="TAA_CouponAdjustments" />
+  </EntityType>
+  <EntityType Name="CAT_Organization">
+    <Key>
+      <PropertyRef Name="UserID" />
+    </Key>
+    <Property Type="Int32" Name="UserID" Nullable="false" />
+    <Property Type="String" Name="CustomerNumber" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Company" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="TaxNumber" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="TaxIdentNumber" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="Tax" Precision="7" Scale="4" />
+    <Property Type="Int32" Name="Price" />
+    <Property Type="Int32" Name="Discount" />
+    <Property Type="Int32" Name="PaymentTypes" />
+    <Property Type="String" Name="AccountType" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Account" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="BankName" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="SortCode" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="BankAddress" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="AccountNumber" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="AccountOwnerName" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="IBAN" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="BIC" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="EmailNotifications" Nullable="false" />
+    <Property Type="String" Name="Department" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="LogoImage" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="AccountStatus" />
+    <Property Type="String" Name="StatusNotes" MaxLength="2000" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="HomePage" />
+    <Property Type="String" Name="Classification" MaxLength="30" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="User" Relationship="fanlive7Model.FK_CAT_Organization_Users" FromRole="CAT_Organization" ToRole="User" />
+  </EntityType>
+  <EntityType Name="CAT_PaymentMethodPermission">
+    <Key>
+      <PropertyRef Name="PaymentMethodPermissionID" />
+    </Key>
+    <Property Type="Int32" Name="PaymentMethodPermissionID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="PaymentMethodID" Nullable="false" />
+    <Property Type="Int32" Name="PermissionID" Nullable="false" />
+    <Property Type="Int32" Name="RoleID" />
+    <Property Type="Boolean" Name="AllowAccess" Nullable="false" />
+    <Property Type="Int32" Name="UserID" />
+    <Property Type="Int32" Name="CreatedByUserID" />
+    <Property Type="DateTime" Name="CreatedOnDate" />
+    <Property Type="Int32" Name="LastModifiedByUserID" />
+    <Property Type="DateTime" Name="LastModifiedOnDate" />
+    <NavigationProperty Name="CAT_PaymentMethods" Relationship="fanlive7Model.FK_CAT_PaymentMethodPermission_CAT_PaymentMethods" FromRole="CAT_PaymentMethodPermission" ToRole="CAT_PaymentMethods" />
+    <NavigationProperty Name="User" Relationship="fanlive7Model.FK_CAT_PaymentMethodPermission_Users" FromRole="CAT_PaymentMethodPermission" ToRole="User" />
+  </EntityType>
+  <EntityType Name="CAT_PaymentMethods">
+    <Key>
+      <PropertyRef Name="PaymentMethodID" />
+    </Key>
+    <Property Type="Int32" Name="PaymentMethodID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="PortalID" />
+    <Property Type="Int32" Name="CreatedByUser" />
+    <Property Type="String" Name="Name" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Title" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Description" MaxLength="2000" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Countries" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Roles" MaxLength="2000" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Formula" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="CCPaymentProcessorID" />
+    <Property Type="String" Name="CCTransactionType" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="ViewOrder" />
+    <Property Type="Boolean" Name="Enabled" />
+    <Property Type="String" Name="CCBrand" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="StoreCCTypes" />
+    <Property Type="String" Name="CCLogin" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="CCTransactionKey" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="CCUserName" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="CCPassword" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="CCMerchantHash" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="CCAdditionalParameters" MaxLength="2000" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="CCTestMode" />
+    <Property Type="Boolean" Name="SaveCCData" />
+    <Property Type="String" Name="PayPalID" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="PayPalReturnTabID" />
+    <Property Type="String" Name="PayPalCartName" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="PayPalButtonURL" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="PayPalURL" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="PayPalSandboxURL" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="PayPalCurrencyID" />
+    <Property Type="String" Name="PayPalShippingAddress" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="Boolean" Name="PayPalPassingIndividualItems" />
+    <Property Type="String" Name="LogoImage" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="UserID" />
+    <Property Type="Int32" Name="PMCategoryID" />
+    <Property Type="String" Name="Formula2" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="ProfileProperties" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="TransSuccEmailMinTransAmt" Precision="19" Scale="4" />
+    <Property Type="String" Name="TransSuccEmails" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="TransSuccEmailSubjTmpl" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="TransSuccEmailMsgTmpl" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="TransFailEmails" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="TransFailEmailSubjTmpl" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="TransFailEmailMsgTmpl" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="CAT_PaymentMethodPermission" Relationship="fanlive7Model.FK_CAT_PaymentMethodPermission_CAT_PaymentMethods" FromRole="CAT_PaymentMethods" ToRole="CAT_PaymentMethodPermission" />
+  </EntityType>
+  <EntityType Name="CAT_Products">
+    <Key>
+      <PropertyRef Name="ProductID" />
+    </Key>
+    <Property Type="Int32" Name="ProductID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="CategoryID" />
+    <Property Type="Int32" Name="Category2ID" />
+    <Property Type="String" Name="Category3" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="ProductName" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="ProductNumber" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="EAN" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="ISBN" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Free1" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Free2" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Free3" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="KeyWords" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="ProductImage" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="UnitCost" Nullable="false" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="UnitCost2" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="UnitCost3" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="UnitCost4" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="UnitCost5" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="UnitCost6" Precision="19" Scale="4" />
+    <Property Type="String" Name="Description" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="DescriptionHTML" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="URL" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="Stock" />
+    <Property Type="String" Name="OrderQuant" Nullable="false" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="Weight" Precision="10" Scale="4" />
+    <Property Type="Decimal" Name="Volume" Precision="8" Scale="2" />
+    <Property Type="Decimal" Name="Length" Precision="8" Scale="2" />
+    <Property Type="Decimal" Name="Width" Precision="8" Scale="2" />
+    <Property Type="Decimal" Name="Height" Precision="8" Scale="2" />
+    <Property Type="Decimal" Name="FreightCosts1" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="FreightCosts2" Precision="19" Scale="4" />
+    <Property Type="Boolean" Name="Featured" Nullable="false" />
+    <Property Type="Decimal" Name="SalePrice" Nullable="false" Precision="19" Scale="4" />
+    <Property Type="DateTime" Name="SaleStart" />
+    <Property Type="DateTime" Name="SaleEnd" />
+    <Property Type="Boolean" Name="DownLoad" />
+    <Property Type="String" Name="ZIPPassWord" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="DownLoadFile" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="Archive" />
+    <Property Type="Int32" Name="CreatedByUser" Nullable="false" />
+    <Property Type="Int32" Name="BulkPriceLimit1" Nullable="false" />
+    <Property Type="Int32" Name="BulkPriceLimit2" Nullable="false" />
+    <Property Type="Int32" Name="BulkPriceLimit3" Nullable="false" />
+    <Property Type="Int32" Name="BulkPriceLimit4" Nullable="false" />
+    <Property Type="Int32" Name="BulkPriceLimit5" Nullable="false" />
+    <Property Type="DateTime" Name="DateCreated" />
+    <Property Type="Int32" Name="RoleID" />
+    <Property Type="Int32" Name="SubscriptionPeriod" />
+    <Property Type="Boolean" Name="RecurringBilling" />
+    <Property Type="Boolean" Name="TaxExempt" />
+    <Property Type="Boolean" Name="ShipExempt" />
+    <Property Type="Decimal" Name="InsuredValue" Nullable="false" Precision="19" Scale="4" />
+    <Property Type="DateTime" Name="PublicationStart" />
+    <Property Type="DateTime" Name="PublicationEnd" />
+    <Property Type="String" Name="Status" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="Boolean" Name="DonationItem" Nullable="false" />
+    <Property Type="Boolean" Name="PayPalSubscription" Nullable="false" />
+    <Property Type="Boolean" Name="UseRoleFees" Nullable="false" />
+    <Property Type="Decimal" Name="ProductCost" Nullable="false" Precision="19" Scale="4" />
+    <Property Type="String" Name="RoleExpiryType" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="ItemDeliveryType" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="Int32" Name="ReorderPoint" Nullable="false" />
+    <Property Type="String" Name="OrderQuantValidExpr" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="ShippingAddress" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="Int32" Name="OrigProductID" />
+    <Property Type="Boolean" Name="AuctionFinished" Nullable="false" />
+    <Property Type="Decimal" Name="StartingPrice" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="ReservePrice" Precision="19" Scale="4" />
+    <Property Type="Int32" Name="LastModifiedByUserID" />
+    <Property Type="DateTime" Name="LastModifiedOnDate" />
+    <Property Type="String" Name="TaxCode" MaxLength="16" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="MaxWeight" Precision="10" Scale="4" />
+    <Property Type="Int32" Name="TotalPeriods" />
+    <Property Type="Boolean" Name="NonStockItem" />
+    <Property Type="Int32" Name="StockedColorID" />
+    <Property Type="Int32" Name="StockedColorID2" />
+    <Property Type="Int32" Name="StockedColorID3" />
+    <Property Type="Int32" Name="StockedColorID4" />
+    <Property Type="Int32" Name="StockedColorID5" />
+    <Property Type="Int32" Name="StockedColorID6" />
+    <Property Type="Decimal" Name="DealerTier1Price" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="DealerTier2Price" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="DealerTier3Price" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="DealerTier4Price" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="ConsumerTier1Price" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="ConsumerTier2Price" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="ConsumerTier3Price" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="ConsumerTier4Price" Precision="19" Scale="4" />
+    <Property Type="String" Name="DiscountClass" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="DiscountClassID" />
+    <Property Type="Int32" Name="CMSProductID" />
+    <Property Type="Int32" Name="TAASportID" />
+    <Property Type="String" Name="CMSProductDesign" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="SortOrder" />
+    <NavigationProperty Name="CAT_AdvCatProducts" Relationship="fanlive7Model.FK_CAT_AdvCatProducts_Products" FromRole="CAT_Products" ToRole="CAT_AdvCatProducts" />
+    <NavigationProperty Name="CAT_OrderDetails" Relationship="fanlive7Model.FK_CAT_OrderDetails_Products" FromRole="CAT_Products" ToRole="CAT_OrderDetails" />
+    <NavigationProperty Name="CAT_ShoppingCart" Relationship="fanlive7Model.FK_CAT_ShoppingCart_Products" FromRole="CAT_Products" ToRole="CAT_ShoppingCart" />
+    <NavigationProperty Name="TAA_ProductSizes" Relationship="fanlive7Model.FK_TAA_ProductSizes_CAT_Products" FromRole="CAT_Products" ToRole="TAA_ProductSizes" />
+    <NavigationProperty Name="TAA_ShoppingCart" Relationship="fanlive7Model.FK_TAA_ShoppingCart_CAT_Products" FromRole="CAT_Products" ToRole="TAA_ShoppingCart" />
+  </EntityType>
+  <EntityType Name="CAT_ShipTo">
+    <Key>
+      <PropertyRef Name="ShipToID" />
+    </Key>
+    <Property Type="Int32" Name="ShipToID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="UserID" Nullable="false" />
+    <Property Type="String" Name="FirstName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="LastName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Street" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Street2" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="City" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Region" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="PostalCode" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Country" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Unit" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Telephone" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="Archived" />
+    <Property Type="String" Name="ProfileProperties" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="Residential" />
+    <NavigationProperty Name="User" Relationship="fanlive7Model.FK_CAT_ShipTo_Users" FromRole="CAT_ShipTo" ToRole="User" />
+  </EntityType>
+  <EntityType Name="CAT_ShoppingCart">
+    <Key>
+      <PropertyRef Name="RecordID" />
+    </Key>
+    <Property Type="Int32" Name="RecordID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="CartID" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="Quantity" Nullable="false" />
+    <Property Type="Int32" Name="ProductID" Nullable="false" />
+    <Property Type="Decimal" Name="UnitCost" Precision="19" Scale="4" />
+    <Property Type="String" Name="Options" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="AllocDate" />
+    <Property Type="Int32" Name="BaseRecID" />
+    <Property Type="Int32" Name="ProductSlotID" />
+    <Property Type="Boolean" Name="ConfigCompleted" />
+    <Property Type="Decimal" Name="Tax" Precision="7" Scale="4" />
+    <Property Type="DateTime" Name="DateCreated" Nullable="false" />
+    <Property Type="String" Name="SKU" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="BillingPeriod" Nullable="false" />
+    <Property Type="Decimal" Name="Tax2" Nullable="false" Precision="7" Scale="4" />
+    <Property Type="Int32" Name="CouponCodeID" />
+    <Property Type="Int32" Name="CartPriceRuleID" />
+    <Property Type="Decimal" Name="LoyaltyDiscount" Precision="7" Scale="4" />
+    <Property Type="Int32" Name="PeriodsRemaining" />
+    <NavigationProperty Name="CAT_Products" Relationship="fanlive7Model.FK_CAT_ShoppingCart_Products" FromRole="CAT_ShoppingCart" ToRole="CAT_Products" />
+    <Property Type="Int32" Name="CouponID" />
+  </EntityType>
+  <EntityType Name="Role">
+    <Key>
+      <PropertyRef Name="RoleID" />
+    </Key>
+    <Property Type="Int32" Name="RoleID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="PortalID" Nullable="false" />
+    <Property Type="String" Name="RoleName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Description" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="ServiceFee" Precision="19" Scale="4" />
+    <Property Type="String" Name="BillingFrequency" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="Int32" Name="TrialPeriod" />
+    <Property Type="String" Name="TrialFrequency" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="Int32" Name="BillingPeriod" />
+    <Property Type="Decimal" Name="TrialFee" Precision="19" Scale="4" />
+    <Property Type="Boolean" Name="IsPublic" Nullable="false" />
+    <Property Type="Boolean" Name="AutoAssignment" Nullable="false" />
+    <Property Type="Int32" Name="RoleGroupID" />
+    <Property Type="String" Name="RSVPCode" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="IconFile" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="CreatedByUserID" />
+    <Property Type="DateTime" Name="CreatedOnDate" />
+    <Property Type="Int32" Name="LastModifiedByUserID" />
+    <Property Type="DateTime" Name="LastModifiedOnDate" />
+    <NavigationProperty Name="UserRoles" Relationship="fanlive7Model.FK_UserRoles_Roles" FromRole="Role" ToRole="UserRole" />
+  </EntityType>
+  <EntityType Name="TAA_Adjustments">
+    <Key>
+      <PropertyRef Name="AdjustmentID" />
+    </Key>
+    <Property Type="Int32" Name="AdjustmentID" Nullable="false" />
+    <Property Type="String" Name="Description" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="PromotionNumber" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="AdjustmentType" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="DefaultValue" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="TAA_ShoppingCartAdjustments" Relationship="fanlive7Model.FK_ShoppingCartAdjustments_TAA_Adjustments" FromRole="TAA_Adjustments" ToRole="TAA_ShoppingCartAdjustments" />
+    <NavigationProperty Name="TAA_OrdersAdjustments" Relationship="fanlive7Model.FK_TAA_OrdersAdjustments_TAA_Adjustments" FromRole="TAA_Adjustments" ToRole="TAA_OrdersAdjustments" />
+  </EntityType>
+  <EntityType Name="TAA_Boxes">
+    <Key>
+      <PropertyRef Name="BoxID" />
+    </Key>
+    <Property Type="Int32" Name="BoxID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Description" Nullable="false" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="Height" Nullable="false" Precision="28" Scale="12" />
+    <Property Type="Decimal" Name="Width" Nullable="false" Precision="28" Scale="12" />
+    <Property Type="Decimal" Name="Depth" Nullable="false" Precision="28" Scale="12" />
+    <Property Type="Decimal" Name="Volume" Nullable="false" Precision="28" Scale="12" />
+    <Property Type="Decimal" Name="Weight" Nullable="false" Precision="28" Scale="12" />
+  </EntityType>
+  <EntityType Name="TAA_Colors">
+    <Key>
+      <PropertyRef Name="ColorID" />
+    </Key>
+    <Property Type="Int32" Name="ColorID" Nullable="false" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Color" Nullable="false" MaxLength="7" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="RGB" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Boolean" Name="Publish" />
+    <Property Type="Int32" Name="TAANumber" />
+    <Property Type="Int32" Name="ThreadColorID" />
+    <Property Type="Int32" Name="ButtonColorID" />
+    <Property Type="String" Name="taaAccountID" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CMYK" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="ZipperColorID" />
+  </EntityType>
+  <EntityType Name="TAA_Commissions">
+    <Key>
+      <PropertyRef Name="CommissionID" />
+    </Key>
+    <Property Type="Int32" Name="CommissionID" Nullable="false" />
+    <Property Type="Boolean" Name="IsPercentage" Nullable="false" />
+    <Property Type="Decimal" Name="LowVolume" Nullable="false" Precision="10" Scale="4" />
+    <Property Type="Decimal" Name="MediumVolume" Nullable="false" Precision="10" Scale="4" />
+    <Property Type="Decimal" Name="HighVolume" Nullable="false" Precision="10" Scale="4" />
+    <Property Type="Int32" Name="CreatedByUserID" Nullable="false" />
+    <Property Type="DateTime" Name="CreatedOnDate" Nullable="false" />
+    <Property Type="Int32" Name="LastModifiedByUserID" />
+    <Property Type="DateTime" Name="LastModifiedOnDate" />
+    <Property Type="Boolean" Name="Deleted" Nullable="false" />
+    <Property Type="Int32" Name="DeletedByUserID" />
+    <Property Type="DateTime" Name="DeletedOnDate" />
+  </EntityType>
+  <EntityType Name="TAA_DealerMicrosites">
+    <Key>
+      <PropertyRef Name="DealerID" />
+      <PropertyRef Name="MicrositeID" />
+    </Key>
+    <Property Type="Int32" Name="DealerID" Nullable="false" />
+    <Property Type="Int32" Name="MicrositeID" Nullable="false" />
+    <Property Type="String" Name="CommissionLevel" Nullable="false" MaxLength="1" FixedLength="true" Unicode="true" />
+    <Property Type="Int32" Name="CreatedByUserID" />
+    <Property Type="DateTime" Name="CreatedOnDate" Nullable="false" />
+    <Property Type="Int32" Name="LastModifiedByUserID" />
+    <Property Type="DateTime" Name="LastModifiedOnDate" />
+    <Property Type="Boolean" Name="Deleted" Nullable="false" />
+    <Property Type="Int32" Name="DeletedByUserID" />
+    <Property Type="DateTime" Name="DeletedOnDate" />
+  </EntityType>
+  <EntityType Name="TAA_DealerPriceLists">
+    <Key>
+      <PropertyRef Name="PriceListID" />
+    </Key>
+    <Property Type="Int32" Name="PriceListID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="PercentDiscount" Precision="19" Scale="4" />
+    <Property Type="String" Name="XMLValue" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="CreatedByUserID" />
+    <Property Type="DateTime" Name="CreatedOnDate" Nullable="false" />
+    <Property Type="Int32" Name="LastModifiedByUserID" />
+    <Property Type="DateTime" Name="LastModifiedOnDate" />
+    <Property Type="Boolean" Name="Deleted" Nullable="false" />
+    <Property Type="Int32" Name="DeletedByUserID" />
+    <Property Type="DateTime" Name="DeletedOnDate" />
+  </EntityType>
+  <EntityType Name="TAA_DiscountClasses">
+    <Key>
+      <PropertyRef Name="DiscountClassID" />
+    </Key>
+    <Property Type="Int32" Name="DiscountClassID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="Tier1BreakQty1" Nullable="false" />
+    <Property Type="Int32" Name="Tier1BreakQty2" Nullable="false" />
+    <Property Type="Int32" Name="Tier1BreakQty3" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TAA_Emails">
+    <Key>
+      <PropertyRef Name="EmailID" />
+    </Key>
+    <Property Type="Int64" Name="EmailID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="MicrositeID" Nullable="false" />
+    <Property Type="Int32" Name="FromUserID" Nullable="false" />
+    <Property Type="Int32" Name="ToUserID" />
+    <Property Type="String" Name="ToAddress" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Subject" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Body" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Attachments" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="EmailSent" Nullable="false" />
+    <Property Type="DateTime" Name="EmailSentDate" />
+  </EntityType>
+  <EntityType Name="TAA_FanID">
+    <Key>
+      <PropertyRef Name="MicrositeID" />
+      <PropertyRef Name="FanID" />
+    </Key>
+    <Property Type="Int32" Name="MicrositeID" Nullable="false" />
+    <Property Type="Int32" Name="FanID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="DesignName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="TeamName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="PrimaryColor" MaxLength="7" FixedLength="true" Unicode="true" />
+    <Property Type="Int32" Name="PrimaryColorID" />
+    <Property Type="String" Name="SecondaryColor" Nullable="false" MaxLength="7" FixedLength="true" Unicode="true" />
+    <Property Type="Int32" Name="SecondaryColorID" />
+    <Property Type="String" Name="Accent" Nullable="false" MaxLength="7" FixedLength="true" Unicode="true" />
+    <Property Type="Int32" Name="AccentColorID" />
+    <Property Type="String" Name="TeamLogo" MaxLength="350" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="School" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="City" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Sport" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="CreatedByUserID" />
+    <Property Type="DateTime" Name="CreatedOnDate" Nullable="false" />
+    <Property Type="Int32" Name="LastModifiedByUserID" />
+    <Property Type="DateTime" Name="LastModifiedOnDate" />
+    <Property Type="Boolean" Name="Deleted" Nullable="false" />
+    <Property Type="Int32" Name="DeletedByUserID" />
+    <Property Type="DateTime" Name="DeletedOnDate" />
+    <Property Type="Int32" Name="TAASportID" />
+    <Property Type="String" Name="UserUploadedGraphic" MaxLength="350" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="GAUploadedGraphic" MaxLength="350" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="CUG" />
+    <Property Type="Boolean" Name="GraphicDeleted" />
+    <Property Type="Boolean" Name="CUGGoodsize" />
+    <Property Type="Boolean" Name="CUGGoodtransparancy" />
+    <Property Type="Boolean" Name="CUGGoodvectorized" />
+    <Property Type="Boolean" Name="CUGGoodresolution" />
+  </EntityType>
+  <EntityType Name="TAA_ImageUpload">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="UserId" />
+    <Property Type="String" Name="ImageName" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Type="Boolean" Name="IsError" />
+    <Property Type="Boolean" Name="IsFixIt" />
+    <Property Type="DateTime" Name="UploadedOnDate" />
+  </EntityType>
+  <EntityType Name="TAA_Microsite">
+    <Key>
+      <PropertyRef Name="MicrositeID" />
+    </Key>
+    <Property Type="Int32" Name="MicrositeID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="TeamName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="PrimaryColour" Nullable="false" MaxLength="11" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="SecondaryColour" Nullable="false" MaxLength="11" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Accent" Nullable="false" MaxLength="11" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="PrimaryColorID" />
+    <Property Type="Int32" Name="SecondaryColorID" />
+    <Property Type="Int32" Name="AccentColorID" />
+    <Property Type="String" Name="TeamLogo" MaxLength="350" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="School" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="City" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Sport" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="SportID" />
+    <Property Type="Boolean" Name="CreatedFromSLP" />
+    <Property Type="Boolean" Name="Enabled" Nullable="false" />
+    <Property Type="Boolean" Name="Locked" Nullable="false" />
+    <Property Type="Int32" Name="CreatedByUserID" />
+    <Property Type="DateTime" Name="CreatedOnDate" Nullable="false" />
+    <Property Type="Int32" Name="LastModifiedByUserID" />
+    <Property Type="DateTime" Name="LastModifiedOnDate" />
+    <Property Type="Boolean" Name="Deleted" Nullable="false" />
+    <Property Type="Int32" Name="DeletedByUserID" />
+    <Property Type="DateTime" Name="DeletedOnDate" />
+    <Property Type="String" Name="URL" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="PartialURL" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="TeamUniqueID" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="IntegratorRetrievalCode" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="IntegratorCustAccount" />
+    <NavigationProperty Name="TAA_Sports" Relationship="fanlive7Model.FK_TAA_Microsite_TAA_Sports" FromRole="TAA_Microsite" ToRole="TAA_Sports" />
+    <NavigationProperty Name="TAA_MicrositeLogos" Relationship="fanlive7Model.FK_TAA_MicrositeLogos_TAA_Microsite" FromRole="TAA_Microsite" ToRole="TAA_MicrositeLogos" />
+  </EntityType>
+  <EntityType Name="TAA_MicrositeLogos">
+    <Key>
+      <PropertyRef Name="LogoID" />
+    </Key>
+    <Property Type="Int32" Name="LogoID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="MicrositeID" Nullable="false" />
+    <Property Type="String" Name="Logo" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="LogoName" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="CreatedByUserID" />
+    <Property Type="DateTime" Name="CreatedOnDate" Nullable="false" />
+    <Property Type="Int32" Name="LastModifiedByUserID" />
+    <Property Type="DateTime" Name="LastModifiedOnDate" />
+    <Property Type="Boolean" Name="Deleted" Nullable="false" />
+    <Property Type="Int32" Name="DeletedByUserID" />
+    <Property Type="DateTime" Name="DeletedOnDate" />
+    <NavigationProperty Name="TAA_Microsite" Relationship="fanlive7Model.FK_TAA_MicrositeLogos_TAA_Microsite" FromRole="TAA_MicrositeLogos" ToRole="TAA_Microsite" />
+  </EntityType>
+  <EntityType Name="TAA_Notifications">
+    <Key>
+      <PropertyRef Name="NotificationID" />
+    </Key>
+    <Property Type="Int32" Name="NotificationID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="UserID" Nullable="false" />
+    <Property Type="Int32" Name="MicrositeID" />
+    <Property Type="String" Name="Notification" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="NotificationType" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Details" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="CreatedByUserID" />
+    <Property Type="DateTime" Name="CreatedOnDate" Nullable="false" />
+    <Property Type="Int32" Name="LastModifiedByUserID" />
+    <Property Type="DateTime" Name="LastModifiedOnDate" />
+    <Property Type="Boolean" Name="Deleted" Nullable="false" />
+    <Property Type="Int32" Name="DeletedByUserID" />
+    <Property Type="DateTime" Name="DeletedOnDate" />
+  </EntityType>
+  <EntityType Name="TAA_OrdersAdjustments">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Type="Int32" Name="id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="AdjustmentID" />
+    <Property Type="Int32" Name="OrderID" />
+    <Property Type="String" Name="PromotionValue" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Double" Name="FanoramaTierPercentage" />
+    <Property Type="Decimal" Name="TotalAdjustment" Precision="19" Scale="4" />
+    <NavigationProperty Name="CAT_Orders" Relationship="fanlive7Model.FK_TAA_OrdersAdjustments_CAT_Orders" FromRole="TAA_OrdersAdjustments" ToRole="CAT_Orders" />
+    <NavigationProperty Name="TAA_Adjustments" Relationship="fanlive7Model.FK_TAA_OrdersAdjustments_TAA_Adjustments" FromRole="TAA_OrdersAdjustments" ToRole="TAA_Adjustments" />
+  </EntityType>
+  <EntityType Name="TAA_PantSizes">
+    <Key>
+      <PropertyRef Name="PantSizeID" />
+    </Key>
+    <Property Type="Int32" Name="PantSizeID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="SizeGroupID" Nullable="false" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Size" MaxLength="20" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="TAA_SizeGroups" Relationship="fanlive7Model.FK_TAA_PantSizes_TAA_SizeGroups" FromRole="TAA_PantSizes" ToRole="TAA_SizeGroups" />
+    <NavigationProperty Name="TAA_RoleCards" Relationship="fanlive7Model.FK_TAA_RoleCards_TAA_PantSizes" FromRole="TAA_PantSizes" ToRole="TAA_RoleCards" />
+  </EntityType>
+  <EntityType Name="TAA_Parameters">
+    <Key>
+      <PropertyRef Name="Parms" />
+    </Key>
+    <Property Type="Int32" Name="Parms" Nullable="false" />
+    <Property Type="Int32" Name="DealerLastAutoAssigned" />
+  </EntityType>
+  <EntityType Name="TAA_PaymentTerms">
+    <Key>
+      <PropertyRef Name="PaymentTermID" />
+    </Key>
+    <Property Type="Int32" Name="PaymentTermID" Nullable="false" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Users" Relationship="fanlive7Model.TAA_DealerPaymentTerms" FromRole="TAA_PaymentTerms" ToRole="User" />
+  </EntityType>
+  <EntityType Name="TAA_ProductCategories">
+    <Key>
+      <PropertyRef Name="CategoryID" />
+    </Key>
+    <Property Type="Int32" Name="CategoryID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="ParentCatID" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="TAA_Products" Relationship="fanlive7Model.FK_TAA_Products_TAA_ProductCategories" FromRole="TAA_ProductCategories" ToRole="TAA_Products" />
+  </EntityType>
+  <EntityType Name="TAA_ProductionTimes">
+    <Key>
+      <PropertyRef Name="ShippingOption" />
+    </Key>
+    <Property Type="String" Name="ShippingOption" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="Sunday" Nullable="false" />
+    <Property Type="Int32" Name="Monday" Nullable="false" />
+    <Property Type="Int32" Name="Tuesday" Nullable="false" />
+    <Property Type="Int32" Name="Wednesday" Nullable="false" />
+    <Property Type="Int32" Name="Thursday" Nullable="false" />
+    <Property Type="Int32" Name="Friday" Nullable="false" />
+    <Property Type="Int32" Name="Saturday" Nullable="false" />
+    <Property Type="Int32" Name="CreatedByUserID" />
+    <Property Type="DateTime" Name="CreatedOnDate" Nullable="false" />
+    <Property Type="Int32" Name="LastModifiedByUserID" />
+    <Property Type="DateTime" Name="LastModifiedOnDate" />
+  </EntityType>
+  <EntityType Name="TAA_Products">
+    <Key>
+      <PropertyRef Name="ProductID" />
+    </Key>
+    <Property Type="Int32" Name="ProductID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="CategoryID" />
+    <Property Type="String" Name="ItemCode" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="Price" Nullable="false" Precision="19" Scale="4" />
+    <Property Type="String" Name="ImageURL" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="SizeID" />
+    <NavigationProperty Name="TAA_ProductCategories" Relationship="fanlive7Model.FK_TAA_Products_TAA_ProductCategories" FromRole="TAA_Products" ToRole="TAA_ProductCategories" />
+  </EntityType>
+  <EntityType Name="TAA_ProductSizes">
+    <Key>
+      <PropertyRef Name="SizeID" />
+      <PropertyRef Name="ProductID" />
+    </Key>
+    <Property Type="Int32" Name="SizeID" Nullable="false" />
+    <Property Type="Int32" Name="ProductID" Nullable="false" />
+    <Property Type="Double" Name="Weight" />
+    <Property Type="Double" Name="Height" />
+    <Property Type="Double" Name="Width" />
+    <Property Type="Double" Name="Depth" />
+    <Property Type="Double" Name="Volume" />
+    <NavigationProperty Name="CAT_Products" Relationship="fanlive7Model.FK_TAA_ProductSizes_CAT_Products" FromRole="TAA_ProductSizes" ToRole="CAT_Products" />
+    <NavigationProperty Name="TAA_Sizes" Relationship="fanlive7Model.FK_TAA_ProductSizes_TAA_Sizes" FromRole="TAA_ProductSizes" ToRole="TAA_Sizes" />
+  </EntityType>
+  <EntityType Name="TAA_RecentActivity">
+    <Key>
+      <PropertyRef Name="ActivityID" />
+    </Key>
+    <Property Type="Int32" Name="ActivityID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="UserID" />
+    <Property Type="Int32" Name="MicrositeID" />
+    <Property Type="String" Name="Activity" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="ActivityType" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Details" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="CreatedByUserID" />
+    <Property Type="DateTime" Name="CreatedOnDate" Nullable="false" />
+    <Property Type="Int32" Name="LastModifiedByUserID" />
+    <Property Type="DateTime" Name="LastModifiedOnDate" />
+    <Property Type="Boolean" Name="Deleted" Nullable="false" />
+    <Property Type="Int32" Name="DeletedByUserID" />
+    <Property Type="DateTime" Name="DeletedOnDate" />
+  </EntityType>
+  <EntityType Name="TAA_RoleCallSheets">
+    <Key>
+      <PropertyRef Name="RollCallSheetID" />
+    </Key>
+    <Property Type="Int32" Name="RollCallSheetID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="MicrositeID" Nullable="false" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="CreatedByUserID" />
+    <Property Type="DateTime" Name="CreatedOnDate" />
+    <Property Type="Int32" Name="LastModifiedByUserID" />
+    <Property Type="DateTime" Name="LastModifiedOnDate" />
+    <Property Type="Boolean" Name="Deleted" Nullable="false" />
+    <Property Type="Int32" Name="DeletedByUserID" />
+    <Property Type="DateTime" Name="DeletedOnDate" />
+    <NavigationProperty Name="TAA_RoleCards" Relationship="fanlive7Model.FK_TAA_RoleCards_TAA_RoleCallSheets" FromRole="TAA_RoleCallSheets" ToRole="TAA_RoleCards" />
+  </EntityType>
+  <EntityType Name="TAA_RoleCards">
+    <Key>
+      <PropertyRef Name="RoleCardID" />
+    </Key>
+    <Property Type="Int32" Name="RoleCardID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="RoleCallSheetID" Nullable="false" />
+    <Property Type="String" Name="PrintedName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="JerseyNumber" />
+    <Property Type="String" Name="FirstName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="LastName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="MiddleInitial" MaxLength="3" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Email" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Phone" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Address" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="City" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="State" MaxLength="2" FixedLength="true" Unicode="true" />
+    <Property Type="String" Name="Zip" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Gender" Nullable="false" MaxLength="1" FixedLength="true" Unicode="true" />
+    <Property Type="Int32" Name="SizeGroupID" Nullable="false" />
+    <Property Type="Int32" Name="PantSizeID" Nullable="false" />
+    <Property Type="Int32" Name="ShirtSizeID" Nullable="false" />
+    <Property Type="String" Name="playerRetrievalCode" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="CreatedByUserID" />
+    <Property Type="DateTime" Name="CreatedOnDate" />
+    <Property Type="Int32" Name="LastModifiedByUserID" />
+    <Property Type="DateTime" Name="LastModifiedOnDate" />
+    <Property Type="Boolean" Name="Deleted" Nullable="false" />
+    <Property Type="Int32" Name="DeletedByUserID" />
+    <Property Type="DateTime" Name="DeletedOnDate" />
+    <NavigationProperty Name="TAA_PantSizes" Relationship="fanlive7Model.FK_TAA_RoleCards_TAA_PantSizes" FromRole="TAA_RoleCards" ToRole="TAA_PantSizes" />
+    <NavigationProperty Name="TAA_RoleCallSheets" Relationship="fanlive7Model.FK_TAA_RoleCards_TAA_RoleCallSheets" FromRole="TAA_RoleCards" ToRole="TAA_RoleCallSheets" />
+    <NavigationProperty Name="TAA_ShirtSizes" Relationship="fanlive7Model.FK_TAA_RoleCards_TAA_ShirtSizes" FromRole="TAA_RoleCards" ToRole="TAA_ShirtSizes" />
+  </EntityType>
+  <EntityType Name="TAA_ShippingBoxes">
+    <Key>
+      <PropertyRef Name="OrderID" />
+      <PropertyRef Name="BoxID" />
+    </Key>
+    <Property Type="Int32" Name="OrderID" Nullable="false" />
+    <Property Type="Int32" Name="BoxID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="BoxSize" Nullable="false" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="DeclaredWeight" Precision="18" Scale="3" />
+    <Property Type="Decimal" Name="BoxWeight" Precision="18" Scale="3" />
+    <Property Type="Decimal" Name="DimensionalWeight" Precision="18" Scale="3" />
+    <Property Type="Decimal" Name="TotalWeight" Precision="18" Scale="3" />
+    <Property Type="Boolean" Name="IsDimensionalWeightApplied" />
+    <Property Type="Decimal" Name="BaseRate" Precision="18" Scale="3" />
+    <Property Type="Decimal" Name="FreightCharge" Precision="18" Scale="3" />
+    <Property Type="Decimal" Name="BoxValue" Precision="18" Scale="3" />
+    <Property Type="Decimal" Name="AreaDelierySurcharge" Precision="18" Scale="3" />
+    <Property Type="Decimal" Name="GroundFuelSurcharge" Precision="18" Scale="3" />
+    <Property Type="Decimal" Name="AirFuelSurcharge" Precision="18" Scale="3" />
+    <Property Type="Decimal" Name="TotalFuelSurcharge" Precision="18" Scale="3" />
+    <Property Type="Decimal" Name="SaturdayDeliverySurcharge" Precision="18" Scale="3" />
+    <Property Type="Decimal" Name="ExpressDeliverySurcharge" Precision="18" Scale="3" />
+    <Property Type="Decimal" Name="GroundToResidentialSurcharge" Precision="18" Scale="3" />
+    <Property Type="Decimal" Name="AirToResidentialSurcharge" Precision="18" Scale="3" />
+    <Property Type="Decimal" Name="CODSurcharge" Precision="18" Scale="3" />
+    <Property Type="Decimal" Name="Insurance" Precision="18" Scale="3" />
+  </EntityType>
+  <EntityType Name="TAA_ShirtSizes">
+    <Key>
+      <PropertyRef Name="ShirtSizeID" />
+    </Key>
+    <Property Type="Int32" Name="ShirtSizeID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="SizeGroupID" Nullable="false" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Size" MaxLength="20" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="TAA_RoleCards" Relationship="fanlive7Model.FK_TAA_RoleCards_TAA_ShirtSizes" FromRole="TAA_ShirtSizes" ToRole="TAA_RoleCards" />
+    <NavigationProperty Name="TAA_SizeGroups" Relationship="fanlive7Model.FK_TAA_ShirtSizes_TAA_SizeGroups" FromRole="TAA_ShirtSizes" ToRole="TAA_SizeGroups" />
+  </EntityType>
+  <EntityType Name="TAA_ShoppingCart">
+    <Key>
+      <PropertyRef Name="CartID" />
+    </Key>
+    <Property Type="Int32" Name="CartID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="RecordID" Nullable="false" />
+    <Property Type="Int32" Name="ProductID" Nullable="false" />
+    <Property Type="Int32" Name="MicrositeID" Nullable="false" />
+    <Property Type="Int32" Name="RoleCardID" />
+    <Property Type="Int32" Name="FanID" />
+    <Property Type="Decimal" Name="BulkDiscount" Precision="19" Scale="4" />
+    <Property Type="Int32" Name="SizeXS" />
+    <Property Type="Int32" Name="SizeS" />
+    <Property Type="Int32" Name="SizeM" />
+    <Property Type="Int32" Name="SizeL" />
+    <Property Type="Int32" Name="SizeXL" />
+    <Property Type="Int32" Name="SizeXXL" />
+    <Property Type="String" Name="PrintedName" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="JerseyNumber" />
+    <Property Type="String" Name="TeamName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="PrimaryColor" Nullable="false" MaxLength="7" FixedLength="true" Unicode="true" />
+    <Property Type="Int32" Name="PrimaryColorID" />
+    <Property Type="String" Name="SecondaryColor" Nullable="false" MaxLength="7" FixedLength="true" Unicode="true" />
+    <Property Type="Int32" Name="SecondaryColorID" />
+    <Property Type="String" Name="Accent" Nullable="false" MaxLength="7" FixedLength="true" Unicode="true" />
+    <Property Type="Int32" Name="AccentColorID" />
+    <Property Type="String" Name="TeamLogo" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="School" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="City" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Sport" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="CreatedByUserID" />
+    <Property Type="DateTime" Name="CreatedOnDate" />
+    <Property Type="Int32" Name="LastModifiedByUserID" />
+    <Property Type="DateTime" Name="LastModifiedOnDate" />
+    <Property Type="Boolean" Name="Deleted" Nullable="false" />
+    <Property Type="Int32" Name="DeletedByUserID" />
+    <Property Type="DateTime" Name="DeletedOnDate" />
+    <NavigationProperty Name="CAT_Products" Relationship="fanlive7Model.FK_TAA_ShoppingCart_CAT_Products" FromRole="TAA_ShoppingCart" ToRole="CAT_Products" />
+    <NavigationProperty Name="TAA_ShoppingCartSizes" Relationship="fanlive7Model.FK_TAA_ShoppingCartSizes_TAA_ShoppingCart" FromRole="TAA_ShoppingCart" ToRole="TAA_ShoppingCartSizes" />
+    <Property Type="String" Name="Initials" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="InitialOne" MaxLength="1" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="TAA_ShoppingCartAdjustments">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Type="Int32" Name="AdjustmentID" />
+    <Property Type="Int32" Name="CartSizeID" />
+    <Property Type="Int32" Name="id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Decimal" Name="TotalAdjustment" Precision="19" Scale="4" />
+    <Property Type="Double" Name="FanoramaTierPercentage" />
+    <Property Type="String" Name="PromotionValue" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="TAA_Adjustments" Relationship="fanlive7Model.FK_ShoppingCartAdjustments_TAA_Adjustments" FromRole="TAA_ShoppingCartAdjustments" ToRole="TAA_Adjustments" />
+    <NavigationProperty Name="TAA_ShoppingCartSizes" Relationship="fanlive7Model.FK_TAA_ShoppingCartAdjustments_TAA_ShoppingCartSizes" FromRole="TAA_ShoppingCartAdjustments" ToRole="TAA_ShoppingCartSizes" />
+  </EntityType>
+  <EntityType Name="TAA_ShoppingCartSizes">
+    <Key>
+      <PropertyRef Name="CartSizeID" />
+    </Key>
+    <Property Type="Int32" Name="CartSizeID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="TAACartID" Nullable="false" />
+    <Property Type="Int32" Name="SizeID" Nullable="false" />
+    <Property Type="Int32" Name="Quantity" Nullable="false" />
+    <NavigationProperty Name="TAA_ShoppingCart" Relationship="fanlive7Model.FK_TAA_ShoppingCartSizes_TAA_ShoppingCart" FromRole="TAA_ShoppingCartSizes" ToRole="TAA_ShoppingCart" />
+    <NavigationProperty Name="TAA_ShoppingCartAdjustments" Relationship="fanlive7Model.FK_TAA_ShoppingCartAdjustments_TAA_ShoppingCartSizes" FromRole="TAA_ShoppingCartSizes" ToRole="TAA_ShoppingCartAdjustments" />
+    <NavigationProperty Name="TAA_Sizes" Relationship="fanlive7Model.FK_TAA_ShoppingCartSizes_TAA_Sizes" FromRole="TAA_ShoppingCartSizes" ToRole="TAA_Sizes" />
+  </EntityType>
+  <EntityType Name="TAA_SizeGroups">
+    <Key>
+      <PropertyRef Name="SizeGroupID" />
+    </Key>
+    <Property Type="Int32" Name="SizeGroupID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Gender" Nullable="false" MaxLength="1" FixedLength="true" Unicode="true" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="TAA_PantSizes" Relationship="fanlive7Model.FK_TAA_PantSizes_TAA_SizeGroups" FromRole="TAA_SizeGroups" ToRole="TAA_PantSizes" />
+    <NavigationProperty Name="TAA_ShirtSizes" Relationship="fanlive7Model.FK_TAA_ShirtSizes_TAA_SizeGroups" FromRole="TAA_SizeGroups" ToRole="TAA_ShirtSizes" />
+  </EntityType>
+  <EntityType Name="TAA_Sizes">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Type="Int32" Name="id" Nullable="false" />
+    <Property Type="String" Name="GroupName" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Displayname" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Sizenumber" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="TAA_ProductSizes" Relationship="fanlive7Model.FK_TAA_ProductSizes_TAA_Sizes" FromRole="TAA_Sizes" ToRole="TAA_ProductSizes" />
+    <NavigationProperty Name="TAA_ShoppingCartSizes" Relationship="fanlive7Model.FK_TAA_ShoppingCartSizes_TAA_Sizes" FromRole="TAA_Sizes" ToRole="TAA_ShoppingCartSizes" />
+    <Property Type="Int32" Name="SortOrder" />
+  </EntityType>
+  <EntityType Name="TAA_Sports">
+    <Key>
+      <PropertyRef Name="SportID" />
+    </Key>
+    <Property Type="Int32" Name="SportID" Nullable="false" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="SortOrder" Nullable="false" />
+    <Property Type="Int32" Name="CreatedByUserID" />
+    <Property Type="DateTime" Name="CreatedOnDate" Nullable="false" />
+    <Property Type="Int32" Name="LastModifiedByUserID" />
+    <Property Type="DateTime" Name="LastModifiedOnDate" />
+    <Property Type="Boolean" Name="Deleted" Nullable="false" />
+    <Property Type="Int32" Name="DeletedByUserID" />
+    <Property Type="DateTime" Name="DeletedOnDate" />
+    <NavigationProperty Name="TAA_Microsite" Relationship="fanlive7Model.FK_TAA_Microsite_TAA_Sports" FromRole="TAA_Sports" ToRole="TAA_Microsite" />
+  </EntityType>
+  <EntityType Name="UserRole">
+    <Key>
+      <PropertyRef Name="UserRoleID" />
+    </Key>
+    <Property Type="Int32" Name="UserRoleID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="UserID" Nullable="false" />
+    <Property Type="Int32" Name="RoleID" Nullable="false" />
+    <Property Type="DateTime" Name="ExpiryDate" />
+    <Property Type="Boolean" Name="IsTrialUsed" />
+    <Property Type="DateTime" Name="EffectiveDate" />
+    <Property Type="Int32" Name="CreatedByUserID" />
+    <Property Type="DateTime" Name="CreatedOnDate" />
+    <Property Type="Int32" Name="LastModifiedByUserID" />
+    <Property Type="DateTime" Name="LastModifiedOnDate" />
+    <NavigationProperty Name="Role" Relationship="fanlive7Model.FK_UserRoles_Roles" FromRole="UserRole" ToRole="Role" />
+    <NavigationProperty Name="User" Relationship="fanlive7Model.FK_UserRoles_Users" FromRole="UserRole" ToRole="User" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="UserID" />
+    </Key>
+    <Property Type="Int32" Name="UserID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Username" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="FirstName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="LastName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="IsSuperUser" Nullable="false" />
+    <Property Type="Int32" Name="AffiliateId" />
+    <Property Type="String" Name="Email" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="DisplayName" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="UpdatePassword" Nullable="false" />
+    <Property Type="String" Name="LastIPAddress" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="IsDeleted" Nullable="false" />
+    <Property Type="Int32" Name="CreatedByUserID" />
+    <Property Type="DateTime" Name="CreatedOnDate" />
+    <Property Type="Int32" Name="LastModifiedByUserID" />
+    <Property Type="DateTime" Name="LastModifiedOnDate" />
+    <NavigationProperty Name="CAT_Orders" Relationship="fanlive7Model.FK_CAT_Orders_Users" FromRole="User" ToRole="CAT_Orders" />
+    <NavigationProperty Name="CAT_Organization" Relationship="fanlive7Model.FK_CAT_Organization_Users" FromRole="User" ToRole="CAT_Organization" />
+    <NavigationProperty Name="CAT_PaymentMethodPermission" Relationship="fanlive7Model.FK_CAT_PaymentMethodPermission_Users" FromRole="User" ToRole="CAT_PaymentMethodPermission" />
+    <NavigationProperty Name="CAT_ShipTo" Relationship="fanlive7Model.FK_CAT_ShipTo_Users" FromRole="User" ToRole="CAT_ShipTo" />
+    <NavigationProperty Name="UserRoles" Relationship="fanlive7Model.FK_UserRoles_Users" FromRole="User" ToRole="UserRole" />
+    <NavigationProperty Name="TAA_PaymentTerms" Relationship="fanlive7Model.TAA_DealerPaymentTerms" FromRole="User" ToRole="TAA_PaymentTerms" />
+    <NavigationProperty Name="UserProfiles" Relationship="fanlive7Model.FK_UserProfile_Users" FromRole="User" ToRole="UserProfile" />
+  </EntityType>
+  <Association Name="FK__aspnet_Me__UserI__4B6D135E">
+    <End Type="fanlive7Model.aspnet_Users" Role="aspnet_Users" Multiplicity="1" />
+    <End Type="fanlive7Model.aspnet_Membership" Role="aspnet_Membership" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="aspnet_Users">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="aspnet_Membership">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__aspnet_Pr__UserI__263B8EAF">
+    <End Type="fanlive7Model.aspnet_Users" Role="aspnet_Users" Multiplicity="1" />
+    <End Type="fanlive7Model.aspnet_Profile" Role="aspnet_Profile" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="aspnet_Users">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="aspnet_Profile">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CAT_AdvCatProducts_AdvCats">
+    <End Type="fanlive7Model.CAT_AdvCats" Role="CAT_AdvCats" Multiplicity="1" />
+    <End Type="fanlive7Model.CAT_AdvCatProducts" Role="CAT_AdvCatProducts" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CAT_AdvCats">
+        <PropertyRef Name="AdvCatID" />
+      </Principal>
+      <Dependent Role="CAT_AdvCatProducts">
+        <PropertyRef Name="AdvCatID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CAT_AdvCatProducts_Products">
+    <End Type="fanlive7Model.CAT_Products" Role="CAT_Products" Multiplicity="1" />
+    <End Type="fanlive7Model.CAT_AdvCatProducts" Role="CAT_AdvCatProducts" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CAT_Products">
+        <PropertyRef Name="ProductID" />
+      </Principal>
+      <Dependent Role="CAT_AdvCatProducts">
+        <PropertyRef Name="ProductID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CAT_AdvCats_CAT_AdvCats">
+    <End Type="fanlive7Model.CAT_AdvCats" Role="CAT_AdvCats" Multiplicity="0..1" />
+    <End Type="fanlive7Model.CAT_AdvCats" Role="CAT_AdvCats1" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CAT_AdvCats">
+        <PropertyRef Name="AdvCatID" />
+      </Principal>
+      <Dependent Role="CAT_AdvCats1">
+        <PropertyRef Name="ParentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CAT_OrderDetails_Orders">
+    <End Type="fanlive7Model.CAT_Orders" Role="CAT_Orders" Multiplicity="1" />
+    <End Type="fanlive7Model.CAT_OrderDetails" Role="CAT_OrderDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CAT_Orders">
+        <PropertyRef Name="OrderID" />
+      </Principal>
+      <Dependent Role="CAT_OrderDetails">
+        <PropertyRef Name="OrderID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CAT_OrderDetails_Products">
+    <End Type="fanlive7Model.CAT_Products" Role="CAT_Products" Multiplicity="1" />
+    <End Type="fanlive7Model.CAT_OrderDetails" Role="CAT_OrderDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CAT_Products">
+        <PropertyRef Name="ProductID" />
+      </Principal>
+      <Dependent Role="CAT_OrderDetails">
+        <PropertyRef Name="ProductID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CAT_Orders_Users">
+    <End Type="fanlive7Model.User" Role="User" Multiplicity="1" />
+    <End Type="fanlive7Model.CAT_Orders" Role="CAT_Orders" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="CAT_Orders">
+        <PropertyRef Name="CustomerID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TAA_OrdersAdjustments_CAT_Orders">
+    <End Type="fanlive7Model.CAT_Orders" Role="CAT_Orders" Multiplicity="0..1" />
+    <End Type="fanlive7Model.TAA_OrdersAdjustments" Role="TAA_OrdersAdjustments" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CAT_Orders">
+        <PropertyRef Name="OrderID" />
+      </Principal>
+      <Dependent Role="TAA_OrdersAdjustments">
+        <PropertyRef Name="OrderID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CAT_Organization_Users">
+    <End Type="fanlive7Model.User" Role="User" Multiplicity="1" />
+    <End Type="fanlive7Model.CAT_Organization" Role="CAT_Organization" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="CAT_Organization">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CAT_PaymentMethodPermission_CAT_PaymentMethods">
+    <End Type="fanlive7Model.CAT_PaymentMethods" Role="CAT_PaymentMethods" Multiplicity="1" />
+    <End Type="fanlive7Model.CAT_PaymentMethodPermission" Role="CAT_PaymentMethodPermission" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CAT_PaymentMethods">
+        <PropertyRef Name="PaymentMethodID" />
+      </Principal>
+      <Dependent Role="CAT_PaymentMethodPermission">
+        <PropertyRef Name="PaymentMethodID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CAT_PaymentMethodPermission_Users">
+    <End Type="fanlive7Model.User" Role="User" Multiplicity="0..1" />
+    <End Type="fanlive7Model.CAT_PaymentMethodPermission" Role="CAT_PaymentMethodPermission" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="CAT_PaymentMethodPermission">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CAT_ShoppingCart_Products">
+    <End Type="fanlive7Model.CAT_Products" Role="CAT_Products" Multiplicity="1" />
+    <End Type="fanlive7Model.CAT_ShoppingCart" Role="CAT_ShoppingCart" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CAT_Products">
+        <PropertyRef Name="ProductID" />
+      </Principal>
+      <Dependent Role="CAT_ShoppingCart">
+        <PropertyRef Name="ProductID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TAA_ProductSizes_CAT_Products">
+    <End Type="fanlive7Model.CAT_Products" Role="CAT_Products" Multiplicity="1" />
+    <End Type="fanlive7Model.TAA_ProductSizes" Role="TAA_ProductSizes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CAT_Products">
+        <PropertyRef Name="ProductID" />
+      </Principal>
+      <Dependent Role="TAA_ProductSizes">
+        <PropertyRef Name="ProductID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TAA_ShoppingCart_CAT_Products">
+    <End Type="fanlive7Model.CAT_Products" Role="CAT_Products" Multiplicity="1" />
+    <End Type="fanlive7Model.TAA_ShoppingCart" Role="TAA_ShoppingCart" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CAT_Products">
+        <PropertyRef Name="ProductID" />
+      </Principal>
+      <Dependent Role="TAA_ShoppingCart">
+        <PropertyRef Name="ProductID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CAT_ShipTo_Users">
+    <End Type="fanlive7Model.User" Role="User" Multiplicity="1" />
+    <End Type="fanlive7Model.CAT_ShipTo" Role="CAT_ShipTo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="CAT_ShipTo">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserRoles_Roles">
+    <End Type="fanlive7Model.Role" Role="Role" Multiplicity="1" />
+    <End Type="fanlive7Model.UserRole" Role="UserRole" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Role">
+        <PropertyRef Name="RoleID" />
+      </Principal>
+      <Dependent Role="UserRole">
+        <PropertyRef Name="RoleID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ShoppingCartAdjustments_TAA_Adjustments">
+    <End Type="fanlive7Model.TAA_Adjustments" Role="TAA_Adjustments" Multiplicity="0..1" />
+    <End Type="fanlive7Model.TAA_ShoppingCartAdjustments" Role="TAA_ShoppingCartAdjustments" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TAA_Adjustments">
+        <PropertyRef Name="AdjustmentID" />
+      </Principal>
+      <Dependent Role="TAA_ShoppingCartAdjustments">
+        <PropertyRef Name="AdjustmentID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TAA_OrdersAdjustments_TAA_Adjustments">
+    <End Type="fanlive7Model.TAA_Adjustments" Role="TAA_Adjustments" Multiplicity="0..1" />
+    <End Type="fanlive7Model.TAA_OrdersAdjustments" Role="TAA_OrdersAdjustments" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TAA_Adjustments">
+        <PropertyRef Name="AdjustmentID" />
+      </Principal>
+      <Dependent Role="TAA_OrdersAdjustments">
+        <PropertyRef Name="AdjustmentID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TAA_Microsite_TAA_Sports">
+    <End Type="fanlive7Model.TAA_Sports" Role="TAA_Sports" Multiplicity="0..1" />
+    <End Type="fanlive7Model.TAA_Microsite" Role="TAA_Microsite" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TAA_Sports">
+        <PropertyRef Name="SportID" />
+      </Principal>
+      <Dependent Role="TAA_Microsite">
+        <PropertyRef Name="SportID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TAA_MicrositeLogos_TAA_Microsite">
+    <End Type="fanlive7Model.TAA_Microsite" Role="TAA_Microsite" Multiplicity="1" />
+    <End Type="fanlive7Model.TAA_MicrositeLogos" Role="TAA_MicrositeLogos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TAA_Microsite">
+        <PropertyRef Name="MicrositeID" />
+      </Principal>
+      <Dependent Role="TAA_MicrositeLogos">
+        <PropertyRef Name="MicrositeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TAA_PantSizes_TAA_SizeGroups">
+    <End Type="fanlive7Model.TAA_SizeGroups" Role="TAA_SizeGroups" Multiplicity="1" />
+    <End Type="fanlive7Model.TAA_PantSizes" Role="TAA_PantSizes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TAA_SizeGroups">
+        <PropertyRef Name="SizeGroupID" />
+      </Principal>
+      <Dependent Role="TAA_PantSizes">
+        <PropertyRef Name="SizeGroupID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TAA_RoleCards_TAA_PantSizes">
+    <End Type="fanlive7Model.TAA_PantSizes" Role="TAA_PantSizes" Multiplicity="1" />
+    <End Type="fanlive7Model.TAA_RoleCards" Role="TAA_RoleCards" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TAA_PantSizes">
+        <PropertyRef Name="PantSizeID" />
+      </Principal>
+      <Dependent Role="TAA_RoleCards">
+        <PropertyRef Name="PantSizeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TAA_Products_TAA_ProductCategories">
+    <End Type="fanlive7Model.TAA_ProductCategories" Role="TAA_ProductCategories" Multiplicity="0..1" />
+    <End Type="fanlive7Model.TAA_Products" Role="TAA_Products" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TAA_ProductCategories">
+        <PropertyRef Name="CategoryID" />
+      </Principal>
+      <Dependent Role="TAA_Products">
+        <PropertyRef Name="CategoryID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TAA_ProductSizes_TAA_Sizes">
+    <End Type="fanlive7Model.TAA_Sizes" Role="TAA_Sizes" Multiplicity="1" />
+    <End Type="fanlive7Model.TAA_ProductSizes" Role="TAA_ProductSizes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TAA_Sizes">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="TAA_ProductSizes">
+        <PropertyRef Name="SizeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TAA_RoleCards_TAA_RoleCallSheets">
+    <End Type="fanlive7Model.TAA_RoleCallSheets" Role="TAA_RoleCallSheets" Multiplicity="1" />
+    <End Type="fanlive7Model.TAA_RoleCards" Role="TAA_RoleCards" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TAA_RoleCallSheets">
+        <PropertyRef Name="RollCallSheetID" />
+      </Principal>
+      <Dependent Role="TAA_RoleCards">
+        <PropertyRef Name="RoleCallSheetID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TAA_RoleCards_TAA_ShirtSizes">
+    <End Type="fanlive7Model.TAA_ShirtSizes" Role="TAA_ShirtSizes" Multiplicity="1" />
+    <End Type="fanlive7Model.TAA_RoleCards" Role="TAA_RoleCards" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TAA_ShirtSizes">
+        <PropertyRef Name="ShirtSizeID" />
+      </Principal>
+      <Dependent Role="TAA_RoleCards">
+        <PropertyRef Name="ShirtSizeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TAA_ShirtSizes_TAA_SizeGroups">
+    <End Type="fanlive7Model.TAA_SizeGroups" Role="TAA_SizeGroups" Multiplicity="1" />
+    <End Type="fanlive7Model.TAA_ShirtSizes" Role="TAA_ShirtSizes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TAA_SizeGroups">
+        <PropertyRef Name="SizeGroupID" />
+      </Principal>
+      <Dependent Role="TAA_ShirtSizes">
+        <PropertyRef Name="SizeGroupID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TAA_ShoppingCartSizes_TAA_ShoppingCart">
+    <End Type="fanlive7Model.TAA_ShoppingCart" Role="TAA_ShoppingCart" Multiplicity="1" />
+    <End Type="fanlive7Model.TAA_ShoppingCartSizes" Role="TAA_ShoppingCartSizes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TAA_ShoppingCart">
+        <PropertyRef Name="CartID" />
+      </Principal>
+      <Dependent Role="TAA_ShoppingCartSizes">
+        <PropertyRef Name="TAACartID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TAA_ShoppingCartAdjustments_TAA_ShoppingCartSizes">
+    <End Type="fanlive7Model.TAA_ShoppingCartSizes" Role="TAA_ShoppingCartSizes" Multiplicity="0..1" />
+    <End Type="fanlive7Model.TAA_ShoppingCartAdjustments" Role="TAA_ShoppingCartAdjustments" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TAA_ShoppingCartSizes">
+        <PropertyRef Name="CartSizeID" />
+      </Principal>
+      <Dependent Role="TAA_ShoppingCartAdjustments">
+        <PropertyRef Name="CartSizeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TAA_ShoppingCartSizes_TAA_Sizes">
+    <End Type="fanlive7Model.TAA_Sizes" Role="TAA_Sizes" Multiplicity="1" />
+    <End Type="fanlive7Model.TAA_ShoppingCartSizes" Role="TAA_ShoppingCartSizes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TAA_Sizes">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="TAA_ShoppingCartSizes">
+        <PropertyRef Name="SizeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserRoles_Users">
+    <End Type="fanlive7Model.User" Role="User" Multiplicity="1" />
+    <End Type="fanlive7Model.UserRole" Role="UserRole" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="UserRole">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="TAA_DealerPaymentTerms">
+    <End Type="fanlive7Model.TAA_PaymentTerms" Role="TAA_PaymentTerms" Multiplicity="*" />
+    <End Type="fanlive7Model.User" Role="User" Multiplicity="*" />
+  </Association>
+  <EntityType Name="UserProfile">
+    <Key>
+      <PropertyRef Name="ProfileID" />
+    </Key>
+    <Property Type="Int32" Name="ProfileID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="UserID" Nullable="false" />
+    <Property Type="Int32" Name="PropertyDefinitionID" Nullable="false" />
+    <Property Type="String" Name="PropertyValue" MaxLength="3750" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="PropertyText" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="Visibility" Nullable="false" />
+    <Property Type="DateTime" Name="LastUpdatedDate" Nullable="false" />
+    <NavigationProperty Name="User" Relationship="fanlive7Model.FK_UserProfile_Users" FromRole="UserProfile" ToRole="User" />
+  </EntityType>
+  <Association Name="FK_UserProfile_Users">
+    <End Type="fanlive7Model.User" Role="User" Multiplicity="1" />
+    <End Type="fanlive7Model.UserProfile" Role="UserProfile" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="UserProfile">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="TAA_vw_OrderDetailsRollCall">
+    <Key>
+      <PropertyRef Name="OrderID" />
+      <PropertyRef Name="TAACartID" />
+      <PropertyRef Name="ProductID" />
+      <PropertyRef Name="RecordID" />
+      <PropertyRef Name="CustomerID" />
+      <PropertyRef Name="UnitCost" />
+      <PropertyRef Name="SizeID" />
+    </Key>
+    <Property Type="Int32" Name="OrderID" Nullable="false" />
+    <Property Type="Int32" Name="TAACartID" Nullable="false" />
+    <Property Type="Int32" Name="RoleCardID" />
+    <Property Type="Int32" Name="ProductID" Nullable="false" />
+    <Property Type="Int32" Name="RecordID" Nullable="false" />
+    <Property Type="Int32" Name="FanID" />
+    <Property Type="Int32" Name="CustomerID" Nullable="false" />
+    <Property Type="String" Name="ProductName" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="JerseyNumber" />
+    <Property Type="String" Name="PrintedName" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="ProductImage" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="UnitCost" Nullable="false" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="Tax" Precision="7" Scale="4" />
+    <Property Type="Decimal" Name="ShipCosts" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="ShippingRebate" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="ShipTax" Precision="7" Scale="4" />
+    <Property Type="String" Name="ShippingMethod" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="DeliveryDate" />
+    <Property Type="String" Name="CMSProductDesign" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="SizeID" Nullable="false" />
+    <Property Type="String" Name="SizeDisplay" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="primaryColorId" />
+    <Property Type="Int32" Name="secondaryColorId" />
+    <Property Type="Int32" Name="accentColorId" />
+    <Property Type="Int32" Name="quantity" />
+    <Property Type="Int32" Name="CMSProductID" />
+    <Property Type="Int32" Name="DiscountClassID" />
+  </EntityType>
+  <EntityType Name="TAA_vw_ProductsInOrders">
+    <Key>
+      <PropertyRef Name="ProductID" />
+      <PropertyRef Name="UnitCost" />
+      <PropertyRef Name="DescriptionHTML" />
+      <PropertyRef Name="OrderQuant" />
+      <PropertyRef Name="Featured" />
+      <PropertyRef Name="SalePrice" />
+      <PropertyRef Name="CreatedByUser" />
+      <PropertyRef Name="BulkPriceLimit1" />
+      <PropertyRef Name="BulkPriceLimit2" />
+      <PropertyRef Name="BulkPriceLimit3" />
+      <PropertyRef Name="BulkPriceLimit4" />
+      <PropertyRef Name="BulkPriceLimit5" />
+      <PropertyRef Name="InsuredValue" />
+      <PropertyRef Name="Status" />
+      <PropertyRef Name="DonationItem" />
+      <PropertyRef Name="PayPalSubscription" />
+      <PropertyRef Name="UseRoleFees" />
+      <PropertyRef Name="ProductCost" />
+      <PropertyRef Name="RoleExpiryType" />
+      <PropertyRef Name="ItemDeliveryType" />
+      <PropertyRef Name="ReorderPoint" />
+      <PropertyRef Name="OrderQuantValidExpr" />
+      <PropertyRef Name="ShippingAddress" />
+      <PropertyRef Name="AuctionFinished" />
+      <PropertyRef Name="OrderDetailsID" />
+      <PropertyRef Name="OrderID" />
+      <PropertyRef Name="QuantityRemaining" />
+      <PropertyRef Name="ProductUnitCost" />
+      <PropertyRef Name="RecordID" />
+      <PropertyRef Name="ReferrerCommission" />
+      <PropertyRef Name="VendorCommission" />
+      <PropertyRef Name="ShippingCompany" />
+      <PropertyRef Name="TrackingNumber" />
+      <PropertyRef Name="DeliveredUnits" />
+      <PropertyRef Name="SKU" />
+      <PropertyRef Name="orderDetailsProductCost" />
+      <PropertyRef Name="BillingPeriod" />
+      <PropertyRef Name="Tax2" />
+      <PropertyRef Name="CartID" />
+      <PropertyRef Name="MicrositeID" />
+      <PropertyRef Name="TeamName" />
+      <PropertyRef Name="PrimaryColor" />
+      <PropertyRef Name="SecondaryColor" />
+      <PropertyRef Name="Accent" />
+      <PropertyRef Name="Deleted" />
+      <PropertyRef Name="sizeQuantity" />
+      <PropertyRef Name="SizeID" />
+      <PropertyRef Name="Quantity" />
+    </Key>
+    <Property Type="Int32" Name="ProductID" Nullable="false" />
+    <Property Type="Int32" Name="CategoryID" />
+    <Property Type="Int32" Name="Category2ID" />
+    <Property Type="String" Name="Category3" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="ProductName" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="ProductNumber" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="EAN" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="ISBN" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Free1" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Free2" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Free3" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="KeyWords" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="ProductImage" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="UnitCost" Nullable="false" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="UnitCost2" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="UnitCost3" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="UnitCost4" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="UnitCost5" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="UnitCost6" Precision="19" Scale="4" />
+    <Property Type="String" Name="Description" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="DescriptionHTML" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="URL" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="Stock" />
+    <Property Type="String" Name="OrderQuant" Nullable="false" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="Weight" Precision="10" Scale="4" />
+    <Property Type="Decimal" Name="Volume" Precision="8" Scale="2" />
+    <Property Type="Decimal" Name="Length" Precision="8" Scale="2" />
+    <Property Type="Decimal" Name="Width" Precision="8" Scale="2" />
+    <Property Type="Decimal" Name="Height" Precision="8" Scale="2" />
+    <Property Type="Decimal" Name="FreightCosts1" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="FreightCosts2" Precision="19" Scale="4" />
+    <Property Type="Boolean" Name="Featured" Nullable="false" />
+    <Property Type="Decimal" Name="SalePrice" Nullable="false" Precision="19" Scale="4" />
+    <Property Type="DateTime" Name="SaleStart" />
+    <Property Type="DateTime" Name="SaleEnd" />
+    <Property Type="Boolean" Name="DownLoad" />
+    <Property Type="String" Name="ZIPPassWord" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="DownLoadFile" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="Archive" />
+    <Property Type="Int32" Name="CreatedByUser" Nullable="false" />
+    <Property Type="Int32" Name="BulkPriceLimit1" Nullable="false" />
+    <Property Type="Int32" Name="BulkPriceLimit2" Nullable="false" />
+    <Property Type="Int32" Name="BulkPriceLimit3" Nullable="false" />
+    <Property Type="Int32" Name="BulkPriceLimit4" Nullable="false" />
+    <Property Type="Int32" Name="BulkPriceLimit5" Nullable="false" />
+    <Property Type="DateTime" Name="DateCreated" />
+    <Property Type="Int32" Name="RoleID" />
+    <Property Type="Int32" Name="SubscriptionPeriod" />
+    <Property Type="Boolean" Name="RecurringBilling" />
+    <Property Type="Boolean" Name="TaxExempt" />
+    <Property Type="Boolean" Name="ShipExempt" />
+    <Property Type="Decimal" Name="InsuredValue" Nullable="false" Precision="19" Scale="4" />
+    <Property Type="DateTime" Name="PublicationStart" />
+    <Property Type="DateTime" Name="PublicationEnd" />
+    <Property Type="String" Name="Status" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="Boolean" Name="DonationItem" Nullable="false" />
+    <Property Type="Boolean" Name="PayPalSubscription" Nullable="false" />
+    <Property Type="Boolean" Name="UseRoleFees" Nullable="false" />
+    <Property Type="Decimal" Name="ProductCost" Nullable="false" Precision="19" Scale="4" />
+    <Property Type="String" Name="RoleExpiryType" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="ItemDeliveryType" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="Int32" Name="ReorderPoint" Nullable="false" />
+    <Property Type="String" Name="OrderQuantValidExpr" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="ShippingAddress" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="Int32" Name="OrigProductID" />
+    <Property Type="Boolean" Name="AuctionFinished" Nullable="false" />
+    <Property Type="Decimal" Name="StartingPrice" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="ReservePrice" Precision="19" Scale="4" />
+    <Property Type="Int32" Name="LastModifiedByUserID" />
+    <Property Type="DateTime" Name="LastModifiedOnDate" />
+    <Property Type="String" Name="TaxCode" MaxLength="16" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="MaxWeight" Precision="10" Scale="4" />
+    <Property Type="Int32" Name="TotalPeriods" />
+    <Property Type="Boolean" Name="NonStockItem" />
+    <Property Type="Decimal" Name="DealerTier1Price" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="DealerTier2Price" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="DealerTier3Price" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="DealerTier4Price" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="ConsumerTier1Price" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="ConsumerTier2Price" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="ConsumerTier3Price" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="ConsumerTier4Price" Precision="19" Scale="4" />
+    <Property Type="String" Name="DiscountClass" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="CMSProductID" />
+    <Property Type="Int32" Name="OrderDetailsID" Nullable="false" />
+    <Property Type="Int32" Name="OrderID" Nullable="false" />
+    <Property Type="Int32" Name="QuantityRemaining" Nullable="false" />
+    <Property Type="Decimal" Name="ProductUnitCost" Nullable="false" Precision="19" Scale="4" />
+    <Property Type="Int32" Name="InvoiceNumber" />
+    <Property Type="DateTime" Name="InvoiceDate" />
+    <Property Type="Decimal" Name="InvoiceShipCosts" Precision="19" Scale="4" />
+    <Property Type="Int32" Name="CreditNoteNumber" />
+    <Property Type="DateTime" Name="CreditNoteDate" />
+    <Property Type="Decimal" Name="CreditNoteShipCosts" Precision="19" Scale="4" />
+    <Property Type="String" Name="Options" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="AllocDate" />
+    <Property Type="DateTime" Name="SubscrExpiryDate" />
+    <Property Type="Int32" Name="RecordID" Nullable="false" />
+    <Property Type="Int32" Name="BaseRecID" />
+    <Property Type="Int32" Name="ProductSlotID" />
+    <Property Type="Decimal" Name="Tax" Precision="7" Scale="4" />
+    <Property Type="Decimal" Name="ReferrerCommission" Nullable="false" Precision="5" Scale="2" />
+    <Property Type="Decimal" Name="VendorCommission" Nullable="false" Precision="5" Scale="2" />
+    <Property Type="String" Name="ShippingCompany" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="TrackingNumber" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="DeliveredUnits" Nullable="false" />
+    <Property Type="String" Name="SKU" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="orderDetailsProductCost" Nullable="false" Precision="19" Scale="4" />
+    <Property Type="Int32" Name="BillingPeriod" Nullable="false" />
+    <Property Type="Decimal" Name="Tax2" Nullable="false" Precision="7" Scale="4" />
+    <Property Type="Int32" Name="CouponCodeID" />
+    <Property Type="Int32" Name="CartPriceRuleID" />
+    <Property Type="Decimal" Name="LoyaltyDiscount" Precision="7" Scale="4" />
+    <Property Type="Int32" Name="CreatedByUserID" />
+    <Property Type="DateTime" Name="CreatedOnDate" />
+    <Property Type="Int32" Name="OrderDetailsLastModfiedBy" />
+    <Property Type="DateTime" Name="orderDetailsLastModfiedOnDate" />
+    <Property Type="Int32" Name="PeriodsRemaining" />
+    <Property Type="Int32" Name="CartID" Nullable="false" />
+    <Property Type="Int32" Name="MicrositeID" Nullable="false" />
+    <Property Type="Int32" Name="RoleCardID" />
+    <Property Type="Int32" Name="FanID" />
+    <Property Type="Decimal" Name="BulkDiscount" Precision="19" Scale="4" />
+    <Property Type="Int32" Name="SizeXS" />
+    <Property Type="Int32" Name="SizeS" />
+    <Property Type="Int32" Name="SizeM" />
+    <Property Type="Int32" Name="SizeL" />
+    <Property Type="Int32" Name="SizeXL" />
+    <Property Type="Int32" Name="SizeXXL" />
+    <Property Type="String" Name="PrintedName" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="JerseyNumber" />
+    <Property Type="String" Name="TeamName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="PrimaryColor" Nullable="false" MaxLength="7" FixedLength="true" Unicode="true" />
+    <Property Type="Int32" Name="PrimaryColorID" />
+    <Property Type="String" Name="SecondaryColor" Nullable="false" MaxLength="7" FixedLength="true" Unicode="true" />
+    <Property Type="Int32" Name="SecondaryColorID" />
+    <Property Type="String" Name="Accent" Nullable="false" MaxLength="7" FixedLength="true" Unicode="true" />
+    <Property Type="Int32" Name="AccentColorID" />
+    <Property Type="String" Name="TeamLogo" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="School" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="City" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Sport" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="orderDetailsCreatedBy" />
+    <Property Type="DateTime" Name="shoppingCartCreatedDate" />
+    <Property Type="Int32" Name="shoppingCartLastModifiedBy" />
+    <Property Type="DateTime" Name="shoppingCartLastModified" />
+    <Property Type="Boolean" Name="Deleted" Nullable="false" />
+    <Property Type="Int32" Name="DeletedByUserID" />
+    <Property Type="DateTime" Name="DeletedOnDate" />
+    <Property Type="String" Name="sizeDisplayname" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="sizeQuantity" Nullable="false" />
+    <Property Type="Int32" Name="SizeID" Nullable="false" />
+    <Property Type="Int32" Name="Quantity" Nullable="false" />
+    <Property Type="String" Name="CMSProductDesign" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Sizenumber" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="TAA_vw_ShoppingCartRollCall">
+    <Key>
+      <PropertyRef Name="TAACartID" />
+      <PropertyRef Name="ProductID" />
+      <PropertyRef Name="RecordID" />
+      <PropertyRef Name="SizeID" />
+    </Key>
+    <Property Type="String" Name="CartID" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="TAACartID" Nullable="false" />
+    <Property Type="Int32" Name="RoleCardID" />
+    <Property Type="Int32" Name="ProductID" Nullable="false" />
+    <Property Type="Int32" Name="RecordID" Nullable="false" />
+    <Property Type="Int32" Name="FanID" />
+    <Property Type="String" Name="ProductName" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="JerseyNumber" />
+    <Property Type="String" Name="PrintedName" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="ProductImage" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="UnitCost" Precision="19" Scale="4" />
+    <Property Type="String" Name="CMSProductDesign" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="SizeID" Nullable="false" />
+    <Property Type="String" Name="SizeDisplay" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="primaryColorId" />
+    <Property Type="Int32" Name="secondaryColorId" />
+    <Property Type="Int32" Name="accentColorId" />
+    <Property Type="Int32" Name="quantity" />
+    <Property Type="Int32" Name="CMSProductID" />
+    <Property Type="Int32" Name="DiscountClassID" />
+  </EntityType>
+  <EntityType Name="TAA_vw_UserAndProfiles">
+    <Key>
+      <PropertyRef Name="PropertyDefinitionID" />
+      <PropertyRef Name="Deleted" />
+      <PropertyRef Name="DataType" />
+      <PropertyRef Name="PropertyCategory" />
+      <PropertyRef Name="PropertyName" />
+      <PropertyRef Name="Length" />
+      <PropertyRef Name="Required" />
+      <PropertyRef Name="ViewOrder" />
+      <PropertyRef Name="Visible" />
+      <PropertyRef Name="UserID" />
+    </Key>
+    <Property Type="Int32" Name="PropertyDefinitionID" Nullable="false" />
+    <Property Type="Int32" Name="PortalID" />
+    <Property Type="Int32" Name="ModuleDefID" />
+    <Property Type="Boolean" Name="Deleted" Nullable="false" />
+    <Property Type="Int32" Name="DataType" Nullable="false" />
+    <Property Type="String" Name="DefaultValue" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="PropertyCategory" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="PropertyName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="Length" Nullable="false" />
+    <Property Type="Boolean" Name="Required" Nullable="false" />
+    <Property Type="String" Name="ValidationExpression" MaxLength="2000" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="ViewOrder" Nullable="false" />
+    <Property Type="Boolean" Name="Visible" Nullable="false" />
+    <Property Type="Int32" Name="CreatedByUserID" />
+    <Property Type="DateTime" Name="CreatedOnDate" />
+    <Property Type="Int32" Name="LastModifiedByUserID" />
+    <Property Type="DateTime" Name="LastModifiedOnDate" />
+    <Property Type="Int32" Name="DefaultVisibility" />
+    <Property Type="Int32" Name="UserID" Nullable="false" />
+    <Property Type="String" Name="PropertyValue" MaxLength="3750" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="PropertyText" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Transaction">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="TransactionID" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="TransactionType" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="AuthCode" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="AvsCode" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="OrderID" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Number" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="Amount" Precision="19" Scale="4" />
+    <Property Type="Int32" Name="Year" />
+    <Property Type="Int32" Name="Month" />
+    <Property Type="String" Name="BankCode" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="BankName" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Address" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Address2" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="City" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Country" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="CustomerID" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Email" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="FirstName" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="LastName" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Phone" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="StateProvince" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="ZipPostal" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="ClientIP" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Status" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="TransactionDate" />
+    <Property Type="String" Name="ErrorMessage" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Description" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="BatchID" />
+    <Property Type="String" Name="Code" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="ReferenceNumber" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="SequenceNumber" />
+    <Property Type="String" Name="ReturnedACI" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="AuthorizationSourceCode" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="CardType" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="TaxAmount" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="ShippingAmount" Precision="19" Scale="4" />
+    <Property Type="String" Name="CardLevel" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="OrderID2" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="BankAccountNumber" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="BankAccountName" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="BankAccountType" />
+    <Property Type="Int32" Name="LastModifiedByUserID" />
+    <Property Type="DateTime" Name="LastModifiedOnDate" />
+    <Property Type="Int32" Name="CreatedByUserID" />
+    <Property Type="DateTime" Name="CreatedOnDate" />
+    <Property Type="String" Name="ProfileProperties" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="CustomerTransFeeAmt" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="MerchantTransFeeAmt" Precision="19" Scale="4" />
+    <Property Type="Int32" Name="PaymentMethodID" />
+  </EntityType>
+  <EntityType Name="TAA_CouponAdjustments">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Type="Int32" Name="id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="CouponID" />
+    <Property Type="Int32" Name="OrderID" />
+    <Property Type="String" Name="PromotionNumber" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="PromotionValue" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Decimal" Name="TotalAdjustment" Precision="19" Scale="4" />
+    <NavigationProperty Name="CAT_Orders" Relationship="fanlive7Model.FK_TAA_CouponAdjustments_CAT_Orders" FromRole="TAA_CouponAdjustments" ToRole="CAT_Orders" />
+    <NavigationProperty Name="TAA_Coupons" Relationship="fanlive7Model.FK_TAA_CouponAdjustments_TAA_Coupons" FromRole="TAA_CouponAdjustments" ToRole="TAA_Coupons" />
+  </EntityType>
+  <EntityType Name="TAA_Coupons">
+    <Key>
+      <PropertyRef Name="CouponID" />
+    </Key>
+    <Property Type="Int32" Name="CouponID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Description" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="AxapterPromoNumber" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="AxapterPromoDescription" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="CouponCode" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="StartDate" Nullable="false" />
+    <Property Type="DateTime" Name="EndDate" Nullable="false" />
+    <Property Type="Decimal" Name="Amount" Nullable="false" Precision="19" Scale="4" />
+    <Property Type="Int32" Name="StartQty" />
+    <Property Type="Int32" Name="EndQty" />
+    <Property Type="Decimal" Name="StartPrice" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="EndPrice" Precision="19" Scale="4" />
+    <Property Type="Int32" Name="MaxUsage" Nullable="false" />
+    <Property Type="Int32" Name="MaxUsagePerUser" Nullable="false" />
+    <Property Type="Int32" Name="UserId" />
+    <Property Type="Int32" Name="RoleId" />
+    <Property Type="Int32" Name="CreatedByUserID" Nullable="false" />
+    <Property Type="DateTime" Name="CreatedOnDate" Nullable="false" />
+    <Property Type="Int32" Name="LastModifiedByUserID" />
+    <Property Type="DateTime" Name="LastModifiedOnDate" />
+    <Property Type="Boolean" Name="Deleted" Nullable="false" />
+    <Property Type="Int32" Name="DeletedByUserID" />
+    <Property Type="DateTime" Name="DeletedOnDate" />
+    <NavigationProperty Name="TAA_CouponAdjustments" Relationship="fanlive7Model.FK_TAA_CouponAdjustments_TAA_Coupons" FromRole="TAA_Coupons" ToRole="TAA_CouponAdjustments" />
+  </EntityType>
+  <Association Name="FK_TAA_CouponAdjustments_CAT_Orders">
+    <End Type="fanlive7Model.CAT_Orders" Role="CAT_Orders" Multiplicity="0..1" />
+    <End Type="fanlive7Model.TAA_CouponAdjustments" Role="TAA_CouponAdjustments" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CAT_Orders">
+        <PropertyRef Name="OrderID" />
+      </Principal>
+      <Dependent Role="TAA_CouponAdjustments">
+        <PropertyRef Name="OrderID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TAA_CouponAdjustments_TAA_Coupons">
+    <End Type="fanlive7Model.TAA_Coupons" Role="TAA_Coupons" Multiplicity="0..1" />
+    <End Type="fanlive7Model.TAA_CouponAdjustments" Role="TAA_CouponAdjustments" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TAA_Coupons">
+        <PropertyRef Name="CouponID" />
+      </Principal>
+      <Dependent Role="TAA_CouponAdjustments">
+        <PropertyRef Name="CouponID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

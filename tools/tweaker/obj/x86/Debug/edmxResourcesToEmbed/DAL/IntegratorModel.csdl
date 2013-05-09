@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="IntegratorModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="IntegratorEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="CMYKLookups" EntityType="IntegratorModel.CMYKLookup" />
+    <EntitySet Name="EmailLists" EntityType="IntegratorModel.EmailList" />
+    <EntitySet Name="ErrorLogs" EntityType="IntegratorModel.ErrorLog" />
+    <EntitySet Name="InsertedDataHistories" EntityType="IntegratorModel.InsertedDataHistory" />
+    <EntitySet Name="StatusMessages" EntityType="IntegratorModel.StatusMessage" />
+    <EntitySet Name="ImageUpdates" EntityType="IntegratorModel.ImageUpdate" />
+    <FunctionImport Name="InsertImageUpdate">
+      <Parameter Name="imagePath" Mode="In" Type="String" />
+      <Parameter Name="micrositeId" Mode="In" Type="Int32" />
+    </FunctionImport>
+  </EntityContainer>
+  <EntityType Name="CMYKLookup">
+    <Key>
+      <PropertyRef Name="RGB" />
+    </Key>
+    <Property Name="RGB" Type="Int32" Nullable="false" />
+    <Property Name="CMYK" Type="Int32" />
+    <Property Name="FakeHex" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="EmailList">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Email" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="IsActive" Type="Boolean" />
+    <Property Name="Type" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="ErrorLog">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Date" Type="DateTime" Precision="3" />
+    <Property Name="Message" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Trace" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Source" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="ErrorType" Type="String" MaxLength="150" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="InsertedDataHistory">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="InsertedDataID" Type="Int32" />
+    <Property Name="XmlFileName" Type="String" MaxLength="350" Unicode="true" FixedLength="false" />
+    <Property Name="Type" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="InsertedDate" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="StatusMessage">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="StatusMessage1" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Type" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Date" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="ImageUpdate">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Type="Int32" Name="id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="ImagePath" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="MicrositeId" />
+  </EntityType>
+</Schema>

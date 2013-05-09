@@ -1,0 +1,419 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="FanoramaStagingModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="FanoramaStagingModelStoreContainer">
+    <EntitySet Name="CAT_AdvCatPermission" EntityType="FanoramaStagingModel.Store.CAT_AdvCatPermission" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="CAT_AdvCatProducts" EntityType="FanoramaStagingModel.Store.CAT_AdvCatProducts" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="CAT_AdvCats" EntityType="FanoramaStagingModel.Store.CAT_AdvCats" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="CAT_Products" EntityType="FanoramaStagingModel.Store.CAT_Products" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ProfilePropertyDefinition" EntityType="FanoramaStagingModel.Store.ProfilePropertyDefinition" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TAA_FanID" EntityType="FanoramaStagingModel.Store.TAA_FanID" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TAA_Microsite" EntityType="FanoramaStagingModel.Store.TAA_Microsite" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TAA_MicrositeLogos" EntityType="FanoramaStagingModel.Store.TAA_MicrositeLogos" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UserProfile" EntityType="FanoramaStagingModel.Store.UserProfile" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Users" EntityType="FanoramaStagingModel.Store.Users" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_CAT_AdvCatPermission_AdvCats" Association="FanoramaStagingModel.Store.FK_CAT_AdvCatPermission_AdvCats">
+      <End Role="CAT_AdvCats" EntitySet="CAT_AdvCats" />
+      <End Role="CAT_AdvCatPermission" EntitySet="CAT_AdvCatPermission" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CAT_AdvCatProducts_AdvCats" Association="FanoramaStagingModel.Store.FK_CAT_AdvCatProducts_AdvCats">
+      <End Role="CAT_AdvCats" EntitySet="CAT_AdvCats" />
+      <End Role="CAT_AdvCatProducts" EntitySet="CAT_AdvCatProducts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CAT_AdvCatProducts_Products" Association="FanoramaStagingModel.Store.FK_CAT_AdvCatProducts_Products">
+      <End Role="CAT_Products" EntitySet="CAT_Products" />
+      <End Role="CAT_AdvCatProducts" EntitySet="CAT_AdvCatProducts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CAT_AdvCats_CAT_AdvCats" Association="FanoramaStagingModel.Store.FK_CAT_AdvCats_CAT_AdvCats">
+      <End Role="CAT_AdvCats" EntitySet="CAT_AdvCats" />
+      <End Role="CAT_AdvCats1" EntitySet="CAT_AdvCats" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TAA_MicrositeLogos_TAA_Microsite" Association="FanoramaStagingModel.Store.FK_TAA_MicrositeLogos_TAA_Microsite">
+      <End Role="TAA_Microsite" EntitySet="TAA_Microsite" />
+      <End Role="TAA_MicrositeLogos" EntitySet="TAA_MicrositeLogos" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserProfile_ProfilePropertyDefinition" Association="FanoramaStagingModel.Store.FK_UserProfile_ProfilePropertyDefinition">
+      <End Role="ProfilePropertyDefinition" EntitySet="ProfilePropertyDefinition" />
+      <End Role="UserProfile" EntitySet="UserProfile" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserProfile_Users" Association="FanoramaStagingModel.Store.FK_UserProfile_Users">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="UserProfile" EntitySet="UserProfile" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="CAT_AdvCatPermission">
+    <Key>
+      <PropertyRef Name="AdvCatPermissionID" />
+    </Key>
+    <Property Name="AdvCatPermissionID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="AdvCatID" Type="int" Nullable="false" />
+    <Property Name="PermissionID" Type="int" Nullable="false" />
+    <Property Name="RoleID" Type="int" Nullable="false" />
+    <Property Name="AllowAccess" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CAT_AdvCatProducts">
+    <Key>
+      <PropertyRef Name="AdvCatProductID" />
+    </Key>
+    <Property Name="AdvCatProductID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="AdvCatID" Type="int" Nullable="false" />
+    <Property Name="ProductID" Type="int" Nullable="false" />
+    <Property Name="AddAdvCatToProductDisplay" Type="bit" />
+  </EntityType>
+  <EntityType Name="CAT_AdvCats">
+    <Key>
+      <PropertyRef Name="AdvCatID" />
+    </Key>
+    <Property Name="AdvCatID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="AdvCatOrder" Type="int" Nullable="false" />
+    <Property Name="PortalID" Type="int" />
+    <Property Name="AdvCatName" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="IsVisible" Type="bit" Nullable="false" />
+    <Property Name="ParentId" Type="int" />
+    <Property Name="DisableLink" Type="bit" Nullable="false" />
+    <Property Name="Url" Type="nvarchar" MaxLength="255" />
+    <Property Name="StartDate" Type="datetime" />
+    <Property Name="EndDate" Type="datetime" />
+    <Property Name="Title" Type="nvarchar" MaxLength="200" />
+    <Property Name="Description" Type="nvarchar(max)" />
+    <Property Name="KeyWords" Type="nvarchar" MaxLength="500" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="IconFile" Type="nvarchar" MaxLength="100" />
+    <Property Name="Level" Type="int" Nullable="false" />
+    <Property Name="AdvCatImportID" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="CAT_Products">
+    <Key>
+      <PropertyRef Name="ProductID" />
+    </Key>
+    <Property Name="ProductID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CategoryID" Type="int" />
+    <Property Name="Category2ID" Type="int" />
+    <Property Name="Category3" Type="nvarchar" MaxLength="50" />
+    <Property Name="ProductName" Type="nvarchar" MaxLength="255" />
+    <Property Name="ProductNumber" Type="nvarchar" MaxLength="50" />
+    <Property Name="EAN" Type="nvarchar" MaxLength="50" />
+    <Property Name="ISBN" Type="nvarchar" MaxLength="50" />
+    <Property Name="Free1" Type="nvarchar" MaxLength="1000" />
+    <Property Name="Free2" Type="nvarchar" MaxLength="1000" />
+    <Property Name="Free3" Type="nvarchar" MaxLength="1000" />
+    <Property Name="KeyWords" Type="nvarchar" MaxLength="1000" />
+    <Property Name="ProductImage" Type="nvarchar" MaxLength="255" />
+    <Property Name="UnitCost" Type="money" Nullable="false" />
+    <Property Name="UnitCost2" Type="money" />
+    <Property Name="UnitCost3" Type="money" />
+    <Property Name="UnitCost4" Type="money" />
+    <Property Name="UnitCost5" Type="money" />
+    <Property Name="UnitCost6" Type="money" />
+    <Property Name="Description" Type="nvarchar(max)" />
+    <Property Name="DescriptionHTML" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="URL" Type="nvarchar" MaxLength="255" />
+    <Property Name="Stock" Type="int" />
+    <Property Name="OrderQuant" Type="nvarchar" Nullable="false" MaxLength="200" />
+    <Property Name="Weight" Type="decimal" Precision="10" Scale="4" />
+    <Property Name="Volume" Type="decimal" Precision="8" Scale="2" />
+    <Property Name="Length" Type="decimal" Precision="8" Scale="2" />
+    <Property Name="Width" Type="decimal" Precision="8" Scale="2" />
+    <Property Name="Height" Type="decimal" Precision="8" Scale="2" />
+    <Property Name="FreightCosts1" Type="money" />
+    <Property Name="FreightCosts2" Type="money" />
+    <Property Name="Featured" Type="bit" Nullable="false" />
+    <Property Name="SalePrice" Type="money" Nullable="false" />
+    <Property Name="SaleStart" Type="datetime" />
+    <Property Name="SaleEnd" Type="datetime" />
+    <Property Name="DownLoad" Type="bit" />
+    <Property Name="ZIPPassWord" Type="nvarchar" MaxLength="30" />
+    <Property Name="DownLoadFile" Type="nvarchar" MaxLength="255" />
+    <Property Name="Archive" Type="bit" />
+    <Property Name="CreatedByUser" Type="int" Nullable="false" />
+    <Property Name="BulkPriceLimit1" Type="int" Nullable="false" />
+    <Property Name="BulkPriceLimit2" Type="int" Nullable="false" />
+    <Property Name="BulkPriceLimit3" Type="int" Nullable="false" />
+    <Property Name="BulkPriceLimit4" Type="int" Nullable="false" />
+    <Property Name="BulkPriceLimit5" Type="int" Nullable="false" />
+    <Property Name="DateCreated" Type="datetime" />
+    <Property Name="RoleID" Type="int" />
+    <Property Name="SubscriptionPeriod" Type="int" />
+    <Property Name="RecurringBilling" Type="bit" />
+    <Property Name="TaxExempt" Type="bit" />
+    <Property Name="ShipExempt" Type="bit" />
+    <Property Name="InsuredValue" Type="money" Nullable="false" />
+    <Property Name="PublicationStart" Type="datetime" />
+    <Property Name="PublicationEnd" Type="datetime" />
+    <Property Name="Status" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="DonationItem" Type="bit" Nullable="false" />
+    <Property Name="PayPalSubscription" Type="bit" Nullable="false" />
+    <Property Name="UseRoleFees" Type="bit" Nullable="false" />
+    <Property Name="ProductCost" Type="money" Nullable="false" />
+    <Property Name="RoleExpiryType" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="ItemDeliveryType" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="ReorderPoint" Type="int" Nullable="false" />
+    <Property Name="OrderQuantValidExpr" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="ShippingAddress" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="OrigProductID" Type="int" />
+    <Property Name="AuctionFinished" Type="bit" Nullable="false" />
+    <Property Name="StartingPrice" Type="money" />
+    <Property Name="ReservePrice" Type="money" />
+    <Property Name="LastModifiedByUserID" Type="int" />
+    <Property Name="LastModifiedOnDate" Type="datetime" />
+    <Property Name="TaxCode" Type="nvarchar" MaxLength="16" />
+    <Property Name="MaxWeight" Type="decimal" Precision="10" Scale="4" />
+    <Property Name="TotalPeriods" Type="int" />
+    <Property Name="NonStockItem" Type="bit" />
+    <Property Name="StockedColorID" Type="int" />
+    <Property Name="StockedColorID2" Type="int" />
+    <Property Name="StockedColorID3" Type="int" />
+    <Property Name="StockedColorID4" Type="int" />
+    <Property Name="StockedColorID5" Type="int" />
+    <Property Name="StockedColorID6" Type="int" />
+    <Property Name="DealerTier1Price" Type="money" />
+    <Property Name="DealerTier2Price" Type="money" />
+    <Property Name="DealerTier3Price" Type="money" />
+    <Property Name="DealerTier4Price" Type="money" />
+    <Property Name="ConsumerTier1Price" Type="money" />
+    <Property Name="ConsumerTier2Price" Type="money" />
+    <Property Name="ConsumerTier3Price" Type="money" />
+    <Property Name="ConsumerTier4Price" Type="money" />
+    <Property Name="DiscountClass" Type="nvarchar" MaxLength="50" />
+    <Property Name="DiscountClassID" Type="int" />
+    <Property Name="CMSProductID" Type="int" />
+    <Property Name="TAASportID" Type="int" />
+    <Property Name="CMSProductDesign" Type="nvarchar" MaxLength="50" />
+    <Property Name="SortOrder" Type="int" />
+  </EntityType>
+  <EntityType Name="ProfilePropertyDefinition">
+    <Key>
+      <PropertyRef Name="PropertyDefinitionID" />
+    </Key>
+    <Property Name="PropertyDefinitionID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="PortalID" Type="int" />
+    <Property Name="ModuleDefID" Type="int" />
+    <Property Name="Deleted" Type="bit" Nullable="false" />
+    <Property Name="DataType" Type="int" Nullable="false" />
+    <Property Name="DefaultValue" Type="ntext" />
+    <Property Name="PropertyCategory" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="PropertyName" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Length" Type="int" Nullable="false" />
+    <Property Name="Required" Type="bit" Nullable="false" />
+    <Property Name="ValidationExpression" Type="nvarchar" MaxLength="2000" />
+    <Property Name="ViewOrder" Type="int" Nullable="false" />
+    <Property Name="Visible" Type="bit" Nullable="false" />
+    <Property Name="CreatedByUserID" Type="int" />
+    <Property Name="CreatedOnDate" Type="datetime" />
+    <Property Name="LastModifiedByUserID" Type="int" />
+    <Property Name="LastModifiedOnDate" Type="datetime" />
+    <Property Name="DefaultVisibility" Type="int" />
+  </EntityType>
+  <EntityType Name="TAA_FanID">
+    <Key>
+      <PropertyRef Name="MicrositeID" />
+      <PropertyRef Name="FanID" />
+    </Key>
+    <Property Name="MicrositeID" Type="int" Nullable="false" />
+    <Property Name="FanID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="DesignName" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="TeamName" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="PrimaryColor" Type="nchar" MaxLength="7" />
+    <Property Name="PrimaryColorID" Type="int" />
+    <Property Name="SecondaryColor" Type="nchar" Nullable="false" MaxLength="7" />
+    <Property Name="SecondaryColorID" Type="int" />
+    <Property Name="Accent" Type="nchar" Nullable="false" MaxLength="7" />
+    <Property Name="AccentColorID" Type="int" />
+    <Property Name="TeamLogo" Type="nvarchar" MaxLength="350" />
+    <Property Name="School" Type="nvarchar" MaxLength="100" />
+    <Property Name="City" Type="nvarchar" MaxLength="100" />
+    <Property Name="Sport" Type="nvarchar" MaxLength="100" />
+    <Property Name="CreatedByUserID" Type="int" />
+    <Property Name="CreatedOnDate" Type="datetime" Nullable="false" />
+    <Property Name="LastModifiedByUserID" Type="int" />
+    <Property Name="LastModifiedOnDate" Type="datetime" />
+    <Property Name="Deleted" Type="bit" Nullable="false" />
+    <Property Name="DeletedByUserID" Type="int" />
+    <Property Name="DeletedOnDate" Type="datetime" />
+    <Property Name="TAASportID" Type="int" />
+    <Property Name="UserUploadedGraphic" Type="nvarchar" MaxLength="350" />
+    <Property Name="GAUploadedGraphic" Type="nvarchar" MaxLength="350" />
+    <Property Name="CUG" Type="bit" />
+    <Property Name="GraphicDeleted" Type="bit" />
+    <Property Name="CUGGoodsize" Type="bit" />
+    <Property Name="CUGGoodtransparancy" Type="bit" />
+    <Property Name="CUGGoodvectorized" Type="bit" />
+    <Property Name="CUGGoodresolution" Type="bit" />
+  </EntityType>
+  <EntityType Name="TAA_Microsite">
+    <Key>
+      <PropertyRef Name="MicrositeID" />
+    </Key>
+    <Property Name="MicrositeID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="TeamName" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="PrimaryColour" Type="nvarchar" Nullable="false" MaxLength="11" />
+    <Property Name="SecondaryColour" Type="nvarchar" Nullable="false" MaxLength="11" />
+    <Property Name="Accent" Type="nvarchar" Nullable="false" MaxLength="11" />
+    <Property Name="PrimaryColorID" Type="int" />
+    <Property Name="SecondaryColorID" Type="int" />
+    <Property Name="AccentColorID" Type="int" />
+    <Property Name="TeamLogo" Type="nvarchar" MaxLength="350" />
+    <Property Name="School" Type="nvarchar" MaxLength="100" />
+    <Property Name="City" Type="nvarchar" MaxLength="100" />
+    <Property Name="Sport" Type="nvarchar" MaxLength="100" />
+    <Property Name="SportID" Type="int" />
+    <Property Name="CreatedFromSLP" Type="bit" />
+    <Property Name="Enabled" Type="bit" Nullable="false" />
+    <Property Name="Locked" Type="bit" Nullable="false" />
+    <Property Name="CreatedByUserID" Type="int" />
+    <Property Name="CreatedOnDate" Type="datetime" Nullable="false" />
+    <Property Name="LastModifiedByUserID" Type="int" />
+    <Property Name="LastModifiedOnDate" Type="datetime" />
+    <Property Name="Deleted" Type="bit" Nullable="false" />
+    <Property Name="DeletedByUserID" Type="int" />
+    <Property Name="DeletedOnDate" Type="datetime" />
+    <Property Name="URL" Type="nvarchar" MaxLength="255" />
+    <Property Name="PartialURL" Type="nvarchar" MaxLength="255" />
+    <Property Name="TeamUniqueID" Type="nvarchar" MaxLength="20" />
+    <Property Name="IntegratorRetrievalCode" Type="varchar" MaxLength="20" />
+    <Property Name="IntegratorCustAccount" Type="int" />
+  </EntityType>
+  <EntityType Name="TAA_MicrositeLogos">
+    <Key>
+      <PropertyRef Name="LogoID" />
+    </Key>
+    <Property Name="LogoID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="MicrositeID" Type="int" Nullable="false" />
+    <Property Name="Logo" Type="nvarchar" MaxLength="50" />
+    <Property Name="LogoName" Type="nvarchar" MaxLength="50" />
+    <Property Name="CreatedByUserID" Type="int" />
+    <Property Name="CreatedOnDate" Type="datetime" Nullable="false" />
+    <Property Name="LastModifiedByUserID" Type="int" />
+    <Property Name="LastModifiedOnDate" Type="datetime" />
+    <Property Name="Deleted" Type="bit" Nullable="false" />
+    <Property Name="DeletedByUserID" Type="int" />
+    <Property Name="DeletedOnDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="UserProfile">
+    <Key>
+      <PropertyRef Name="ProfileID" />
+    </Key>
+    <Property Name="ProfileID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="UserID" Type="int" Nullable="false" />
+    <Property Name="PropertyDefinitionID" Type="int" Nullable="false" />
+    <Property Name="PropertyValue" Type="nvarchar" MaxLength="3750" />
+    <Property Name="PropertyText" Type="ntext" />
+    <Property Name="Visibility" Type="int" Nullable="false" />
+    <Property Name="LastUpdatedDate" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="UserID" />
+    </Key>
+    <Property Name="UserID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Username" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="FirstName" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="LastName" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="IsSuperUser" Type="bit" Nullable="false" />
+    <Property Name="AffiliateId" Type="int" />
+    <Property Name="Email" Type="nvarchar" MaxLength="256" />
+    <Property Name="DisplayName" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="UpdatePassword" Type="bit" Nullable="false" />
+    <Property Name="LastIPAddress" Type="nvarchar" MaxLength="50" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="CreatedByUserID" Type="int" />
+    <Property Name="CreatedOnDate" Type="datetime" />
+    <Property Name="LastModifiedByUserID" Type="int" />
+    <Property Name="LastModifiedOnDate" Type="datetime" />
+  </EntityType>
+  <Association Name="FK_CAT_AdvCatPermission_AdvCats">
+    <End Role="CAT_AdvCats" Type="FanoramaStagingModel.Store.CAT_AdvCats" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="CAT_AdvCatPermission" Type="FanoramaStagingModel.Store.CAT_AdvCatPermission" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CAT_AdvCats">
+        <PropertyRef Name="AdvCatID" />
+      </Principal>
+      <Dependent Role="CAT_AdvCatPermission">
+        <PropertyRef Name="AdvCatID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CAT_AdvCatProducts_AdvCats">
+    <End Role="CAT_AdvCats" Type="FanoramaStagingModel.Store.CAT_AdvCats" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="CAT_AdvCatProducts" Type="FanoramaStagingModel.Store.CAT_AdvCatProducts" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CAT_AdvCats">
+        <PropertyRef Name="AdvCatID" />
+      </Principal>
+      <Dependent Role="CAT_AdvCatProducts">
+        <PropertyRef Name="AdvCatID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CAT_AdvCatProducts_Products">
+    <End Role="CAT_Products" Type="FanoramaStagingModel.Store.CAT_Products" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="CAT_AdvCatProducts" Type="FanoramaStagingModel.Store.CAT_AdvCatProducts" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CAT_Products">
+        <PropertyRef Name="ProductID" />
+      </Principal>
+      <Dependent Role="CAT_AdvCatProducts">
+        <PropertyRef Name="ProductID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CAT_AdvCats_CAT_AdvCats">
+    <End Role="CAT_AdvCats" Type="FanoramaStagingModel.Store.CAT_AdvCats" Multiplicity="0..1" />
+    <End Role="CAT_AdvCats1" Type="FanoramaStagingModel.Store.CAT_AdvCats" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CAT_AdvCats">
+        <PropertyRef Name="AdvCatID" />
+      </Principal>
+      <Dependent Role="CAT_AdvCats1">
+        <PropertyRef Name="ParentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TAA_MicrositeLogos_TAA_Microsite">
+    <End Role="TAA_Microsite" Type="FanoramaStagingModel.Store.TAA_Microsite" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="TAA_MicrositeLogos" Type="FanoramaStagingModel.Store.TAA_MicrositeLogos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TAA_Microsite">
+        <PropertyRef Name="MicrositeID" />
+      </Principal>
+      <Dependent Role="TAA_MicrositeLogos">
+        <PropertyRef Name="MicrositeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserProfile_ProfilePropertyDefinition">
+    <End Role="ProfilePropertyDefinition" Type="FanoramaStagingModel.Store.ProfilePropertyDefinition" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="UserProfile" Type="FanoramaStagingModel.Store.UserProfile" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProfilePropertyDefinition">
+        <PropertyRef Name="PropertyDefinitionID" />
+      </Principal>
+      <Dependent Role="UserProfile">
+        <PropertyRef Name="PropertyDefinitionID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserProfile_Users">
+    <End Role="Users" Type="FanoramaStagingModel.Store.Users" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="UserProfile" Type="FanoramaStagingModel.Store.UserProfile" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="UserProfile">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

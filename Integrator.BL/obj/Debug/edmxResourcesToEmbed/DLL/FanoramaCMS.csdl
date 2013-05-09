@@ -1,0 +1,1233 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="FanoramaCMS14062012Model" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="FanoramaCMS14062012Entities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="BaseProductCategories" EntityType="FanoramaCMS14062012Model.BaseProductCategory" />
+    <EntitySet Name="ClientVariables" EntityType="FanoramaCMS14062012Model.ClientVariable" />
+    <EntitySet Name="EmblemElementProperties" EntityType="FanoramaCMS14062012Model.EmblemElementProperty" />
+    <EntitySet Name="EmblemElementPropertyValues" EntityType="FanoramaCMS14062012Model.EmblemElementPropertyValue" />
+    <EntitySet Name="EmblemElements" EntityType="FanoramaCMS14062012Model.EmblemElement" />
+    <EntitySet Name="EmblemElementTypeProperties" EntityType="FanoramaCMS14062012Model.EmblemElementTypeProperty" />
+    <EntitySet Name="EmblemElementTypes" EntityType="FanoramaCMS14062012Model.EmblemElementType" />
+    <EntitySet Name="EmblemPrintTypes" EntityType="FanoramaCMS14062012Model.EmblemPrintType" />
+    <EntitySet Name="Emblems" EntityType="FanoramaCMS14062012Model.Emblem" />
+    <EntitySet Name="FileTypes" EntityType="FanoramaCMS14062012Model.FileType" />
+    <EntitySet Name="FlatCutBaseChains" EntityType="FanoramaCMS14062012Model.FlatCutBaseChain" />
+    <EntitySet Name="Genders" EntityType="FanoramaCMS14062012Model.Gender" />
+    <EntitySet Name="Grids" EntityType="FanoramaCMS14062012Model.Grid" />
+    <EntitySet Name="ImageCategories" EntityType="FanoramaCMS14062012Model.ImageCategory" />
+    <EntitySet Name="Images" EntityType="FanoramaCMS14062012Model.Image" />
+    <EntitySet Name="MasterChainProperties" EntityType="FanoramaCMS14062012Model.MasterChainProperty" />
+    <EntitySet Name="MasterChains" EntityType="FanoramaCMS14062012Model.MasterChain" />
+    <EntitySet Name="PlacedEmblems" EntityType="FanoramaCMS14062012Model.PlacedEmblem" />
+    <EntitySet Name="PreviewTypes" EntityType="FanoramaCMS14062012Model.PreviewType" />
+    <EntitySet Name="PrintTypes" EntityType="FanoramaCMS14062012Model.PrintType" />
+    <EntitySet Name="ProductCollections" EntityType="FanoramaCMS14062012Model.ProductCollection" />
+    <EntitySet Name="ProductDesigns" EntityType="FanoramaCMS14062012Model.ProductDesign" />
+    <EntitySet Name="ProductPreviews" EntityType="FanoramaCMS14062012Model.ProductPreview" />
+    <EntitySet Name="ProductSizes" EntityType="FanoramaCMS14062012Model.ProductSize" />
+    <EntitySet Name="ProductStyleDesigns" EntityType="FanoramaCMS14062012Model.ProductStyleDesign" />
+    <EntitySet Name="ProductStyleDesignSizeFlatCuts" EntityType="FanoramaCMS14062012Model.ProductStyleDesignSizeFlatCut" />
+    <EntitySet Name="ProductStyleDesignSizePrintableAreas" EntityType="FanoramaCMS14062012Model.ProductStyleDesignSizePrintableArea" />
+    <EntitySet Name="ProductStylePrintableAreas" EntityType="FanoramaCMS14062012Model.ProductStylePrintableArea" />
+    <EntitySet Name="ProductStyles" EntityType="FanoramaCMS14062012Model.ProductStyle" />
+    <EntitySet Name="ProductStyleSizes" EntityType="FanoramaCMS14062012Model.ProductStyleSize" />
+    <EntitySet Name="ProductTypes" EntityType="FanoramaCMS14062012Model.ProductType" />
+    <EntitySet Name="PropertyTypes" EntityType="FanoramaCMS14062012Model.PropertyType" />
+    <EntitySet Name="PropertyTypeValues" EntityType="FanoramaCMS14062012Model.PropertyTypeValue" />
+    <EntitySet Name="RetailProducts" EntityType="FanoramaCMS14062012Model.RetailProduct" />
+    <EntitySet Name="ServerConfigurations" EntityType="FanoramaCMS14062012Model.ServerConfiguration" />
+    <EntitySet Name="AvaliableMasterChainProperties" EntityType="FanoramaCMS14062012Model.AvaliableMasterChainProperty" />
+    <EntitySet Name="EmblemElementPropertiesByMasterChains" EntityType="FanoramaCMS14062012Model.EmblemElementPropertiesByMasterChain" />
+    <EntitySet Name="EmblemElementPropertiesByTypes" EntityType="FanoramaCMS14062012Model.EmblemElementPropertiesByType" />
+    <EntitySet Name="ProductWithEmblems" EntityType="FanoramaCMS14062012Model.ProductWithEmblem" />
+    <AssociationSet Name="FK_ProductStyles_BaseProductCategory" Association="FanoramaCMS14062012Model.FK_ProductStyles_BaseProductCategory">
+      <End Role="BaseProductCategory" EntitySet="BaseProductCategories" />
+      <End Role="ProductStyles" EntitySet="ProductStyles" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ClientVariables_PropertyTypes" Association="FanoramaCMS14062012Model.FK_ClientVariables_PropertyTypes">
+      <End Role="PropertyTypes" EntitySet="PropertyTypes" />
+      <End Role="ClientVariables" EntitySet="ClientVariables" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ClientVariables_PropertyTypeValues" Association="FanoramaCMS14062012Model.FK_ClientVariables_PropertyTypeValues">
+      <End Role="PropertyTypeValues" EntitySet="PropertyTypeValues" />
+      <End Role="ClientVariables" EntitySet="ClientVariables" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EmblemElementPropertyValues_ClientVariables" Association="FanoramaCMS14062012Model.FK_EmblemElementPropertyValues_ClientVariables">
+      <End Role="ClientVariables" EntitySet="ClientVariables" />
+      <End Role="EmblemElementPropertyValues" EntitySet="EmblemElementPropertyValues" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EmblemElementProperties_PropertyTypes" Association="FanoramaCMS14062012Model.FK_EmblemElementProperties_PropertyTypes">
+      <End Role="PropertyTypes" EntitySet="PropertyTypes" />
+      <End Role="EmblemElementProperties" EntitySet="EmblemElementProperties" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EmblemElementProperties_PropertyTypeValues" Association="FanoramaCMS14062012Model.FK_EmblemElementProperties_PropertyTypeValues">
+      <End Role="PropertyTypeValues" EntitySet="PropertyTypeValues" />
+      <End Role="EmblemElementProperties" EntitySet="EmblemElementProperties" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EmblemElementPropertyValues_EmblemElementProperties" Association="FanoramaCMS14062012Model.FK_EmblemElementPropertyValues_EmblemElementProperties">
+      <End Role="EmblemElementProperties" EntitySet="EmblemElementProperties" />
+      <End Role="EmblemElementPropertyValues" EntitySet="EmblemElementPropertyValues" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EmblemElementTypeProperties_EmblemElementProperties" Association="FanoramaCMS14062012Model.FK_EmblemElementTypeProperties_EmblemElementProperties">
+      <End Role="EmblemElementProperties" EntitySet="EmblemElementProperties" />
+      <End Role="EmblemElementTypeProperties" EntitySet="EmblemElementTypeProperties" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MasterChainProperties_EmblemElementProperties" Association="FanoramaCMS14062012Model.FK_MasterChainProperties_EmblemElementProperties">
+      <End Role="EmblemElementProperties" EntitySet="EmblemElementProperties" />
+      <End Role="MasterChainProperties" EntitySet="MasterChainProperties" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EmblemElementPropertyValues_EmblemElements" Association="FanoramaCMS14062012Model.FK_EmblemElementPropertyValues_EmblemElements">
+      <End Role="EmblemElements" EntitySet="EmblemElements" />
+      <End Role="EmblemElementPropertyValues" EntitySet="EmblemElementPropertyValues" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EmblemElementPropertyValues_PropertyTypeValues" Association="FanoramaCMS14062012Model.FK_EmblemElementPropertyValues_PropertyTypeValues">
+      <End Role="PropertyTypeValues" EntitySet="PropertyTypeValues" />
+      <End Role="EmblemElementPropertyValues" EntitySet="EmblemElementPropertyValues" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EmblemElements_EmblemElementTypes" Association="FanoramaCMS14062012Model.FK_EmblemElements_EmblemElementTypes">
+      <End Role="EmblemElementTypes" EntitySet="EmblemElementTypes" />
+      <End Role="EmblemElements" EntitySet="EmblemElements" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EmblemElements_Emblems" Association="FanoramaCMS14062012Model.FK_EmblemElements_Emblems">
+      <End Role="Emblems" EntitySet="Emblems" />
+      <End Role="EmblemElements" EntitySet="EmblemElements" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EmblemElements_MasterChains" Association="FanoramaCMS14062012Model.FK_EmblemElements_MasterChains">
+      <End Role="MasterChains" EntitySet="MasterChains" />
+      <End Role="EmblemElements" EntitySet="EmblemElements" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EmblemElementTypeProperties_EmblemElementTypes" Association="FanoramaCMS14062012Model.FK_EmblemElementTypeProperties_EmblemElementTypes">
+      <End Role="EmblemElementTypes" EntitySet="EmblemElementTypes" />
+      <End Role="EmblemElementTypeProperties" EntitySet="EmblemElementTypeProperties" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MasterChains_EmblemElementTypes" Association="FanoramaCMS14062012Model.FK_MasterChains_EmblemElementTypes">
+      <End Role="EmblemElementTypes" EntitySet="EmblemElementTypes" />
+      <End Role="MasterChains" EntitySet="MasterChains" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EmblemPrintTypes_Emblems" Association="FanoramaCMS14062012Model.FK_EmblemPrintTypes_Emblems">
+      <End Role="Emblems" EntitySet="Emblems" />
+      <End Role="EmblemPrintTypes" EntitySet="EmblemPrintTypes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EmblemPrintTypes_PrintTypes" Association="FanoramaCMS14062012Model.FK_EmblemPrintTypes_PrintTypes">
+      <End Role="PrintTypes" EntitySet="PrintTypes" />
+      <End Role="EmblemPrintTypes" EntitySet="EmblemPrintTypes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PlacedEmblems_Emblems" Association="FanoramaCMS14062012Model.FK_PlacedEmblems_Emblems">
+      <End Role="Emblems" EntitySet="Emblems" />
+      <End Role="PlacedEmblems" EntitySet="PlacedEmblems" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProductStyleDesignSizeFlatCuts_FlatCutBaseChains" Association="FanoramaCMS14062012Model.FK_ProductStyleDesignSizeFlatCuts_FlatCutBaseChains">
+      <End Role="FlatCutBaseChains" EntitySet="FlatCutBaseChains" />
+      <End Role="ProductStyleDesignSizeFlatCuts" EntitySet="ProductStyleDesignSizeFlatCuts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProductStyles_Genders" Association="FanoramaCMS14062012Model.FK_ProductStyles_Genders">
+      <End Role="Genders" EntitySet="Genders" />
+      <End Role="ProductStyles" EntitySet="ProductStyles" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MasterChainProperties_MasterChains" Association="FanoramaCMS14062012Model.FK_MasterChainProperties_MasterChains">
+      <End Role="MasterChains" EntitySet="MasterChains" />
+      <End Role="MasterChainProperties" EntitySet="MasterChainProperties" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PlacedEmblems_ProductStylePrintableAreas" Association="FanoramaCMS14062012Model.FK_PlacedEmblems_ProductStylePrintableAreas">
+      <End Role="ProductStylePrintableAreas" EntitySet="ProductStylePrintableAreas" />
+      <End Role="PlacedEmblems" EntitySet="PlacedEmblems" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PlacedEmblems_RetailProducts" Association="FanoramaCMS14062012Model.FK_PlacedEmblems_RetailProducts">
+      <End Role="RetailProducts" EntitySet="RetailProducts" />
+      <End Role="PlacedEmblems" EntitySet="PlacedEmblems" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProductPreviews_PreviewTypes" Association="FanoramaCMS14062012Model.FK_ProductPreviews_PreviewTypes">
+      <End Role="PreviewTypes" EntitySet="PreviewTypes" />
+      <End Role="ProductPreviews" EntitySet="ProductPreviews" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProductStyleDesigns_ProductCollections" Association="FanoramaCMS14062012Model.FK_ProductStyleDesigns_ProductCollections">
+      <End Role="ProductCollections" EntitySet="ProductCollections" />
+      <End Role="ProductStyleDesigns" EntitySet="ProductStyleDesigns" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProductStyleDesigns_ProductDesigns" Association="FanoramaCMS14062012Model.FK_ProductStyleDesigns_ProductDesigns">
+      <End Role="ProductDesigns" EntitySet="ProductDesigns" />
+      <End Role="ProductStyleDesigns" EntitySet="ProductStyleDesigns" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProductStyleDesignSizeFlatCuts_ProductSizes" Association="FanoramaCMS14062012Model.FK_ProductStyleDesignSizeFlatCuts_ProductSizes">
+      <End Role="ProductSizes" EntitySet="ProductSizes" />
+      <End Role="ProductStyleDesignSizeFlatCuts" EntitySet="ProductStyleDesignSizeFlatCuts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProductStyleSizes_Sizes" Association="FanoramaCMS14062012Model.FK_ProductStyleSizes_Sizes">
+      <End Role="ProductSizes" EntitySet="ProductSizes" />
+      <End Role="ProductStyleSizes" EntitySet="ProductStyleSizes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProductStyleDesigns_ProductStyles" Association="FanoramaCMS14062012Model.FK_ProductStyleDesigns_ProductStyles">
+      <End Role="ProductStyles" EntitySet="ProductStyles" />
+      <End Role="ProductStyleDesigns" EntitySet="ProductStyleDesigns" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProductStyleDesignSizeFlatCuts_ProductStyleDesigns" Association="FanoramaCMS14062012Model.FK_ProductStyleDesignSizeFlatCuts_ProductStyleDesigns">
+      <End Role="ProductStyleDesigns" EntitySet="ProductStyleDesigns" />
+      <End Role="ProductStyleDesignSizeFlatCuts" EntitySet="ProductStyleDesignSizeFlatCuts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RetailProducts_ProductStyleDesigns" Association="FanoramaCMS14062012Model.FK_RetailProducts_ProductStyleDesigns">
+      <End Role="ProductStyleDesigns" EntitySet="ProductStyleDesigns" />
+      <End Role="RetailProducts" EntitySet="RetailProducts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProductStyleDesignSizePrintableArea_ProductStyleDesignSizeFlatCuts" Association="FanoramaCMS14062012Model.FK_ProductStyleDesignSizePrintableArea_ProductStyleDesignSizeFlatCuts">
+      <End Role="ProductStyleDesignSizeFlatCuts" EntitySet="ProductStyleDesignSizeFlatCuts" />
+      <End Role="ProductStyleDesignSizePrintableArea" EntitySet="ProductStyleDesignSizePrintableAreas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProductStyleDesignSizePrintableArea_ProductStylePrintableAreas" Association="FanoramaCMS14062012Model.FK_ProductStyleDesignSizePrintableArea_ProductStylePrintableAreas">
+      <End Role="ProductStylePrintableAreas" EntitySet="ProductStylePrintableAreas" />
+      <End Role="ProductStyleDesignSizePrintableArea" EntitySet="ProductStyleDesignSizePrintableAreas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProductStylePrintableAreas_ProductStyles" Association="FanoramaCMS14062012Model.FK_ProductStylePrintableAreas_ProductStyles">
+      <End Role="ProductStyles" EntitySet="ProductStyles" />
+      <End Role="ProductStylePrintableAreas" EntitySet="ProductStylePrintableAreas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProductStyles_ProductTypes" Association="FanoramaCMS14062012Model.FK_ProductStyles_ProductTypes">
+      <End Role="ProductTypes" EntitySet="ProductTypes" />
+      <End Role="ProductStyles" EntitySet="ProductStyles" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProductStyleSizes_ProductStyles" Association="FanoramaCMS14062012Model.FK_ProductStyleSizes_ProductStyles">
+      <End Role="ProductStyles" EntitySet="ProductStyles" />
+      <End Role="ProductStyleSizes" EntitySet="ProductStyleSizes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PropertyTypeValues_PropertyTypes" Association="FanoramaCMS14062012Model.FK_PropertyTypeValues_PropertyTypes">
+      <End Role="PropertyTypes" EntitySet="PropertyTypes" />
+      <End Role="PropertyTypeValues" EntitySet="PropertyTypeValues" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="BaseProductCategory">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="CreateDateTime" Type="DateTime" Nullable="false" />
+    <Property Name="ModifyDateTime" Type="DateTime" Nullable="false" />
+    <Property Name="Publish" Type="Boolean" Nullable="false" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="ProductStyles" Relationship="FanoramaCMS14062012Model.FK_ProductStyles_BaseProductCategory" FromRole="BaseProductCategory" ToRole="ProductStyles" />
+  </EntityType>
+  <EntityType Name="ClientVariable">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CreateDateTime" Type="DateTime" Nullable="false" />
+    <Property Name="ModifyDateTime" Type="DateTime" Nullable="false" />
+    <Property Name="Publish" Type="Boolean" Nullable="false" />
+    <Property Name="idPropertyType" Type="Int32" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="VariableName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="idTypeValue" Type="Int32" />
+    <Property Name="WebValue" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="PrintValue" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="PropertyType" Relationship="FanoramaCMS14062012Model.FK_ClientVariables_PropertyTypes" FromRole="ClientVariables" ToRole="PropertyTypes" />
+    <NavigationProperty Name="PropertyTypeValue" Relationship="FanoramaCMS14062012Model.FK_ClientVariables_PropertyTypeValues" FromRole="ClientVariables" ToRole="PropertyTypeValues" />
+    <NavigationProperty Name="EmblemElementPropertyValues" Relationship="FanoramaCMS14062012Model.FK_EmblemElementPropertyValues_ClientVariables" FromRole="ClientVariables" ToRole="EmblemElementPropertyValues" />
+  </EntityType>
+  <EntityType Name="EmblemElementProperty">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CreateDateTime" Type="DateTime" Nullable="false" />
+    <Property Name="ModifyDateTime" Type="DateTime" Nullable="false" />
+    <Property Name="Publish" Type="Boolean" Nullable="false" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="idPropertyType" Type="Int32" />
+    <Property Name="idTypeValue" Type="Int32" />
+    <Property Name="WebValue" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="PrintValue" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="PropertyType" Relationship="FanoramaCMS14062012Model.FK_EmblemElementProperties_PropertyTypes" FromRole="EmblemElementProperties" ToRole="PropertyTypes" />
+    <NavigationProperty Name="PropertyTypeValue" Relationship="FanoramaCMS14062012Model.FK_EmblemElementProperties_PropertyTypeValues" FromRole="EmblemElementProperties" ToRole="PropertyTypeValues" />
+    <NavigationProperty Name="EmblemElementPropertyValues" Relationship="FanoramaCMS14062012Model.FK_EmblemElementPropertyValues_EmblemElementProperties" FromRole="EmblemElementProperties" ToRole="EmblemElementPropertyValues" />
+    <NavigationProperty Name="EmblemElementTypeProperties" Relationship="FanoramaCMS14062012Model.FK_EmblemElementTypeProperties_EmblemElementProperties" FromRole="EmblemElementProperties" ToRole="EmblemElementTypeProperties" />
+    <NavigationProperty Name="MasterChainProperties" Relationship="FanoramaCMS14062012Model.FK_MasterChainProperties_EmblemElementProperties" FromRole="EmblemElementProperties" ToRole="MasterChainProperties" />
+  </EntityType>
+  <EntityType Name="EmblemElementPropertyValue">
+    <Key>
+      <PropertyRef Name="idElement" />
+      <PropertyRef Name="idElementProperty" />
+    </Key>
+    <Property Name="idElement" Type="Int32" Nullable="false" />
+    <Property Name="idElementProperty" Type="Int32" Nullable="false" />
+    <Property Name="CreateDateTime" Type="DateTime" Nullable="false" />
+    <Property Name="ModifyDateTime" Type="DateTime" Nullable="false" />
+    <Property Name="WebValue" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="PrintValue" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="idTypeValue" Type="Int32" />
+    <Property Name="idClientVariable" Type="Int32" />
+    <NavigationProperty Name="ClientVariable" Relationship="FanoramaCMS14062012Model.FK_EmblemElementPropertyValues_ClientVariables" FromRole="EmblemElementPropertyValues" ToRole="ClientVariables" />
+    <NavigationProperty Name="EmblemElementProperty" Relationship="FanoramaCMS14062012Model.FK_EmblemElementPropertyValues_EmblemElementProperties" FromRole="EmblemElementPropertyValues" ToRole="EmblemElementProperties" />
+    <NavigationProperty Name="EmblemElement" Relationship="FanoramaCMS14062012Model.FK_EmblemElementPropertyValues_EmblemElements" FromRole="EmblemElementPropertyValues" ToRole="EmblemElements" />
+    <NavigationProperty Name="PropertyTypeValue" Relationship="FanoramaCMS14062012Model.FK_EmblemElementPropertyValues_PropertyTypeValues" FromRole="EmblemElementPropertyValues" ToRole="PropertyTypeValues" />
+  </EntityType>
+  <EntityType Name="EmblemElement">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CreateDateTime" Type="DateTime" Nullable="false" />
+    <Property Name="ModifyDateTime" Type="DateTime" Nullable="false" />
+    <Property Name="Publish" Type="Boolean" Nullable="false" />
+    <Property Name="idEmblem" Type="Int32" Nullable="false" />
+    <Property Name="idElementType" Type="Int32" Nullable="false" />
+    <Property Name="idMasterChain" Type="Int32" />
+    <Property Name="SortIndex" Type="Int32" Nullable="false" />
+    <Property Name="SizeX" Type="Single" Nullable="false" />
+    <Property Name="SizeY" Type="Single" Nullable="false" />
+    <Property Name="PosX" Type="Single" Nullable="false" />
+    <Property Name="PosY" Type="Single" Nullable="false" />
+    <Property Name="Rotation" Type="Single" Nullable="false" />
+    <Property Name="AdvancedChain" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="EmblemElementPropertyValues" Relationship="FanoramaCMS14062012Model.FK_EmblemElementPropertyValues_EmblemElements" FromRole="EmblemElements" ToRole="EmblemElementPropertyValues" />
+    <NavigationProperty Name="EmblemElementType" Relationship="FanoramaCMS14062012Model.FK_EmblemElements_EmblemElementTypes" FromRole="EmblemElements" ToRole="EmblemElementTypes" />
+    <NavigationProperty Name="Emblem" Relationship="FanoramaCMS14062012Model.FK_EmblemElements_Emblems" FromRole="EmblemElements" ToRole="Emblems" />
+    <NavigationProperty Name="MasterChain" Relationship="FanoramaCMS14062012Model.FK_EmblemElements_MasterChains" FromRole="EmblemElements" ToRole="MasterChains" />
+  </EntityType>
+  <EntityType Name="EmblemElementTypeProperty">
+    <Key>
+      <PropertyRef Name="idElementType" />
+      <PropertyRef Name="idElementProperty" />
+    </Key>
+    <Property Name="idElementType" Type="Int32" Nullable="false" />
+    <Property Name="idElementProperty" Type="Int32" Nullable="false" />
+    <Property Name="CreateDateTime" Type="DateTime" Nullable="false" />
+    <Property Name="ModifyDateTime" Type="DateTime" Nullable="false" />
+    <Property Name="ChainParameterName" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="EmblemElementProperty" Relationship="FanoramaCMS14062012Model.FK_EmblemElementTypeProperties_EmblemElementProperties" FromRole="EmblemElementTypeProperties" ToRole="EmblemElementProperties" />
+    <NavigationProperty Name="EmblemElementType" Relationship="FanoramaCMS14062012Model.FK_EmblemElementTypeProperties_EmblemElementTypes" FromRole="EmblemElementTypeProperties" ToRole="EmblemElementTypes" />
+  </EntityType>
+  <EntityType Name="EmblemElementType">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CreateDateTime" Type="DateTime" Nullable="false" />
+    <Property Name="ModifyDateTime" Type="DateTime" Nullable="false" />
+    <Property Name="Publish" Type="Boolean" Nullable="false" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="EmblemElements" Relationship="FanoramaCMS14062012Model.FK_EmblemElements_EmblemElementTypes" FromRole="EmblemElementTypes" ToRole="EmblemElements" />
+    <NavigationProperty Name="EmblemElementTypeProperties" Relationship="FanoramaCMS14062012Model.FK_EmblemElementTypeProperties_EmblemElementTypes" FromRole="EmblemElementTypes" ToRole="EmblemElementTypeProperties" />
+    <NavigationProperty Name="MasterChains" Relationship="FanoramaCMS14062012Model.FK_MasterChains_EmblemElementTypes" FromRole="EmblemElementTypes" ToRole="MasterChains" />
+  </EntityType>
+  <EntityType Name="EmblemPrintType">
+    <Key>
+      <PropertyRef Name="idEmblem" />
+      <PropertyRef Name="idPrintType" />
+    </Key>
+    <Property Name="idEmblem" Type="Int32" Nullable="false" />
+    <Property Name="idPrintType" Type="Int32" Nullable="false" />
+    <Property Name="CreateDateTime" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="Emblem" Relationship="FanoramaCMS14062012Model.FK_EmblemPrintTypes_Emblems" FromRole="EmblemPrintTypes" ToRole="Emblems" />
+    <NavigationProperty Name="PrintType" Relationship="FanoramaCMS14062012Model.FK_EmblemPrintTypes_PrintTypes" FromRole="EmblemPrintTypes" ToRole="PrintTypes" />
+  </EntityType>
+  <EntityType Name="Emblem">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CreateDateTime" Type="DateTime" Nullable="false" />
+    <Property Name="ModifyDateTime" Type="DateTime" Nullable="false" />
+    <Property Name="Publish" Type="Boolean" Nullable="false" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="SizeX" Type="Single" Nullable="false" />
+    <Property Name="SizeY" Type="Single" Nullable="false" />
+    <Property Name="AdvancedChain" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="EmblemElements" Relationship="FanoramaCMS14062012Model.FK_EmblemElements_Emblems" FromRole="Emblems" ToRole="EmblemElements" />
+    <NavigationProperty Name="EmblemPrintTypes" Relationship="FanoramaCMS14062012Model.FK_EmblemPrintTypes_Emblems" FromRole="Emblems" ToRole="EmblemPrintTypes" />
+    <NavigationProperty Name="PlacedEmblems" Relationship="FanoramaCMS14062012Model.FK_PlacedEmblems_Emblems" FromRole="Emblems" ToRole="PlacedEmblems" />
+  </EntityType>
+  <EntityType Name="FileType">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="FlatCutBaseChain">
+    <Key>
+      <PropertyRef Name="idFlatCut" />
+    </Key>
+    <Property Name="idFlatCut" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="ProductStyleDesignSizeFlatCuts" Relationship="FanoramaCMS14062012Model.FK_ProductStyleDesignSizeFlatCuts_FlatCutBaseChains" FromRole="FlatCutBaseChains" ToRole="ProductStyleDesignSizeFlatCuts" />
+  </EntityType>
+  <EntityType Name="Gender">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CreateDateTime" Type="DateTime" Nullable="false" />
+    <Property Name="ModifyDateTime" Type="DateTime" Nullable="false" />
+    <Property Name="Publish" Type="Boolean" Nullable="false" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="LP_GenderName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="ProductStyles" Relationship="FanoramaCMS14062012Model.FK_ProductStyles_Genders" FromRole="Genders" ToRole="ProductStyles" />
+  </EntityType>
+  <EntityType Name="Grid">
+    <Key>
+      <PropertyRef Name="idGrid" />
+    </Key>
+    <Property Name="idGrid" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ImageCategory">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="ModifyDateTime" />
+      <PropertyRef Name="Publish" />
+      <PropertyRef Name="Name" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="ModifyDateTime" Type="DateTime" Nullable="false" />
+    <Property Name="Publish" Type="Boolean" Nullable="false" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="idParent" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Image">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="ModifyDateTime" />
+      <PropertyRef Name="Publish" />
+      <PropertyRef Name="idImageCategory" />
+      <PropertyRef Name="Name" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="ModifyDateTime" Type="DateTime" Nullable="false" />
+    <Property Name="Publish" Type="Boolean" Nullable="false" />
+    <Property Name="idImageCategory" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="idFile" Type="Int32" />
+  </EntityType>
+  <EntityType Name="MasterChainProperty">
+    <Key>
+      <PropertyRef Name="idMasterChain" />
+      <PropertyRef Name="idElementProperty" />
+    </Key>
+    <Property Name="idMasterChain" Type="Int32" Nullable="false" />
+    <Property Name="idElementProperty" Type="Int32" Nullable="false" />
+    <Property Name="CreateDateTime" Type="DateTime" Nullable="false" />
+    <Property Name="ModifyDateTime" Type="DateTime" Nullable="false" />
+    <Property Name="ChainParameterName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="EmblemElementProperty" Relationship="FanoramaCMS14062012Model.FK_MasterChainProperties_EmblemElementProperties" FromRole="MasterChainProperties" ToRole="EmblemElementProperties" />
+    <NavigationProperty Name="MasterChain" Relationship="FanoramaCMS14062012Model.FK_MasterChainProperties_MasterChains" FromRole="MasterChainProperties" ToRole="MasterChains" />
+  </EntityType>
+  <EntityType Name="MasterChain">
+    <Key>
+      <PropertyRef Name="idMasterChain" />
+    </Key>
+    <Property Name="idMasterChain" Type="Int32" Nullable="false" />
+    <Property Name="idElementType" Type="Int32" Nullable="false" />
+    <Property Name="SelfPositioned" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="EmblemElements" Relationship="FanoramaCMS14062012Model.FK_EmblemElements_MasterChains" FromRole="MasterChains" ToRole="EmblemElements" />
+    <NavigationProperty Name="EmblemElementType" Relationship="FanoramaCMS14062012Model.FK_MasterChains_EmblemElementTypes" FromRole="MasterChains" ToRole="EmblemElementTypes" />
+    <NavigationProperty Name="MasterChainProperties" Relationship="FanoramaCMS14062012Model.FK_MasterChainProperties_MasterChains" FromRole="MasterChains" ToRole="MasterChainProperties" />
+  </EntityType>
+  <EntityType Name="PlacedEmblem">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CreateDateTime" Type="DateTime" Nullable="false" />
+    <Property Name="ModifyDateTime" Type="DateTime" Nullable="false" />
+    <Property Name="Publish" Type="Boolean" Nullable="false" />
+    <Property Name="idRetailProduct" Type="Int32" Nullable="false" />
+    <Property Name="idProductStylePrintableArea" Type="Int32" Nullable="false" />
+    <Property Name="idEmblem" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Emblem" Relationship="FanoramaCMS14062012Model.FK_PlacedEmblems_Emblems" FromRole="PlacedEmblems" ToRole="Emblems" />
+    <NavigationProperty Name="ProductStylePrintableArea" Relationship="FanoramaCMS14062012Model.FK_PlacedEmblems_ProductStylePrintableAreas" FromRole="PlacedEmblems" ToRole="ProductStylePrintableAreas" />
+    <NavigationProperty Name="RetailProduct" Relationship="FanoramaCMS14062012Model.FK_PlacedEmblems_RetailProducts" FromRole="PlacedEmblems" ToRole="RetailProducts" />
+  </EntityType>
+  <EntityType Name="PreviewType">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CreateDateTime" Type="DateTime" />
+    <Property Name="ModifyDateTime" Type="DateTime" Nullable="false" />
+    <Property Name="Publish" Type="Boolean" Nullable="false" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="ProductPreviews" Relationship="FanoramaCMS14062012Model.FK_ProductPreviews_PreviewTypes" FromRole="PreviewTypes" ToRole="ProductPreviews" />
+  </EntityType>
+  <EntityType Name="PrintType">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CreateDateTime" Type="DateTime" Nullable="false" />
+    <Property Name="ModifyDateTime" Type="DateTime" Nullable="false" />
+    <Property Name="Publish" Type="Boolean" Nullable="false" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="EmblemPrintTypes" Relationship="FanoramaCMS14062012Model.FK_EmblemPrintTypes_PrintTypes" FromRole="PrintTypes" ToRole="EmblemPrintTypes" />
+  </EntityType>
+  <EntityType Name="ProductCollection">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CreateDateTime" Type="DateTime" Nullable="false" />
+    <Property Name="ModifyDateTime" Type="DateTime" Nullable="false" />
+    <Property Name="Publish" Type="Boolean" Nullable="false" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="ProductStyleDesigns" Relationship="FanoramaCMS14062012Model.FK_ProductStyleDesigns_ProductCollections" FromRole="ProductCollections" ToRole="ProductStyleDesigns" />
+  </EntityType>
+  <EntityType Name="ProductDesign">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CreateDateTime" Type="DateTime" Nullable="false" />
+    <Property Name="ModifyDateTime" Type="DateTime" Nullable="false" />
+    <Property Name="Publish" Type="Boolean" Nullable="false" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="LP_DesignName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="ProductStyleDesigns" Relationship="FanoramaCMS14062012Model.FK_ProductStyleDesigns_ProductDesigns" FromRole="ProductDesigns" ToRole="ProductStyleDesigns" />
+  </EntityType>
+  <EntityType Name="ProductPreview">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CreateDateTime" Type="DateTime" Nullable="false" />
+    <Property Name="ModifyDateTime" Type="DateTime" />
+    <Property Name="Publish" Type="Boolean" Nullable="false" />
+    <Property Name="idProductStyleDesign" Type="Int32" Nullable="false" />
+    <Property Name="idPreviewType" Type="Int32" Nullable="false" />
+    <Property Name="idChain" Type="Int32" />
+    <Property Name="idGrid" Type="Int32" />
+    <NavigationProperty Name="PreviewType" Relationship="FanoramaCMS14062012Model.FK_ProductPreviews_PreviewTypes" FromRole="ProductPreviews" ToRole="PreviewTypes" />
+  </EntityType>
+  <EntityType Name="ProductSize">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CreateDateTime" Type="DateTime" Nullable="false" />
+    <Property Name="ModifyDateTime" Type="DateTime" Nullable="false" />
+    <Property Name="Publish" Type="Boolean" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="SortIndex" Type="Int32" Nullable="false" />
+    <Property Name="LP_SizeName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="ProductStyleDesignSizeFlatCuts" Relationship="FanoramaCMS14062012Model.FK_ProductStyleDesignSizeFlatCuts_ProductSizes" FromRole="ProductSizes" ToRole="ProductStyleDesignSizeFlatCuts" />
+    <NavigationProperty Name="ProductStyleSizes" Relationship="FanoramaCMS14062012Model.FK_ProductStyleSizes_Sizes" FromRole="ProductSizes" ToRole="ProductStyleSizes" />
+  </EntityType>
+  <EntityType Name="ProductStyleDesign">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CreateDateTime" Type="DateTime" Nullable="false" />
+    <Property Name="ModifyDateTime" Type="DateTime" Nullable="false" />
+    <Property Name="Publish" Type="Boolean" Nullable="false" />
+    <Property Name="idProductCollection" Type="Int32" Nullable="false" />
+    <Property Name="idProductStyle" Type="Int32" Nullable="false" />
+    <Property Name="idProductDesign" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="ProductCollection" Relationship="FanoramaCMS14062012Model.FK_ProductStyleDesigns_ProductCollections" FromRole="ProductStyleDesigns" ToRole="ProductCollections" />
+    <NavigationProperty Name="ProductDesign" Relationship="FanoramaCMS14062012Model.FK_ProductStyleDesigns_ProductDesigns" FromRole="ProductStyleDesigns" ToRole="ProductDesigns" />
+    <NavigationProperty Name="ProductStyle" Relationship="FanoramaCMS14062012Model.FK_ProductStyleDesigns_ProductStyles" FromRole="ProductStyleDesigns" ToRole="ProductStyles" />
+    <NavigationProperty Name="ProductStyleDesignSizeFlatCuts" Relationship="FanoramaCMS14062012Model.FK_ProductStyleDesignSizeFlatCuts_ProductStyleDesigns" FromRole="ProductStyleDesigns" ToRole="ProductStyleDesignSizeFlatCuts" />
+    <NavigationProperty Name="RetailProducts" Relationship="FanoramaCMS14062012Model.FK_RetailProducts_ProductStyleDesigns" FromRole="ProductStyleDesigns" ToRole="RetailProducts" />
+  </EntityType>
+  <EntityType Name="ProductStyleDesignSizeFlatCut">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CreateDateTime" Type="DateTime" Nullable="false" />
+    <Property Name="ModifyDateTime" Type="DateTime" Nullable="false" />
+    <Property Name="Publish" Type="Boolean" Nullable="false" />
+    <Property Name="idProductStyleDesign" Type="Int32" Nullable="false" />
+    <Property Name="idProductSize" Type="Int32" Nullable="false" />
+    <Property Name="idFlatCutBaseChain" Type="Int32" />
+    <Property Name="SizeX" Type="Single" Nullable="false" />
+    <Property Name="SizeY" Type="Single" Nullable="false" />
+    <NavigationProperty Name="FlatCutBaseChain" Relationship="FanoramaCMS14062012Model.FK_ProductStyleDesignSizeFlatCuts_FlatCutBaseChains" FromRole="ProductStyleDesignSizeFlatCuts" ToRole="FlatCutBaseChains" />
+    <NavigationProperty Name="ProductSize" Relationship="FanoramaCMS14062012Model.FK_ProductStyleDesignSizeFlatCuts_ProductSizes" FromRole="ProductStyleDesignSizeFlatCuts" ToRole="ProductSizes" />
+    <NavigationProperty Name="ProductStyleDesign" Relationship="FanoramaCMS14062012Model.FK_ProductStyleDesignSizeFlatCuts_ProductStyleDesigns" FromRole="ProductStyleDesignSizeFlatCuts" ToRole="ProductStyleDesigns" />
+    <NavigationProperty Name="ProductStyleDesignSizePrintableAreas" Relationship="FanoramaCMS14062012Model.FK_ProductStyleDesignSizePrintableArea_ProductStyleDesignSizeFlatCuts" FromRole="ProductStyleDesignSizeFlatCuts" ToRole="ProductStyleDesignSizePrintableArea" />
+  </EntityType>
+  <EntityType Name="ProductStyleDesignSizePrintableArea">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CreateDateTime" Type="DateTime" Nullable="false" />
+    <Property Name="ModifyDateTime" Type="DateTime" Nullable="false" />
+    <Property Name="Publish" Type="Boolean" Nullable="false" />
+    <Property Name="idStylePrintableArea" Type="Int32" Nullable="false" />
+    <Property Name="idFlatCut" Type="Int32" />
+    <Property Name="PosX" Type="Single" Nullable="false" />
+    <Property Name="PosY" Type="Single" Nullable="false" />
+    <Property Name="SizeX" Type="Single" Nullable="false" />
+    <Property Name="SizeY" Type="Single" Nullable="false" />
+    <Property Name="Rotation" Type="Single" Nullable="false" />
+    <NavigationProperty Name="ProductStyleDesignSizeFlatCut" Relationship="FanoramaCMS14062012Model.FK_ProductStyleDesignSizePrintableArea_ProductStyleDesignSizeFlatCuts" FromRole="ProductStyleDesignSizePrintableArea" ToRole="ProductStyleDesignSizeFlatCuts" />
+    <NavigationProperty Name="ProductStylePrintableArea" Relationship="FanoramaCMS14062012Model.FK_ProductStyleDesignSizePrintableArea_ProductStylePrintableAreas" FromRole="ProductStyleDesignSizePrintableArea" ToRole="ProductStylePrintableAreas" />
+  </EntityType>
+  <EntityType Name="ProductStylePrintableArea">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CreateDateTime" Type="DateTime" Nullable="false" />
+    <Property Name="ModifyDateTime" Type="DateTime" Nullable="false" />
+    <Property Name="Publish" Type="Boolean" Nullable="false" />
+    <Property Name="idProductStyle" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="PlacedEmblems" Relationship="FanoramaCMS14062012Model.FK_PlacedEmblems_ProductStylePrintableAreas" FromRole="ProductStylePrintableAreas" ToRole="PlacedEmblems" />
+    <NavigationProperty Name="ProductStyleDesignSizePrintableAreas" Relationship="FanoramaCMS14062012Model.FK_ProductStyleDesignSizePrintableArea_ProductStylePrintableAreas" FromRole="ProductStylePrintableAreas" ToRole="ProductStyleDesignSizePrintableArea" />
+    <NavigationProperty Name="ProductStyle" Relationship="FanoramaCMS14062012Model.FK_ProductStylePrintableAreas_ProductStyles" FromRole="ProductStylePrintableAreas" ToRole="ProductStyles" />
+  </EntityType>
+  <EntityType Name="ProductStyle">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="CreateDateTime" Type="DateTime" Nullable="false" />
+    <Property Name="ModifyDateTime" Type="DateTime" Nullable="false" />
+    <Property Name="Publish" Type="Boolean" Nullable="false" />
+    <Property Name="idBaseCategory" Type="Int32" Nullable="false" />
+    <Property Name="idProductType" Type="Int32" Nullable="false" />
+    <Property Name="idGender" Type="Int32" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="StyleNumber" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="LP_StyleNumber" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="BaseProductCategory" Relationship="FanoramaCMS14062012Model.FK_ProductStyles_BaseProductCategory" FromRole="ProductStyles" ToRole="BaseProductCategory" />
+    <NavigationProperty Name="Gender" Relationship="FanoramaCMS14062012Model.FK_ProductStyles_Genders" FromRole="ProductStyles" ToRole="Genders" />
+    <NavigationProperty Name="ProductStyleDesigns" Relationship="FanoramaCMS14062012Model.FK_ProductStyleDesigns_ProductStyles" FromRole="ProductStyles" ToRole="ProductStyleDesigns" />
+    <NavigationProperty Name="ProductStylePrintableAreas" Relationship="FanoramaCMS14062012Model.FK_ProductStylePrintableAreas_ProductStyles" FromRole="ProductStyles" ToRole="ProductStylePrintableAreas" />
+    <NavigationProperty Name="ProductType" Relationship="FanoramaCMS14062012Model.FK_ProductStyles_ProductTypes" FromRole="ProductStyles" ToRole="ProductTypes" />
+    <NavigationProperty Name="ProductStyleSizes" Relationship="FanoramaCMS14062012Model.FK_ProductStyleSizes_ProductStyles" FromRole="ProductStyles" ToRole="ProductStyleSizes" />
+  </EntityType>
+  <EntityType Name="ProductStyleSize">
+    <Key>
+      <PropertyRef Name="idProductSize" />
+      <PropertyRef Name="idProductStyle" />
+    </Key>
+    <Property Name="idProductSize" Type="Int32" Nullable="false" />
+    <Property Name="idProductStyle" Type="Int32" Nullable="false" />
+    <Property Name="CreateDateTime" Type="DateTime" Nullable="false" />
+    <Property Name="ModifyDateTime" Type="DateTime" Nullable="false" />
+    <Property Name="Publish" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="ProductSize" Relationship="FanoramaCMS14062012Model.FK_ProductStyleSizes_Sizes" FromRole="ProductStyleSizes" ToRole="ProductSizes" />
+    <NavigationProperty Name="ProductStyle" Relationship="FanoramaCMS14062012Model.FK_ProductStyleSizes_ProductStyles" FromRole="ProductStyleSizes" ToRole="ProductStyles" />
+  </EntityType>
+  <EntityType Name="ProductType">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CreateDateTime" Type="DateTime" Nullable="false" />
+    <Property Name="ModifyDateTime" Type="DateTime" Nullable="false" />
+    <Property Name="Publish" Type="Boolean" Nullable="false" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="ProductStyles" Relationship="FanoramaCMS14062012Model.FK_ProductStyles_ProductTypes" FromRole="ProductTypes" ToRole="ProductStyles" />
+  </EntityType>
+  <EntityType Name="PropertyType">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CreateDateTime" Type="DateTime" Nullable="false" />
+    <Property Name="ModifyDateTime" Type="DateTime" Nullable="false" />
+    <Property Name="Publish" Type="Boolean" Nullable="false" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="IsDictionary" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="ClientVariables" Relationship="FanoramaCMS14062012Model.FK_ClientVariables_PropertyTypes" FromRole="PropertyTypes" ToRole="ClientVariables" />
+    <NavigationProperty Name="EmblemElementProperties" Relationship="FanoramaCMS14062012Model.FK_EmblemElementProperties_PropertyTypes" FromRole="PropertyTypes" ToRole="EmblemElementProperties" />
+    <NavigationProperty Name="PropertyTypeValues" Relationship="FanoramaCMS14062012Model.FK_PropertyTypeValues_PropertyTypes" FromRole="PropertyTypes" ToRole="PropertyTypeValues" />
+  </EntityType>
+  <EntityType Name="PropertyTypeValue">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CreateDateTime" Type="DateTime" Nullable="false" />
+    <Property Name="ModifyDateTime" Type="DateTime" Nullable="false" />
+    <Property Name="Publish" Type="Boolean" Nullable="false" />
+    <Property Name="idPropertyType" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="WebValue" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="PrintValue" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="AxaptaId" Type="Int32" />
+    <NavigationProperty Name="ClientVariables" Relationship="FanoramaCMS14062012Model.FK_ClientVariables_PropertyTypeValues" FromRole="PropertyTypeValues" ToRole="ClientVariables" />
+    <NavigationProperty Name="EmblemElementProperties" Relationship="FanoramaCMS14062012Model.FK_EmblemElementProperties_PropertyTypeValues" FromRole="PropertyTypeValues" ToRole="EmblemElementProperties" />
+    <NavigationProperty Name="EmblemElementPropertyValues" Relationship="FanoramaCMS14062012Model.FK_EmblemElementPropertyValues_PropertyTypeValues" FromRole="PropertyTypeValues" ToRole="EmblemElementPropertyValues" />
+    <NavigationProperty Name="PropertyType" Relationship="FanoramaCMS14062012Model.FK_PropertyTypeValues_PropertyTypes" FromRole="PropertyTypeValues" ToRole="PropertyTypes" />
+  </EntityType>
+  <EntityType Name="RetailProduct">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CreateDateTime" Type="DateTime" Nullable="false" />
+    <Property Name="ModifyDateTime" Type="DateTime" Nullable="false" />
+    <Property Name="Publish" Type="Boolean" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="AxaptaProductId" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="idProductStyleDesign" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="PlacedEmblems" Relationship="FanoramaCMS14062012Model.FK_PlacedEmblems_RetailProducts" FromRole="RetailProducts" ToRole="PlacedEmblems" />
+    <NavigationProperty Name="ProductStyleDesign" Relationship="FanoramaCMS14062012Model.FK_RetailProducts_ProductStyleDesigns" FromRole="RetailProducts" ToRole="ProductStyleDesigns" />
+  </EntityType>
+  <EntityType Name="ServerConfiguration">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="CreateDaetTime" Type="DateTime" Nullable="false" />
+    <Property Name="ModifyDateTime" Type="DateTime" Nullable="false" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="ServerType" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="ServerPath" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="AvaliableMasterChainProperty">
+    <Key>
+      <PropertyRef Name="IsDefault" />
+    </Key>
+    <Property Name="idElementProperty" Type="Int32" />
+    <Property Name="idMasterChain" Type="Int32" />
+    <Property Name="ChainParameterName" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="IsDefault" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="EmblemElementPropertiesByMasterChain">
+    <Key>
+      <PropertyRef Name="idMasterChain" />
+      <PropertyRef Name="idElementProperty" />
+      <PropertyRef Name="ChainParameterName" />
+    </Key>
+    <Property Name="idMasterChain" Type="Int32" Nullable="false" />
+    <Property Name="idElementProperty" Type="Int32" Nullable="false" />
+    <Property Name="ChainParameterName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="EmblemElementPropertiesByType">
+    <Key>
+      <PropertyRef Name="idMasterChain" />
+      <PropertyRef Name="idElementProperty" />
+      <PropertyRef Name="ChainParameterName" />
+    </Key>
+    <Property Name="idMasterChain" Type="Int32" Nullable="false" />
+    <Property Name="idElementProperty" Type="Int32" Nullable="false" />
+    <Property Name="ChainParameterName" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="ProductWithEmblem">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="Publish" />
+      <PropertyRef Name="idProductStyleDesign" />
+      <PropertyRef Name="idEmblem" />
+      <PropertyRef Name="Expr1" />
+      <PropertyRef Name="PosX" />
+      <PropertyRef Name="PosY" />
+      <PropertyRef Name="Expr2" />
+      <PropertyRef Name="Expr3" />
+      <PropertyRef Name="Rotation" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Publish" Type="Boolean" Nullable="false" />
+    <Property Name="idProductStyleDesign" Type="Int32" Nullable="false" />
+    <Property Name="idEmblem" Type="Int32" Nullable="false" />
+    <Property Name="Expr1" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="PosX" Type="Single" Nullable="false" />
+    <Property Name="PosY" Type="Single" Nullable="false" />
+    <Property Name="Expr2" Type="Single" Nullable="false" />
+    <Property Name="Expr3" Type="Single" Nullable="false" />
+    <Property Name="Rotation" Type="Single" Nullable="false" />
+    <Property Name="idFlatCut" Type="Int32" />
+  </EntityType>
+  <Association Name="FK_ProductStyles_BaseProductCategory">
+    <End Role="BaseProductCategory" Type="FanoramaCMS14062012Model.BaseProductCategory" Multiplicity="1" />
+    <End Role="ProductStyles" Type="FanoramaCMS14062012Model.ProductStyle" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BaseProductCategory">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="ProductStyles">
+        <PropertyRef Name="idBaseCategory" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ClientVariables_PropertyTypes">
+    <End Role="PropertyTypes" Type="FanoramaCMS14062012Model.PropertyType" Multiplicity="0..1" />
+    <End Role="ClientVariables" Type="FanoramaCMS14062012Model.ClientVariable" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PropertyTypes">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="ClientVariables">
+        <PropertyRef Name="idPropertyType" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ClientVariables_PropertyTypeValues">
+    <End Role="PropertyTypeValues" Type="FanoramaCMS14062012Model.PropertyTypeValue" Multiplicity="0..1" />
+    <End Role="ClientVariables" Type="FanoramaCMS14062012Model.ClientVariable" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PropertyTypeValues">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="ClientVariables">
+        <PropertyRef Name="idTypeValue" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EmblemElementPropertyValues_ClientVariables">
+    <End Role="ClientVariables" Type="FanoramaCMS14062012Model.ClientVariable" Multiplicity="0..1" />
+    <End Role="EmblemElementPropertyValues" Type="FanoramaCMS14062012Model.EmblemElementPropertyValue" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ClientVariables">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="EmblemElementPropertyValues">
+        <PropertyRef Name="idClientVariable" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EmblemElementProperties_PropertyTypes">
+    <End Role="PropertyTypes" Type="FanoramaCMS14062012Model.PropertyType" Multiplicity="0..1" />
+    <End Role="EmblemElementProperties" Type="FanoramaCMS14062012Model.EmblemElementProperty" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PropertyTypes">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="EmblemElementProperties">
+        <PropertyRef Name="idPropertyType" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EmblemElementProperties_PropertyTypeValues">
+    <End Role="PropertyTypeValues" Type="FanoramaCMS14062012Model.PropertyTypeValue" Multiplicity="0..1" />
+    <End Role="EmblemElementProperties" Type="FanoramaCMS14062012Model.EmblemElementProperty" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PropertyTypeValues">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="EmblemElementProperties">
+        <PropertyRef Name="idTypeValue" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EmblemElementPropertyValues_EmblemElementProperties">
+    <End Role="EmblemElementProperties" Type="FanoramaCMS14062012Model.EmblemElementProperty" Multiplicity="1" />
+    <End Role="EmblemElementPropertyValues" Type="FanoramaCMS14062012Model.EmblemElementPropertyValue" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EmblemElementProperties">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="EmblemElementPropertyValues">
+        <PropertyRef Name="idElementProperty" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EmblemElementTypeProperties_EmblemElementProperties">
+    <End Role="EmblemElementProperties" Type="FanoramaCMS14062012Model.EmblemElementProperty" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="EmblemElementTypeProperties" Type="FanoramaCMS14062012Model.EmblemElementTypeProperty" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EmblemElementProperties">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="EmblemElementTypeProperties">
+        <PropertyRef Name="idElementProperty" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MasterChainProperties_EmblemElementProperties">
+    <End Role="EmblemElementProperties" Type="FanoramaCMS14062012Model.EmblemElementProperty" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="MasterChainProperties" Type="FanoramaCMS14062012Model.MasterChainProperty" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EmblemElementProperties">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="MasterChainProperties">
+        <PropertyRef Name="idElementProperty" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EmblemElementPropertyValues_EmblemElements">
+    <End Role="EmblemElements" Type="FanoramaCMS14062012Model.EmblemElement" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="EmblemElementPropertyValues" Type="FanoramaCMS14062012Model.EmblemElementPropertyValue" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EmblemElements">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="EmblemElementPropertyValues">
+        <PropertyRef Name="idElement" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EmblemElementPropertyValues_PropertyTypeValues">
+    <End Role="PropertyTypeValues" Type="FanoramaCMS14062012Model.PropertyTypeValue" Multiplicity="0..1" />
+    <End Role="EmblemElementPropertyValues" Type="FanoramaCMS14062012Model.EmblemElementPropertyValue" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PropertyTypeValues">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="EmblemElementPropertyValues">
+        <PropertyRef Name="idTypeValue" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EmblemElements_EmblemElementTypes">
+    <End Role="EmblemElementTypes" Type="FanoramaCMS14062012Model.EmblemElementType" Multiplicity="1" />
+    <End Role="EmblemElements" Type="FanoramaCMS14062012Model.EmblemElement" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EmblemElementTypes">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="EmblemElements">
+        <PropertyRef Name="idElementType" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EmblemElements_Emblems">
+    <End Role="Emblems" Type="FanoramaCMS14062012Model.Emblem" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="EmblemElements" Type="FanoramaCMS14062012Model.EmblemElement" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Emblems">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="EmblemElements">
+        <PropertyRef Name="idEmblem" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EmblemElements_MasterChains">
+    <End Role="MasterChains" Type="FanoramaCMS14062012Model.MasterChain" Multiplicity="0..1" />
+    <End Role="EmblemElements" Type="FanoramaCMS14062012Model.EmblemElement" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MasterChains">
+        <PropertyRef Name="idMasterChain" />
+      </Principal>
+      <Dependent Role="EmblemElements">
+        <PropertyRef Name="idMasterChain" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EmblemElementTypeProperties_EmblemElementTypes">
+    <End Role="EmblemElementTypes" Type="FanoramaCMS14062012Model.EmblemElementType" Multiplicity="1" />
+    <End Role="EmblemElementTypeProperties" Type="FanoramaCMS14062012Model.EmblemElementTypeProperty" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EmblemElementTypes">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="EmblemElementTypeProperties">
+        <PropertyRef Name="idElementType" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MasterChains_EmblemElementTypes">
+    <End Role="EmblemElementTypes" Type="FanoramaCMS14062012Model.EmblemElementType" Multiplicity="1" />
+    <End Role="MasterChains" Type="FanoramaCMS14062012Model.MasterChain" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EmblemElementTypes">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="MasterChains">
+        <PropertyRef Name="idElementType" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EmblemPrintTypes_Emblems">
+    <End Role="Emblems" Type="FanoramaCMS14062012Model.Emblem" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="EmblemPrintTypes" Type="FanoramaCMS14062012Model.EmblemPrintType" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Emblems">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="EmblemPrintTypes">
+        <PropertyRef Name="idEmblem" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EmblemPrintTypes_PrintTypes">
+    <End Role="PrintTypes" Type="FanoramaCMS14062012Model.PrintType" Multiplicity="1" />
+    <End Role="EmblemPrintTypes" Type="FanoramaCMS14062012Model.EmblemPrintType" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PrintTypes">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="EmblemPrintTypes">
+        <PropertyRef Name="idPrintType" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PlacedEmblems_Emblems">
+    <End Role="Emblems" Type="FanoramaCMS14062012Model.Emblem" Multiplicity="1" />
+    <End Role="PlacedEmblems" Type="FanoramaCMS14062012Model.PlacedEmblem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Emblems">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="PlacedEmblems">
+        <PropertyRef Name="idEmblem" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProductStyleDesignSizeFlatCuts_FlatCutBaseChains">
+    <End Role="FlatCutBaseChains" Type="FanoramaCMS14062012Model.FlatCutBaseChain" Multiplicity="0..1" />
+    <End Role="ProductStyleDesignSizeFlatCuts" Type="FanoramaCMS14062012Model.ProductStyleDesignSizeFlatCut" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="FlatCutBaseChains">
+        <PropertyRef Name="idFlatCut" />
+      </Principal>
+      <Dependent Role="ProductStyleDesignSizeFlatCuts">
+        <PropertyRef Name="idFlatCutBaseChain" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProductStyles_Genders">
+    <End Role="Genders" Type="FanoramaCMS14062012Model.Gender" Multiplicity="0..1" />
+    <End Role="ProductStyles" Type="FanoramaCMS14062012Model.ProductStyle" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Genders">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="ProductStyles">
+        <PropertyRef Name="idGender" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MasterChainProperties_MasterChains">
+    <End Role="MasterChains" Type="FanoramaCMS14062012Model.MasterChain" Multiplicity="1" />
+    <End Role="MasterChainProperties" Type="FanoramaCMS14062012Model.MasterChainProperty" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MasterChains">
+        <PropertyRef Name="idMasterChain" />
+      </Principal>
+      <Dependent Role="MasterChainProperties">
+        <PropertyRef Name="idMasterChain" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PlacedEmblems_ProductStylePrintableAreas">
+    <End Role="ProductStylePrintableAreas" Type="FanoramaCMS14062012Model.ProductStylePrintableArea" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="PlacedEmblems" Type="FanoramaCMS14062012Model.PlacedEmblem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProductStylePrintableAreas">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="PlacedEmblems">
+        <PropertyRef Name="idProductStylePrintableArea" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PlacedEmblems_RetailProducts">
+    <End Role="RetailProducts" Type="FanoramaCMS14062012Model.RetailProduct" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="PlacedEmblems" Type="FanoramaCMS14062012Model.PlacedEmblem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="RetailProducts">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="PlacedEmblems">
+        <PropertyRef Name="idRetailProduct" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProductPreviews_PreviewTypes">
+    <End Role="PreviewTypes" Type="FanoramaCMS14062012Model.PreviewType" Multiplicity="1" />
+    <End Role="ProductPreviews" Type="FanoramaCMS14062012Model.ProductPreview" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PreviewTypes">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="ProductPreviews">
+        <PropertyRef Name="idPreviewType" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProductStyleDesigns_ProductCollections">
+    <End Role="ProductCollections" Type="FanoramaCMS14062012Model.ProductCollection" Multiplicity="1" />
+    <End Role="ProductStyleDesigns" Type="FanoramaCMS14062012Model.ProductStyleDesign" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProductCollections">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="ProductStyleDesigns">
+        <PropertyRef Name="idProductCollection" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProductStyleDesigns_ProductDesigns">
+    <End Role="ProductDesigns" Type="FanoramaCMS14062012Model.ProductDesign" Multiplicity="1" />
+    <End Role="ProductStyleDesigns" Type="FanoramaCMS14062012Model.ProductStyleDesign" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProductDesigns">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="ProductStyleDesigns">
+        <PropertyRef Name="idProductDesign" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProductStyleDesignSizeFlatCuts_ProductSizes">
+    <End Role="ProductSizes" Type="FanoramaCMS14062012Model.ProductSize" Multiplicity="1" />
+    <End Role="ProductStyleDesignSizeFlatCuts" Type="FanoramaCMS14062012Model.ProductStyleDesignSizeFlatCut" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProductSizes">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="ProductStyleDesignSizeFlatCuts">
+        <PropertyRef Name="idProductSize" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProductStyleSizes_Sizes">
+    <End Role="ProductSizes" Type="FanoramaCMS14062012Model.ProductSize" Multiplicity="1" />
+    <End Role="ProductStyleSizes" Type="FanoramaCMS14062012Model.ProductStyleSize" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProductSizes">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="ProductStyleSizes">
+        <PropertyRef Name="idProductSize" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProductStyleDesigns_ProductStyles">
+    <End Role="ProductStyles" Type="FanoramaCMS14062012Model.ProductStyle" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="ProductStyleDesigns" Type="FanoramaCMS14062012Model.ProductStyleDesign" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProductStyles">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="ProductStyleDesigns">
+        <PropertyRef Name="idProductStyle" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProductStyleDesignSizeFlatCuts_ProductStyleDesigns">
+    <End Role="ProductStyleDesigns" Type="FanoramaCMS14062012Model.ProductStyleDesign" Multiplicity="1" />
+    <End Role="ProductStyleDesignSizeFlatCuts" Type="FanoramaCMS14062012Model.ProductStyleDesignSizeFlatCut" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProductStyleDesigns">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="ProductStyleDesignSizeFlatCuts">
+        <PropertyRef Name="idProductStyleDesign" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RetailProducts_ProductStyleDesigns">
+    <End Role="ProductStyleDesigns" Type="FanoramaCMS14062012Model.ProductStyleDesign" Multiplicity="1" />
+    <End Role="RetailProducts" Type="FanoramaCMS14062012Model.RetailProduct" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProductStyleDesigns">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="RetailProducts">
+        <PropertyRef Name="idProductStyleDesign" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProductStyleDesignSizePrintableArea_ProductStyleDesignSizeFlatCuts">
+    <End Role="ProductStyleDesignSizeFlatCuts" Type="FanoramaCMS14062012Model.ProductStyleDesignSizeFlatCut" Multiplicity="0..1" />
+    <End Role="ProductStyleDesignSizePrintableArea" Type="FanoramaCMS14062012Model.ProductStyleDesignSizePrintableArea" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProductStyleDesignSizeFlatCuts">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="ProductStyleDesignSizePrintableArea">
+        <PropertyRef Name="idFlatCut" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProductStyleDesignSizePrintableArea_ProductStylePrintableAreas">
+    <End Role="ProductStylePrintableAreas" Type="FanoramaCMS14062012Model.ProductStylePrintableArea" Multiplicity="1" />
+    <End Role="ProductStyleDesignSizePrintableArea" Type="FanoramaCMS14062012Model.ProductStyleDesignSizePrintableArea" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProductStylePrintableAreas">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="ProductStyleDesignSizePrintableArea">
+        <PropertyRef Name="idStylePrintableArea" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProductStylePrintableAreas_ProductStyles">
+    <End Role="ProductStyles" Type="FanoramaCMS14062012Model.ProductStyle" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="ProductStylePrintableAreas" Type="FanoramaCMS14062012Model.ProductStylePrintableArea" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProductStyles">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="ProductStylePrintableAreas">
+        <PropertyRef Name="idProductStyle" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProductStyles_ProductTypes">
+    <End Role="ProductTypes" Type="FanoramaCMS14062012Model.ProductType" Multiplicity="1" />
+    <End Role="ProductStyles" Type="FanoramaCMS14062012Model.ProductStyle" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProductTypes">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="ProductStyles">
+        <PropertyRef Name="idProductType" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProductStyleSizes_ProductStyles">
+    <End Role="ProductStyles" Type="FanoramaCMS14062012Model.ProductStyle" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="ProductStyleSizes" Type="FanoramaCMS14062012Model.ProductStyleSize" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProductStyles">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="ProductStyleSizes">
+        <PropertyRef Name="idProductStyle" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PropertyTypeValues_PropertyTypes">
+    <End Role="PropertyTypes" Type="FanoramaCMS14062012Model.PropertyType" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="PropertyTypeValues" Type="FanoramaCMS14062012Model.PropertyTypeValue" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PropertyTypes">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="PropertyTypeValues">
+        <PropertyRef Name="idPropertyType" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

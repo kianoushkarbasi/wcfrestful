@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="dnnolddescriptionModelStoreContainer" CdmEntityContainer="dnnolddescriptionEntities">
+    <EntitySetMapping Name="CAT_Products">
+      <EntityTypeMapping TypeName="dnnolddescriptionModel.CAT_Products">
+        <MappingFragment StoreEntitySet="CAT_Products">
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+          <ScalarProperty Name="Category2ID" ColumnName="Category2ID" />
+          <ScalarProperty Name="Category3" ColumnName="Category3" />
+          <ScalarProperty Name="ProductName" ColumnName="ProductName" />
+          <ScalarProperty Name="ProductNumber" ColumnName="ProductNumber" />
+          <ScalarProperty Name="EAN" ColumnName="EAN" />
+          <ScalarProperty Name="ISBN" ColumnName="ISBN" />
+          <ScalarProperty Name="Free1" ColumnName="Free1" />
+          <ScalarProperty Name="Free2" ColumnName="Free2" />
+          <ScalarProperty Name="Free3" ColumnName="Free3" />
+          <ScalarProperty Name="KeyWords" ColumnName="KeyWords" />
+          <ScalarProperty Name="ProductImage" ColumnName="ProductImage" />
+          <ScalarProperty Name="UnitCost" ColumnName="UnitCost" />
+          <ScalarProperty Name="UnitCost2" ColumnName="UnitCost2" />
+          <ScalarProperty Name="UnitCost3" ColumnName="UnitCost3" />
+          <ScalarProperty Name="UnitCost4" ColumnName="UnitCost4" />
+          <ScalarProperty Name="UnitCost5" ColumnName="UnitCost5" />
+          <ScalarProperty Name="UnitCost6" ColumnName="UnitCost6" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="DescriptionHTML" ColumnName="DescriptionHTML" />
+          <ScalarProperty Name="URL" ColumnName="URL" />
+          <ScalarProperty Name="Stock" ColumnName="Stock" />
+          <ScalarProperty Name="OrderQuant" ColumnName="OrderQuant" />
+          <ScalarProperty Name="Weight" ColumnName="Weight" />
+          <ScalarProperty Name="Volume" ColumnName="Volume" />
+          <ScalarProperty Name="Length" ColumnName="Length" />
+          <ScalarProperty Name="Width" ColumnName="Width" />
+          <ScalarProperty Name="Height" ColumnName="Height" />
+          <ScalarProperty Name="FreightCosts1" ColumnName="FreightCosts1" />
+          <ScalarProperty Name="FreightCosts2" ColumnName="FreightCosts2" />
+          <ScalarProperty Name="Featured" ColumnName="Featured" />
+          <ScalarProperty Name="SalePrice" ColumnName="SalePrice" />
+          <ScalarProperty Name="SaleStart" ColumnName="SaleStart" />
+          <ScalarProperty Name="SaleEnd" ColumnName="SaleEnd" />
+          <ScalarProperty Name="DownLoad" ColumnName="DownLoad" />
+          <ScalarProperty Name="ZIPPassWord" ColumnName="ZIPPassWord" />
+          <ScalarProperty Name="DownLoadFile" ColumnName="DownLoadFile" />
+          <ScalarProperty Name="Archive" ColumnName="Archive" />
+          <ScalarProperty Name="CreatedByUser" ColumnName="CreatedByUser" />
+          <ScalarProperty Name="BulkPriceLimit1" ColumnName="BulkPriceLimit1" />
+          <ScalarProperty Name="BulkPriceLimit2" ColumnName="BulkPriceLimit2" />
+          <ScalarProperty Name="BulkPriceLimit3" ColumnName="BulkPriceLimit3" />
+          <ScalarProperty Name="BulkPriceLimit4" ColumnName="BulkPriceLimit4" />
+          <ScalarProperty Name="BulkPriceLimit5" ColumnName="BulkPriceLimit5" />
+          <ScalarProperty Name="DateCreated" ColumnName="DateCreated" />
+          <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+          <ScalarProperty Name="SubscriptionPeriod" ColumnName="SubscriptionPeriod" />
+          <ScalarProperty Name="RecurringBilling" ColumnName="RecurringBilling" />
+          <ScalarProperty Name="TaxExempt" ColumnName="TaxExempt" />
+          <ScalarProperty Name="ShipExempt" ColumnName="ShipExempt" />
+          <ScalarProperty Name="InsuredValue" ColumnName="InsuredValue" />
+          <ScalarProperty Name="PublicationStart" ColumnName="PublicationStart" />
+          <ScalarProperty Name="PublicationEnd" ColumnName="PublicationEnd" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="DonationItem" ColumnName="DonationItem" />
+          <ScalarProperty Name="PayPalSubscription" ColumnName="PayPalSubscription" />
+          <ScalarProperty Name="UseRoleFees" ColumnName="UseRoleFees" />
+          <ScalarProperty Name="ProductCost" ColumnName="ProductCost" />
+          <ScalarProperty Name="RoleExpiryType" ColumnName="RoleExpiryType" />
+          <ScalarProperty Name="ItemDeliveryType" ColumnName="ItemDeliveryType" />
+          <ScalarProperty Name="ReorderPoint" ColumnName="ReorderPoint" />
+          <ScalarProperty Name="OrderQuantValidExpr" ColumnName="OrderQuantValidExpr" />
+          <ScalarProperty Name="ShippingAddress" ColumnName="ShippingAddress" />
+          <ScalarProperty Name="OrigProductID" ColumnName="OrigProductID" />
+          <ScalarProperty Name="AuctionFinished" ColumnName="AuctionFinished" />
+          <ScalarProperty Name="StartingPrice" ColumnName="StartingPrice" />
+          <ScalarProperty Name="ReservePrice" ColumnName="ReservePrice" />
+          <ScalarProperty Name="LastModifiedByUserID" ColumnName="LastModifiedByUserID" />
+          <ScalarProperty Name="LastModifiedOnDate" ColumnName="LastModifiedOnDate" />
+          <ScalarProperty Name="TaxCode" ColumnName="TaxCode" />
+          <ScalarProperty Name="MaxWeight" ColumnName="MaxWeight" />
+          <ScalarProperty Name="TotalPeriods" ColumnName="TotalPeriods" />
+          <ScalarProperty Name="NonStockItem" ColumnName="NonStockItem" />
+          <ScalarProperty Name="StockedColorID" ColumnName="StockedColorID" />
+          <ScalarProperty Name="StockedColorID2" ColumnName="StockedColorID2" />
+          <ScalarProperty Name="StockedColorID3" ColumnName="StockedColorID3" />
+          <ScalarProperty Name="StockedColorID4" ColumnName="StockedColorID4" />
+          <ScalarProperty Name="StockedColorID5" ColumnName="StockedColorID5" />
+          <ScalarProperty Name="StockedColorID6" ColumnName="StockedColorID6" />
+          <ScalarProperty Name="DealerTier1Price" ColumnName="DealerTier1Price" />
+          <ScalarProperty Name="DealerTier2Price" ColumnName="DealerTier2Price" />
+          <ScalarProperty Name="DealerTier3Price" ColumnName="DealerTier3Price" />
+          <ScalarProperty Name="DealerTier4Price" ColumnName="DealerTier4Price" />
+          <ScalarProperty Name="ConsumerTier1Price" ColumnName="ConsumerTier1Price" />
+          <ScalarProperty Name="ConsumerTier2Price" ColumnName="ConsumerTier2Price" />
+          <ScalarProperty Name="ConsumerTier3Price" ColumnName="ConsumerTier3Price" />
+          <ScalarProperty Name="ConsumerTier4Price" ColumnName="ConsumerTier4Price" />
+          <ScalarProperty Name="DiscountClass" ColumnName="DiscountClass" />
+          <ScalarProperty Name="DiscountClassID" ColumnName="DiscountClassID" />
+          <ScalarProperty Name="CMSProductID" ColumnName="CMSProductID" />
+          <ScalarProperty Name="TAASportID" ColumnName="TAASportID" />
+          <ScalarProperty Name="CMSProductDesign" ColumnName="CMSProductDesign" />
+          <ScalarProperty Name="SortOrder" ColumnName="SortOrder" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

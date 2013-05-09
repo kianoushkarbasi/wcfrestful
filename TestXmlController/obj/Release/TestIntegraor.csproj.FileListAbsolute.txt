@@ -1,0 +1,34 @@
+C:\Users\kianoush.karbasi.DOMAIN\Documents\Visual Studio 2010\Projects\Sparshcom Integrator\Live server\TestXmlController\bin\Release\TestXmlController.dll.config
+C:\Users\kianoush.karbasi.DOMAIN\Documents\Visual Studio 2010\Projects\Sparshcom Integrator\Live server\TestXmlController\bin\Release\TestXmlController.dll
+C:\Users\kianoush.karbasi.DOMAIN\Documents\Visual Studio 2010\Projects\Sparshcom Integrator\Live server\TestXmlController\bin\Release\TestXmlController.pdb
+C:\Users\kianoush.karbasi.DOMAIN\Documents\Visual Studio 2010\Projects\Sparshcom Integrator\Live server\TestXmlController\bin\Release\AutoPoco.dll
+C:\Users\kianoush.karbasi.DOMAIN\Documents\Visual Studio 2010\Projects\Sparshcom Integrator\Live server\TestXmlController\bin\Release\Integrator.BL.dll
+C:\Users\kianoush.karbasi.DOMAIN\Documents\Visual Studio 2010\Projects\Sparshcom Integrator\Live server\TestXmlController\bin\Release\Integrator.dll
+C:\Users\kianoush.karbasi.DOMAIN\Documents\Visual Studio 2010\Projects\Sparshcom Integrator\Live server\TestXmlController\bin\Release\Integrator.BL.pdb
+C:\Users\kianoush.karbasi.DOMAIN\Documents\Visual Studio 2010\Projects\Sparshcom Integrator\Live server\TestXmlController\bin\Release\Integrator.pdb
+C:\Users\kianoush.karbasi.DOMAIN\Documents\Visual Studio 2010\Projects\Sparshcom Integrator\Live server\TestXmlController\bin\Release\Integrator.BL_Accessor.dll
+C:\Users\kianoush.karbasi.DOMAIN\Documents\Visual Studio 2010\Projects\Sparshcom Integrator\Live server\TestXmlController\bin\Release\Integrator.BL_Accessor.pdb
+C:\Users\kianoush.karbasi.DOMAIN\Documents\Visual Studio 2010\Projects\Sparshcom Integrator\Live server\TestXmlController\obj\Release\ResolveAssemblyReference.cache
+C:\Users\kianoush.karbasi.DOMAIN\Documents\Visual Studio 2010\Projects\Sparshcom Integrator\Live server\TestXmlController\obj\Release\TestXmlController.dll
+C:\Users\kianoush.karbasi.DOMAIN\Documents\Visual Studio 2010\Projects\Sparshcom Integrator\Live server\TestXmlController\obj\Release\TestXmlController.pdb
+C:\Users\kianoush.karbasi.DOMAIN\Documents\Visual Studio 2010\Projects\Sparshcom Integrator\Live server\TestXmlController\bin\Release\nunit.framework.dll
+C:\Users\kianoush.karbasi.DOMAIN\Documents\Visual Studio 2010\Projects\Sparshcom Integrator\Live server\TestXmlController\bin\Release\nunit.mocks.dll
+C:\Users\kianoush.karbasi.DOMAIN\Documents\Visual Studio 2010\Projects\Sparshcom Integrator\Live server\TestXmlController\bin\Release\pnunit.framework.dll
+C:\Users\kianoush.karbasi.DOMAIN\Documents\Visual Studio 2010\Projects\Sparshcom Integrator\Live server\TestXmlController\bin\Release\nunit.framework.xml
+C:\Users\kianoush.karbasi.DOMAIN\Documents\GitHub\Integrator\Live server\TestXmlController\bin\Release\TestXmlController.dll.config
+C:\Users\kianoush.karbasi.DOMAIN\Documents\GitHub\Integrator\Live server\TestXmlController\bin\Release\TestXmlController.dll
+C:\Users\kianoush.karbasi.DOMAIN\Documents\GitHub\Integrator\Live server\TestXmlController\bin\Release\TestXmlController.pdb
+C:\Users\kianoush.karbasi.DOMAIN\Documents\GitHub\Integrator\Live server\TestXmlController\bin\Release\AutoPoco.dll
+C:\Users\kianoush.karbasi.DOMAIN\Documents\GitHub\Integrator\Live server\TestXmlController\bin\Release\Integrator.BL.dll
+C:\Users\kianoush.karbasi.DOMAIN\Documents\GitHub\Integrator\Live server\TestXmlController\bin\Release\Integrator.dll
+C:\Users\kianoush.karbasi.DOMAIN\Documents\GitHub\Integrator\Live server\TestXmlController\bin\Release\nunit.framework.dll
+C:\Users\kianoush.karbasi.DOMAIN\Documents\GitHub\Integrator\Live server\TestXmlController\bin\Release\nunit.mocks.dll
+C:\Users\kianoush.karbasi.DOMAIN\Documents\GitHub\Integrator\Live server\TestXmlController\bin\Release\pnunit.framework.dll
+C:\Users\kianoush.karbasi.DOMAIN\Documents\GitHub\Integrator\Live server\TestXmlController\bin\Release\Integrator.BL.pdb
+C:\Users\kianoush.karbasi.DOMAIN\Documents\GitHub\Integrator\Live server\TestXmlController\bin\Release\Integrator.pdb
+C:\Users\kianoush.karbasi.DOMAIN\Documents\GitHub\Integrator\Live server\TestXmlController\bin\Release\nunit.framework.xml
+C:\Users\kianoush.karbasi.DOMAIN\Documents\GitHub\Integrator\Live server\TestXmlController\bin\Release\Integrator.BL_Accessor.dll
+C:\Users\kianoush.karbasi.DOMAIN\Documents\GitHub\Integrator\Live server\TestXmlController\bin\Release\Integrator.BL_Accessor.pdb
+C:\Users\kianoush.karbasi.DOMAIN\Documents\GitHub\Integrator\Live server\TestXmlController\obj\Release\ResolveAssemblyReference.cache
+C:\Users\kianoush.karbasi.DOMAIN\Documents\GitHub\Integrator\Live server\TestXmlController\obj\Release\TestXmlController.dll
+C:\Users\kianoush.karbasi.DOMAIN\Documents\GitHub\Integrator\Live server\TestXmlController\obj\Release\TestXmlController.pdb

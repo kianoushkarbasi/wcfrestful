@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="dnnolddescriptionModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="dnnolddescriptionModelStoreContainer">
+    <EntitySet Name="CAT_Products" EntityType="dnnolddescriptionModel.Store.CAT_Products" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="CAT_Products">
+    <Key>
+      <PropertyRef Name="ProductID" />
+    </Key>
+    <Property Name="ProductID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CategoryID" Type="int" />
+    <Property Name="Category2ID" Type="int" />
+    <Property Name="Category3" Type="nvarchar" MaxLength="50" />
+    <Property Name="ProductName" Type="nvarchar" MaxLength="255" />
+    <Property Name="ProductNumber" Type="nvarchar" MaxLength="50" />
+    <Property Name="EAN" Type="nvarchar" MaxLength="50" />
+    <Property Name="ISBN" Type="nvarchar" MaxLength="50" />
+    <Property Name="Free1" Type="nvarchar" MaxLength="1000" />
+    <Property Name="Free2" Type="nvarchar" MaxLength="1000" />
+    <Property Name="Free3" Type="nvarchar" MaxLength="1000" />
+    <Property Name="KeyWords" Type="nvarchar" MaxLength="1000" />
+    <Property Name="ProductImage" Type="nvarchar" MaxLength="255" />
+    <Property Name="UnitCost" Type="money" Nullable="false" />
+    <Property Name="UnitCost2" Type="money" />
+    <Property Name="UnitCost3" Type="money" />
+    <Property Name="UnitCost4" Type="money" />
+    <Property Name="UnitCost5" Type="money" />
+    <Property Name="UnitCost6" Type="money" />
+    <Property Name="Description" Type="nvarchar(max)" />
+    <Property Name="DescriptionHTML" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="URL" Type="nvarchar" MaxLength="255" />
+    <Property Name="Stock" Type="int" />
+    <Property Name="OrderQuant" Type="nvarchar" Nullable="false" MaxLength="200" />
+    <Property Name="Weight" Type="decimal" Precision="10" Scale="4" />
+    <Property Name="Volume" Type="decimal" Precision="8" Scale="2" />
+    <Property Name="Length" Type="decimal" Precision="8" Scale="2" />
+    <Property Name="Width" Type="decimal" Precision="8" Scale="2" />
+    <Property Name="Height" Type="decimal" Precision="8" Scale="2" />
+    <Property Name="FreightCosts1" Type="money" />
+    <Property Name="FreightCosts2" Type="money" />
+    <Property Name="Featured" Type="bit" Nullable="false" />
+    <Property Name="SalePrice" Type="money" Nullable="false" />
+    <Property Name="SaleStart" Type="datetime" />
+    <Property Name="SaleEnd" Type="datetime" />
+    <Property Name="DownLoad" Type="bit" />
+    <Property Name="ZIPPassWord" Type="nvarchar" MaxLength="30" />
+    <Property Name="DownLoadFile" Type="nvarchar" MaxLength="255" />
+    <Property Name="Archive" Type="bit" />
+    <Property Name="CreatedByUser" Type="int" Nullable="false" />
+    <Property Name="BulkPriceLimit1" Type="int" Nullable="false" />
+    <Property Name="BulkPriceLimit2" Type="int" Nullable="false" />
+    <Property Name="BulkPriceLimit3" Type="int" Nullable="false" />
+    <Property Name="BulkPriceLimit4" Type="int" Nullable="false" />
+    <Property Name="BulkPriceLimit5" Type="int" Nullable="false" />
+    <Property Name="DateCreated" Type="datetime" />
+    <Property Name="RoleID" Type="int" />
+    <Property Name="SubscriptionPeriod" Type="int" />
+    <Property Name="RecurringBilling" Type="bit" />
+    <Property Name="TaxExempt" Type="bit" />
+    <Property Name="ShipExempt" Type="bit" />
+    <Property Name="InsuredValue" Type="money" Nullable="false" />
+    <Property Name="PublicationStart" Type="datetime" />
+    <Property Name="PublicationEnd" Type="datetime" />
+    <Property Name="Status" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="DonationItem" Type="bit" Nullable="false" />
+    <Property Name="PayPalSubscription" Type="bit" Nullable="false" />
+    <Property Name="UseRoleFees" Type="bit" Nullable="false" />
+    <Property Name="ProductCost" Type="money" Nullable="false" />
+    <Property Name="RoleExpiryType" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="ItemDeliveryType" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="ReorderPoint" Type="int" Nullable="false" />
+    <Property Name="OrderQuantValidExpr" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="ShippingAddress" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="OrigProductID" Type="int" />
+    <Property Name="AuctionFinished" Type="bit" Nullable="false" />
+    <Property Name="StartingPrice" Type="money" />
+    <Property Name="ReservePrice" Type="money" />
+    <Property Name="LastModifiedByUserID" Type="int" />
+    <Property Name="LastModifiedOnDate" Type="datetime" />
+    <Property Name="TaxCode" Type="nvarchar" MaxLength="16" />
+    <Property Name="MaxWeight" Type="decimal" Precision="10" Scale="4" />
+    <Property Name="TotalPeriods" Type="int" />
+    <Property Name="NonStockItem" Type="bit" />
+    <Property Name="StockedColorID" Type="int" />
+    <Property Name="StockedColorID2" Type="int" />
+    <Property Name="StockedColorID3" Type="int" />
+    <Property Name="StockedColorID4" Type="int" />
+    <Property Name="StockedColorID5" Type="int" />
+    <Property Name="StockedColorID6" Type="int" />
+    <Property Name="DealerTier1Price" Type="money" />
+    <Property Name="DealerTier2Price" Type="money" />
+    <Property Name="DealerTier3Price" Type="money" />
+    <Property Name="DealerTier4Price" Type="money" />
+    <Property Name="ConsumerTier1Price" Type="money" />
+    <Property Name="ConsumerTier2Price" Type="money" />
+    <Property Name="ConsumerTier3Price" Type="money" />
+    <Property Name="ConsumerTier4Price" Type="money" />
+    <Property Name="DiscountClass" Type="nvarchar" MaxLength="50" />
+    <Property Name="DiscountClassID" Type="int" />
+    <Property Name="CMSProductID" Type="int" />
+    <Property Name="TAASportID" Type="int" />
+    <Property Name="CMSProductDesign" Type="nvarchar" MaxLength="50" />
+    <Property Name="SortOrder" Type="int" />
+  </EntityType>
+</Schema>

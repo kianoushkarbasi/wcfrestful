@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LastUsedBuildConfiguration>Debug</LastUsedBuildConfiguration>
+    <LastUsedPlatform>Any CPU</LastUsedPlatform>
+    <TimeStampOfAssociatedLegacyPublishXmlFile>2012-11-21T18:11:31.3462626+08:00</TimeStampOfAssociatedLegacyPublishXmlFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/Integrator.BL.dll">
+      <publishTime>04/19/2013 10:04:20</publishTime>
+    </File>
+    <File Include="bin/Integrator.BL.pdb">
+      <publishTime>04/19/2013 10:04:20</publishTime>
+    </File>
+    <File Include="bin/Integrator.dll">
+      <publishTime>04/19/2013 10:04:21</publishTime>
+    </File>
+    <File Include="bin/Integrator.pdb">
+      <publishTime>04/19/2013 10:04:21</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>10/17/2012 11:13:58</publishTime>
+    </File>
+    <File Include="urls.txt">
+      <publishTime>10/17/2012 11:13:58</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>04/19/2013 10:04:50</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

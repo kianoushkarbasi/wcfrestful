@@ -1,0 +1,502 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="FanoramaCMS14062012ModelStoreContainer" CdmEntityContainer="FanoramaCMS14062012Entities">
+    <EntitySetMapping Name="BaseProductCategories">
+      <EntityTypeMapping TypeName="FanoramaCMS14062012Model.BaseProductCategory">
+        <MappingFragment StoreEntitySet="BaseProductCategory">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="CreateDateTime" ColumnName="CreateDateTime" />
+          <ScalarProperty Name="ModifyDateTime" ColumnName="ModifyDateTime" />
+          <ScalarProperty Name="Publish" ColumnName="Publish" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ClientVariables">
+      <EntityTypeMapping TypeName="FanoramaCMS14062012Model.ClientVariable">
+        <MappingFragment StoreEntitySet="ClientVariables">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="CreateDateTime" ColumnName="CreateDateTime" />
+          <ScalarProperty Name="ModifyDateTime" ColumnName="ModifyDateTime" />
+          <ScalarProperty Name="Publish" ColumnName="Publish" />
+          <ScalarProperty Name="idPropertyType" ColumnName="idPropertyType" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="VariableName" ColumnName="VariableName" />
+          <ScalarProperty Name="idTypeValue" ColumnName="idTypeValue" />
+          <ScalarProperty Name="WebValue" ColumnName="WebValue" />
+          <ScalarProperty Name="PrintValue" ColumnName="PrintValue" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EmblemElementProperties">
+      <EntityTypeMapping TypeName="FanoramaCMS14062012Model.EmblemElementProperty">
+        <MappingFragment StoreEntitySet="EmblemElementProperties">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="CreateDateTime" ColumnName="CreateDateTime" />
+          <ScalarProperty Name="ModifyDateTime" ColumnName="ModifyDateTime" />
+          <ScalarProperty Name="Publish" ColumnName="Publish" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="idPropertyType" ColumnName="idPropertyType" />
+          <ScalarProperty Name="idTypeValue" ColumnName="idTypeValue" />
+          <ScalarProperty Name="WebValue" ColumnName="WebValue" />
+          <ScalarProperty Name="PrintValue" ColumnName="PrintValue" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EmblemElementPropertyValues">
+      <EntityTypeMapping TypeName="FanoramaCMS14062012Model.EmblemElementPropertyValue">
+        <MappingFragment StoreEntitySet="EmblemElementPropertyValues">
+          <ScalarProperty Name="idElement" ColumnName="idElement" />
+          <ScalarProperty Name="idElementProperty" ColumnName="idElementProperty" />
+          <ScalarProperty Name="CreateDateTime" ColumnName="CreateDateTime" />
+          <ScalarProperty Name="ModifyDateTime" ColumnName="ModifyDateTime" />
+          <ScalarProperty Name="WebValue" ColumnName="WebValue" />
+          <ScalarProperty Name="PrintValue" ColumnName="PrintValue" />
+          <ScalarProperty Name="idTypeValue" ColumnName="idTypeValue" />
+          <ScalarProperty Name="idClientVariable" ColumnName="idClientVariable" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EmblemElements">
+      <EntityTypeMapping TypeName="FanoramaCMS14062012Model.EmblemElement">
+        <MappingFragment StoreEntitySet="EmblemElements">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="CreateDateTime" ColumnName="CreateDateTime" />
+          <ScalarProperty Name="ModifyDateTime" ColumnName="ModifyDateTime" />
+          <ScalarProperty Name="Publish" ColumnName="Publish" />
+          <ScalarProperty Name="idEmblem" ColumnName="idEmblem" />
+          <ScalarProperty Name="idElementType" ColumnName="idElementType" />
+          <ScalarProperty Name="idMasterChain" ColumnName="idMasterChain" />
+          <ScalarProperty Name="SortIndex" ColumnName="SortIndex" />
+          <ScalarProperty Name="SizeX" ColumnName="SizeX" />
+          <ScalarProperty Name="SizeY" ColumnName="SizeY" />
+          <ScalarProperty Name="PosX" ColumnName="PosX" />
+          <ScalarProperty Name="PosY" ColumnName="PosY" />
+          <ScalarProperty Name="Rotation" ColumnName="Rotation" />
+          <ScalarProperty Name="AdvancedChain" ColumnName="AdvancedChain" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EmblemElementTypeProperties">
+      <EntityTypeMapping TypeName="FanoramaCMS14062012Model.EmblemElementTypeProperty">
+        <MappingFragment StoreEntitySet="EmblemElementTypeProperties">
+          <ScalarProperty Name="idElementType" ColumnName="idElementType" />
+          <ScalarProperty Name="idElementProperty" ColumnName="idElementProperty" />
+          <ScalarProperty Name="CreateDateTime" ColumnName="CreateDateTime" />
+          <ScalarProperty Name="ModifyDateTime" ColumnName="ModifyDateTime" />
+          <ScalarProperty Name="ChainParameterName" ColumnName="ChainParameterName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EmblemElementTypes">
+      <EntityTypeMapping TypeName="FanoramaCMS14062012Model.EmblemElementType">
+        <MappingFragment StoreEntitySet="EmblemElementTypes">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="CreateDateTime" ColumnName="CreateDateTime" />
+          <ScalarProperty Name="ModifyDateTime" ColumnName="ModifyDateTime" />
+          <ScalarProperty Name="Publish" ColumnName="Publish" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EmblemPrintTypes">
+      <EntityTypeMapping TypeName="FanoramaCMS14062012Model.EmblemPrintType">
+        <MappingFragment StoreEntitySet="EmblemPrintTypes">
+          <ScalarProperty Name="idEmblem" ColumnName="idEmblem" />
+          <ScalarProperty Name="idPrintType" ColumnName="idPrintType" />
+          <ScalarProperty Name="CreateDateTime" ColumnName="CreateDateTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Emblems">
+      <EntityTypeMapping TypeName="FanoramaCMS14062012Model.Emblem">
+        <MappingFragment StoreEntitySet="Emblems">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="CreateDateTime" ColumnName="CreateDateTime" />
+          <ScalarProperty Name="ModifyDateTime" ColumnName="ModifyDateTime" />
+          <ScalarProperty Name="Publish" ColumnName="Publish" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="SizeX" ColumnName="SizeX" />
+          <ScalarProperty Name="SizeY" ColumnName="SizeY" />
+          <ScalarProperty Name="AdvancedChain" ColumnName="AdvancedChain" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FileTypes">
+      <EntityTypeMapping TypeName="FanoramaCMS14062012Model.FileType">
+        <MappingFragment StoreEntitySet="FileTypes">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FlatCutBaseChains">
+      <EntityTypeMapping TypeName="FanoramaCMS14062012Model.FlatCutBaseChain">
+        <MappingFragment StoreEntitySet="FlatCutBaseChains">
+          <ScalarProperty Name="idFlatCut" ColumnName="idFlatCut" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Genders">
+      <EntityTypeMapping TypeName="FanoramaCMS14062012Model.Gender">
+        <MappingFragment StoreEntitySet="Genders">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="CreateDateTime" ColumnName="CreateDateTime" />
+          <ScalarProperty Name="ModifyDateTime" ColumnName="ModifyDateTime" />
+          <ScalarProperty Name="Publish" ColumnName="Publish" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="LP_GenderName" ColumnName="LP_GenderName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Grids">
+      <EntityTypeMapping TypeName="FanoramaCMS14062012Model.Grid">
+        <MappingFragment StoreEntitySet="Grids">
+          <ScalarProperty Name="idGrid" ColumnName="idGrid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ImageCategories">
+      <EntityTypeMapping TypeName="FanoramaCMS14062012Model.ImageCategory">
+        <MappingFragment StoreEntitySet="ImageCategories">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="ModifyDateTime" ColumnName="ModifyDateTime" />
+          <ScalarProperty Name="Publish" ColumnName="Publish" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="idParent" ColumnName="idParent" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Images">
+      <EntityTypeMapping TypeName="FanoramaCMS14062012Model.Image">
+        <MappingFragment StoreEntitySet="Images">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="ModifyDateTime" ColumnName="ModifyDateTime" />
+          <ScalarProperty Name="Publish" ColumnName="Publish" />
+          <ScalarProperty Name="idImageCategory" ColumnName="idImageCategory" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="idFile" ColumnName="idFile" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MasterChainProperties">
+      <EntityTypeMapping TypeName="FanoramaCMS14062012Model.MasterChainProperty">
+        <MappingFragment StoreEntitySet="MasterChainProperties">
+          <ScalarProperty Name="idMasterChain" ColumnName="idMasterChain" />
+          <ScalarProperty Name="idElementProperty" ColumnName="idElementProperty" />
+          <ScalarProperty Name="CreateDateTime" ColumnName="CreateDateTime" />
+          <ScalarProperty Name="ModifyDateTime" ColumnName="ModifyDateTime" />
+          <ScalarProperty Name="ChainParameterName" ColumnName="ChainParameterName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MasterChains">
+      <EntityTypeMapping TypeName="FanoramaCMS14062012Model.MasterChain">
+        <MappingFragment StoreEntitySet="MasterChains">
+          <ScalarProperty Name="idMasterChain" ColumnName="idMasterChain" />
+          <ScalarProperty Name="idElementType" ColumnName="idElementType" />
+          <ScalarProperty Name="SelfPositioned" ColumnName="SelfPositioned" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PlacedEmblems">
+      <EntityTypeMapping TypeName="FanoramaCMS14062012Model.PlacedEmblem">
+        <MappingFragment StoreEntitySet="PlacedEmblems">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="CreateDateTime" ColumnName="CreateDateTime" />
+          <ScalarProperty Name="ModifyDateTime" ColumnName="ModifyDateTime" />
+          <ScalarProperty Name="Publish" ColumnName="Publish" />
+          <ScalarProperty Name="idRetailProduct" ColumnName="idRetailProduct" />
+          <ScalarProperty Name="idProductStylePrintableArea" ColumnName="idProductStylePrintableArea" />
+          <ScalarProperty Name="idEmblem" ColumnName="idEmblem" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PreviewTypes">
+      <EntityTypeMapping TypeName="FanoramaCMS14062012Model.PreviewType">
+        <MappingFragment StoreEntitySet="PreviewTypes">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="CreateDateTime" ColumnName="CreateDateTime" />
+          <ScalarProperty Name="ModifyDateTime" ColumnName="ModifyDateTime" />
+          <ScalarProperty Name="Publish" ColumnName="Publish" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PrintTypes">
+      <EntityTypeMapping TypeName="FanoramaCMS14062012Model.PrintType">
+        <MappingFragment StoreEntitySet="PrintTypes">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="CreateDateTime" ColumnName="CreateDateTime" />
+          <ScalarProperty Name="ModifyDateTime" ColumnName="ModifyDateTime" />
+          <ScalarProperty Name="Publish" ColumnName="Publish" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductCollections">
+      <EntityTypeMapping TypeName="FanoramaCMS14062012Model.ProductCollection">
+        <MappingFragment StoreEntitySet="ProductCollections">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="CreateDateTime" ColumnName="CreateDateTime" />
+          <ScalarProperty Name="ModifyDateTime" ColumnName="ModifyDateTime" />
+          <ScalarProperty Name="Publish" ColumnName="Publish" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductDesigns">
+      <EntityTypeMapping TypeName="FanoramaCMS14062012Model.ProductDesign">
+        <MappingFragment StoreEntitySet="ProductDesigns">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="CreateDateTime" ColumnName="CreateDateTime" />
+          <ScalarProperty Name="ModifyDateTime" ColumnName="ModifyDateTime" />
+          <ScalarProperty Name="Publish" ColumnName="Publish" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="LP_DesignName" ColumnName="LP_DesignName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductPreviews">
+      <EntityTypeMapping TypeName="FanoramaCMS14062012Model.ProductPreview">
+        <MappingFragment StoreEntitySet="ProductPreviews">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="CreateDateTime" ColumnName="CreateDateTime" />
+          <ScalarProperty Name="ModifyDateTime" ColumnName="ModifyDateTime" />
+          <ScalarProperty Name="Publish" ColumnName="Publish" />
+          <ScalarProperty Name="idProductStyleDesign" ColumnName="idProductStyleDesign" />
+          <ScalarProperty Name="idPreviewType" ColumnName="idPreviewType" />
+          <ScalarProperty Name="idChain" ColumnName="idChain" />
+          <ScalarProperty Name="idGrid" ColumnName="idGrid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductSizes">
+      <EntityTypeMapping TypeName="FanoramaCMS14062012Model.ProductSize">
+        <MappingFragment StoreEntitySet="ProductSizes">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="CreateDateTime" ColumnName="CreateDateTime" />
+          <ScalarProperty Name="ModifyDateTime" ColumnName="ModifyDateTime" />
+          <ScalarProperty Name="Publish" ColumnName="Publish" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="SortIndex" ColumnName="SortIndex" />
+          <ScalarProperty Name="LP_SizeName" ColumnName="LP_SizeName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductStyleDesigns">
+      <EntityTypeMapping TypeName="FanoramaCMS14062012Model.ProductStyleDesign">
+        <MappingFragment StoreEntitySet="ProductStyleDesigns">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="CreateDateTime" ColumnName="CreateDateTime" />
+          <ScalarProperty Name="ModifyDateTime" ColumnName="ModifyDateTime" />
+          <ScalarProperty Name="Publish" ColumnName="Publish" />
+          <ScalarProperty Name="idProductCollection" ColumnName="idProductCollection" />
+          <ScalarProperty Name="idProductStyle" ColumnName="idProductStyle" />
+          <ScalarProperty Name="idProductDesign" ColumnName="idProductDesign" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductStyleDesignSizeFlatCuts">
+      <EntityTypeMapping TypeName="FanoramaCMS14062012Model.ProductStyleDesignSizeFlatCut">
+        <MappingFragment StoreEntitySet="ProductStyleDesignSizeFlatCuts">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="CreateDateTime" ColumnName="CreateDateTime" />
+          <ScalarProperty Name="ModifyDateTime" ColumnName="ModifyDateTime" />
+          <ScalarProperty Name="Publish" ColumnName="Publish" />
+          <ScalarProperty Name="idProductStyleDesign" ColumnName="idProductStyleDesign" />
+          <ScalarProperty Name="idProductSize" ColumnName="idProductSize" />
+          <ScalarProperty Name="idFlatCutBaseChain" ColumnName="idFlatCutBaseChain" />
+          <ScalarProperty Name="SizeX" ColumnName="SizeX" />
+          <ScalarProperty Name="SizeY" ColumnName="SizeY" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductStyleDesignSizePrintableAreas">
+      <EntityTypeMapping TypeName="FanoramaCMS14062012Model.ProductStyleDesignSizePrintableArea">
+        <MappingFragment StoreEntitySet="ProductStyleDesignSizePrintableArea">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="CreateDateTime" ColumnName="CreateDateTime" />
+          <ScalarProperty Name="ModifyDateTime" ColumnName="ModifyDateTime" />
+          <ScalarProperty Name="Publish" ColumnName="Publish" />
+          <ScalarProperty Name="idStylePrintableArea" ColumnName="idStylePrintableArea" />
+          <ScalarProperty Name="idFlatCut" ColumnName="idFlatCut" />
+          <ScalarProperty Name="PosX" ColumnName="PosX" />
+          <ScalarProperty Name="PosY" ColumnName="PosY" />
+          <ScalarProperty Name="SizeX" ColumnName="SizeX" />
+          <ScalarProperty Name="SizeY" ColumnName="SizeY" />
+          <ScalarProperty Name="Rotation" ColumnName="Rotation" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductStylePrintableAreas">
+      <EntityTypeMapping TypeName="FanoramaCMS14062012Model.ProductStylePrintableArea">
+        <MappingFragment StoreEntitySet="ProductStylePrintableAreas">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="CreateDateTime" ColumnName="CreateDateTime" />
+          <ScalarProperty Name="ModifyDateTime" ColumnName="ModifyDateTime" />
+          <ScalarProperty Name="Publish" ColumnName="Publish" />
+          <ScalarProperty Name="idProductStyle" ColumnName="idProductStyle" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductStyles">
+      <EntityTypeMapping TypeName="FanoramaCMS14062012Model.ProductStyle">
+        <MappingFragment StoreEntitySet="ProductStyles">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="CreateDateTime" ColumnName="CreateDateTime" />
+          <ScalarProperty Name="ModifyDateTime" ColumnName="ModifyDateTime" />
+          <ScalarProperty Name="Publish" ColumnName="Publish" />
+          <ScalarProperty Name="idBaseCategory" ColumnName="idBaseCategory" />
+          <ScalarProperty Name="idProductType" ColumnName="idProductType" />
+          <ScalarProperty Name="idGender" ColumnName="idGender" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="StyleNumber" ColumnName="StyleNumber" />
+          <ScalarProperty Name="LP_StyleNumber" ColumnName="LP_StyleNumber" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductStyleSizes">
+      <EntityTypeMapping TypeName="FanoramaCMS14062012Model.ProductStyleSize">
+        <MappingFragment StoreEntitySet="ProductStyleSizes">
+          <ScalarProperty Name="idProductSize" ColumnName="idProductSize" />
+          <ScalarProperty Name="idProductStyle" ColumnName="idProductStyle" />
+          <ScalarProperty Name="CreateDateTime" ColumnName="CreateDateTime" />
+          <ScalarProperty Name="ModifyDateTime" ColumnName="ModifyDateTime" />
+          <ScalarProperty Name="Publish" ColumnName="Publish" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductTypes">
+      <EntityTypeMapping TypeName="FanoramaCMS14062012Model.ProductType">
+        <MappingFragment StoreEntitySet="ProductTypes">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="CreateDateTime" ColumnName="CreateDateTime" />
+          <ScalarProperty Name="ModifyDateTime" ColumnName="ModifyDateTime" />
+          <ScalarProperty Name="Publish" ColumnName="Publish" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PropertyTypes">
+      <EntityTypeMapping TypeName="FanoramaCMS14062012Model.PropertyType">
+        <MappingFragment StoreEntitySet="PropertyTypes">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="CreateDateTime" ColumnName="CreateDateTime" />
+          <ScalarProperty Name="ModifyDateTime" ColumnName="ModifyDateTime" />
+          <ScalarProperty Name="Publish" ColumnName="Publish" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="IsDictionary" ColumnName="IsDictionary" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PropertyTypeValues">
+      <EntityTypeMapping TypeName="FanoramaCMS14062012Model.PropertyTypeValue">
+        <MappingFragment StoreEntitySet="PropertyTypeValues">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="CreateDateTime" ColumnName="CreateDateTime" />
+          <ScalarProperty Name="ModifyDateTime" ColumnName="ModifyDateTime" />
+          <ScalarProperty Name="Publish" ColumnName="Publish" />
+          <ScalarProperty Name="idPropertyType" ColumnName="idPropertyType" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="WebValue" ColumnName="WebValue" />
+          <ScalarProperty Name="PrintValue" ColumnName="PrintValue" />
+          <ScalarProperty Name="AxaptaId" ColumnName="AxaptaId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RetailProducts">
+      <EntityTypeMapping TypeName="FanoramaCMS14062012Model.RetailProduct">
+        <MappingFragment StoreEntitySet="RetailProducts">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="CreateDateTime" ColumnName="CreateDateTime" />
+          <ScalarProperty Name="ModifyDateTime" ColumnName="ModifyDateTime" />
+          <ScalarProperty Name="Publish" ColumnName="Publish" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="AxaptaProductId" ColumnName="AxaptaProductId" />
+          <ScalarProperty Name="idProductStyleDesign" ColumnName="idProductStyleDesign" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ServerConfigurations">
+      <EntityTypeMapping TypeName="FanoramaCMS14062012Model.ServerConfiguration">
+        <MappingFragment StoreEntitySet="ServerConfiguration">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="CreateDaetTime" ColumnName="CreateDaetTime" />
+          <ScalarProperty Name="ModifyDateTime" ColumnName="ModifyDateTime" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="ServerType" ColumnName="ServerType" />
+          <ScalarProperty Name="ServerPath" ColumnName="ServerPath" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AvaliableMasterChainProperties">
+      <EntityTypeMapping TypeName="FanoramaCMS14062012Model.AvaliableMasterChainProperty">
+        <MappingFragment StoreEntitySet="AvaliableMasterChainProperties">
+          <ScalarProperty Name="idElementProperty" ColumnName="idElementProperty" />
+          <ScalarProperty Name="idMasterChain" ColumnName="idMasterChain" />
+          <ScalarProperty Name="ChainParameterName" ColumnName="ChainParameterName" />
+          <ScalarProperty Name="IsDefault" ColumnName="IsDefault" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EmblemElementPropertiesByMasterChains">
+      <EntityTypeMapping TypeName="FanoramaCMS14062012Model.EmblemElementPropertiesByMasterChain">
+        <MappingFragment StoreEntitySet="EmblemElementPropertiesByMasterChain">
+          <ScalarProperty Name="idMasterChain" ColumnName="idMasterChain" />
+          <ScalarProperty Name="idElementProperty" ColumnName="idElementProperty" />
+          <ScalarProperty Name="ChainParameterName" ColumnName="ChainParameterName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EmblemElementPropertiesByTypes">
+      <EntityTypeMapping TypeName="FanoramaCMS14062012Model.EmblemElementPropertiesByType">
+        <MappingFragment StoreEntitySet="EmblemElementPropertiesByType">
+          <ScalarProperty Name="idMasterChain" ColumnName="idMasterChain" />
+          <ScalarProperty Name="idElementProperty" ColumnName="idElementProperty" />
+          <ScalarProperty Name="ChainParameterName" ColumnName="ChainParameterName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductWithEmblems">
+      <EntityTypeMapping TypeName="FanoramaCMS14062012Model.ProductWithEmblem">
+        <MappingFragment StoreEntitySet="ProductWithEmblems">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Publish" ColumnName="Publish" />
+          <ScalarProperty Name="idProductStyleDesign" ColumnName="idProductStyleDesign" />
+          <ScalarProperty Name="idEmblem" ColumnName="idEmblem" />
+          <ScalarProperty Name="Expr1" ColumnName="Expr1" />
+          <ScalarProperty Name="PosX" ColumnName="PosX" />
+          <ScalarProperty Name="PosY" ColumnName="PosY" />
+          <ScalarProperty Name="Expr2" ColumnName="Expr2" />
+          <ScalarProperty Name="Expr3" ColumnName="Expr3" />
+          <ScalarProperty Name="Rotation" ColumnName="Rotation" />
+          <ScalarProperty Name="idFlatCut" ColumnName="idFlatCut" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

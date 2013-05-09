@@ -1,0 +1,2144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4B0F1D7C-D2E9-4CE1-9449-1D192AE84742}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Repository</RootNamespace>
+    <AssemblyName>Repository</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net40\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DAL\Affiliate.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\AnonymousUser.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\aspnet_Applications.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\aspnet_Membership.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\aspnet_Membership_GetPasswordWithFormat_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\aspnet_Membership_GetPassword_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\aspnet_Membership_GetUserByName_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\aspnet_Membership_GetUserByUserId_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\aspnet_Profile.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\aspnet_Profile_GetProperties_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\aspnet_Roles.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\aspnet_SchemaVersions.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\aspnet_Users.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\aspnet_UsersInRoles_RemoveUsersFromRoles_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\Assembly.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\Authentication.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\Banner.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\Batch.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_AdvCatPermission.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_AdvCatProducts.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_AdvCats.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_AuditLog.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_AuditLogGet_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_AuditLogsGet_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_AuditLogsOrdersGet_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_Bids.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_CartPriceRuleGetByCoupon_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_CartPriceRuleGet_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_CartPriceRuleItemsExists_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_CartPriceRules.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_Categories.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_Category1Dist_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_Category2Dist_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_CCPaymentProcessors.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_CheckAllocation_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_Checkout.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_CommentGetAll_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_Comments.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_CouponCodeGetDetails_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_CouponCodeGet_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_CouponCodes.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_CreditNotes.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_CustomerAlsoBought_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_EmailBlockList.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_ExtendedSearch_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_Feedbacks.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_GetActiveSubscriptions_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_GetAdvCatByName_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_GetAdvCatPermissionsByAdvCatID_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_GetAdvCatPermissionsByPortal_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_GetAdvCatPermission_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_GetAdvCatProducts_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_GetAdvCatsByParentId_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_GetAdvCatsProducts_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_GetAdvCatsProduct_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_GetAdvCats_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_GetAdvCat_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_GetAllAdvCats_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_GetAllCustomers_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_GetAllFromEmailBlockList_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_GetAllNativeLanguages_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_GetAllRelatedProducts_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_GetAllVendors_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_GetBaseProductColors_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_GetCategory_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_GetCCCryptoData_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_GetCCPaymentProcessors_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_GetCCTransactionID_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_GetCheckout_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_GetCompanyDetails_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_GetCreditNoteDetails_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_GetCreditNotes_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_GetCreditNoteTotals_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_GetCustomerLoyaltyPoints_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_GetExpiredSubscr_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_GetInvoiceDetails_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_GetListEntries_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_GetListItemTexts_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_GetListItemTypes_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_GetLoyaltyPoints_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_GetModuleControl_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_GetModuleIDsByPortalID_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_GetNativeLanguages_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_GetNativeLanguage_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_GetNewReleases_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_GetOptions_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_GetPaymentMethodPermissionsByPaymentMethodID_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_GetPaymentMethodPermissionsByPortal_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_GetPeriodByAllocDate_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_GetPeriods_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_GetPermissionsByCode_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_GetPermission_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_GetPOSel_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_GetPriceRules_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_GetPriceRule_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_GetProductFiles_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_GetProductFile_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_GetProductImages_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_GetProductImage_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_GetProductOptions_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_GetProductPermissionsByPortal_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_GetProductPermissionsByProductID_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_GetProductPriceHistory_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_GetProductsLITypesTexts_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_GetProductSlots_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_GetProductsTypesSpecs_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_GetProductTax_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_GetProductTypes_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_GetProductType_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_GetProductZonesTax_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_GetReferrals_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_GetReferrerByUser_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_GetReferrerCommissions_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_GetReferrer_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_GetRelatedProductsByProductID1_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_GetRelatedProductsOnlyByProductID1_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_GetRequiredTypesSpecs_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_GetResources_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_GetSalesStatistics_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_GetSeasons_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_GetSelProdTypesSpecs_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_GetSettings_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_GetShippingRates_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_GetShipTax_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_GetShipToAll_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_GetSinglePayPalCurreny_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_GetSinglePOS_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_GetSingleProducts_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_GetSingleShipTo_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_GetSlotProductTypes_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_GetSlots_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_GetSlot_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_GetSpecifications_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_GetSpecification_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_GetStoreCurrency_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_GetSubscription_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_GetSubZones_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_GetSuspendedSubscriptions_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_GetTypeSpecs_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_GetTypeTexts_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_GetVendorCommissions_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_GetVendorPermissionsByPortalID_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_GetVendorSales_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_GetZoneNames_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_ListItemTexts.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_ListItemTypes.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_MainZones.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_NativeLanguages.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_NonDeliveryPeriodGet_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_NonDeliveryPeriods.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_NonDespatchPeriodGet_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_NonDespatchPeriods.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_Options.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_OrderCCTransactions_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_OrderDetails.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_OrderItemsLinks.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_OrderItemsLinksGetByUser_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_OrderItemsLinksGet_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_Orders.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_OrdersByDateCustomers_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_OrdersDetail_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_OrderSerialNumberGet_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_OrderSerialNumbers.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_OrdersList_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_OrderSNCategories.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_OrderSNCategoriesGet_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_OrderSNCategoryGet_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_Organization.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_PaymentMethodPermission.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_PaymentMethods.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_Periods.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_PMCategories.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_PMCategoriesGet_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_PMCategoryGet_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_PostGetAll_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_Posts.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_PriceAgent.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_PriceHistory.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_PriceRules.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_ProdOptionsSelections.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_ProductCategoryList_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_ProductFiles.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_ProductImages.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_ProductPermission.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_Products.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_ProductsAll_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_ProductsFeatured_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_ProductsLevel1_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_ProductsLevel2_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_ProductsLevel3_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_ProductsLITypesTexts.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_ProductsMostPopular_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_ProductsOptions.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_ProductsSlots.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_ProductsTypesSpecs.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_ProductsZonesTax.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_ProductTypes.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_Referrals.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_ReferrerGet_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_RelatedProducts.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_Resources.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_Reviews.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_ReviewsListAll_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_ReviewsList_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_SearchProductsForSlot_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_SerialNumberGet_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_SerialNumbers.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_Settings.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_ShippingRates.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_ShipTo.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_ShoppingCart.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_ShoppingCartListMini_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_ShoppingCartList_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_ShoppingCartTotal_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_Slots.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_SlotsProductTypes.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_SNCategories.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_SNCategoriesGet_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_SNCategoryGet_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_Specifications.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_SRSerialNumberGet_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_SRSerialNumbers.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_SRSNCategories.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_SRSNCategoriesGet_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_SRSNCategoryGet_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_StoreCurrency.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_StorePermission.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_SubZones.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_Threads.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_TransactionsGet_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_TypesSpecs.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_TypesTexts.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_VendorPermission.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_ViewerGet_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_Viewers.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_ViewersGet_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_vw_OrderDetailsRollCall.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_vw_PaymentMethodPermissions.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_vw_ProductPermissions.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_vw_ShoppingCartProduct.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_vw_ShoppingCartRollCall.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAT_ZonesNames.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\Classification.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CMYKLookup.cs">
+      <DependentUpon>IntegratorModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\ContentItem.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\ContentItems_MetaData.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\ContentItems_Tags.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\ContentType.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\Dashboard_Controls.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\Dashboard_GetControls_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\Dashboard_GetDashboardControlByKey_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\Dashboard_GetDbBackups_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\Dashboard_GetDbFileInfo_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\Dashboard_GetDbInfo_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\Dashboard_GetInstalledModules_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\DesktopModule.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\DesktopModulePermission.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\dnnLinks_GetLinks_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\dnnLinks_GetLink_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\DNNModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DNNModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\DNNModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\DNNModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DNNModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\EmailList.cs">
+      <DependentUpon>IntegratorModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\ErrorLog.cs">
+      <DependentUpon>IntegratorModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\EventLog.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\EventLogConfig.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\EventLogType.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\EventQueue.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\FAQ.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\FAQCategoryGet_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\FAQCategoryListHierarchical_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\FAQCategoryList_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\FAQGet_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\FAQList_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\FAQsCategory.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\FAQSearch_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\File.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\FindBanners_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\Flyer_Flyer.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\Flyer_HeaderImage.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\Flyer_ImageEditorData.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\Flyer_Login.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\Flyer_Logo.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\Flyer_LogoType.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\Flyer_Order.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\Flyer_PlaceHolder.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\Flyer_PlaceHolderLocation.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\Flyer_Player.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\Flyer_Preference.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\Flyer_Product.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\Flyer_Rcommendation.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\Flyer_Template.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\Flyer_TemplatePreferenceDetails.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\Flyer_TemplateRegions.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\Flyer_TemplateType.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\Flyer_Template_Preference.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\flyer_template_preference1.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\Flyer_User.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\Folder.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\FolderMapping.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\FolderMappingsSetting.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\FolderPermission.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetAffiliates_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetAffiliate_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetAllFiles_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetAllHtmlText_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetAllModules_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetAllProfiles_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetAllTabsModulesByModuleID_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetAllTabsModules_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetAllTabs_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetAllUsers_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetAuthenticationServiceByPackageID_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetAuthenticationServiceByType_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetAuthenticationServices_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetAuthenticationService_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetBanners_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetBanner_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetContentItemsByTerm_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetContentItems_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetContentItem_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetContentTypes_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetDatabaseServer_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetDatabaseVersion_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetDefaultLanguageByModule_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetDeletedUsers_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetDesktopModulePermissionsByPortalDesktopModuleID_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetDesktopModulePermissions_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetDesktopModulePermission_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetDesktopModulesByPortal_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetDesktopModules_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetEnabledAuthenticationServices_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetEventLogByLogGUID_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetEventLogConfig_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetEventLogPendingNotifConfig_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetEventLogPendingNotif_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetEventLogType_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetEventLog_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetEventMessagesBySubscriber_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetEventMessages_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetExpiredPortals_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetFileById_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetFileByUniqueID_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetFiles_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetFile_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetFolderByFolderID_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetFolderByFolderPath_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetFolderByUniqueID_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetFolderMappingByMappingName_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetFolderMappingsSettings_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetFolderMappingsSetting_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetFolderMappings_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetFolderMapping_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetFolderPermissionsByFolderPath_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetFolderPermissionsByPortal_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetFolderPermission_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetFoldersByPermissions_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetFolders_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetHostSettings_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetHtmlTextLog_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetHtmlTextUser_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetHtmlText_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetLanguagePackByPackage_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetLanguagesByPortal_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetLanguages_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetListEntries_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetListEntry_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetLists_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetList_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetMetaData_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetModuleByDefinition_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetModuleByUniqueID_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetModuleControlByKeyAndSrc_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetModuleControlsByKey_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetModuleControls_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetModuleControl_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetModuleDefinitions_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetModulePackagesInUse_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetModulePermissionsByModuleID_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetModulePermissionsByPortal_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetModulePermissionsByTabID_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetModulePermission_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetModuleSettings_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetModules_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetModule_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetOnlineUsers_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetOnlineUser_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetPackageByName_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetPackagesByType_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetPackages_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetPackageTypes_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetPackageType_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetPackage_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetPermissionByCodeAndKey_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetPermissionsByFolder_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetPermissionsByModuleDefID_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetPermissionsByModuleID_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetPermissionsByPortalDesktopModule_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetPermissionsByTab_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetPermission_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetPortalAliasByPortalAliasID_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetPortalAliasByPortalID_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetPortalAlias_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetPortalByPortalAliasID_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetPortalDesktopModules_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetPortalGroups_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetPortalRoles_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetPortalSettings_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetPortals_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetPortal_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetProfile_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetPropertyDefinitionByName_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetPropertyDefinitionsByCategory_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetPropertyDefinitionsByPortal_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetPropertyDefinition_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetRoleByName_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetRoleGroupByName_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetRoleGroups_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetRoleGroup_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetRolesByGroup_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetRolesByUser_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetRoles_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetRole_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetScheduleByEvent_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetScheduleByScheduleID_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetScheduleByTypeFullName_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetScheduleHistory_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetScheduleItemSettings_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetScheduleNextTask_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetSchedule_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetScopeTypes_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetSearchCommonWordByID_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetSearchCommonWordsByLocale_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetSearchIndexers_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetSearchItems_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetSearchItemWordBySearchItem_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetSearchItemWordBySearchWord_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetSearchItemWordPositionBySearchItemWord_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetSearchItemWordPosition_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetSearchItemWord_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetSearchItem_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetSearchModules_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetSearchResultModules_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetSearchResultsByWord_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetSearchResults_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetSearchSettings_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetSearchWordByID_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetSearchWords_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetServerConfiguration_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetServers_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetServices_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetSiteLog12_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetSiteLog1_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetSiteLog2_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetSiteLog3_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetSiteLog4_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetSiteLog5_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetSiteLog6_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetSiteLog7_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetSiteLog8_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetSiteLog9_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetSkinControlByKey_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetSkinControlByPackageID_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetSkinControls_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetSkinControl_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetSkinPackageByPackageID_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetSkinPackage_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetSuperUsers_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetTabByName_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetTabByUniqueID_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetTabModuleOrder_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetTabModuleSettings_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetTabModuleSetting_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetTabModules_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetTabModule_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetTabPaths_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetTabPermissionsByPortal_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetTabPermissionsByTabID_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetTabPermission_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetTabsByModuleID_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetTabsByPackageID_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetTabsByParentId_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetTabSettings_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetTabs_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetTab_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetTermsByContent_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetTermsByVocabulary_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetTerm_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetTopHtmlText_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetUnAuthorizedUsers_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetUnIndexedContentItems_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetUrlLog_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetUrls_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetUrlTracking_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetUrl_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetUserByAuthToken_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetUserByUsername_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetUserProfile_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetUserRolesByUsername_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetUserRoles_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetUserRole_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetUsersByEmail_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetUsersByRolename_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetUsers_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetUser_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetVendorClassifications_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetVendor_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetVocabularies_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetWorkflowStates_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GetWorkflows_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\HostSetting.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\HtmlText.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\HtmlTextLog.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\HtmlTextUser.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\ImageUpdate.cs">
+      <DependentUpon>IntegratorModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\InsertedDataHistory.cs">
+      <DependentUpon>IntegratorModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\IntegratorModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IntegratorModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\IntegratorModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IntegratorModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\IntegratorModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IntegratorModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\IsUserInRole_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\Language.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\LanguagePack.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\Link.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\List.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\ListSearchItemWordPosition_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\ListSearchItemWord_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\ListSearchItem_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\Messaging_GetInbox_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\Messaging_GetMessage_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\Messaging_GetNextMessageForDispatch_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\Messaging_Messages.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\MetaData.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\Mobile_GetAllRedirections_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\Mobile_GetPreviewProfiles_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\Mobile_GetRedirectionRules_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\Mobile_GetRedirections_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\Mobile_PreviewProfiles.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\Mobile_RedirectionRules.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\Mobile_Redirections.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\Module.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\ModuleControl.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\ModuleDefinition.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\ModulePermission.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\ModuleSetting.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\Package.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\PackageType.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\Permission.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\Portal.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\PortalAlia.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\PortalDesktopModule.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\PortalGroup.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\PortalLanguage.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\PortalLocalization.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\PortalSetting.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\Profile.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\ProfilePropertyDefinition.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\Role.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\RoleGroup.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\Schedule.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\ScheduleHistory.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\ScheduleItemSetting.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\SearchCommonWord.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\SearchIndexer.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\SearchItem.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\SearchItemWord.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\SearchItemWordPosition.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\SearchWord.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\SiteLog.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\Skin.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\SkinControl.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\SkinPackage.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\StatusMessage.cs">
+      <DependentUpon>IntegratorModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\SystemMessage.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\TAA_Adjustments.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\TAA_Boxes.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\TAA_CatalookGetAdvCatProducts_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\TAA_CatalookGetAdvCats_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\TAA_Colors.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\TAA_Commissions.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\TAA_CouponAdjustments.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\TAA_Coupons.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\TAA_Coupons_GetAll_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\TAA_Coupons_GetByCouponID_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\TAA_DealerMicrosites.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\TAA_DealerPriceLists.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\TAA_DiscountClasses.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\TAA_Emails.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\TAA_EmailTemplates.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\TAA_FanID.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\TAA_GetCategories_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\TAA_GetProductSizes_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\TAA_GetProduct_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\TAA_GetSliderCategories_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\TAA_GetSubCategories_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\TAA_ImageUpload.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\TAA_Microsite.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\TAA_MicrositeLogos.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\TAA_Notifications.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\TAA_OrdersAdjustments.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\TAA_PantSizes.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\TAA_Parameters.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\TAA_PaymentTerms.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\TAA_ProductCategories.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\TAA_ProductionTimes.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\TAA_Products.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\TAA_ProductSizes.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\TAA_RecentActivity.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\TAA_RoleCallSheets.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\TAA_RoleCards.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\TAA_ShippingBoxes.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\TAA_ShirtSizes.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\TAA_ShoppingCart.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\TAA_ShoppingCartAdjustments.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\TAA_ShoppingCartSizes.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\TAA_ShoppingCartTotal_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\TAA_SizeGroups.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\TAA_Sizes.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\TAA_Sports.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\TAA_vw_OrderDetailsRollCall.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\TAA_vw_ProductsInOrders.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\TAA_vw_ShoppingCartRollCall.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\TAA_vw_UserAndProfiles.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\Tab.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\TabModule.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\TabModuleSetting.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\TabPermission.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\TabSetting.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\Taxonomy_ScopeTypes.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\Taxonomy_Terms.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\Taxonomy_Vocabularies.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\Taxonomy_VocabularyTypes.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\Transaction.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\Url.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\UrlLog.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\UrlTracking.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\User.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\UserAuthentication.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\UserDefinedData.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\UserDefinedField.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\UserDefinedFieldSetting.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\UserDefinedRow.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\UserDefinedTable_GetData_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\UserDefinedTable_GetFieldSettings_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\UserDefinedTable_GetFields_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\UserDefinedTable_GetField_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\UserDefinedTable_GetRows_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\UserDefinedTable_GetRow_Result.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\UserPortal.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\UserProfile.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\UserRole.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\UsersOnline.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\Vendor.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\VendorClassification.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\Version.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\vw_aspnet_Applications.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\vw_aspnet_MembershipUsers.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\vw_aspnet_Profiles.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\vw_aspnet_Roles.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\vw_aspnet_Users.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\vw_aspnet_UsersInRoles.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\vw_DesktopModulePermissions.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\vw_DesktopModules.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\vw_FolderPermissions.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\vw_Lists.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\vw_ModulePermissions.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\vw_Modules.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\vw_Portals.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\vw_PortalsDefaultLanguage.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\vw_SearchItems.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\vw_TabModules.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\vw_TabPermissions.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\vw_Tabs.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\vw_UserRoles.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\vw_Users.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\WebServer.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\Workflow.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\WorkflowState.cs">
+      <DependentUpon>DNNModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config" />
+    <EntityDeploy Include="DAL\IntegratorModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>IntegratorModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <EntityDeploy Include="DAL\DNNModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>DNNModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="DAL\DNNModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>DNNModel.edmx</DependentUpon>
+      <LastGenOutput>DNNModel.Context.cs</LastGenOutput>
+    </None>
+    <None Include="DAL\DNNModel.edmx.diagram">
+      <DependentUpon>DNNModel.edmx</DependentUpon>
+    </None>
+    <None Include="DAL\DNNModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>DNNModel.edmx</DependentUpon>
+      <LastGenOutput>DNNModel.cs</LastGenOutput>
+    </None>
+    <None Include="DAL\IntegratorModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>IntegratorModel.edmx</DependentUpon>
+      <LastGenOutput>IntegratorModel.Context.cs</LastGenOutput>
+    </None>
+    <None Include="DAL\IntegratorModel.edmx.diagram">
+      <DependentUpon>IntegratorModel.edmx</DependentUpon>
+    </None>
+    <None Include="DAL\IntegratorModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>IntegratorModel.edmx</DependentUpon>
+      <LastGenOutput>IntegratorModel.cs</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

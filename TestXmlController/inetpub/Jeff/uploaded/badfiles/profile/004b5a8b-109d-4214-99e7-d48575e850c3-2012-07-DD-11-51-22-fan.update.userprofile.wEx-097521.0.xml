@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<userProfile id="201276171833" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="userProfile.xsd">
+	<organizations>
+		<organization>
+			<name>Superflash T- Shirts</name>
+			<description>Superflash T- Shirts</description>
+			<users>
+				<user>
+					<login>100330_4117637</login>
+					<userId></userId>
+					<extensions>
+						<taaContactName>Fax</taaContactName>
+						<taaContactId>4117637</taaContactId>
+						<isActive>true</isActive>
+						<phone></phone>
+						<email></email>
+						<title></title>
+					</extensions>
+				</user>
+				<user>
+					<login>100330_106203</login>
+					<userId></userId>
+					<extensions>
+						<taaContactName>Chuck Caggiano</taaContactName>
+						<taaContactId>106203</taaContactId>
+						<isActive>true</isActive>
+						<phone>617-323-9374</phone>
+						<email>sflashtees@verizon.net</email>
+						<title>Legal Owner</title>
+					</extensions>
+				</user>
+				<user>
+					<login>100330_456229</login>
+					<userId></userId>
+					<extensions>
+						<taaContactName>Tony Caggiano</taaContactName>
+						<taaContactId>456229</taaContactId>
+						<isActive>true</isActive>
+						<phone>617-323-9374</phone>
+						<email></email>
+						<title>Legal Owner</title>
+					</extensions>
+				</user>
+			</users>
+			<shippingAddresses>
+				<shippingAddress>
+					<default>true</default>
+					<addressId></addressId>
+					<firstName></firstName>
+					<middleName></middleName>
+					<lastName></lastName>
+					<companyName>JC Designs</companyName>
+					<address1>73 Lakewood Dr</address1>
+					<address2></address2>
+					<address3></address3>
+					<city>Mashpee</city>
+					<state>MA</state>
+					<postalCode>02649</postalCode>
+					<country>US</country>
+					<phoneNumber>508-477-5874</phoneNumber>
+					<faxNumber>617-323-9374</faxNumber>
+				</shippingAddress>
+				<shippingAddress>
+					<default>false</default>
+					<addressId></addressId>
+					<firstName></firstName>
+					<middleName></middleName>
+					<lastName></lastName>
+					<companyName>Boston Prepatory School</companyName>
+					<address1>Attn: Megan Nelson Blute1236 Hyde Park Ave</address1>
+					<address2></address2>
+					<address3></address3>
+					<city>Hyde Park</city>
+					<state>MA</state>
+					<postalCode>02136</postalCode>
+					<country>US</country>
+					<phoneNumber>617-323-9374</phoneNumber>
+					<faxNumber></faxNumber>
+				</shippingAddress>
+				<shippingAddress>
+					<default>false</default>
+					<addressId></addressId>
+					<firstName></firstName>
+					<middleName></middleName>
+					<lastName></lastName>
+					<companyName>Superflash T-Shirts</companyName>
+					<address1>1731 Centre St</address1>
+					<address2></address2>
+					<address3></address3>
+					<city>West Roxbury</city>
+					<state>MA</state>
+					<postalCode>02132</postalCode>
+					<country>US</country>
+					<phoneNumber>617-323-9374</phoneNumber>
+					<faxNumber>617-323-9374</faxNumber>
+				</shippingAddress>
+			</shippingAddresses>
+			<paymentTypes>
+			</paymentTypes>
+			<extensions>
+				<orderLimit>10000.00</orderLimit>
+				<rebateBalance>0.00</rebateBalance>
+				<taaAccountId>100330</taaAccountId>
+				<paymentTerm>NET30</paymentTerm>
+				<paymentMethod>NET30</paymentMethod>
+				<resaleCertTaxId>042696723</resaleCertTaxId>
+				<residential>true</residential>
+				<collections>false</collections>
+				<country>US</country>
+				<ptPlusQualified>false</ptPlusQualified>
+				<custPromoGroup1></custPromoGroup1>
+				<custPromoGroup2></custPromoGroup2>
+				<custPromoGroup3></custPromoGroup3>
+				<custPromoGroup4></custPromoGroup4>
+				<custPromoGroup5></custPromoGroup5>
+				<custPromoGroup6></custPromoGroup6>
+				<custPromoGroup7></custPromoGroup7>
+				<custPromoGroup8></custPromoGroup8>
+				<custPromoGroup9></custPromoGroup9>
+				<custPromoGroup10></custPromoGroup10>
+				<businessType></businessType>
+				<firstOrder>2004-12-1</firstOrder>
+				<email>sflashtees@verizon.net</email>
+				<defaultDeliveryMode>UPS2DXP</defaultDeliveryMode>
+				<priceList>Premium_Dealer_1</priceList>
+				<defaultMailingAddress>
+					<default>true</default>
+					<addressId></addressId>
+					<firstName></firstName>
+					<middleName></middleName>
+					<lastName></lastName>
+					<companyName>Superflash T- Shirts</companyName>
+					<address1>1731 Centre St</address1>
+					<address2></address2>
+					<address3></address3>
+					<city>West Roxbury</city>
+					<state>MA</state>
+					<postalCode>02132</postalCode>
+					<country>US</country>
+					<phoneNumber>617-323-9374</phoneNumber>
+					<faxNumber>617-323-9374</faxNumber>
+				</defaultMailingAddress>
+				<shippingAccounts>
+				</shippingAccounts>
+				<segmentation>
+					<sports></sports>
+					<hearAbout></hearAbout>
+					<priIndustry></priIndustry>
+					<priSchool></priSchool>
+					<secIndustry></secIndustry>
+					<secSchool></secSchool>
+					<terIndustry></terIndustry>
+					<terSchool></terSchool>
+					<orders></orders>
+				</segmentation>
+			</extensions>
+		</organization>
+	</organizations>
+</userProfile>

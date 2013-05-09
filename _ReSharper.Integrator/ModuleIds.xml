@@ -1,0 +1,5 @@
+<Modules>
+  <Module PersistentId="CA89CB8E-7F3C-42AC-9894-B4DAA1381655" ModuleId="Integrator.BL" />
+  <Module PersistentId="AEC2255D-FAEA-41A9-A715-4E09F67A798D" ModuleId="Integrator" />
+  <Module PersistentId="CA6C7A6B-5B32-4231-BA79-61EF9D989B67" ModuleId="TestIntegraor" />
+</Modules>

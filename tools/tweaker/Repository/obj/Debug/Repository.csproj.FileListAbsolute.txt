@@ -1,0 +1,8 @@
+C:\Users\kianoush.karbasi.DOMAIN\Documents\github\integrator\live server\tools\tweaker\Repository\bin\Debug\Repository.dll.config
+C:\Users\kianoush.karbasi.DOMAIN\Documents\github\integrator\live server\tools\tweaker\Repository\bin\Debug\Repository.dll
+C:\Users\kianoush.karbasi.DOMAIN\Documents\github\integrator\live server\tools\tweaker\Repository\bin\Debug\Repository.pdb
+C:\Users\kianoush.karbasi.DOMAIN\Documents\github\integrator\live server\tools\tweaker\Repository\obj\Debug\Repository.dll
+C:\Users\kianoush.karbasi.DOMAIN\Documents\github\integrator\live server\tools\tweaker\Repository\obj\Debug\Repository.pdb
+C:\Users\kianoush.karbasi.DOMAIN\Documents\github\integrator\live server\tools\tweaker\Repository\bin\Debug\EntityFramework.dll
+C:\Users\kianoush.karbasi.DOMAIN\Documents\github\integrator\live server\tools\tweaker\Repository\bin\Debug\EntityFramework.xml
+C:\Users\kianoush.karbasi.DOMAIN\Documents\github\integrator\live server\tools\tweaker\Repository\obj\Debug\Repository.csprojResolveAssemblyReference.cache

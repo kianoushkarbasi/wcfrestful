@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="IntegratorModelStoreContainer" CdmEntityContainer="IntegratorEntities">
+    <EntitySetMapping Name="CMYKLookups">
+      <EntityTypeMapping TypeName="IntegratorModel.CMYKLookup">
+        <MappingFragment StoreEntitySet="CMYKLookup">
+          <ScalarProperty Name="RGB" ColumnName="RGB" />
+          <ScalarProperty Name="CMYK" ColumnName="CMYK" />
+          <ScalarProperty Name="FakeHex" ColumnName="FakeHex" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EmailLists">
+      <EntityTypeMapping TypeName="IntegratorModel.EmailList">
+        <MappingFragment StoreEntitySet="EmailList">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ErrorLogs">
+      <EntityTypeMapping TypeName="IntegratorModel.ErrorLog">
+        <MappingFragment StoreEntitySet="ErrorLog">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Message" ColumnName="Message" />
+          <ScalarProperty Name="Trace" ColumnName="Trace" />
+          <ScalarProperty Name="Source" ColumnName="Source" />
+          <ScalarProperty Name="ErrorType" ColumnName="ErrorType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="InsertedDataHistories">
+      <EntityTypeMapping TypeName="IntegratorModel.InsertedDataHistory">
+        <MappingFragment StoreEntitySet="InsertedDataHistory">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="InsertedDataID" ColumnName="InsertedDataID" />
+          <ScalarProperty Name="XmlFileName" ColumnName="XmlFileName" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="InsertedDate" ColumnName="InsertedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StatusMessages">
+      <EntityTypeMapping TypeName="IntegratorModel.StatusMessage">
+        <MappingFragment StoreEntitySet="StatusMessages">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="StatusMessage1" ColumnName="StatusMessage" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ImageUpdates">
+      <EntityTypeMapping TypeName="IntegratorModel.ImageUpdate">
+        <MappingFragment StoreEntitySet="ImageUpdates">
+          <ScalarProperty Name="MicrositeId" ColumnName="MicrositeId" />
+          <ScalarProperty Name="ImagePath" ColumnName="ImagePath" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="InsertImageUpdate" FunctionName="IntegratorModel.Store.InsertImageUpdate" />
+  </EntityContainerMapping>
+</Mapping>

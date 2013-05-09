@@ -1,0 +1,69 @@
+<html>
+<head>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js">
+</script>
+
+</head>
+
+<body>
+ 
+
+<form action="http://localhost:63404/integratorservice/uploadcolors" method="POST">
+<div>
+</div>
+<div></div>
+<h1>Color Uploader</h1>
+<input style="margin-left:800px" type="button" id="uploadbutton" name="uploadbutton"  value="Upload" />
+</form>
+<form name="input" contenttype="multipart/form-data" action="http://localhost:63404/integratorservice/uploadcolors" method="POST">
+<div style="float:left">XML:</div> <textarea style="float:left" cols="100"  rows="100" id="xmlfile" name="xmlfile">
+</textarea>
+
+
+</form> 
+<script>
+    $("#uploadbutton").click(function() {
+    
+	//alert($('input[type=file]').val());
+	
+	$.ajax({		
+				type: "POST",
+				url: "http://localhost:63404/integratorservice/uploadcolors" ,
+				contentType: "text/XML",
+				data: $('#xmlfile').val(),
+				dataType: "xml",
+				success: function (result) {
+				alert("Successfully updated");
+				}
+				 ,error: function(request, errordata, errorObject) { alert('Not sent'); }               
+                
+
+			});
+    // var contentsObj;
+    // var xmlfile     = $.ajax({
+        // url : $('input[type=file]').val(), // would be set to 'l1contents.js'
+        // dataType : 'xml', // yes this is correct, I want jquery to think this is text
+        // cache : false,
+
+        // success: function(data) {
+            // contentsObj = eval('(' + data + ')');            
+			// alert(contentsObj);
+			// $.ajax({
+				// type: "POST",
+				// url: "http://localhost:63404/integratorservice/uploadmicrosites" ,
+				// contentType: "text/xml",
+				// data: contentsObj,
+				// success: function (result) {
+				// alert(result);
+				// }
+			// });
+
+        // }
+        
+    // });
+
+});
+
+</script>
+</body>
+</html>

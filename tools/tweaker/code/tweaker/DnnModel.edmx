@@ -1,0 +1,1049 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="fanlive4Model.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="fanlive4ModelStoreContainer">
+          <EntitySet Name="CAT_AdvCatProducts" EntityType="fanlive4Model.Store.CAT_AdvCatProducts" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="CAT_Products" EntityType="fanlive4Model.Store.CAT_Products" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="TAA_FanID" EntityType="fanlive4Model.Store.TAA_FanID" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="TAA_Microsite" EntityType="fanlive4Model.Store.TAA_Microsite" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="TAA_MicrositeLogos" EntityType="fanlive4Model.Store.TAA_MicrositeLogos" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="TAA_RoleCallSheets" EntityType="fanlive4Model.Store.TAA_RoleCallSheets" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="TAA_RoleCards" EntityType="fanlive4Model.Store.TAA_RoleCards" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="UserProfile" EntityType="fanlive4Model.Store.UserProfile" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Users" EntityType="fanlive4Model.Store.Users" store:Type="Tables" Schema="dbo" />
+          <AssociationSet Name="FK_CAT_AdvCatProducts_Products" Association="fanlive4Model.Store.FK_CAT_AdvCatProducts_Products">
+            <End Role="CAT_Products" EntitySet="CAT_Products" />
+            <End Role="CAT_AdvCatProducts" EntitySet="CAT_AdvCatProducts" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TAA_MicrositeLogos_TAA_Microsite" Association="fanlive4Model.Store.FK_TAA_MicrositeLogos_TAA_Microsite">
+            <End Role="TAA_Microsite" EntitySet="TAA_Microsite" />
+            <End Role="TAA_MicrositeLogos" EntitySet="TAA_MicrositeLogos" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TAA_RoleCards_TAA_RoleCallSheets" Association="fanlive4Model.Store.FK_TAA_RoleCards_TAA_RoleCallSheets">
+            <End Role="TAA_RoleCallSheets" EntitySet="TAA_RoleCallSheets" />
+            <End Role="TAA_RoleCards" EntitySet="TAA_RoleCards" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UserProfile_Users" Association="fanlive4Model.Store.FK_UserProfile_Users">
+            <End Role="Users" EntitySet="Users" />
+            <End Role="UserProfile" EntitySet="UserProfile" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="CAT_AdvCatProducts">
+          <Key>
+            <PropertyRef Name="AdvCatProductID" />
+          </Key>
+          <Property Name="AdvCatProductID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="AdvCatID" Type="int" Nullable="false" />
+          <Property Name="ProductID" Type="int" Nullable="false" />
+          <Property Name="AddAdvCatToProductDisplay" Type="bit" />
+        </EntityType>
+        <EntityType Name="CAT_Products">
+          <Key>
+            <PropertyRef Name="ProductID" />
+          </Key>
+          <Property Name="ProductID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="CategoryID" Type="int" />
+          <Property Name="Category2ID" Type="int" />
+          <Property Name="Category3" Type="nvarchar" MaxLength="50" />
+          <Property Name="ProductName" Type="nvarchar" MaxLength="255" />
+          <Property Name="ProductNumber" Type="nvarchar" MaxLength="50" />
+          <Property Name="EAN" Type="nvarchar" MaxLength="50" />
+          <Property Name="ISBN" Type="nvarchar" MaxLength="50" />
+          <Property Name="Free1" Type="nvarchar" MaxLength="1000" />
+          <Property Name="Free2" Type="nvarchar" MaxLength="1000" />
+          <Property Name="Free3" Type="nvarchar" MaxLength="1000" />
+          <Property Name="KeyWords" Type="nvarchar" MaxLength="1000" />
+          <Property Name="ProductImage" Type="nvarchar" MaxLength="255" />
+          <Property Name="UnitCost" Type="money" Nullable="false" />
+          <Property Name="UnitCost2" Type="money" />
+          <Property Name="UnitCost3" Type="money" />
+          <Property Name="UnitCost4" Type="money" />
+          <Property Name="UnitCost5" Type="money" />
+          <Property Name="UnitCost6" Type="money" />
+          <Property Name="Description" Type="nvarchar(max)" />
+          <Property Name="DescriptionHTML" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="URL" Type="nvarchar" MaxLength="255" />
+          <Property Name="Stock" Type="int" />
+          <Property Name="OrderQuant" Type="nvarchar" Nullable="false" MaxLength="200" />
+          <Property Name="Weight" Type="decimal" Precision="10" Scale="4" />
+          <Property Name="Volume" Type="decimal" Precision="8" Scale="2" />
+          <Property Name="Length" Type="decimal" Precision="8" Scale="2" />
+          <Property Name="Width" Type="decimal" Precision="8" Scale="2" />
+          <Property Name="Height" Type="decimal" Precision="8" Scale="2" />
+          <Property Name="FreightCosts1" Type="money" />
+          <Property Name="FreightCosts2" Type="money" />
+          <Property Name="Featured" Type="bit" Nullable="false" />
+          <Property Name="SalePrice" Type="money" Nullable="false" />
+          <Property Name="SaleStart" Type="datetime" />
+          <Property Name="SaleEnd" Type="datetime" />
+          <Property Name="DownLoad" Type="bit" />
+          <Property Name="ZIPPassWord" Type="nvarchar" MaxLength="30" />
+          <Property Name="DownLoadFile" Type="nvarchar" MaxLength="255" />
+          <Property Name="Archive" Type="bit" />
+          <Property Name="CreatedByUser" Type="int" Nullable="false" />
+          <Property Name="BulkPriceLimit1" Type="int" Nullable="false" />
+          <Property Name="BulkPriceLimit2" Type="int" Nullable="false" />
+          <Property Name="BulkPriceLimit3" Type="int" Nullable="false" />
+          <Property Name="BulkPriceLimit4" Type="int" Nullable="false" />
+          <Property Name="BulkPriceLimit5" Type="int" Nullable="false" />
+          <Property Name="DateCreated" Type="datetime" />
+          <Property Name="RoleID" Type="int" />
+          <Property Name="SubscriptionPeriod" Type="int" />
+          <Property Name="RecurringBilling" Type="bit" />
+          <Property Name="TaxExempt" Type="bit" />
+          <Property Name="ShipExempt" Type="bit" />
+          <Property Name="InsuredValue" Type="money" Nullable="false" />
+          <Property Name="PublicationStart" Type="datetime" />
+          <Property Name="PublicationEnd" Type="datetime" />
+          <Property Name="Status" Type="char" Nullable="false" MaxLength="1" />
+          <Property Name="DonationItem" Type="bit" Nullable="false" />
+          <Property Name="PayPalSubscription" Type="bit" Nullable="false" />
+          <Property Name="UseRoleFees" Type="bit" Nullable="false" />
+          <Property Name="ProductCost" Type="money" Nullable="false" />
+          <Property Name="RoleExpiryType" Type="char" Nullable="false" MaxLength="1" />
+          <Property Name="ItemDeliveryType" Type="char" Nullable="false" MaxLength="1" />
+          <Property Name="ReorderPoint" Type="int" Nullable="false" />
+          <Property Name="OrderQuantValidExpr" Type="nvarchar" Nullable="false" MaxLength="255" />
+          <Property Name="ShippingAddress" Type="char" Nullable="false" MaxLength="1" />
+          <Property Name="OrigProductID" Type="int" />
+          <Property Name="AuctionFinished" Type="bit" Nullable="false" />
+          <Property Name="StartingPrice" Type="money" />
+          <Property Name="ReservePrice" Type="money" />
+          <Property Name="LastModifiedByUserID" Type="int" />
+          <Property Name="LastModifiedOnDate" Type="datetime" />
+          <Property Name="TaxCode" Type="nvarchar" MaxLength="16" />
+          <Property Name="MaxWeight" Type="decimal" Precision="10" Scale="4" />
+          <Property Name="TotalPeriods" Type="int" />
+          <Property Name="NonStockItem" Type="bit" />
+          <Property Name="StockedColorID" Type="int" />
+          <Property Name="StockedColorID2" Type="int" />
+          <Property Name="StockedColorID3" Type="int" />
+          <Property Name="StockedColorID4" Type="int" />
+          <Property Name="StockedColorID5" Type="int" />
+          <Property Name="StockedColorID6" Type="int" />
+          <Property Name="DealerTier1Price" Type="money" />
+          <Property Name="DealerTier2Price" Type="money" />
+          <Property Name="DealerTier3Price" Type="money" />
+          <Property Name="DealerTier4Price" Type="money" />
+          <Property Name="ConsumerTier1Price" Type="money" />
+          <Property Name="ConsumerTier2Price" Type="money" />
+          <Property Name="ConsumerTier3Price" Type="money" />
+          <Property Name="ConsumerTier4Price" Type="money" />
+          <Property Name="DiscountClass" Type="nvarchar" MaxLength="50" />
+          <Property Name="DiscountClassID" Type="int" />
+          <Property Name="CMSProductID" Type="int" />
+          <Property Name="TAASportID" Type="int" />
+          <Property Name="CMSProductDesign" Type="nvarchar" MaxLength="50" />
+          <Property Name="SortOrder" Type="int" />
+        </EntityType>
+        <EntityType Name="TAA_FanID">
+          <Key>
+            <PropertyRef Name="MicrositeID" />
+            <PropertyRef Name="FanID" />
+          </Key>
+          <Property Name="MicrositeID" Type="int" Nullable="false" />
+          <Property Name="FanID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="DesignName" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="TeamName" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="PrimaryColor" Type="nchar" MaxLength="7" />
+          <Property Name="PrimaryColorID" Type="int" />
+          <Property Name="SecondaryColor" Type="nchar" Nullable="false" MaxLength="7" />
+          <Property Name="SecondaryColorID" Type="int" />
+          <Property Name="Accent" Type="nchar" Nullable="false" MaxLength="7" />
+          <Property Name="AccentColorID" Type="int" />
+          <Property Name="TeamLogo" Type="nvarchar" MaxLength="350" />
+          <Property Name="School" Type="nvarchar" MaxLength="100" />
+          <Property Name="City" Type="nvarchar" MaxLength="100" />
+          <Property Name="Sport" Type="nvarchar" MaxLength="100" />
+          <Property Name="CreatedByUserID" Type="int" />
+          <Property Name="CreatedOnDate" Type="datetime" Nullable="false" />
+          <Property Name="LastModifiedByUserID" Type="int" />
+          <Property Name="LastModifiedOnDate" Type="datetime" />
+          <Property Name="Deleted" Type="bit" Nullable="false" />
+          <Property Name="DeletedByUserID" Type="int" />
+          <Property Name="DeletedOnDate" Type="datetime" />
+          <Property Name="TAASportID" Type="int" />
+          <Property Name="UserUploadedGraphic" Type="nvarchar" MaxLength="350" />
+          <Property Name="GAUploadedGraphic" Type="nvarchar" MaxLength="350" />
+          <Property Name="CUG" Type="bit" />
+          <Property Name="GraphicDeleted" Type="bit" />
+          <Property Name="CUGGoodsize" Type="bit" />
+          <Property Name="CUGGoodtransparancy" Type="bit" />
+          <Property Name="CUGGoodvectorized" Type="bit" />
+          <Property Name="CUGGoodresolution" Type="bit" />
+        </EntityType>
+        <EntityType Name="TAA_Microsite">
+          <Key>
+            <PropertyRef Name="MicrositeID" />
+          </Key>
+          <Property Name="MicrositeID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="TeamName" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="PrimaryColour" Type="nvarchar" Nullable="false" MaxLength="11" />
+          <Property Name="SecondaryColour" Type="nvarchar" Nullable="false" MaxLength="11" />
+          <Property Name="Accent" Type="nvarchar" Nullable="false" MaxLength="11" />
+          <Property Name="PrimaryColorID" Type="int" />
+          <Property Name="SecondaryColorID" Type="int" />
+          <Property Name="AccentColorID" Type="int" />
+          <Property Name="TeamLogo" Type="nvarchar" MaxLength="350" />
+          <Property Name="School" Type="nvarchar" MaxLength="100" />
+          <Property Name="City" Type="nvarchar" MaxLength="100" />
+          <Property Name="Sport" Type="nvarchar" MaxLength="100" />
+          <Property Name="SportID" Type="int" />
+          <Property Name="CreatedFromSLP" Type="bit" />
+          <Property Name="Enabled" Type="bit" Nullable="false" />
+          <Property Name="Locked" Type="bit" Nullable="false" />
+          <Property Name="CreatedByUserID" Type="int" />
+          <Property Name="CreatedOnDate" Type="datetime" Nullable="false" />
+          <Property Name="LastModifiedByUserID" Type="int" />
+          <Property Name="LastModifiedOnDate" Type="datetime" />
+          <Property Name="Deleted" Type="bit" Nullable="false" />
+          <Property Name="DeletedByUserID" Type="int" />
+          <Property Name="DeletedOnDate" Type="datetime" />
+          <Property Name="URL" Type="nvarchar" MaxLength="255" />
+          <Property Name="PartialURL" Type="nvarchar" MaxLength="255" />
+          <Property Name="TeamUniqueID" Type="nvarchar" MaxLength="20" />
+          <Property Name="IntegratorRetrievalCode" Type="varchar" MaxLength="20" />
+          <Property Name="IntegratorCustAccount" Type="int" />
+        </EntityType>
+        <EntityType Name="TAA_MicrositeLogos">
+          <Key>
+            <PropertyRef Name="LogoID" />
+          </Key>
+          <Property Name="LogoID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="MicrositeID" Type="int" Nullable="false" />
+          <Property Name="Logo" Type="nvarchar" MaxLength="50" />
+          <Property Name="LogoName" Type="nvarchar" MaxLength="50" />
+          <Property Name="CreatedByUserID" Type="int" />
+          <Property Name="CreatedOnDate" Type="datetime" Nullable="false" />
+          <Property Name="LastModifiedByUserID" Type="int" />
+          <Property Name="LastModifiedOnDate" Type="datetime" />
+          <Property Name="Deleted" Type="bit" Nullable="false" />
+          <Property Name="DeletedByUserID" Type="int" />
+          <Property Name="DeletedOnDate" Type="datetime" />
+        </EntityType>
+        <EntityType Name="TAA_RoleCallSheets">
+          <Key>
+            <PropertyRef Name="RollCallSheetID" />
+          </Key>
+          <Property Name="RollCallSheetID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="MicrositeID" Type="int" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="CreatedByUserID" Type="int" />
+          <Property Name="CreatedOnDate" Type="datetime" />
+          <Property Name="LastModifiedByUserID" Type="int" />
+          <Property Name="LastModifiedOnDate" Type="datetime" />
+          <Property Name="Deleted" Type="bit" Nullable="false" />
+          <Property Name="DeletedByUserID" Type="int" />
+          <Property Name="DeletedOnDate" Type="datetime" />
+        </EntityType>
+        <EntityType Name="TAA_RoleCards">
+          <Key>
+            <PropertyRef Name="RoleCardID" />
+          </Key>
+          <Property Name="RoleCardID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="RoleCallSheetID" Type="int" Nullable="false" />
+          <Property Name="PrintedName" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="JerseyNumber" Type="int" />
+          <Property Name="FirstName" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="LastName" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="MiddleInitial" Type="nvarchar" MaxLength="3" />
+          <Property Name="Email" Type="nvarchar" MaxLength="255" />
+          <Property Name="Phone" Type="nvarchar" MaxLength="50" />
+          <Property Name="Address" Type="nvarchar" MaxLength="500" />
+          <Property Name="City" Type="nvarchar" MaxLength="50" />
+          <Property Name="State" Type="nchar" MaxLength="2" />
+          <Property Name="Zip" Type="nvarchar" MaxLength="20" />
+          <Property Name="Gender" Type="nchar" Nullable="false" MaxLength="1" />
+          <Property Name="SizeGroupID" Type="int" Nullable="false" />
+          <Property Name="PantSizeID" Type="int" Nullable="false" />
+          <Property Name="ShirtSizeID" Type="int" Nullable="false" />
+          <Property Name="playerRetrievalCode" Type="varchar" MaxLength="50" />
+          <Property Name="CreatedByUserID" Type="int" />
+          <Property Name="CreatedOnDate" Type="datetime" />
+          <Property Name="LastModifiedByUserID" Type="int" />
+          <Property Name="LastModifiedOnDate" Type="datetime" />
+          <Property Name="Deleted" Type="bit" Nullable="false" />
+          <Property Name="DeletedByUserID" Type="int" />
+          <Property Name="DeletedOnDate" Type="datetime" />
+        </EntityType>
+        <EntityType Name="UserProfile">
+          <Key>
+            <PropertyRef Name="ProfileID" />
+          </Key>
+          <Property Name="ProfileID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="UserID" Type="int" Nullable="false" />
+          <Property Name="PropertyDefinitionID" Type="int" Nullable="false" />
+          <Property Name="PropertyValue" Type="nvarchar" MaxLength="3750" />
+          <Property Name="PropertyText" Type="ntext" />
+          <Property Name="Visibility" Type="int" Nullable="false" />
+          <Property Name="LastUpdatedDate" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Users">
+          <Key>
+            <PropertyRef Name="UserID" />
+          </Key>
+          <Property Name="UserID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Username" Type="nvarchar" Nullable="false" MaxLength="100" />
+          <Property Name="FirstName" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="LastName" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="IsSuperUser" Type="bit" Nullable="false" />
+          <Property Name="AffiliateId" Type="int" />
+          <Property Name="Email" Type="nvarchar" MaxLength="256" />
+          <Property Name="DisplayName" Type="nvarchar" Nullable="false" MaxLength="128" />
+          <Property Name="UpdatePassword" Type="bit" Nullable="false" />
+          <Property Name="LastIPAddress" Type="nvarchar" MaxLength="50" />
+          <Property Name="IsDeleted" Type="bit" Nullable="false" />
+          <Property Name="CreatedByUserID" Type="int" />
+          <Property Name="CreatedOnDate" Type="datetime" />
+          <Property Name="LastModifiedByUserID" Type="int" />
+          <Property Name="LastModifiedOnDate" Type="datetime" />
+        </EntityType>
+        <Association Name="FK_CAT_AdvCatProducts_Products">
+          <End Role="CAT_Products" Type="fanlive4Model.Store.CAT_Products" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="CAT_AdvCatProducts" Type="fanlive4Model.Store.CAT_AdvCatProducts" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CAT_Products">
+              <PropertyRef Name="ProductID" />
+            </Principal>
+            <Dependent Role="CAT_AdvCatProducts">
+              <PropertyRef Name="ProductID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TAA_MicrositeLogos_TAA_Microsite">
+          <End Role="TAA_Microsite" Type="fanlive4Model.Store.TAA_Microsite" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="TAA_MicrositeLogos" Type="fanlive4Model.Store.TAA_MicrositeLogos" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TAA_Microsite">
+              <PropertyRef Name="MicrositeID" />
+            </Principal>
+            <Dependent Role="TAA_MicrositeLogos">
+              <PropertyRef Name="MicrositeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TAA_RoleCards_TAA_RoleCallSheets">
+          <End Role="TAA_RoleCallSheets" Type="fanlive4Model.Store.TAA_RoleCallSheets" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="TAA_RoleCards" Type="fanlive4Model.Store.TAA_RoleCards" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TAA_RoleCallSheets">
+              <PropertyRef Name="RollCallSheetID" />
+            </Principal>
+            <Dependent Role="TAA_RoleCards">
+              <PropertyRef Name="RoleCallSheetID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UserProfile_Users">
+          <End Role="Users" Type="fanlive4Model.Store.Users" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="UserProfile" Type="fanlive4Model.Store.UserProfile" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Users">
+              <PropertyRef Name="UserID" />
+            </Principal>
+            <Dependent Role="UserProfile">
+              <PropertyRef Name="UserID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="fanlive4Model" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="fanlive4Entities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Users" EntityType="fanlive4Model.User" />
+          <EntitySet Name="UserProfiles" EntityType="fanlive4Model.UserProfile" />
+          <AssociationSet Name="FK_UserProfile_Users" Association="fanlive4Model.FK_UserProfile_Users">
+            <End Role="User" EntitySet="Users" />
+            <End Role="UserProfile" EntitySet="UserProfiles" />
+          </AssociationSet>
+          <EntitySet Name="TAA_FanID" EntityType="fanlive4Model.TAA_FanID" />
+          <EntitySet Name="TAA_Microsite" EntityType="fanlive4Model.TAA_Microsite" />
+          <EntitySet Name="TAA_RoleCards" EntityType="fanlive4Model.TAA_RoleCards" />
+          <EntitySet Name="TAA_RoleCallSheets" EntityType="fanlive4Model.TAA_RoleCallSheets" />
+          <AssociationSet Name="FK_TAA_RoleCards_TAA_RoleCallSheets" Association="fanlive4Model.FK_TAA_RoleCards_TAA_RoleCallSheets">
+            <End Role="TAA_RoleCallSheets" EntitySet="TAA_RoleCallSheets" />
+            <End Role="TAA_RoleCards" EntitySet="TAA_RoleCards" />
+          </AssociationSet>
+          <EntitySet Name="CAT_Products" EntityType="fanlive4Model.CAT_Products" />
+          <EntitySet Name="CAT_AdvCatProducts" EntityType="fanlive4Model.CAT_AdvCatProducts" />
+          <AssociationSet Name="FK_CAT_AdvCatProducts_Products" Association="fanlive4Model.FK_CAT_AdvCatProducts_Products">
+            <End Role="CAT_Products" EntitySet="CAT_Products" />
+            <End Role="CAT_AdvCatProducts" EntitySet="CAT_AdvCatProducts" />
+          </AssociationSet>
+          <EntitySet Name="TAA_MicrositeLogos" EntityType="fanlive4Model.TAA_MicrositeLogos" />
+          <AssociationSet Name="FK_TAA_MicrositeLogos_TAA_Microsite" Association="fanlive4Model.FK_TAA_MicrositeLogos_TAA_Microsite">
+            <End Role="TAA_Microsite" EntitySet="TAA_Microsite" />
+            <End Role="TAA_MicrositeLogos" EntitySet="TAA_MicrositeLogos" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="User">
+          <Key>
+            <PropertyRef Name="UserID" />
+          </Key>
+          <Property Name="UserID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Username" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="FirstName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="LastName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="IsSuperUser" Type="Boolean" Nullable="false" />
+          <Property Name="AffiliateId" Type="Int32" />
+          <Property Name="Email" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+          <Property Name="DisplayName" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+          <Property Name="UpdatePassword" Type="Boolean" Nullable="false" />
+          <Property Name="LastIPAddress" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+          <Property Name="CreatedByUserID" Type="Int32" />
+          <Property Name="CreatedOnDate" Type="DateTime" />
+          <Property Name="LastModifiedByUserID" Type="Int32" />
+          <Property Name="LastModifiedOnDate" Type="DateTime" />
+          <NavigationProperty Name="UserProfiles" Relationship="fanlive4Model.FK_UserProfile_Users" FromRole="User" ToRole="UserProfile" />
+        </EntityType>
+        <EntityType Name="UserProfile">
+          <Key>
+            <PropertyRef Name="ProfileID" />
+          </Key>
+          <Property Type="Int32" Name="ProfileID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int32" Name="UserID" Nullable="false" />
+          <Property Type="Int32" Name="PropertyDefinitionID" Nullable="false" />
+          <Property Type="String" Name="PropertyValue" MaxLength="3750" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="PropertyText" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="Visibility" Nullable="false" />
+          <Property Type="DateTime" Name="LastUpdatedDate" Nullable="false" />
+          <NavigationProperty Name="User" Relationship="fanlive4Model.FK_UserProfile_Users" FromRole="UserProfile" ToRole="User" />
+        </EntityType>
+        <Association Name="FK_UserProfile_Users">
+          <End Type="fanlive4Model.User" Role="User" Multiplicity="1" />
+          <End Type="fanlive4Model.UserProfile" Role="UserProfile" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="User">
+              <PropertyRef Name="UserID" />
+            </Principal>
+            <Dependent Role="UserProfile">
+              <PropertyRef Name="UserID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="TAA_FanID">
+          <Key>
+            <PropertyRef Name="MicrositeID" />
+            <PropertyRef Name="FanID" />
+          </Key>
+          <Property Type="Int32" Name="MicrositeID" Nullable="false" />
+          <Property Type="Int32" Name="FanID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="DesignName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="TeamName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="PrimaryColor" MaxLength="7" FixedLength="true" Unicode="true" />
+          <Property Type="Int32" Name="PrimaryColorID" />
+          <Property Type="String" Name="SecondaryColor" Nullable="false" MaxLength="7" FixedLength="true" Unicode="true" />
+          <Property Type="Int32" Name="SecondaryColorID" />
+          <Property Type="String" Name="Accent" Nullable="false" MaxLength="7" FixedLength="true" Unicode="true" />
+          <Property Type="Int32" Name="AccentColorID" />
+          <Property Type="String" Name="TeamLogo" MaxLength="350" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="School" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="City" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Sport" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="CreatedByUserID" />
+          <Property Type="DateTime" Name="CreatedOnDate" Nullable="false" />
+          <Property Type="Int32" Name="LastModifiedByUserID" />
+          <Property Type="DateTime" Name="LastModifiedOnDate" />
+          <Property Type="Boolean" Name="Deleted" Nullable="false" />
+          <Property Type="Int32" Name="DeletedByUserID" />
+          <Property Type="DateTime" Name="DeletedOnDate" />
+          <Property Type="Int32" Name="TAASportID" />
+          <Property Type="String" Name="UserUploadedGraphic" MaxLength="350" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="GAUploadedGraphic" MaxLength="350" FixedLength="false" Unicode="true" />
+          <Property Type="Boolean" Name="CUG" />
+          <Property Type="Boolean" Name="GraphicDeleted" />
+          <Property Type="Boolean" Name="CUGGoodsize" />
+          <Property Type="Boolean" Name="CUGGoodtransparancy" />
+          <Property Type="Boolean" Name="CUGGoodvectorized" />
+          <Property Type="Boolean" Name="CUGGoodresolution" />
+        </EntityType>
+        <EntityType Name="TAA_Microsite">
+          <Key>
+            <PropertyRef Name="MicrositeID" />
+          </Key>
+          <Property Type="Int32" Name="MicrositeID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="TeamName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="PrimaryColour" Nullable="false" MaxLength="11" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="SecondaryColour" Nullable="false" MaxLength="11" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Accent" Nullable="false" MaxLength="11" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="PrimaryColorID" />
+          <Property Type="Int32" Name="SecondaryColorID" />
+          <Property Type="Int32" Name="AccentColorID" />
+          <Property Type="String" Name="TeamLogo" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="School" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="City" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Sport" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="SportID" />
+          <Property Type="Boolean" Name="CreatedFromSLP" />
+          <Property Type="Boolean" Name="Enabled" Nullable="false" />
+          <Property Type="Boolean" Name="Locked" Nullable="false" />
+          <Property Type="Int32" Name="CreatedByUserID" />
+          <Property Type="DateTime" Name="CreatedOnDate" Nullable="false" />
+          <Property Type="Int32" Name="LastModifiedByUserID" />
+          <Property Type="DateTime" Name="LastModifiedOnDate" />
+          <Property Type="Boolean" Name="Deleted" Nullable="false" />
+          <Property Type="Int32" Name="DeletedByUserID" />
+          <Property Type="DateTime" Name="DeletedOnDate" />
+          <Property Type="String" Name="URL" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="PartialURL" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="TeamUniqueID" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="IntegratorRetrievalCode" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Type="Int32" Name="IntegratorCustAccount" />
+          <NavigationProperty Name="TAA_MicrositeLogos" Relationship="fanlive4Model.FK_TAA_MicrositeLogos_TAA_Microsite" FromRole="TAA_Microsite" ToRole="TAA_MicrositeLogos" />
+        </EntityType>
+        <EntityType Name="TAA_RoleCards">
+          <Key>
+            <PropertyRef Name="RoleCardID" />
+          </Key>
+          <Property Type="Int32" Name="RoleCardID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int32" Name="RoleCallSheetID" Nullable="false" />
+          <Property Type="String" Name="PrintedName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="JerseyNumber" />
+          <Property Type="String" Name="FirstName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="LastName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MiddleInitial" MaxLength="3" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Email" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Phone" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Address" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="City" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="State" MaxLength="2" FixedLength="true" Unicode="true" />
+          <Property Type="String" Name="Zip" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Gender" Nullable="false" MaxLength="1" FixedLength="true" Unicode="true" />
+          <Property Type="Int32" Name="SizeGroupID" Nullable="false" />
+          <Property Type="Int32" Name="PantSizeID" Nullable="false" />
+          <Property Type="Int32" Name="ShirtSizeID" Nullable="false" />
+          <Property Type="String" Name="playerRetrievalCode" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="Int32" Name="CreatedByUserID" />
+          <Property Type="DateTime" Name="CreatedOnDate" />
+          <Property Type="Int32" Name="LastModifiedByUserID" />
+          <Property Type="DateTime" Name="LastModifiedOnDate" />
+          <Property Type="Boolean" Name="Deleted" Nullable="false" />
+          <Property Type="Int32" Name="DeletedByUserID" />
+          <Property Type="DateTime" Name="DeletedOnDate" />
+          <NavigationProperty Name="TAA_RoleCallSheets" Relationship="fanlive4Model.FK_TAA_RoleCards_TAA_RoleCallSheets" FromRole="TAA_RoleCards" ToRole="TAA_RoleCallSheets" />
+        </EntityType>
+        <EntityType Name="TAA_RoleCallSheets">
+          <Key>
+            <PropertyRef Name="RollCallSheetID" />
+          </Key>
+          <Property Type="Int32" Name="RollCallSheetID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int32" Name="MicrositeID" Nullable="false" />
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="CreatedByUserID" />
+          <Property Type="DateTime" Name="CreatedOnDate" />
+          <Property Type="Int32" Name="LastModifiedByUserID" />
+          <Property Type="DateTime" Name="LastModifiedOnDate" />
+          <Property Type="Boolean" Name="Deleted" Nullable="false" />
+          <Property Type="Int32" Name="DeletedByUserID" />
+          <Property Type="DateTime" Name="DeletedOnDate" />
+          <NavigationProperty Name="TAA_RoleCards" Relationship="fanlive4Model.FK_TAA_RoleCards_TAA_RoleCallSheets" FromRole="TAA_RoleCallSheets" ToRole="TAA_RoleCards" />
+        </EntityType>
+        <Association Name="FK_TAA_RoleCards_TAA_RoleCallSheets">
+          <End Type="fanlive4Model.TAA_RoleCallSheets" Role="TAA_RoleCallSheets" Multiplicity="1" />
+          <End Type="fanlive4Model.TAA_RoleCards" Role="TAA_RoleCards" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TAA_RoleCallSheets">
+              <PropertyRef Name="RollCallSheetID" />
+            </Principal>
+            <Dependent Role="TAA_RoleCards">
+              <PropertyRef Name="RoleCallSheetID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="CAT_Products">
+          <Key>
+            <PropertyRef Name="ProductID" />
+          </Key>
+          <Property Type="Int32" Name="ProductID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int32" Name="CategoryID" />
+          <Property Type="Int32" Name="Category2ID" />
+          <Property Type="String" Name="Category3" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ProductName" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ProductNumber" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="EAN" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ISBN" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Free1" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Free2" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Free3" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="KeyWords" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ProductImage" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="UnitCost" Nullable="false" Precision="19" Scale="4" />
+          <Property Type="Decimal" Name="UnitCost2" Precision="19" Scale="4" />
+          <Property Type="Decimal" Name="UnitCost3" Precision="19" Scale="4" />
+          <Property Type="Decimal" Name="UnitCost4" Precision="19" Scale="4" />
+          <Property Type="Decimal" Name="UnitCost5" Precision="19" Scale="4" />
+          <Property Type="Decimal" Name="UnitCost6" Precision="19" Scale="4" />
+          <Property Type="String" Name="Description" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="DescriptionHTML" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="URL" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="Stock" />
+          <Property Type="String" Name="OrderQuant" Nullable="false" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="Weight" Precision="10" Scale="4" />
+          <Property Type="Decimal" Name="Volume" Precision="8" Scale="2" />
+          <Property Type="Decimal" Name="Length" Precision="8" Scale="2" />
+          <Property Type="Decimal" Name="Width" Precision="8" Scale="2" />
+          <Property Type="Decimal" Name="Height" Precision="8" Scale="2" />
+          <Property Type="Decimal" Name="FreightCosts1" Precision="19" Scale="4" />
+          <Property Type="Decimal" Name="FreightCosts2" Precision="19" Scale="4" />
+          <Property Type="Boolean" Name="Featured" Nullable="false" />
+          <Property Type="Decimal" Name="SalePrice" Nullable="false" Precision="19" Scale="4" />
+          <Property Type="DateTime" Name="SaleStart" />
+          <Property Type="DateTime" Name="SaleEnd" />
+          <Property Type="Boolean" Name="DownLoad" />
+          <Property Type="String" Name="ZIPPassWord" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="DownLoadFile" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Boolean" Name="Archive" />
+          <Property Type="Int32" Name="CreatedByUser" Nullable="false" />
+          <Property Type="Int32" Name="BulkPriceLimit1" Nullable="false" />
+          <Property Type="Int32" Name="BulkPriceLimit2" Nullable="false" />
+          <Property Type="Int32" Name="BulkPriceLimit3" Nullable="false" />
+          <Property Type="Int32" Name="BulkPriceLimit4" Nullable="false" />
+          <Property Type="Int32" Name="BulkPriceLimit5" Nullable="false" />
+          <Property Type="DateTime" Name="DateCreated" />
+          <Property Type="Int32" Name="RoleID" />
+          <Property Type="Int32" Name="SubscriptionPeriod" />
+          <Property Type="Boolean" Name="RecurringBilling" />
+          <Property Type="Boolean" Name="TaxExempt" />
+          <Property Type="Boolean" Name="ShipExempt" />
+          <Property Type="Decimal" Name="InsuredValue" Nullable="false" Precision="19" Scale="4" />
+          <Property Type="DateTime" Name="PublicationStart" />
+          <Property Type="DateTime" Name="PublicationEnd" />
+          <Property Type="String" Name="Status" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Type="Boolean" Name="DonationItem" Nullable="false" />
+          <Property Type="Boolean" Name="PayPalSubscription" Nullable="false" />
+          <Property Type="Boolean" Name="UseRoleFees" Nullable="false" />
+          <Property Type="Decimal" Name="ProductCost" Nullable="false" Precision="19" Scale="4" />
+          <Property Type="String" Name="RoleExpiryType" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="ItemDeliveryType" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Type="Int32" Name="ReorderPoint" Nullable="false" />
+          <Property Type="String" Name="OrderQuantValidExpr" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ShippingAddress" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Type="Int32" Name="OrigProductID" />
+          <Property Type="Boolean" Name="AuctionFinished" Nullable="false" />
+          <Property Type="Decimal" Name="StartingPrice" Precision="19" Scale="4" />
+          <Property Type="Decimal" Name="ReservePrice" Precision="19" Scale="4" />
+          <Property Type="Int32" Name="LastModifiedByUserID" />
+          <Property Type="DateTime" Name="LastModifiedOnDate" />
+          <Property Type="String" Name="TaxCode" MaxLength="16" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="MaxWeight" Precision="10" Scale="4" />
+          <Property Type="Int32" Name="TotalPeriods" />
+          <Property Type="Boolean" Name="NonStockItem" />
+          <Property Type="Int32" Name="StockedColorID" />
+          <Property Type="Int32" Name="StockedColorID2" />
+          <Property Type="Int32" Name="StockedColorID3" />
+          <Property Type="Int32" Name="StockedColorID4" />
+          <Property Type="Int32" Name="StockedColorID5" />
+          <Property Type="Int32" Name="StockedColorID6" />
+          <Property Type="Decimal" Name="DealerTier1Price" Precision="19" Scale="4" />
+          <Property Type="Decimal" Name="DealerTier2Price" Precision="19" Scale="4" />
+          <Property Type="Decimal" Name="DealerTier3Price" Precision="19" Scale="4" />
+          <Property Type="Decimal" Name="DealerTier4Price" Precision="19" Scale="4" />
+          <Property Type="Decimal" Name="ConsumerTier1Price" Precision="19" Scale="4" />
+          <Property Type="Decimal" Name="ConsumerTier2Price" Precision="19" Scale="4" />
+          <Property Type="Decimal" Name="ConsumerTier3Price" Precision="19" Scale="4" />
+          <Property Type="Decimal" Name="ConsumerTier4Price" Precision="19" Scale="4" />
+          <Property Type="String" Name="DiscountClass" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="DiscountClassID" />
+          <Property Type="Int32" Name="CMSProductID" />
+          <Property Type="Int32" Name="TAASportID" />
+          <Property Type="String" Name="CMSProductDesign" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="SortOrder" />
+          <NavigationProperty Name="CAT_AdvCatProducts" Relationship="fanlive4Model.FK_CAT_AdvCatProducts_Products" FromRole="CAT_Products" ToRole="CAT_AdvCatProducts" />
+        </EntityType>
+        <EntityType Name="CAT_AdvCatProducts">
+          <Key>
+            <PropertyRef Name="AdvCatProductID" />
+          </Key>
+          <Property Type="Int32" Name="AdvCatProductID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int32" Name="AdvCatID" Nullable="false" />
+          <Property Type="Int32" Name="ProductID" Nullable="false" />
+          <Property Type="Boolean" Name="AddAdvCatToProductDisplay" />
+          <NavigationProperty Name="CAT_Products" Relationship="fanlive4Model.FK_CAT_AdvCatProducts_Products" FromRole="CAT_AdvCatProducts" ToRole="CAT_Products" />
+        </EntityType>
+        <Association Name="FK_CAT_AdvCatProducts_Products">
+          <End Type="fanlive4Model.CAT_Products" Role="CAT_Products" Multiplicity="1" />
+          <End Type="fanlive4Model.CAT_AdvCatProducts" Role="CAT_AdvCatProducts" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CAT_Products">
+              <PropertyRef Name="ProductID" />
+            </Principal>
+            <Dependent Role="CAT_AdvCatProducts">
+              <PropertyRef Name="ProductID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="TAA_MicrositeLogos">
+          <Key>
+            <PropertyRef Name="LogoID" />
+          </Key>
+          <Property Type="Int32" Name="LogoID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int32" Name="MicrositeID" Nullable="false" />
+          <Property Type="String" Name="Logo" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="LogoName" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="CreatedByUserID" />
+          <Property Type="DateTime" Name="CreatedOnDate" Nullable="false" />
+          <Property Type="Int32" Name="LastModifiedByUserID" />
+          <Property Type="DateTime" Name="LastModifiedOnDate" />
+          <Property Type="Boolean" Name="Deleted" Nullable="false" />
+          <Property Type="Int32" Name="DeletedByUserID" />
+          <Property Type="DateTime" Name="DeletedOnDate" />
+          <NavigationProperty Name="TAA_Microsite" Relationship="fanlive4Model.FK_TAA_MicrositeLogos_TAA_Microsite" FromRole="TAA_MicrositeLogos" ToRole="TAA_Microsite" />
+        </EntityType>
+        <Association Name="FK_TAA_MicrositeLogos_TAA_Microsite">
+          <End Type="fanlive4Model.TAA_Microsite" Role="TAA_Microsite" Multiplicity="1" />
+          <End Type="fanlive4Model.TAA_MicrositeLogos" Role="TAA_MicrositeLogos" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TAA_Microsite">
+              <PropertyRef Name="MicrositeID" />
+            </Principal>
+            <Dependent Role="TAA_MicrositeLogos">
+              <PropertyRef Name="MicrositeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="fanlive4ModelStoreContainer" CdmEntityContainer="fanlive4Entities">
+          <EntitySetMapping Name="Users"><EntityTypeMapping TypeName="fanlive4Model.User"><MappingFragment StoreEntitySet="Users">
+            <ScalarProperty Name="UserID" ColumnName="UserID" />
+            <ScalarProperty Name="Username" ColumnName="Username" />
+            <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+            <ScalarProperty Name="LastName" ColumnName="LastName" />
+            <ScalarProperty Name="IsSuperUser" ColumnName="IsSuperUser" />
+            <ScalarProperty Name="AffiliateId" ColumnName="AffiliateId" />
+            <ScalarProperty Name="Email" ColumnName="Email" />
+            <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
+            <ScalarProperty Name="UpdatePassword" ColumnName="UpdatePassword" />
+            <ScalarProperty Name="LastIPAddress" ColumnName="LastIPAddress" />
+            <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+            <ScalarProperty Name="CreatedByUserID" ColumnName="CreatedByUserID" />
+            <ScalarProperty Name="CreatedOnDate" ColumnName="CreatedOnDate" />
+            <ScalarProperty Name="LastModifiedByUserID" ColumnName="LastModifiedByUserID" />
+            <ScalarProperty Name="LastModifiedOnDate" ColumnName="LastModifiedOnDate" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="UserProfiles">
+            <EntityTypeMapping TypeName="fanlive4Model.UserProfile">
+              <MappingFragment StoreEntitySet="UserProfile">
+                <ScalarProperty Name="LastUpdatedDate" ColumnName="LastUpdatedDate" />
+                <ScalarProperty Name="Visibility" ColumnName="Visibility" />
+                <ScalarProperty Name="PropertyText" ColumnName="PropertyText" />
+                <ScalarProperty Name="PropertyValue" ColumnName="PropertyValue" />
+                <ScalarProperty Name="PropertyDefinitionID" ColumnName="PropertyDefinitionID" />
+                <ScalarProperty Name="UserID" ColumnName="UserID" />
+                <ScalarProperty Name="ProfileID" ColumnName="ProfileID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TAA_FanID">
+            <EntityTypeMapping TypeName="fanlive4Model.TAA_FanID">
+              <MappingFragment StoreEntitySet="TAA_FanID">
+                <ScalarProperty Name="CUGGoodresolution" ColumnName="CUGGoodresolution" />
+                <ScalarProperty Name="CUGGoodvectorized" ColumnName="CUGGoodvectorized" />
+                <ScalarProperty Name="CUGGoodtransparancy" ColumnName="CUGGoodtransparancy" />
+                <ScalarProperty Name="CUGGoodsize" ColumnName="CUGGoodsize" />
+                <ScalarProperty Name="GraphicDeleted" ColumnName="GraphicDeleted" />
+                <ScalarProperty Name="CUG" ColumnName="CUG" />
+                <ScalarProperty Name="GAUploadedGraphic" ColumnName="GAUploadedGraphic" />
+                <ScalarProperty Name="UserUploadedGraphic" ColumnName="UserUploadedGraphic" />
+                <ScalarProperty Name="TAASportID" ColumnName="TAASportID" />
+                <ScalarProperty Name="DeletedOnDate" ColumnName="DeletedOnDate" />
+                <ScalarProperty Name="DeletedByUserID" ColumnName="DeletedByUserID" />
+                <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+                <ScalarProperty Name="LastModifiedOnDate" ColumnName="LastModifiedOnDate" />
+                <ScalarProperty Name="LastModifiedByUserID" ColumnName="LastModifiedByUserID" />
+                <ScalarProperty Name="CreatedOnDate" ColumnName="CreatedOnDate" />
+                <ScalarProperty Name="CreatedByUserID" ColumnName="CreatedByUserID" />
+                <ScalarProperty Name="Sport" ColumnName="Sport" />
+                <ScalarProperty Name="City" ColumnName="City" />
+                <ScalarProperty Name="School" ColumnName="School" />
+                <ScalarProperty Name="TeamLogo" ColumnName="TeamLogo" />
+                <ScalarProperty Name="AccentColorID" ColumnName="AccentColorID" />
+                <ScalarProperty Name="Accent" ColumnName="Accent" />
+                <ScalarProperty Name="SecondaryColorID" ColumnName="SecondaryColorID" />
+                <ScalarProperty Name="SecondaryColor" ColumnName="SecondaryColor" />
+                <ScalarProperty Name="PrimaryColorID" ColumnName="PrimaryColorID" />
+                <ScalarProperty Name="PrimaryColor" ColumnName="PrimaryColor" />
+                <ScalarProperty Name="TeamName" ColumnName="TeamName" />
+                <ScalarProperty Name="DesignName" ColumnName="DesignName" />
+                <ScalarProperty Name="FanID" ColumnName="FanID" />
+                <ScalarProperty Name="MicrositeID" ColumnName="MicrositeID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TAA_Microsite">
+            <EntityTypeMapping TypeName="fanlive4Model.TAA_Microsite">
+              <MappingFragment StoreEntitySet="TAA_Microsite">
+                <ScalarProperty Name="IntegratorCustAccount" ColumnName="IntegratorCustAccount" />
+                <ScalarProperty Name="IntegratorRetrievalCode" ColumnName="IntegratorRetrievalCode" />
+                <ScalarProperty Name="TeamUniqueID" ColumnName="TeamUniqueID" />
+                <ScalarProperty Name="PartialURL" ColumnName="PartialURL" />
+                <ScalarProperty Name="URL" ColumnName="URL" />
+                <ScalarProperty Name="DeletedOnDate" ColumnName="DeletedOnDate" />
+                <ScalarProperty Name="DeletedByUserID" ColumnName="DeletedByUserID" />
+                <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+                <ScalarProperty Name="LastModifiedOnDate" ColumnName="LastModifiedOnDate" />
+                <ScalarProperty Name="LastModifiedByUserID" ColumnName="LastModifiedByUserID" />
+                <ScalarProperty Name="CreatedOnDate" ColumnName="CreatedOnDate" />
+                <ScalarProperty Name="CreatedByUserID" ColumnName="CreatedByUserID" />
+                <ScalarProperty Name="Locked" ColumnName="Locked" />
+                <ScalarProperty Name="Enabled" ColumnName="Enabled" />
+                <ScalarProperty Name="CreatedFromSLP" ColumnName="CreatedFromSLP" />
+                <ScalarProperty Name="SportID" ColumnName="SportID" />
+                <ScalarProperty Name="Sport" ColumnName="Sport" />
+                <ScalarProperty Name="City" ColumnName="City" />
+                <ScalarProperty Name="School" ColumnName="School" />
+                <ScalarProperty Name="TeamLogo" ColumnName="TeamLogo" />
+                <ScalarProperty Name="AccentColorID" ColumnName="AccentColorID" />
+                <ScalarProperty Name="SecondaryColorID" ColumnName="SecondaryColorID" />
+                <ScalarProperty Name="PrimaryColorID" ColumnName="PrimaryColorID" />
+                <ScalarProperty Name="Accent" ColumnName="Accent" />
+                <ScalarProperty Name="SecondaryColour" ColumnName="SecondaryColour" />
+                <ScalarProperty Name="PrimaryColour" ColumnName="PrimaryColour" />
+                <ScalarProperty Name="TeamName" ColumnName="TeamName" />
+                <ScalarProperty Name="MicrositeID" ColumnName="MicrositeID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TAA_RoleCards">
+            <EntityTypeMapping TypeName="fanlive4Model.TAA_RoleCards">
+              <MappingFragment StoreEntitySet="TAA_RoleCards">
+                <ScalarProperty Name="DeletedOnDate" ColumnName="DeletedOnDate" />
+                <ScalarProperty Name="DeletedByUserID" ColumnName="DeletedByUserID" />
+                <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+                <ScalarProperty Name="LastModifiedOnDate" ColumnName="LastModifiedOnDate" />
+                <ScalarProperty Name="LastModifiedByUserID" ColumnName="LastModifiedByUserID" />
+                <ScalarProperty Name="CreatedOnDate" ColumnName="CreatedOnDate" />
+                <ScalarProperty Name="CreatedByUserID" ColumnName="CreatedByUserID" />
+                <ScalarProperty Name="playerRetrievalCode" ColumnName="playerRetrievalCode" />
+                <ScalarProperty Name="ShirtSizeID" ColumnName="ShirtSizeID" />
+                <ScalarProperty Name="PantSizeID" ColumnName="PantSizeID" />
+                <ScalarProperty Name="SizeGroupID" ColumnName="SizeGroupID" />
+                <ScalarProperty Name="Gender" ColumnName="Gender" />
+                <ScalarProperty Name="Zip" ColumnName="Zip" />
+                <ScalarProperty Name="State" ColumnName="State" />
+                <ScalarProperty Name="City" ColumnName="City" />
+                <ScalarProperty Name="Address" ColumnName="Address" />
+                <ScalarProperty Name="Phone" ColumnName="Phone" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="MiddleInitial" ColumnName="MiddleInitial" />
+                <ScalarProperty Name="LastName" ColumnName="LastName" />
+                <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+                <ScalarProperty Name="JerseyNumber" ColumnName="JerseyNumber" />
+                <ScalarProperty Name="PrintedName" ColumnName="PrintedName" />
+                <ScalarProperty Name="RoleCallSheetID" ColumnName="RoleCallSheetID" />
+                <ScalarProperty Name="RoleCardID" ColumnName="RoleCardID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TAA_RoleCallSheets">
+            <EntityTypeMapping TypeName="fanlive4Model.TAA_RoleCallSheets">
+              <MappingFragment StoreEntitySet="TAA_RoleCallSheets">
+                <ScalarProperty Name="DeletedOnDate" ColumnName="DeletedOnDate" />
+                <ScalarProperty Name="DeletedByUserID" ColumnName="DeletedByUserID" />
+                <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+                <ScalarProperty Name="LastModifiedOnDate" ColumnName="LastModifiedOnDate" />
+                <ScalarProperty Name="LastModifiedByUserID" ColumnName="LastModifiedByUserID" />
+                <ScalarProperty Name="CreatedOnDate" ColumnName="CreatedOnDate" />
+                <ScalarProperty Name="CreatedByUserID" ColumnName="CreatedByUserID" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="MicrositeID" ColumnName="MicrositeID" />
+                <ScalarProperty Name="RollCallSheetID" ColumnName="RollCallSheetID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CAT_Products">
+            <EntityTypeMapping TypeName="fanlive4Model.CAT_Products">
+              <MappingFragment StoreEntitySet="CAT_Products">
+                <ScalarProperty Name="SortOrder" ColumnName="SortOrder" />
+                <ScalarProperty Name="CMSProductDesign" ColumnName="CMSProductDesign" />
+                <ScalarProperty Name="TAASportID" ColumnName="TAASportID" />
+                <ScalarProperty Name="CMSProductID" ColumnName="CMSProductID" />
+                <ScalarProperty Name="DiscountClassID" ColumnName="DiscountClassID" />
+                <ScalarProperty Name="DiscountClass" ColumnName="DiscountClass" />
+                <ScalarProperty Name="ConsumerTier4Price" ColumnName="ConsumerTier4Price" />
+                <ScalarProperty Name="ConsumerTier3Price" ColumnName="ConsumerTier3Price" />
+                <ScalarProperty Name="ConsumerTier2Price" ColumnName="ConsumerTier2Price" />
+                <ScalarProperty Name="ConsumerTier1Price" ColumnName="ConsumerTier1Price" />
+                <ScalarProperty Name="DealerTier4Price" ColumnName="DealerTier4Price" />
+                <ScalarProperty Name="DealerTier3Price" ColumnName="DealerTier3Price" />
+                <ScalarProperty Name="DealerTier2Price" ColumnName="DealerTier2Price" />
+                <ScalarProperty Name="DealerTier1Price" ColumnName="DealerTier1Price" />
+                <ScalarProperty Name="StockedColorID6" ColumnName="StockedColorID6" />
+                <ScalarProperty Name="StockedColorID5" ColumnName="StockedColorID5" />
+                <ScalarProperty Name="StockedColorID4" ColumnName="StockedColorID4" />
+                <ScalarProperty Name="StockedColorID3" ColumnName="StockedColorID3" />
+                <ScalarProperty Name="StockedColorID2" ColumnName="StockedColorID2" />
+                <ScalarProperty Name="StockedColorID" ColumnName="StockedColorID" />
+                <ScalarProperty Name="NonStockItem" ColumnName="NonStockItem" />
+                <ScalarProperty Name="TotalPeriods" ColumnName="TotalPeriods" />
+                <ScalarProperty Name="MaxWeight" ColumnName="MaxWeight" />
+                <ScalarProperty Name="TaxCode" ColumnName="TaxCode" />
+                <ScalarProperty Name="LastModifiedOnDate" ColumnName="LastModifiedOnDate" />
+                <ScalarProperty Name="LastModifiedByUserID" ColumnName="LastModifiedByUserID" />
+                <ScalarProperty Name="ReservePrice" ColumnName="ReservePrice" />
+                <ScalarProperty Name="StartingPrice" ColumnName="StartingPrice" />
+                <ScalarProperty Name="AuctionFinished" ColumnName="AuctionFinished" />
+                <ScalarProperty Name="OrigProductID" ColumnName="OrigProductID" />
+                <ScalarProperty Name="ShippingAddress" ColumnName="ShippingAddress" />
+                <ScalarProperty Name="OrderQuantValidExpr" ColumnName="OrderQuantValidExpr" />
+                <ScalarProperty Name="ReorderPoint" ColumnName="ReorderPoint" />
+                <ScalarProperty Name="ItemDeliveryType" ColumnName="ItemDeliveryType" />
+                <ScalarProperty Name="RoleExpiryType" ColumnName="RoleExpiryType" />
+                <ScalarProperty Name="ProductCost" ColumnName="ProductCost" />
+                <ScalarProperty Name="UseRoleFees" ColumnName="UseRoleFees" />
+                <ScalarProperty Name="PayPalSubscription" ColumnName="PayPalSubscription" />
+                <ScalarProperty Name="DonationItem" ColumnName="DonationItem" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="PublicationEnd" ColumnName="PublicationEnd" />
+                <ScalarProperty Name="PublicationStart" ColumnName="PublicationStart" />
+                <ScalarProperty Name="InsuredValue" ColumnName="InsuredValue" />
+                <ScalarProperty Name="ShipExempt" ColumnName="ShipExempt" />
+                <ScalarProperty Name="TaxExempt" ColumnName="TaxExempt" />
+                <ScalarProperty Name="RecurringBilling" ColumnName="RecurringBilling" />
+                <ScalarProperty Name="SubscriptionPeriod" ColumnName="SubscriptionPeriod" />
+                <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+                <ScalarProperty Name="DateCreated" ColumnName="DateCreated" />
+                <ScalarProperty Name="BulkPriceLimit5" ColumnName="BulkPriceLimit5" />
+                <ScalarProperty Name="BulkPriceLimit4" ColumnName="BulkPriceLimit4" />
+                <ScalarProperty Name="BulkPriceLimit3" ColumnName="BulkPriceLimit3" />
+                <ScalarProperty Name="BulkPriceLimit2" ColumnName="BulkPriceLimit2" />
+                <ScalarProperty Name="BulkPriceLimit1" ColumnName="BulkPriceLimit1" />
+                <ScalarProperty Name="CreatedByUser" ColumnName="CreatedByUser" />
+                <ScalarProperty Name="Archive" ColumnName="Archive" />
+                <ScalarProperty Name="DownLoadFile" ColumnName="DownLoadFile" />
+                <ScalarProperty Name="ZIPPassWord" ColumnName="ZIPPassWord" />
+                <ScalarProperty Name="DownLoad" ColumnName="DownLoad" />
+                <ScalarProperty Name="SaleEnd" ColumnName="SaleEnd" />
+                <ScalarProperty Name="SaleStart" ColumnName="SaleStart" />
+                <ScalarProperty Name="SalePrice" ColumnName="SalePrice" />
+                <ScalarProperty Name="Featured" ColumnName="Featured" />
+                <ScalarProperty Name="FreightCosts2" ColumnName="FreightCosts2" />
+                <ScalarProperty Name="FreightCosts1" ColumnName="FreightCosts1" />
+                <ScalarProperty Name="Height" ColumnName="Height" />
+                <ScalarProperty Name="Width" ColumnName="Width" />
+                <ScalarProperty Name="Length" ColumnName="Length" />
+                <ScalarProperty Name="Volume" ColumnName="Volume" />
+                <ScalarProperty Name="Weight" ColumnName="Weight" />
+                <ScalarProperty Name="OrderQuant" ColumnName="OrderQuant" />
+                <ScalarProperty Name="Stock" ColumnName="Stock" />
+                <ScalarProperty Name="URL" ColumnName="URL" />
+                <ScalarProperty Name="DescriptionHTML" ColumnName="DescriptionHTML" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="UnitCost6" ColumnName="UnitCost6" />
+                <ScalarProperty Name="UnitCost5" ColumnName="UnitCost5" />
+                <ScalarProperty Name="UnitCost4" ColumnName="UnitCost4" />
+                <ScalarProperty Name="UnitCost3" ColumnName="UnitCost3" />
+                <ScalarProperty Name="UnitCost2" ColumnName="UnitCost2" />
+                <ScalarProperty Name="UnitCost" ColumnName="UnitCost" />
+                <ScalarProperty Name="ProductImage" ColumnName="ProductImage" />
+                <ScalarProperty Name="KeyWords" ColumnName="KeyWords" />
+                <ScalarProperty Name="Free3" ColumnName="Free3" />
+                <ScalarProperty Name="Free2" ColumnName="Free2" />
+                <ScalarProperty Name="Free1" ColumnName="Free1" />
+                <ScalarProperty Name="ISBN" ColumnName="ISBN" />
+                <ScalarProperty Name="EAN" ColumnName="EAN" />
+                <ScalarProperty Name="ProductNumber" ColumnName="ProductNumber" />
+                <ScalarProperty Name="ProductName" ColumnName="ProductName" />
+                <ScalarProperty Name="Category3" ColumnName="Category3" />
+                <ScalarProperty Name="Category2ID" ColumnName="Category2ID" />
+                <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+                <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CAT_AdvCatProducts">
+            <EntityTypeMapping TypeName="fanlive4Model.CAT_AdvCatProducts">
+              <MappingFragment StoreEntitySet="CAT_AdvCatProducts">
+                <ScalarProperty Name="AddAdvCatToProductDisplay" ColumnName="AddAdvCatToProductDisplay" />
+                <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+                <ScalarProperty Name="AdvCatID" ColumnName="AdvCatID" />
+                <ScalarProperty Name="AdvCatProductID" ColumnName="AdvCatProductID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TAA_MicrositeLogos">
+            <EntityTypeMapping TypeName="fanlive4Model.TAA_MicrositeLogos">
+              <MappingFragment StoreEntitySet="TAA_MicrositeLogos">
+                <ScalarProperty Name="DeletedOnDate" ColumnName="DeletedOnDate" />
+                <ScalarProperty Name="DeletedByUserID" ColumnName="DeletedByUserID" />
+                <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+                <ScalarProperty Name="LastModifiedOnDate" ColumnName="LastModifiedOnDate" />
+                <ScalarProperty Name="LastModifiedByUserID" ColumnName="LastModifiedByUserID" />
+                <ScalarProperty Name="CreatedOnDate" ColumnName="CreatedOnDate" />
+                <ScalarProperty Name="CreatedByUserID" ColumnName="CreatedByUserID" />
+                <ScalarProperty Name="LogoName" ColumnName="LogoName" />
+                <ScalarProperty Name="Logo" ColumnName="Logo" />
+                <ScalarProperty Name="MicrositeID" ColumnName="MicrositeID" />
+                <ScalarProperty Name="LogoID" ColumnName="LogoID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="DnnModel">
+        <EntityTypeShape EntityType="fanlive4Model.User" Width="1.5" PointX="0.75" PointY="0.75" Height="3.9033007812499996" IsExpanded="true" />
+        <EntityTypeShape EntityType="fanlive4Model.UserProfile" Width="1.5" PointX="3" PointY="5.5" Height="2.5571907552083326" />
+        <AssociationConnector Association="fanlive4Model.FK_UserProfile_Users" >
+          <ConnectorPoint PointX="2.25" PointY="2.7978011067708328" />
+          <ConnectorPoint PointX="3.75" PointY="2.7978011067708328" />
+          <ConnectorPoint PointX="3.75" PointY="5.5" />
+        </AssociationConnector>
+        <EntityTypeShape EntityType="fanlive4Model.TAA_FanID" Width="1.5" PointX="5.375" PointY="0.75" Height="6.787822265625" />
+        <EntityTypeShape EntityType="fanlive4Model.TAA_Microsite" Width="1.5" PointX="7.375" PointY="0.75" Height="6.4032194010416656" />
+        <EntityTypeShape EntityType="fanlive4Model.TAA_RoleCards" Width="1.5" PointX="9.75" PointY="1.25" Height="0.4" IsExpanded="false" />
+        <EntityTypeShape EntityType="fanlive4Model.TAA_RoleCallSheets" Width="1.5" PointX="12.75" PointY="2.25" Height="3.1340950520833317" />
+        <AssociationConnector Association="fanlive4Model.FK_TAA_RoleCards_TAA_RoleCallSheets" >
+          <ConnectorPoint PointX="12.75" PointY="2.78125" />
+          <ConnectorPoint PointX="11.21875" PointY="2.78125" />
+          <ConnectorPoint PointX="11.21875" PointY="1.65" />
+        </AssociationConnector>
+        <EntityTypeShape EntityType="fanlive4Model.CAT_Products" Width="1.5" PointX="5.375" PointY="8.75" Height="19.095113932291667" />
+        <EntityTypeShape EntityType="fanlive4Model.CAT_AdvCatProducts" Width="1.5" PointX="9.875" PointY="13.125" Height="1.9802864583333317" />
+        <AssociationConnector Association="fanlive4Model.FK_CAT_AdvCatProducts_Products" >
+          <ConnectorPoint PointX="6.875" PointY="14.115143229166666" />
+          <ConnectorPoint PointX="9.875" PointY="14.115143229166666" />
+        </AssociationConnector>
+        <EntityTypeShape EntityType="fanlive4Model.TAA_MicrositeLogos" Width="1.5" PointX="9.625" PointY="3.375" Height="3.3263964843749996" />
+        <AssociationConnector Association="fanlive4Model.FK_TAA_MicrositeLogos_TAA_Microsite" >
+          <ConnectorPoint PointX="8.875" PointY="5.0381982421875" />
+          <ConnectorPoint PointX="9.625" PointY="5.0381982421875" />
+        </AssociationConnector>
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>
